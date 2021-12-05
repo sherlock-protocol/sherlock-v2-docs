@@ -1,6 +1,6 @@
 # Stake positions
 
-![Core](https://i.imgur.com/XXzh7bn.png)
+![Stake position lifecycle](https://i.imgur.com/XXzh7bn.png)
 
 ## Minting a position
 

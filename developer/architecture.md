@@ -12,13 +12,13 @@ The [core contract](https://github.com/sherlock-protocol/sherlock-v2-core/blob/m
 4. Claims/payout process (SherlockClaimManager.sol)
 5. Non-Staker address (multisig wallet)
 
-![overview](https://i.imgur.com/tJ7hH7z.jpg)
+![Architecture overview](https://i.imgur.com/tJ7hH7z.jpg)
 
 Core holds USDC and the exact amount of SHER that will be distributed to stakers upon exiting their position.
 
 Yield strategy holds most of the USDC as the owner of the core contract can move funds into Aave V2 and earn yield.
 
-Protocol manager holds all the balances deposited by protocols and exposes the exact amount of debt to core, which is claimable each block. 
+Protocol manager holds all the balances deposited by protocols and exposes the exact amount of debt to core, which is claimable each block.
 
 The claims/payout process contract is not supposed to hold funds.
 

@@ -4,11 +4,11 @@ The goal of this contract is to distribute SHER tokens to stakers who stake thei
 
 The core contract will call `pullReward(amount, period)` on every stake and restake action, and based on the curve described below the right amount of SHER tokens is sent back to the core contract.
 
-Enough tokens need to be available in this contract to actually transfer them to the staker at the end of a lockup period. 
+Enough tokens need to be available in this contract to actually transfer them to the staker at the end of a lockup period.
 
 ### Kors curve
 
-![img](https://i.imgur.com/eqlqM5e.png)
+![SHER distribution curve](https://i.imgur.com/eqlqM5e.png)
 
 The distribution curve starts with a fixed rate until a certain amount of TVL (a). Once (a) is reached, it will calculate rewards based on a linear slope until the max amount of TVL is reached (b).
 
@@ -20,7 +20,7 @@ If tokens are being staked after the TVL is past (b), no SHER rewards are distri
 
 ### Design goal
 
-The goal of this curve is to make sure Sherlock's TVL will never drop below a certain level. As the current TVL changes, the starting point on the curve moves more to the left if the TVL drops and to the right if the TVL increases. SHER rewards are automatically increased (on a TVL drop) or decreased (on a TVL increase) as the point on the slope changes. 
+The goal of this curve is to make sure Sherlock's TVL will never drop below a certain level. As the current TVL changes, the starting point on the curve moves more to the left if the TVL drops and to the right if the TVL increases. SHER rewards are automatically increased (on a TVL drop) or decreased (on a TVL increase) as the point on the slope changes.
 
 The flat part is there for the situation where governance wants to have a predictable, fixed SHER distribution rate up until (a). Without the flat part we would distribute an excessive amount of SHER to the earliest stakers. The curve also has the flexilbity to remove the flat part completely by setting (a) to 0.
 
