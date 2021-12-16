@@ -10,7 +10,7 @@ Once the exploit has been mitigated, the Watsons will work to understand the exp
 
 The first stage of evaluating a claim is the committee vote of the SPCC (Sherlock Protocol Claims Committee). The SPCC is made up of members of the core team of Sherlock as well as security advisors to Sherlock. These committee members will be well-versed in the nature of exploits covered by Sherlock. All of the members of the SPCC have a stake in Sherlock and an interest in doing what's best for the long-term success of Sherlock. They will also have reputations and public identities outside of Sherlock that they will want to uphold. These factors will make it very likely that the members of the SPCC will see it in their best interest to make the most accurate claims decision possible.
 
-![](https://i.imgur.com/n1P41mz.png)
+![](https://imgur.com/a/XcUePdy)
 
 The decision made by the SPCC will be binary (either the claim will be paid out or not). Once a decision is made on a claim by the SPCC, there are a few possible paths.&#x20;
 
