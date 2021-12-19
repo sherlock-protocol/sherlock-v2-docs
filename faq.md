@@ -14,7 +14,7 @@
   * Pricing is done by security experts with skin in the game
     * Assessing smart contract risk is hard. Really hard. Sherlock's approach puts the responsibility squarely in the hands of those who are most capable and aligns their incentives as closely as possible with stakers.&#x20;
   * Claims decisions are made by an unbiased 3rd party
-    * Follow the incentives. Does your payout rely on a decision made by someone who will lose a lot of money if they decide in your favor? Sherlock has partnered with UMA to offer an unbiased claims process handled by objective, third-party voters who have economic guarantees around their incentives. Read more [here](https://app.gitbook.com/o/-M\_eFb0i0B5bGNIG9sx8/s/IULvDRunHtCHQJQoTsGo/). \[update link]
+    * Follow the incentives. Does your payout rely on a decision made by someone who will lose a lot of money if they decide in your favor? Sherlock has partnered with UMA to offer an unbiased claims process handled by objective, third-party voters who have economic guarantees around their incentives. Read more [here](https://docs.umaproject.org/getting-started/oracle).
 
 ### How does staking work?
 

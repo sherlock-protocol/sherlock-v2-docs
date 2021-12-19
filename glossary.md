@@ -4,7 +4,7 @@
 
 ### Claim
 
-* A claim occurs when a protocol covered by Sherlock believes it has been hacked and believes Sherlock has a responsibility to repay the hack. See the claims section \[add link] for details. &#x20;
+* A claim occurs when a protocol covered by Sherlock believes it has been hacked and believes Sherlock has a responsibility to repay the hack. See the [claims section](https://docs.sherlock.xyz/claims/claims-process) for details. &#x20;
 
 ### Coverage
 
@@ -12,7 +12,7 @@
 
 ### Exploit
 
-* For Sherlock's purposes, an exploit is the act of maliciously removing tokens (usually tokens deposited by others) from a protocol in an unintended way. Sherlock covers most (but not all) exploits that a protocol could experience. For a detailed breakdown of which exploits are generally covered, see the Sherlock Coverage Agreement. \[insert link]
+* For Sherlock's purposes, an exploit is the act of maliciously removing tokens (usually tokens deposited by others) from a protocol in an unintended way. Sherlock covers most (but not all) exploits that a protocol could experience. For a detailed breakdown of which exploits are generally covered, see an example of the Sherlock Coverage Agreement [here](https://app.sherlock.xyz/static/pdf/Nifty_Options_Statement_of_Coverage.pdf).
 
 ### Premium
 
@@ -20,7 +20,7 @@
 
 ### SHER
 
-* Sherlock's governance token. See the [SHER section](broken-reference) for more info.
+* Sherlock's governance token. See the [SHER section](https://docs.sherlock.xyz/tokens/sher) for more info.
 
 ### Staking
 
