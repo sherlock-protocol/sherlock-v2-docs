@@ -2,12 +2,12 @@
 
 ### Contract roles
 
-Manager: Current address for the overarching manager contract used by Sherlock (Manager.sol)
-ISherlock: Current address for the contract that manages governance and staking used by Sherlock (Sherlock.sol)
-IStrategyManager: Current address for the yield strategy contract used by Sherlock (AaveV2Strategy.sol)
-ISherDistributionManager: Current address for the distribution manager contract used by Sherlock (SherDistributionManager.sol)
-ISherlockProtocolManager: Current address for the protocol manager contract used by Sherlock (SherlockProtocolManager.sol)
-ISherlockClaimManager: Current address for the claim manager contract used by Sherlock (SherlockClaimManager.sol)
+- **Manager**: Current address for the overarching manager contract used by Sherlock (Manager.sol)
+- **ISherlock**: Current address for the contract that manages governance and staking used by Sherlock (Sherlock.sol)
+- **IStrategyManager**: Current address for the yield strategy contract used by Sherlock (AaveV2Strategy.sol)
+- **ISherDistributionManager**: Current address for the distribution manager contract used by Sherlock (SherDistributionManager.sol)
+- **ISherlockProtocolManager**: Current address for the protocol manager contract used by Sherlock (SherlockProtocolManager.sol)
+- **ISherlockClaimManager**: Current address for the claim manager contract used by Sherlock (SherlockClaimManager.sol)
 
 ### onlyOwner and owner
 Manager.sol and Sherlock.sol implement OpenZeppelin's Ownable library. In both cases, the owner address will be a multi-sig controlled by the Sherlock core team. 
