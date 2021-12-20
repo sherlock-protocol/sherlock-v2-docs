@@ -35,6 +35,7 @@
 ## Developer
 
 - [Architecture](developer/architecture.md)
+- [Roles](developer/roles.md)
 - [Stake position lifecycle](developer/stake-position.md)
 - [Claim lifecycle](developer/claims.md)
 - [Protocol lifecycle](developer/protocols.md)
