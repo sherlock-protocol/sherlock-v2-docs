@@ -24,8 +24,6 @@ The claims/payout process contract is not supposed to hold funds.
 
 The non-staker address is able to claim funds from protocol manager based on the configuration of each covered protocol.
 
-> Every contract is ownable
-
 ## Lifecycles
 
 Conceptually there a couple objects with a lifecycle
