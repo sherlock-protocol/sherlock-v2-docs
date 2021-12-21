@@ -43,7 +43,7 @@ For Ownable, the openZeppelin's Ownable library is being used. The owner address
 
 ### Sherlock.sol
 
-#### Ownable
+**Ownable**
 
 1. `enableStakingPeriod()`
 2. `disableStakingPeriod()`
