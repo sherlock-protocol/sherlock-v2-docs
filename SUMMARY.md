@@ -32,6 +32,10 @@
 - [SHER](tokens/sher.md)
 - [Receipt NFTs](tokens/receipt-nfts.md)
 
+## Governance
+
+- [Roles](governance/roles.md)
+
 ## Developer
 
 - [Overview](developer/overview.md)
