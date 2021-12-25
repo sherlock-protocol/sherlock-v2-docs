@@ -1,4 +1,4 @@
-## Protocol Roles
+# Protocol Roles
 
 ### Governance Functionality
 While the protocol is quite governance-minimized, there are still some aspects that will be controlled by a governing party. At launch, a multi sig controlled by the Sherlock core team will be in control of upgrades, pausing and functionality related to adding and removing covered protocols. Over time, this functionality will be turned over to a DAO that will be in full control of the parts of the Sherlock protocol which can be changed. 
