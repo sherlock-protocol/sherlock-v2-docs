@@ -13,5 +13,5 @@ This is another multi sig that will be controlled by the core UMA team. Basicall
 A protocol agent is simply a wallet or multi sig controlled by a covered protocol. This agent will have the ability to do protocol-specific actions like submitting claims and withdrawing unused funds (in the case of overpayment). 
 
 ### NFT Owners
-When a staker deposits funds into Sherlock, the staker receives an NFT in return. If the staker tries to unstake but no longer holds the NFT, the unstake transaction will fail. Only the owner of the NFT at any given time can do important actions that are specific to the NFT position. The only exception is restaking done by arbitragers, discussed in the [Unstaking] (https://docs.sherlock.xyz/stakers/lockup-period#unstaking) section. 
+When a staker deposits funds into Sherlock, the staker receives an NFT in return. If the staker tries to unstake but no longer holds the NFT, the unstake transaction will fail. Only the owner of the NFT at any given time can do important actions that are specific to the NFT position. The only exception is restaking done by arbitragers, discussed in the [Unstaking](https://docs.sherlock.xyz/stakers/lockup-period#unstaking) section. 
 
