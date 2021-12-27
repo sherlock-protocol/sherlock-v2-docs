@@ -1,6 +1,6 @@
 # Claims
 
-![Claim lifecycle](https://i.imgur.com/Ispf0gT.png)
+![Claim lifecycle](https://i.imgur.com/BEjncCz.png)
 
 ## Creating a claim
 

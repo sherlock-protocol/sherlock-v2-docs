@@ -12,7 +12,7 @@ There are 3 main participants in the Sherlock ecosystem:
 2. Stakers
 3. Security team
 
-![](https://i.imgur.com/CilRUuX.png)
+![](https://i.imgur.com/bQxJd02.png)
 
 ### Protocols
 

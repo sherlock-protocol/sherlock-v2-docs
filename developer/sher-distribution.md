@@ -8,7 +8,7 @@ Enough tokens need to be available in this contract to actually transfer them to
 
 ### Kors curve
 
-![SHER distribution curve](https://i.imgur.com/KjNsV6H.png)
+![SHER distribution curve](https://i.imgur.com/1U3ibuR.png)
 
 The distribution curve starts with a fixed rate until a certain amount of TVL (a). Once (a) is reached, it will calculate rewards based on a linear slope until the max amount of TVL is reached (b).
 
