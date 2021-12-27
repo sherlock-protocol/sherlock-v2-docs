@@ -32,10 +32,13 @@
 - [SHER](tokens/sher.md)
 - [Receipt NFTs](tokens/receipt-nfts.md)
 
+## Governance
+
+- [Roles](governance/roles.md)
+
 ## Developer
 
-- [Architecture](developer/architecture.md)
-- [Roles](developer/roles.md)
+- [Overview](developer/overview.md)
 - [Stake position lifecycle](developer/stake-position.md)
 - [Claim lifecycle](developer/claims.md)
 - [Protocol lifecycle](developer/protocols.md)
