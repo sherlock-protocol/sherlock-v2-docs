@@ -12,7 +12,7 @@ The [core contract](https://github.com/sherlock-protocol/sherlock-v2-core/blob/m
 4. Claims/payout process (SherlockClaimManager.sol)
 5. Non-Staker address (multisig wallet)
 
-![Architecture overview](https://i.imgur.com/tJ7hH7z.jpg)
+![Architecture overview](https://i.imgur.com/YIhb5EM.png)
 
 Core holds USDC and the exact amount of SHER that will be distributed to stakers upon exiting their position.
 
