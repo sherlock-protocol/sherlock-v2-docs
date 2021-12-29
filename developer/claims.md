@@ -20,7 +20,7 @@ After a claim is created, the Sherlock Protocol Claims Committee (SPCC) has 7 da
 
 ## Escalate to UMA
 
-The protocol agent has to pay a bond to escalate the claim (20k USDC). This bond will be paid back if UMA approves the claim. If UMA denies the claim the bond will be distributed to Sherlock stakers.
+The protocol agent has to pay a bond to escalate the claim (~20k USDC). This bond will be paid back if UMA approves the claim. If UMA denies the claim the bond will be distributed to Sherlock stakers.
 
 ## UMA halt operator
 
