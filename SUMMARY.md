@@ -4,6 +4,11 @@
 - [FAQ](faq.md)
 - [Glossary](glossary.md)
 
+## Governance
+
+- [Functions](governance/functions.md)
+- [Roles](governance/roles.md)
+
 ## Stakers
 
 - [Overview](stakers/overview.md)
@@ -32,10 +37,6 @@
 
 - [SHER](tokens/sher.md)
 - [Receipt NFTs](tokens/receipt-nfts.md)
-
-## Governance
-
-- [Roles](governance/roles.md)
 
 ## Developer
 
