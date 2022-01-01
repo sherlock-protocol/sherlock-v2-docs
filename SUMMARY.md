@@ -42,6 +42,6 @@
 - [Stake position lifecycle](developer/stake-position.md)
 - [Claim lifecycle](developer/claims.md)
 - [Protocol lifecycle](developer/protocols.md)
-- [Sher distribution](developer/sher-distribution.md)
+- [SHER distribution](developer/sher-distribution.md)
 - [Deployed Contracts](developer/deployed-contracts.md)
 - [Contract Reference](developer/contract-reference.md)

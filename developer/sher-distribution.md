@@ -1,4 +1,4 @@
-## Sher Distribution manager
+## SHER Token Distribution manager
 
 The goal of this contract is to distribute SHER tokens to stakers who stake their USDC into Sherlock (for a specified lockup period).
 
