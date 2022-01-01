@@ -7,7 +7,7 @@
 ## Stakers
 
 - [Overview](stakers/overview.md)
-- [APY](stakers/APY.md)
+- [Staking APY](stakers/staking-APY.md)
 - [Lockup Period](stakers/lockup-period.md)
 - [Exploit Flow](stakers/exploit-flow.md)
 
