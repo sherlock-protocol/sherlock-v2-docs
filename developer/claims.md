@@ -4,7 +4,7 @@
 
 ## Creating a claim
 
-Claims can be created by protocol agents. Protocol agents take actions on behalf of a specific covered protocol. The protocol agent will be the linked to the claim and is able to execute on future actions regarding the claim.
+Claims can be created by protocol agents. Protocol agents take actions on behalf of a specific covered protocol. The protocol agent will be the linked to the claim during it's lifecycle and is able to execute on future actions regarding the claim.
 
 Claims can be submitted for the current and previous coverage amounts of the protocol.
 
