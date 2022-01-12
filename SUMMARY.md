@@ -8,6 +8,7 @@
 
 - [Functions](governance/functions.md)
 - [Roles](governance/roles.md)
+- [Work](governance/work.md)
 
 ## Stakers
 
@@ -47,3 +48,4 @@
 - [SHER distribution](developer/sher-distribution.md)
 - [Deployed Contracts](developer/deployed-contracts.md)
 - [Contract Reference](developer/contract-reference.md)
+- [Arbitrage](developer/arbitrage.md)
