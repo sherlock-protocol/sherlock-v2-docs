@@ -22,7 +22,7 @@ The third and last path is to escalate the claim to the UMA Optimistic Oracle. T
 
     Staked amount = 2 x (Sherlock's bond of 9600 USDC + UMA's final fee)
     
-E.g. if Sherlock's bond is 9600 USDC and if UMA's final fee is 400 USDC, the required staked amount for escalation would be 20,000 USDC.
+E.g. if Sherlock's bond is 9600 USDC and if UMA's final fee is 1500 USDC, the required staked amount for escalation would be 22,200 USDC.
 
 > Note: Even though Sherlock's bond is set at 9600 USDC, UMA's final fee can be changed in the future, which may result in lower or higher required staked amounts for escalating a claim. The current fee is fetched using the [computeFinalFee](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/oracle/implementation/Store.sol#L131) function.
 
