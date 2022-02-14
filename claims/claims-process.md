@@ -18,6 +18,16 @@ The first path for a covered protocol is to agree and accept the SPCC's decision
 
 The second path is to revise the claim (i.e. the amount of the claim) and re-submit.&#x20;
 
-The third and last path is to escalate the claim to the UMA Optimistic Oracle. This would require the covered protocol to “stake” a reasonable claim amount of approximately ~20k$ to escalate the claim above the SPCC. The escalation would move the claim decision from Sherlock’s hands into the hands of UMA’s [Optimistic Oracle](https://docs.umaproject.org/getting-started/oracle). The claims decision would then be voted on by UMA tokenholders using UMA’s Data Verification Mechanism and the resolution of that vote is the final claim decision. If the covered protocol is proven correct, then the amount specified by the claim will be paid out. They will also receive the staked amount, minus UMA's burned amount (BOND / 2 + UMA's final fee). If the covered protocol's escalation is not successful, then the amount specified by the claim is not paid out and the stake amount is not returned.
+The third and last path is to escalate the claim to the UMA Optimistic Oracle. This would require the covered protocol to “stake” a reasonable claim amount, to escalate the claim above the SPCC, computed as follows:
+
+    Staked amount = 2 x (Sherlock's bond of 9600 USDC + UMA's final fee)
+    
+E.g. if Sherlock's bond is 9600 USDC and if UMA's final fee is 400 USDC, the required staked amount for escalation would be 20,000 USDC.
+
+> Note: Even though Sherlock's bond is set at 9600 USDC, UMA's final fee can be changed in the future, which may result in lower or higher required staked amounts for escalating a claim. The current fee is fetched using the [computeFinalFee](https://github.com/UMAprotocol/protocol/blob/master/packages/core/contracts/oracle/implementation/Store.sol#L131) function.
+
+Half of the staked amount is necessary for the proposer (`requestAndProposePriceFor`) and half for the disputer (`disputePriceFor`), as explained in the [UMA's Optimistic Oracle documentation](https://docs.umaproject.org/getting-started/oracle)
+
+The escalation would move the claim decision from Sherlock’s hands into the hands of UMA’s Optimistic Oracle. The claims decision would then be voted on by UMA tokenholders using UMA’s Data Verification Mechanism and the resolution of that vote is the final claim decision. If the covered protocol is proven correct, then the amount specified by the claim will be paid out. They will also receive the staked amount, minus UMA's burned amount (Half of the Sherlock's bond of 9600 USDC + UMA's final fee). If the covered protocol's escalation is not successful, then the amount specified by the claim is not paid out and the stake amount is not returned.
 
 Note: There is also an option for an UMA multisig to reject the claim decision if the core UMA team collectively believes the oracle didn't function properly. Because the UMA Optimistic Oracle is still somewhat new to this use case, and because the dollar amounts at stake could be extremely high, Sherlock has included this intermediate step in the code with the option to enable or disable it at launch. Once disabled, it cannot be re-enabled.&#x20;
