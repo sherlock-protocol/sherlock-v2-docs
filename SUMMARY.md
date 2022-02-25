@@ -4,6 +4,12 @@
 - [FAQ](faq.md)
 - [Glossary](glossary.md)
 
+## Governance
+
+- [Functions](governance/functions.md)
+- [Roles](governance/roles.md)
+- [Work](governance/work.md)
+
 ## Stakers
 
 - [Overview](stakers/overview.md)
@@ -33,10 +39,6 @@
 - [SHER](tokens/sher.md)
 - [Receipt NFTs](tokens/receipt-nfts.md)
 
-## Governance
-
-- [Roles](governance/roles.md)
-
 ## Developer
 
 - [Overview](developer/overview.md)
@@ -46,3 +48,4 @@
 - [SHER distribution](developer/sher-distribution.md)
 - [Deployed Contracts](developer/deployed-contracts.md)
 - [Contract Reference](developer/contract-reference.md)
+- [Arbitrage](developer/arbitrage.md)
