@@ -15,7 +15,7 @@ The first two sources of APY are variable:
 
 The third source of APY is variable in $ terms, but fixed in SHER token terms:
 
-- Any staker will be able to see exactly how many SHER tokens they will receive from staking. If a staker doubles the length of the stake (from 3 months to 6 months), the amount of SHER tokens to be received will double as well. In this way, stakers will have a good sense of the value they're guaranteed to receive by locking up their USDC. Of course, the APY from SHER tokens will fluctuate as the price of SHER fluctuates. 
+- Any staker will be able to see exactly how many SHER tokens they will receive from staking. If a staker doubles the length of the stake (from 6 months to 12 months), the amount of SHER tokens to be received will double as well. In this way, stakers will have a good sense of the value they're guaranteed to receive by locking up their USDC. Of course, the APY from SHER tokens will fluctuate as the price of SHER fluctuates. 
 
 ### How are the SHER tokens for each stake calculated?
 
