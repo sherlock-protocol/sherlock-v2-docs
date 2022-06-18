@@ -8,7 +8,7 @@
 
 ### Coverage
 
-* If Sherlock takes on a protocol as a customer, the "coverage" is the amount of tokens that Sherlock will reimburse when an exploit (that falls under the coverage agreement) occurs.
+* If Sherlock takes on a protocol as a customer, the "coverage" is the amount of tokens (USDC) that Sherlock will reimburse when an exploit (that falls under the coverage agreement) occurs.
 
 ### Exploit
 
@@ -24,16 +24,16 @@
 
 ### Staking
 
-* The act of depositing USDC into a Sherlock staking pool for a fixed period (3 months, 6 months, etc.). Once USDC has been deposited, USDC and SHER tokens accrue to the depositor in the form of APY. A portion of the staked tokens (up to 33% for an individual exploit) in the staking pool is at risk of being liquidated due to an exploit at one of the protocols covered by Sherlock.
+* The act of depositing USDC into a Sherlock staking pool for a fixed period (6 months, 12 months, etc.). Once USDC has been deposited, USDC and SHER tokens accrue to the depositor in the form of APY. A portion of the staked tokens (up to 50% for an individual exploit) in the staking pool is at risk of being liquidated due to an exploit at one of the protocols covered by Sherlock.
 
 ### Unstaking
 
-* The act of removing staked USDC from the Sherlock staking pool. This action can only be taken once the staking period (3 months, 6 months, etc.) for that USDC has ended.&#x20;
+* The act of removing staked USDC from the Sherlock staking pool. This action can only be taken once the staking period (6 months, 12 months, etc.) for that USDC has ended.&#x20;
 
 ### Watsons
 
 * "You know my methods, Watson. There was not one of them which I did not apply to the inquiry." - _The Memoirs of Sherlock Holmes_ (1893)
-* Watsons are the individuals without which Sherlock would be nothing. These are the security experts who do the deep fundamental analyses that allow Sherlock to select only the best protocols for coverage.&#x20;
+* Watsons are the individuals without which Sherlock would be nothing. These are the security experts who do the deep fundamental analyses (audits) that allow Sherlock to confidently provide coverage for a given protocol's smart contracts.&#x20;
 
 ### Yield Strategy
 

@@ -8,9 +8,9 @@ As described in the [Claims](https://docs.sherlock.xyz/claims/claims-process) se
 
 The SPCC is optimized for speed, at the expense of some potential for bias. If some amount of bias is believed to have occured, a protocol can escalate their claim above the authority of the SPCC, and put it in the hands of the UMA Optimistic Oracle. The UMA OO is a slower process but the claim decision is made by tens of thousands of UMA tokenholders who, as a whole, are probably not biased towards Sherlock or the protocol submitting the claim. 
 
-The SPCC is made up of core Sherlock team members as well as well-known security experts in the space. This committee controls a multisig that accepts or denies a protocol's claim submission. Again, if the committee votes in a way that the protocol disagrees with, the protocol can escalate to the UMA Optimistic Oracle. 
+The SPCC is made up of core Sherlock team members in addition to well-known security experts in the space. This committee controls a multisig that accepts or denies a protocol's claim submission. Again, if the committee votes in a way that the protocol disagrees with, the protocol can escalate to the UMA Optimistic Oracle. 
 
-The address of the SPCC is: 0x4Fcf6AA323a92EB92a58025E821f393da6C41bD6
+The address of the SPCC multi-sig is: 0x4Fcf6AA323a92EB92a58025E821f393da6C41bD6
 
 The current members of the SPCC are:
 
