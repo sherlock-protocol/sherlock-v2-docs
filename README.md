@@ -28,7 +28,7 @@ Stakers deposit USDC into the staking pools in return for one of the highest USD
 2. Interest earned from depositing staker funds into yield strategies (Aave, Compound etc.)
 3. Incentive rewards paid in SHER (Sherlock’s governance token)
 
-In return for these streams, a staker’s funds are at risk of being partially paid out (up to 33%) if a significant covered event (i.e. exploit) occurs on one of the audited contracts covered by Sherlock. Despite the risk, stakers are incentivized to stake because:
+In return for these streams, a staker’s funds are at risk of being partially paid out (up to 50%) if a significant covered event (i.e. exploit) occurs on one of the audited contracts covered by Sherlock. Despite the risk, stakers are incentivized to stake because:
 
 1. There is a healthy APY to be earned for doing so
 2. Sherlock's auditors are some of the top security experts in the space
