@@ -4,7 +4,7 @@
 
 ### What is Sherlock?
 
-* Sherlock is an audit and risk management platform designed to provide protocols with affordable, reliable protection against smart contract exploits. Once Sherlock V2 launches, anyone (in a designated jurisdiction) will be able to stake in Sherlock's staking pools and receive premiums from Sherlock's covered protocols. This is made possible by Sherlock's expert smart contract security team, who conducts deep security reviews for each covered protocol and is incentivized with “skin-in-the-game” alongside Sherlock stakers.
+* Sherlock is an audit and risk management platform designed to provide protocols with affordable, reliable protection against smart contract exploits. Anyone (in a designated jurisdiction) is able to stake in Sherlock's staking pools and receive premiums from Sherlock's covered protocols. This is made possible by Sherlock's expert smart contract security team, who conducts deep security reviews for each covered protocol and is incentivized with “skin-in-the-game” alongside Sherlock stakers.
 
 ### How is Sherlock different from other audit firms?
 
