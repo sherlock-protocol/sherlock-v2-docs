@@ -1,6 +1,8 @@
 # Getting Started
 
-If you're a protocol interested in getting an audit and/or smart contract coverage from Sherlock, please reach out to contact@sherlock.xyz. We'll get you set up with our pricing indicators and the Audit Requirements Checklist. The most up-to-date information will be found there. 
+If you're a protocol interested in getting an audit and/or smart contract coverage from Sherlock, please reach out to contact@sherlock.xyz. 
+
+We'll get you set up with our pricing indicators and the Audit Requirements Checklist. The most up-to-date information will be found there. 
 
 ## Happy Flow
 
@@ -14,4 +16,8 @@ Once a protocol has seen the pricing and agreed to follow the Audit Requirements
 6. On the date of the fix review, Sherlock's Watsons will review any changes made related to issues flagged in the preliminary report. 
 7. Once the fixes are signed off on, the protocol can activate coverage for any Sherlock-audited contracts that are (or will be) on mainnet. 
 
-As the protocol team makes changes or updates to the protocol, Sherlock can work with the Watsons to review any changes made and the cost of these reviews will be simply based on the time spent by the Watsons. For small changes, the cost can be less than one tenth the cost of a regular audit, and Sherlock can extend coverage to these contracts after the review. This will save protocol teams from getting full-priced audits elsewhere and allow the protocol's contracts to still be covered after updates. 
+As the protocol team makes changes or updates to the protocol, Sherlock can work with the Watsons to review any changes made and the cost of these reviews will be simply based on the time spent by the Watsons. 
+
+For small changes, the cost can be less than one tenth the cost of a regular audit, and Sherlock can extend coverage to these contracts after the review. 
+
+This will save protocol teams from getting full-priced audits elsewhere and allow the protocol's contracts to still be covered after updates. 

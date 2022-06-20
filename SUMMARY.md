@@ -14,7 +14,7 @@
 ## Protocols
 
 - [Getting Started](protocols/getting-started.md)
-- [Premiums](protocols/premiums.md)
+- [Coverage Premiums](protocols/premiums.md)
 - [Pricing](protocols/pricing.md)
 - [Exploit Flow](protocols/exploit-flow.md)
 
@@ -22,7 +22,6 @@
 
 - [Intro](watsons/intro.md)
 - [Incentives](watsons/incentives.md)
-- [Payout Mechanism](watsons/payout-mechanism.md)
 
 ## Claims
 
