@@ -4,7 +4,7 @@
 
 ### What is Sherlock?
 
-* Sherlock is an audit and risk management platform designed to provide protocols with affordable, reliable protection against smart contract exploits. Once Sherlock V2 launches, anyone (in a designated jurisdiction) will be able to stake in Sherlock's staking pools and receive premiums from Sherlock's covered protocols. This is made possible by Sherlock's expert smart contract security team, who conducts deep security reviews for each covered protocol and is incentivized with “skin-in-the-game” alongside Sherlock stakers.
+* Sherlock is an audit and risk management platform designed to provide protocols with affordable, reliable protection against smart contract exploits. Anyone (in a designated jurisdiction) is able to stake in Sherlock's staking pools and receive premiums from Sherlock's covered protocols. This is made possible by Sherlock's expert smart contract security team, who conducts deep security reviews for each covered protocol and is incentivized with “skin-in-the-game” alongside Sherlock stakers.
 
 ### How is Sherlock different from other audit firms?
 
@@ -14,12 +14,14 @@
 
 ### How is Sherlock different from other risk management protocols?
 
-* Coverage is managed by protocols/DAOs instead of users
-  * Right now, the burden of managing smart contract risk is borne entirely by users. By working directly with protocols, smart contract coverage can be applied to all users with no extra work required. Not to mention, when an exploit happens, protocol teams often find themselves deciding to reimburse users who did not purchase insurance (all of them, usually), so getting covered at the protocol level helps teams sleep better.&#x20;
-* Pricing is done by security experts with skin in the game
-  * Assessing smart contract risk is hard. Really hard. Sherlock's approach puts the responsibility squarely in the hands of those who are most capable and aligns their incentives as closely as possible with stakers.&#x20;
-* Claims decisions are made by an unbiased 3rd party
-  * Follow the incentives. Does a successful payout rely on a decision made by someone who will lose a lot of money if they decide in your favor? Sherlock has partnered with UMA to offer an unbiased claims process handled by objective, third-party voters who have economic guarantees around their incentives. Read more [here](https://docs.umaproject.org/getting-started/oracle).
+Coverage is managed by protocols/DAOs instead of users
+* Right now, the burden of managing smart contract risk is borne entirely by users. By working directly with protocols, smart contract coverage can be applied to all users with no extra work required. Not to mention, when an exploit happens, protocol teams often find themselves deciding to reimburse users who did not purchase insurance (all of them, usually), so getting covered at the protocol level helps teams sleep better.&#x20;
+
+Pricing is done by security experts with skin in the game
+* Assessing smart contract risk is hard. Really hard. Sherlock's approach puts the responsibility squarely in the hands of those who are most capable and aligns their incentives as closely as possible with stakers.&#x20;
+
+Claims decisions are made by an unbiased 3rd party
+* Follow the incentives. Does a successful payout rely on a decision made by someone who will lose a lot of money if they decide in your favor? Sherlock has partnered with UMA to offer an unbiased claims process handled by objective, third-party voters who have economic guarantees around their incentives. Read more [here](https://docs.umaproject.org/getting-started/oracle).
 
 ### How does staking work?
 
