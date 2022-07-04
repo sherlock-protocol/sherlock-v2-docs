@@ -43,6 +43,7 @@
 - [Claim lifecycle](developer/claims.md)
 - [Protocol lifecycle](developer/protocols.md)
 - [SHER distribution](developer/sher-distribution.md)
+- [Strategy distribution](developer/strategy-distribution.md)
 - [Deployed Contracts](developer/deployed-contracts.md)
 - [Contract Reference](developer/contract-reference.md)
 - [Audits](developer/audits.md)
