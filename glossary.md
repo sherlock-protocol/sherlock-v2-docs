@@ -12,7 +12,7 @@
 
 ### Exploit
 
-* For Sherlock's purposes, an exploit is the act of maliciously removing tokens (usually tokens deposited by others) from a protocol in an unintended way. Sherlock covers most (but not all) exploits that a protocol could experience. For a detailed breakdown of which exploits are generally covered, see an example of the Sherlock Coverage Agreement [here](https://app.sherlock.xyz/static/pdf/Nifty_Options_Statement_of_Coverage.pdf).
+* For Sherlock's purposes, an exploit is the act of maliciously removing tokens (usually tokens deposited by others) from a protocol in an unintended way. Sherlock covers most (but not all) exploits that a protocol could experience. For a detailed breakdown of which exploits are generally covered, take a look at our current coverage agreements [here](https://github.com/sherlock-protocol/sherlock-reports/tree/main/coverage-agreements).
 
 ### Premium
 
