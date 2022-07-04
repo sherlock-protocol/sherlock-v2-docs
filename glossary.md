@@ -37,4 +37,4 @@
 
 ### Yield Strategy
 
-* If Sherlock didn't have yield strategies, then a staker's USDC stake would sit idly in Sherlock's contracts until the staking period ends. Instead, Sherlock puts that USDC to work in other protocols in an effort to earn more APY for stakers. Currently, the only yield strategy is depositing USDC into Aave, but more strategies will be added over time.
+* If Sherlock didn't have yield strategies, then a staker's USDC stake would sit idly in Sherlock's contracts until the staking period ends. Instead, Sherlock puts that USDC to work in other protocols in an effort to earn more APY for stakers. View the current yield strategies on our [dashboard](https://app.sherlock.xyz/overview "Sherlock dashboard")
