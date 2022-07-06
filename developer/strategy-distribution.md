@@ -14,9 +14,9 @@ There are currently 5 strategies implemented to work with our strategy distribut
 
 At the moment only Aave, Compound and Euler are deployed, the configuration of the current deployment is illustrated in the image below.
 
-See [Deployed Contracts](https://docs.sherlock.xyz/developer/deployed-contracts) for the contract addresses related to the strategy distribution.
+See [Deployed Contracts](https://docs.sherlock.xyz/developer/deployed-contracts) for the contract addresses related to the strategy deployment.
 
-![](TODO: INSERT IMAGE)
+![Strategy Deployment](https://i.imgur.com/Hc9kyCr.png)
 
 
 
