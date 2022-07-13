@@ -6,7 +6,7 @@
 
 The [core contract](https://github.com/sherlock-protocol/sherlock-v2-core/blob/main/contracts/Sherlock.sol) (Sherlock.sol) is the main point of interaction for stakers. The contract has an upgradeable reference to 5 addresses.
 
-1. Yield strategy (AaveV2Strategy.sol)
+1. Yield strategy (MasterStrategy.sol)
 2. SHER rewards (SherDistributionManager.sol)
 3. Protocol manager (SherlockProtocolManager.sol)
 4. Claims/payout process (SherlockClaimManager.sol)
@@ -16,7 +16,7 @@ The [core contract](https://github.com/sherlock-protocol/sherlock-v2-core/blob/m
 
 Core holds USDC and the exact amount of SHER that will be distributed to stakers upon exiting their position.
 
-Yield strategy holds most of the USDC as the owner of the core contract can move funds into Aave V2 and earn yield.
+The yield strategy holds most of the USDC as the owner of the core contract can move funds into to the Master Strategy contract which will distribute the USDC between different protocols based on a preconfigured distribution.
 
 Protocol manager holds all the balances deposited by protocols and exposes the exact amount of debt to core, which is claimable each block.
 
@@ -65,22 +65,24 @@ Functions 9 and 10 are used in emergency situations when the protocol needs to b
 
 Function 11, 12 and 13 are used to move the staker pool in and out of the active strategy.
 
-### AaveV2Strategy.sol
+### MasterStrategy.sol
 
 **Ownable**
 
-1. `sweep()`
+1. `withdrawAllByAdmin()`
+2. `withdrawByAdmin()`
 
-This function is used to get the remaining ERC20s and ETH out of the contract. This can only be called if it isn't the current active strategy.
+These functions are used to get USDC out of the underlying strategies.
 
 **onlySherlockCore**
 
 This role means that only the address associated with the active Sherlock.sol implementation can call the function.
 
-1. `withdraw()`
+1. `deposit()`
 2. `withdrawAll()`
+3. `withdraw()`
 
-These functions are use to get liquidity out of the strategy.
+These functions are used to get liquidity in and out of the underlying strategies.
 
 ### SherDistributionManager.sol
 
