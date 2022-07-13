@@ -39,10 +39,10 @@
 ## Developer
 
 - [Overview](developer/overview.md)
-- [Stake position lifecycle](developer/stake-position.md)
-- [Claim lifecycle](developer/claims.md)
-- [Protocol lifecycle](developer/protocols.md)
-- [SHER distribution](developer/sher-distribution.md)
+- [Stake Position Lifecycle](developer/stake-position.md)
+- [Claim Lifecycle](developer/claims.md)
+- [Protocol Lifecycle](developer/protocols.md)
+- [SHER Distribution](developer/sher-distribution.md)
 - [Strategy Distribution](developer/strategy-distribution.md)
 - [Deployed Contracts](developer/deployed-contracts.md)
 - [Contract Reference](developer/contract-reference.md)
