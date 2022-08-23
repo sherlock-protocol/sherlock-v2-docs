@@ -1,6 +1,6 @@
-# Sherlock V2 Technical overview
+# Overview
 
-> Repo: https://github.com/sherlock-protocol/sherlock-v2-core
+> Repository: https://github.com/sherlock-protocol/sherlock-v2-core
 
 ## Architecture
 
@@ -28,10 +28,10 @@ The non-staker address is able to claim funds from protocol manager based on the
 
 Conceptually there a couple objects with a lifecycle
 
-- Stake position (Core)
-- Claim (Claim manager)
-- Protocol (Protocol manager)
-- SHER Rewards Curve (SHER distribution manager)
+* Stake position (Core)
+* Claim (Claim manager)
+* Protocol (Protocol manager)
+* SHER Rewards Curve (SHER distribution manager)
 
 Each object and their lifecycle can be viewed in the specific docs
 
@@ -97,12 +97,12 @@ This function is used to get the remaining ERC20s and ETH out of the contract. T
 **Ownable**
 
 1. `setMinActiveBalance()`
-1. `protocolAdd()`
-1. `protocolUpdate()`
-1. `protocolRemove()`
-1. `setProtocolPremium()`
-1. `setProtocolPremiums()`
-1. `sweep()`
+2. `protocolAdd()`
+3. `protocolUpdate()`
+4. `protocolRemove()`
+5. `setProtocolPremium()`
+6. `setProtocolPremiums()`
+7. `sweep()`
 
 This function is used to get the remaining ERC20s and ETH out of the contract. This can only be called if it isn't the current active sher distribution manager.
 
@@ -123,15 +123,15 @@ This function can only be called by the `nonStakersAddress`, which is defined in
 **Ownable**
 
 1. `renounceUmaHaltOperator()`
-1. `addCallback()`
-1. `removeCallback()`
+2. `addCallback()`
+3. `removeCallback()`
 
 **Protocol Agent**
 
 1. `startClaim()`
-1. `escalate()`
-1. `payoutClaim()`
-1. `cleanUp()`
+2. `escalate()`
+3. `payoutClaim()`
+4. `cleanUp()`
 
 These function can only be called by the protocol agent, there are as many protocol agents as there are protocols. This agent retrieved from `SherlockProtocolManager.sol`
 
@@ -142,8 +142,8 @@ NOTE: Function 2 and 3 use the stored protocol agent of `startClaim()`
 > Read more about our UMA integration here https://docs.sherlock.xyz/claims/claims-process
 
 1. `priceProposed()`
-1. `priceDisputed()`
-1. `priceSettled()`
+2. `priceDisputed()`
+3. `priceSettled()`
 
 These functions can only be called by `UMA`, this is a hardcoded address in `SherlockClaimManager.sol`
 
@@ -156,6 +156,6 @@ These functions can only be called by `UMAHO` (UMA Halt Operator), this is an ad
 **SPCC**
 
 1. `spccApprove()`
-1. `spccRefuse()`
+2. `spccRefuse()`
 
 These functions can only be called by `SPCC` (Sherlock Protocol Claims Committee), this is an address passed on in the constructor of `SherlockClaimManager.sol`
