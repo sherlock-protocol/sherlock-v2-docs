@@ -1,6 +1,6 @@
 # Overview
 
-> Repository: https://github.com/sherlock-protocol/sherlock-v2-core
+> Repo: https://github.com/sherlock-protocol/sherlock-v2-core
 
 ## Architecture
 
