@@ -18,7 +18,7 @@ There are 3 main participants in the Sherlock ecosystem:
 
 Protocols come to Sherlock for audits from top independent security experts. Sherlock offers smart contract coverage on any contracts that are reviewed as part of the audit. Sherlock offers coverage on white-hat bounties and/or black-hat exploits. The coverage is optional, but adding the coverage allows protocols to know that Sherlock has "skin in the game" in terms of auditing the smart contracts. Basically, if the audited smart contracts have a critical bug, Sherlock will likely have to pay out millions of dollars. No other auditor offers this kind of backing for their audits.
 
-In return, whenever an exploit occurs at the protocol (on an audited contract), Sherlock will repay the amount of the exploit up to the coverage limit. Sherlock's [claims process](coverage/claims/claims-process.md) will decide whether or not an exploit falls under coverage and should be paid out.
+In return, whenever an exploit occurs at the protocol (on an audited contract), Sherlock will repay the amount of the exploit up to the coverage limit. Sherlock's [claims process](claims/claims-process.md) will decide whether or not an exploit falls under coverage and should be paid out.
 
 ### Stakers
 

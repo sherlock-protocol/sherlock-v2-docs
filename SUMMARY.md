@@ -4,26 +4,6 @@
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
 
-## Stakers
-
-## Coverage
-
-* [Stakers](coverage/staking-apy/README.md)
-  * [Overview](coverage/staking-apy/overview.md)
-  * [Lockup Period](coverage/staking-apy/lockup-period.md)
-  * [Exploit Flow](coverage/staking-apy/exploit-flow.md)
-  * [Staking APY](coverage/staking-apy/staking-apy.md)
-* [Protocols](coverage/protocols/README.md)
-  * [Getting Started](coverage/protocols/getting-started.md)
-  * [Coverage Premiums](coverage/protocols/premiums.md)
-  * [Pricing](coverage/protocols/pricing.md)
-  * [Exploit Flow](coverage/protocols/exploit-flow.md)
-* [Watsons](coverage/watsons/README.md)
-  * [Intro](coverage/watsons/intro.md)
-  * [Incentives](coverage/watsons/incentives.md)
-* [Claims](coverage/claims/README.md)
-  * [Claims Process](coverage/claims/claims-process.md)
-
 ## Audits
 
 * [Watsons](audits/watsons/README.md)
@@ -32,6 +12,24 @@
   * [Ranking Points](audits/watsons/ranking-points.md)
   * [How you Score Issue Points in a Contest](audits/watsons/how-you-score-issue-points-in-a-contest.md)
   * [Judging](audits/watsons/judging.md)
+
+## Coverage
+
+* [Stakers](coverage/staking-apy/README.md)
+  * [Overview](stakers/overview.md)
+  * [Lockup Period](stakers/lockup-period.md)
+  * [Exploit Flow](stakers/exploit-flow.md)
+  * [Staking APY](stakers/staking-APY.md)
+* [Protocols](coverage/protocols/README.md)
+  * [Getting Started](protocols/getting-started.md)
+  * [Coverage Premiums](protocols/premiums.md)
+  * [Pricing](protocols/pricing.md)
+  * [Exploit Flow](protocols/exploit-flow.md)
+* [Watsons](coverage/watsons/README.md)
+  * [Intro](watsons/intro.md)
+  * [Incentives](watsons/incentives.md)
+* [Claims](coverage/claims/README.md)
+  * [Claims Process](claims/claims-process.md)
 
 ## Tokens
 
