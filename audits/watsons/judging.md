@@ -11,5 +11,6 @@ At the official end-date of the audit, Sherlock’s team will go through and de-
 ### **Case Law**
 
 \
-Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?\
-\- It would not count if the DOS, etc. lasts a known, finite amount of time. If it will result in funds being indefinitely (or potentially indefinitely) inaccessible, then it would count as a loss of funds and be eligible for a Medium or High designation.&#x20;
+**Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?**
+
+It would not count if the DOS, etc. lasts a known, finite amount of time. If it will result in funds being indefinitely (or potentially indefinitely) inaccessible, then it would count as a loss of funds and be eligible for a Medium or High designation.&#x20;
