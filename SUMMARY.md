@@ -10,7 +10,7 @@
   * [Lead Senior Watson Selection Process](audits/watsons/lead-senior-watson-selection-process.md)
   * [Fix Review Process](audits/watsons/fix-review-process.md)
   * [Ranking Points](audits/watsons/ranking-points.md)
-  * [How you Score Issue Points in a Contest](audits/watsons/how-you-score-issue-points-in-a-contest.md)
+  * [How to Score Issue Points in a Contest](audits/watsons/how-to-score-issue-points-in-a-contest.md)
   * [Judging](audits/watsons/judging.md)
 
 ## Coverage
