@@ -1,6 +1,6 @@
 # Overview
 
-A staker deposits USDC into Sherlock's staking pool for a fixed term (6 months, 12 months etc.) and receives a market-leading APY in exchange for the risk of funds being used (up to 50%) to pay out an exploit at a covered protocol.
+A staker deposits USDC into Sherlock's staking pool for a fixed term (6 months, 12 months etc.) and receives a market-leading APY in exchange for the risk of funds being used (up to 50%) to pay out an exploit at a covered protocol.&#x20;
 
 The APY for a staker is made up of 3 streams:
 
