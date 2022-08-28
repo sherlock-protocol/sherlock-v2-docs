@@ -6,6 +6,15 @@
 
 ## Audits
 
+* [Protocols](audits/protocols/README.md)
+  * [How it Works for Protocols](audits/protocols/how-it-works-for-protocols.md)
+  * [Audit Pricing and Timeline](audits/protocols/audit-pricing-and-timeline.md)
+  * [Scheduling Process](audits/protocols/scheduling-process.md)
+  * [Audit Preparation](audits/protocols/audit-preparation.md)
+  * [Protocol Involvement During the Audit Process](audits/protocols/protocol-involvement-during-the-audit-process.md)
+  * [Protocol Involvement Post-Audit](audits/protocols/protocol-involvement-post-audit.md)
+  * [Rescheduling and Cancellations](audits/protocols/rescheduling-and-cancellations.md)
+  * [Interim Updates and Upgrades](audits/protocols/interim-updates-and-upgrades.md)
 * [Watsons](audits/watsons/README.md)
   * [Lead Senior Watson Selection Process](audits/watsons/lead-senior-watson-selection-process.md)
   * [Fix Review Process](audits/watsons/fix-review-process.md)
