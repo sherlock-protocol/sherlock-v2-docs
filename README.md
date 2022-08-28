@@ -1,6 +1,6 @@
 # Intro to Sherlock
 
-Sherlock is an audit marketplace and smart contract coverage protocol built on the Ethereum blockchain. Sherlock works to protect Decentralized Finance (DeFi) users from smart contract exploits with security reviews from top auditors backed by smart contract coverage on the audited contracts. 
+Sherlock is an audit marketplace and smart contract coverage protocol built on the Ethereum blockchain. Sherlock works to protect Decentralized Finance (DeFi) users from smart contract exploits with security reviews from top auditors backed by smart contract coverage on the audited contracts.
 
 You can find a brief overview of the Sherlock ecosystem below.
 
@@ -16,7 +16,7 @@ There are 3 main participants in the Sherlock ecosystem:
 
 ### Protocols
 
-Protocols come to Sherlock for audits from top independent security experts. Sherlock offers smart contract coverage on any contracts that are reviewed as part of the audit. Sherlock offers coverage on white-hat bounties and/or black-hat exploits. The coverage is optional, but adding the coverage allows protocols to know that Sherlock has "skin in the game" in terms of auditing the smart contracts. Basically, if the audited smart contracts have a critical bug, Sherlock will likely have to pay out millions of dollars. No other auditor offers this kind of backing for their audits. 
+Protocols come to Sherlock for audits from top independent security experts. Sherlock offers smart contract coverage on any contracts that are reviewed as part of the audit. Sherlock offers coverage on white-hat bounties and/or black-hat exploits. The coverage is optional, but adding the coverage allows protocols to know that Sherlock has "skin in the game" in terms of auditing the smart contracts. Basically, if the audited smart contracts have a critical bug, Sherlock will likely have to pay out millions of dollars. No other auditor offers this kind of backing for their audits.
 
 In return, whenever an exploit occurs at the protocol (on an audited contract), Sherlock will repay the amount of the exploit up to the coverage limit. Sherlock's [claims process](claims/claims-process.md) will decide whether or not an exploit falls under coverage and should be paid out.
 
