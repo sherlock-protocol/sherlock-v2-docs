@@ -10,7 +10,7 @@ There are 3 main participants in the Sherlock ecosystem:
 
 1. Protocols
 2. Stakers
-3. Security team
+3. Watsons
 
 ![](https://i.imgur.com/bQxJd02.png)
 
@@ -34,8 +34,8 @@ In return for these streams, a staker’s funds are at risk of being partially p
 2. Sherlock's auditors are some of the top security experts in the space
 3. Each covered protocol is required to have a large bug bounty program which can further protect stakers against losses
 
-### Security Team
+### Watsons
 
-Sherlock’s Watsons (the security experts) do a full audit of each prospective protocol's contracts and provide input as to the risk of the protocol's contracts. For security team incentive alignment, we pay out a certain amount of SHER tokens if the protocol a security team is in charge of pricing/securing stays safe over time.
-
-If stakers are well-compensated by a protocol’s fees (net of hacks), then the security team gets rewarded. If hacks eat away most or all of the premiums paid to stakers, the security team responsible for that protocol makes far less. Once a relationship has been initiated with a protocol, Sherlock's Watsons will work closely with the protocol’s developers to maintain and improve the security of the protocol as it changes over time.
+Sherlock’s Watsons (the security experts) do a full audit of each prospective protocol's contracts and provide input as to the risk of the protocol's contracts. \
+\
+Sherlock audits feature both dedicated, top-tier auditors who are incentivized to find vulnerabilities in the codebase, as well as a contest pot where anyone in the world can find bugs. See the "Protocols" tab of the "Audits" section for more info on the audit process. And security experts (or those planning to become security experts) can see more information about how they can participate in audits in the "Watsons" tab in the "Audits" section.&#x20;
