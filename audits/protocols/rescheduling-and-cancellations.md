@@ -4,8 +4,8 @@ Having a protocol on mainnet ourselves, Sherlock fully understands the challenge
 
 **Reschedule / Cancellation Timeline:**
 
-\>14 days before audit start date → 100% deposit refund / no rescheduling costs&#x20;
+\>14 days before audit start date → 100% deposit refund / no rescheduling costs
 
-7 - 14 days before audit start date → 50% deposit refund&#x20;
+7 - 14 days before audit start date → 50% deposit refund
 
 <7 days before audit start date → 0% deposit refund

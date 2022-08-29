@@ -38,4 +38,4 @@ In return for these streams, a staker’s funds are at risk of being partially p
 
 Sherlock’s Watsons (the security experts) do a full audit of each prospective protocol's contracts and provide input as to the risk of the protocol's contracts. \
 \
-Sherlock audits feature both dedicated, top-tier auditors who are incentivized to find vulnerabilities in the codebase, as well as a contest pot where anyone in the world can find bugs. See the "Protocols" tab of the "Audits" section for more info on the audit process. And security experts (or those planning to become security experts) can see more information about how they can participate in audits in the "Watsons" tab in the "Audits" section.&#x20;
+Sherlock audits feature both dedicated, top-tier auditors who are incentivized to find vulnerabilities in the codebase, as well as a contest pot where anyone in the world can find bugs. See the "Protocols" tab of the "Audits" section for more info on the audit process. And security experts (or those planning to become security experts) can see more information about how they can participate in audits in the "Watsons" tab in the "Audits" section.
