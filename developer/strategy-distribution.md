@@ -16,7 +16,5 @@ At the moment only Aave, Compound and Euler are deployed, the configuration of t
 
 See [Deployed Contracts](https://docs.sherlock.xyz/developer/deployed-contracts) for the contract addresses related to the strategy deployment.
 
-![Strategy Deployment](https://i.imgur.com/Hc9kyCr.png)
-
 
 

@@ -20,8 +20,8 @@
 | Name                    | Address                                   |
 | ----------------------- | ----------------------------------------- |
 | Info Storage            | [0xbFa53D098d7063DdCc39a45ea6F8c290FcD7FC70](https://etherscan.io/address/0xbFa53D098d7063DdCc39a45ea6F8c290FcD7FC70) |
-| Splitter 0              | [0x71B6BC6c70E27DCfD7d0b7AE8EbA6a76D518D88A](https://etherscan.io/address/0x71B6BC6c70E27DCfD7d0b7AE8EbA6a76D518D88A) |
+| Splitter 0              | [0x01fE7ff1162D4b4aB41bdaf99296644b7b0eE27D](https://etherscan.io/address/0x01fE7ff1162D4b4aB41bdaf99296644b7b0eE27D) |
 | Splitter 1              | [0x7E0049866879151480d9Ec01391Bbf713F7705b1](https://etherscan.io/address/0x7E0049866879151480d9Ec01391Bbf713F7705b1) |
 | AaveStrategy            | [0x75C5d2d8D54254476239a5c1e1F23ec48Df8779E](https://etherscan.io/address/0x75C5d2d8D54254476239a5c1e1F23ec48Df8779E) |
 | CompoundStrategy        | [0x5b7a52b6d75Fb3105c3c37fcc6007Eb7ac78F1B8](https://etherscan.io/address/0x5b7a52b6d75Fb3105c3c37fcc6007Eb7ac78F1B8) |
-| EulerStrategy           | [0xC124A8088c39625f125655152A168baA86b49026](https://etherscan.io/address/0xC124A8088c39625f125655152A168baA86b49026) |
+| MapleStrategy           | [0xB2acd0214F87d217A2eF148aA4a5ABA71d3F7956](https://etherscan.io/address/0xB2acd0214F87d217A2eF148aA4a5ABA71d3F7956) |
