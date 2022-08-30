@@ -47,6 +47,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 * There’s no guarantee that top-tier security experts will look at your code (especially if the contest was scheduled days before)
 * Even if top-tier experts participate, you don’t know how long they’ll spend looking for bugs
 * Once the bugs are found, there is no one who will look for bugs in the fixes (no fix review)
+* Security experts are incentivized to spend time submitting Low/Informational/QA/gas findings
 * The protocol team is expected to sort through hundreds of issues at the end
 
 ### The Best of Both Worlds
@@ -55,8 +56,8 @@ Sherlock’s approach provides a protocol with the focus, collaboration, and ass
 
 **Overview**
 
-* Top-ranked security expert is guaranteed to look for bugs over the entire length of the audit
-* Significant prize pool attracts 50-100 independent auditors who get paid based on the severity of their findings
+* Top-ranked security expert is incentivized (through ELO-style ranking system) to look for bugs over the entire length of the audit
+* Significant prize pool attracts 50-100 independent auditors who get paid based on the severity of their findings (only High/Medium findings are rewarded)
 * Top-ranked security expert also handles the fix review
 * Sherlock’s internal team takes hundreds of raw, duplicated issues and turns them into a digestible report, saving the protocol team days of work
 
