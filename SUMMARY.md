@@ -33,6 +33,7 @@
   * [Getting Started](protocols/getting-started.md)
   * [Coverage Premiums](protocols/premiums.md)
   * [Pricing](protocols/pricing.md)
+  * [Composability and Coverage](coverage/protocols/composability-and-coverage.md)
   * [Exploit Flow](protocols/exploit-flow.md)
 * [Watsons](coverage/watsons/README.md)
   * [Intro](watsons/intro.md)
