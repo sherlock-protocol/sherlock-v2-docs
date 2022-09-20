@@ -1,5 +1,0 @@
-# Incentives
-
-One of the cruxes of the Sherlock protocol design is the alignment between stakers and Watsons (Sherlock's security and risk experts). This incentive alignment borrows from other "financial" designs such as venture capital firms or hedge funds. In Sherlock's case, stakers are “LPs” who are not experts in a given field but have capital they want to deploy. Security experts are like “hedge fund analysts” who have expertise in a certain field but don’t have the same level of capital as LPs. The way these two parties coordinate in a traditional finance setup is through something like a "carry" structure, where analysts allocate the LP capital and receive a share of the gains (or lack thereof) every year. Sherlock has taken after the spirit of this cooperation.
-
-For each protocol covered by Sherlock, 10-20% of the compensation to Watsons is targeted to be in vested SHER tokens. These tokens are usually locked for 6 months. If no hacks occur on the relevant protocol during the specified vesting period, then the SHER tokens are released to the security team as incentive compensation.
