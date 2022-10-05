@@ -10,4 +10,4 @@ If a protocol decides it wants to withdraw USDC from its active balance, it is p
 
 ### Fluctuating TVL
 
-A protocol may agree to a $10M coverage policy, but find that its TVL is below $10M for a period of time. Instead of charging more than Sherlock is actually covering, the premium gets updated monthly based on the TVL being covered that month. Sherlock has an off-chain script that manages this process. Basically this ensures that a protocol doesn't overpay for coverage.
+A protocol may agree to a $10M coverage policy, but find that its TVL is below $10M for a period of time. Instead of charging more than Sherlock is actually covering, the premium gets updated monthly based on the TVL being covered that month. Sherlock has an off-chain script that manages this process. Basically this ensures that a protocol doesn't overpay for coverage. In the same vein, if Sherlock's staking pool TVL sinks below 200% of the coverage policy amount (i.e. $10M) for any reason, then Sherlock will only charge based on the amount of coverage that is being offered (and payouts will max out at 50% of Sherlock's staking pool TVL).&#x20;
