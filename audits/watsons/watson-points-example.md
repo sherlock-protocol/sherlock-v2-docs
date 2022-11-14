@@ -42,13 +42,13 @@ As you can see, Bob was the only person to find H2 (a High severity issue) and h
 
 Based on these "issue points," we can now see who performed best in the contest and earned the most from the USDC pot:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Bob makes over 50% of the contest pot (over 50k USDC), largely driven by his submission of H2, which no one else found. Emilly fared the worst because she only found Medium severity issues, and other participants also found both Medium severity issues.&#x20;
 
 Based on % of the pot captured by each participant, we can now calculate their leaderboard points. Everyone was assigned temporary leaderboard points because this was everyone's first contest. And the temporary leaderboard points are simply re-distributed based on who performed the best in the contest (captured the largest % of the pot):
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can see that Bob emerged as a winner and gained \~155 points thanks to this contest. This is because he captured \~51% of the total pot, mostly driven by his solo submission of H2, a High severity issue that no one else found. Emily only had 50 points going into the contest, so she only lost \~3 points despite a relatively poor performance in the contest. Alice took a large hit, parting with \~195 points. Expectations for Alice were high based on her Code Arena performances (giving her the 300 temporary leaderboard points) but she did not live up to expectations in this contest, so her leaderboard points took a big hit.&#x20;
 
@@ -60,7 +60,7 @@ We can see a new distribution of findings in the second contest, with 1 legitima
 
 Using the "sybil-resistant" formula from above, we can see that Carol and Emily performed the best in this contest:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 We can see that almost 60% of the 200k USDC pot was distributed for the H1 finding:
 
@@ -78,6 +78,6 @@ The 700 represents the cumulative amount of leaderboard points in the second con
 
 This is how the Sherlock leaderboard would look after these two contests:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 Because of the increased weighting of the 14-day contest vs. the 7-day contest, Carol and Emily ended up higher on the leaderboard than Bob, despite Bob's great performance in the 7-day contest.&#x20;
