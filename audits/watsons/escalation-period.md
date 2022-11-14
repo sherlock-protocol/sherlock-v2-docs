@@ -69,7 +69,7 @@ If a Watson stakes 10 USDC and escalates an issue, there are two outcomes:&#x20;
 In scenario #2, the 10 USDC is simply added back to the contest pool and split equally among all other Watsons who earned points in the contest. If Sherlock kept this 10 USDC, it would create an incentive for Sherlock to deny escalations, and that would be bad.&#x20;
 
 {% hint style="info" %}
-If a Watson stakes 10 USDC, loses the escalation and ALSO didn't earn anything in the contest, then a debt will carried on the Watson's account until they earn >= 10 USDC in a future contest. In this case, future contest participants would receive the 10 USDC, not current contest participants.&#x20;
+If a Watson stakes 10 USDC, loses the escalation and ALSO didn't earn anything in the contest, then a debt will be carried on the Watson's account until they earn USDC in a future contest. In this case, future contest participants would receive the USDC, not current contest participants.&#x20;
 {% endhint %}
 
 ### How Does Sherlock Protect Against Sybil Attacks on the Escalation Period?
