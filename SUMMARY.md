@@ -3,6 +3,7 @@
 * [Intro to Sherlock](README.md)
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
+* [Disclaimers](disclaimers.md)
 
 ## Audits
 
