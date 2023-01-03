@@ -22,7 +22,7 @@
   * [Contest Points](audits/watsons/contest-points.md)
   * [How to Score Issue Points in a Contest](audits/watsons/how-to-score-issue-points-in-a-contest.md)
   * [Watson Points Example](audits/watsons/watson-points-example.md)
-  * [Judging](audits/watsons/judging.md)
+  * [Judging Guide](audits/watsons/judging.md)
   * [Escalation Period](audits/watsons/escalation-period.md)
 
 ## Coverage
