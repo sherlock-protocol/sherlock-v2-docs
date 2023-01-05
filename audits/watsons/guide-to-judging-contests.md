@@ -57,7 +57,7 @@ For example, if 7.md was the “best” issue, you would rename it like so:
 Once you’ve gone through all of the issues, every issue should be in a folder. The top-level folder structure might look like:
 
 ```
-// 001-H/
+001-H/
 002-H/
 001-M/
 002-M/
@@ -105,7 +105,7 @@ And the judging contest uses an even stricter sybil formula, which means getting
 The sybil-resistant formula is:
 
 ```
-// question_weight / 2.01 ^ (X - 1)
+question_weight / 2.01 ^ (X - 1)
 ```
 
 Where question\_weight is the multiplier for the question type (Severity, Duplication, Best), and X represents the number of judges who got the question correct.&#x20;
