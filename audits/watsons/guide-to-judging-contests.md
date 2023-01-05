@@ -56,13 +56,15 @@ For example, if 7.md was the “best” issue, you would rename it like so:
 
 Once you’ve gone through all of the issues, every issue should be in a folder. The top-level folder structure might look like:
 
-`001-H/`\
-`002-H/`\
-`001-M/`\
-`002-M/`\
-`003-M/`\
-`low/`\
-`false/`
+```
+// 001-H/
+002-H/
+001-M/
+002-M/
+003-M/
+low/
+false/
+```
 
 This would mean that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities.\
 \
