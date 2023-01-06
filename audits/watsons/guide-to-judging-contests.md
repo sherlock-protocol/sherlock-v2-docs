@@ -27,6 +27,8 @@ Example: If an audit contest goes from January 1st to January 14th, the judging 
 
 ## How to judge issues
 
+{% hint style="danger" %}
+
 **DONT's**
 - Change file content
 - Remove files (only move between folders)
@@ -37,7 +39,7 @@ Example: If an audit contest goes from January 1st to January 14th, the judging 
 
 By default every {number}.md file in the root of the directory is considered an unjudged issue.
 
----
+{% endhint %}
 
 You've already completed the steps above and now you're ready to start judging:
 
