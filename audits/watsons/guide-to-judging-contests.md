@@ -87,7 +87,8 @@ This would mean that there are 2 High severity vulnerabilities, and 3 Medium sev
 \
 If you were to open up all the folders above, it might look like this:
 
-<pre><code>001-H/
+```
+001-H/
   - 003.md
   - 005-best.md
   - 012.md
@@ -108,9 +109,9 @@ low/
   - 009.md
 false/
   - 001.md
-<strong>  - 010.md
-</strong>  - 015.md
-</code></pre>
+  - 010.md
+  - 015.md
+```
 
 This structure still means that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities (just like the top-level folder structure above).&#x20;
 
