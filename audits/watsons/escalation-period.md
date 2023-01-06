@@ -50,13 +50,13 @@ You must be in the 48-hour Escalation Period window in order to submit an escala
 
 If you submitted a successful escalation, you should receive a bot reply almost immediately:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 As the "sherlock-admin" bot says, you can edit your escalation by editing the USDC amount or reason in the comment you've already posted. \
 \
 And you can delete an escalation by simply deleting the comment you've already posted. You should see a confirmation from the bot after a successful deletion:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Successful deletion of an escalation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Successful deletion of an escalation</p></figcaption></figure>
 
 ### Who Keeps the Escalation Stake?
 
