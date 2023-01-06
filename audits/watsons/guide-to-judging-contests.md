@@ -37,7 +37,7 @@ Example: If an audit contest goes from January 1st to January 14th, the judging 
 
 \### stands for any number, we would suggest to start with 001 and increase sequentially (002, 003, 004)
 
-By default every {number}.md file in the root of the directory is considered an unjudged issue.
+By default every {number}.md file in the root of the repo is considered an unjudged issue.
 
 {% endhint %}
 
