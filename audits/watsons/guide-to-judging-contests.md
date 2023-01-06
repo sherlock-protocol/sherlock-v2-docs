@@ -54,7 +54,12 @@ For each Markdown (.md) file, you will:
 
 An example High severity issue might look like this:
 
-<figure><img src="https://lh6.googleusercontent.com/wEM_XPnGmxNr6Ya8oTPWnCEX-U6hol0Qw6chciY64zozIP7yYzOuKzd7K5tGYjWmZo_ZW71OvnyunUH_DDiQCGC1ENYwxCQUGhUdP9-u0vAXYxM2b_YBvv0jCJoxHucQcps7JHADRi-1XMpY2tV0yVo6HdUtIDCX91YTUIoVaG2eSHNguuleHulUXwCuDw" alt=""><figcaption></figcaption></figure>
+```
+Individual issue
+
+001-H/
+  - 003.md
+```
 
 2\. Decide if the issue is a duplicate or not
 
@@ -63,13 +68,27 @@ An example High severity issue might look like this:
 
 A family of duplicate High issues might look like:
 
-<figure><img src="https://lh6.googleusercontent.com/lummNF4RuBUR4F5GYyQn-IGIoDcfDkcIidFMvOdS0PIofIPlKhSdMu1CyiwLRfv2DyzipbjjkNvArhKotI9SIoXsBz5v7zLLboiKhhg1wKUg6JWD6EkJQI_EW8dY9PKU6TLaW7QMZ4Bfz2rZD4sCWVd6Upt7FAcqHwq6OV1kGj4DC04ThDCT9flV6lKcvg" alt=""><figcaption></figcaption></figure>
+```
+Family of issues
+
+001-H/
+  - 003.md
+  - 007.md
+  - 049.md
+```
 
 3\. If there are duplicates, pick the “best” issue out of the bunch (the issue that describes the vulnerability best)
 
 For example, if 7.md was the “best” issue, you would rename it like so:
 
-<figure><img src="https://lh3.googleusercontent.com/FT8dpErW4Y9eCrRa-x3BxhETjlKTTB4WuFXD5XT5rRDUtTOAwjaxVp5AGxwnlzLIYTXDh8LLAvJGUURSMkThhjvdVw8EHiudwh2PxG-zbBJw1G00mbaW_5vddzT6Zw-BeXkuUvLTMldoo4fWfW4HjTs0qhw_qvpcCwwcwrV4iJQi8HmkZmjBCy0XEDZrOg" alt=""><figcaption></figcaption></figure>
+```
+Family of issues (with best issue labeled)
+
+001-H/
+  - 003.md
+  - 007-best.md
+  - 049.md
+```
 
 Once you’ve gone through all of the issues, every issue should be in a folder. The top-level folder structure might look like:
 
