@@ -18,12 +18,26 @@ Example: If an audit contest goes from January 1st to January 14th, the judging 
 
 1. Go to [https://app.sherlock.xyz/audits/contests](https://app.sherlock.xyz/audits/contests)
 2. Sign up as a Watson if you haven't already.&#x20;
-3. Find contests that have a pink "Judging contest" label.&#x20;
-4. Click on that contest then click the "Judge contest" button on the lower right side.&#x20;
+3. Find active contests in the `JUDGING CONTESTS` section or find upcoming ones by looking for a "Judge Contest" button on the detailed contest page&#x20;
+4. Click on that contest then click the "Judge Contest" button on the lower right side.&#x20;
 5. A new private repo will be created for you in GitHub.
 6. The repo will contain a Markdown (.md) file with each submitted issue and two folders ("low" and "false"). Your job is to sort the Markdown files. See the next section.&#x20;
 
+<figure><img src=https://i.imgur.com/9SS740m.png" alt=""><figcaption></figcaption></figure>
+
 ## How to judge issues
+
+**DONT's**
+- Change file content
+- Remove files (only move between folders)
+- Rename files (has a single exception)
+- Create folders that are not formatted either ###-M or ###-H
+
+\### stands for any number, we would suggest to start with 001 and increase sequentially (002, 003, 004)
+
+By default every {number}.md file in the root of the directory is considered an unjudged issue.
+
+---
 
 You've already completed the steps above and now you're ready to start judging:
 
@@ -31,8 +45,8 @@ For each Markdown (.md) file, you will:
 
 1\. Decide the severity (High/Medium/Low/False)
 
-* If High, create a new folder with issue number and an “H” (ex. 001-H) and put the corresponding .md file in the folder
-* If Medium, create a new folder with issue number and an “M” (ex. 001-M) and put the corresponding .md file in the folder
+* If High, create a new folder with a 3 digit number and an “-H” (ex. 001-H) and put the corresponding .md file in the folder
+* If Medium, create a new folder with a 3 digit number and an “-M” (ex. 001-M) and put the corresponding .md file in the folder
 * If Low/False, put the .md file in either the “low” or “false” folder
 
 An example High severity issue might look like this:
@@ -113,25 +127,4 @@ Where question\_weight is the multiplier for the question type (Severity, Duplic
 After this, each judge will receive an individual score for their performance. And based on the individual\_score / total\_score, a proportional percentage of the contest pot will be awarded.
 
 For example, if the contest pot is $2,500 and a judge receives 50% of all the points, then that judge will receive $1,250.&#x20;
-
-\
-\
-\
-\
-
-
-
-
-
-
-
-
-
-
-\
-\
-
-
-\
-
 
