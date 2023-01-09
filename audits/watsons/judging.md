@@ -44,7 +44,9 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 * Read the contest readme and documents thoroughly.
 * Submit issues that are considered valid according to sherlock rules based on your discretion
-* Do not submit multiple issues in a single submission. Even if the 2 completely different issues occur on the same line, please make sure to separately submit them. Below is a valid example where multiple occurrences can be combined into one issue: https://github.com/sherlock-audit/2022-11-dodo-judging/issues/47 Also there could be multiple occurrences of an issue but they may need to be submitted separately as each occurrence need not be an obvious repetition like the `safeTransfer` example. Watsons must use their own discretion in such cases.
+* Do not submit multiple issues in a single submission. Even if the 2 completely different issues occur on the same line, please make sure to separately submit them. \
+  Below is a valid example where multiple occurrences can be combined into one issue: [https://github.com/sherlock-audit/2022-11-dodo-judging/issues/47](https://github.com/sherlock-audit/2022-11-dodo-judging/issues/47) \
+  Also, there could be multiple occurrences of an issue but they may need to be submitted separately as each occurrence need not be an obvious repetition like the `safeTransfer` example. Watsons must use their own discretion in such cases.
 * Be specific and sufficiently descriptive when describing an issue's impact. Bad: Loss of funds for the user Good: Loss of funds for users as there is no access control for the ‘withdraw’ function
 * Do not add unnecessarily long code snippets into the submission. Keep the code snippet limited to the scope of the impact, and be as descriptive as possible in the Vulnerability Detail sections.
 * Do not copy-paste issues from other contests/reports/past audits. They are extremely unlikely to be valid to the respective contest.&#x20;
