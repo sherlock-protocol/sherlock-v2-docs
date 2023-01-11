@@ -33,8 +33,6 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
     While most of the admin input issues are invalid, there may be some issues where there could be a valid sanity check. \
     Example(Valid): [https://github.com/sherlock-audit/2022-10-mycelium-judging-new/issues/164](https://github.com/sherlock-audit/2022-10-mycelium-judging-new/issues/164)
 * **Contract / Admin Address Blocklisting / Blacklisting / Freezing:** If a protocol's smart contracts or admin addresses get added to a "blocklist" and the functionality of the protocol is affected by this blocklist, this is not considered a valid issue. \
-  Example(Invalid): [https://github.com/sherlock-audit/2022-12-rain-judging/issues/46 ](https://github.com/sherlock-audit/2022-12-rain-judging/issues/46)\
-  \
   However, there could be cases where an attacker would use a blocklisted address to cause harm to a protocol functioning. \
   Example(Valid): [https://github.com/sherlock-audit/2022-11-opyn-judging/issues/219](https://github.com/sherlock-audit/2022-11-opyn-judging/issues/219)
 * **Front-running initializers:** Front-running initializers where there is no irreversible damage or loss of funds & the protocol could just redeploy and initialize again is not a valid issue.
