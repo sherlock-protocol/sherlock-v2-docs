@@ -6,7 +6,7 @@ While the protocol is quite governance-minimized, there are still some aspects t
 ### Sherlock Protocol Claims Committee
 As described in the [Claims](https://docs.sherlock.xyz/claims/claims-process) section, the Sherlock Protocol Claims Committee (or SPCC) is the first of two arbitration mechanisms that decide whether a claim should be paid out or not. 
 
-The SPCC is optimized for speed, at the expense of some potential for bias. If some amount of bias is believed to have occured, a protocol can escalate their claim above the authority of the SPCC, and put it in the hands of the UMA Optimistic Oracle. The UMA OO is a slower process but the claim decision is made by tens of thousands of UMA tokenholders who, as a whole, are probably not biased towards Sherlock or the protocol submitting the claim. 
+The SPCC is optimized for speed, at the expense of some potential for bias. If some amount of bias is believed to have occurred, a protocol can escalate their claim above the authority of the SPCC, and put it in the hands of the UMA Optimistic Oracle. The UMA OO is a slower process but the claim decision is made by tens of thousands of UMA tokenholders who, as a whole, are probably not biased towards Sherlock or the protocol submitting the claim. 
 
 The SPCC is made up of core Sherlock team members in addition to well-known security experts in the space. This committee controls a multisig that accepts or denies a protocol's claim submission. Again, if the committee votes in a way that the protocol disagrees with, the protocol can escalate to the UMA Optimistic Oracle. 
 
@@ -26,7 +26,7 @@ The current members of the SPCC are:
 
 
 ### UMA Halt Operator
-This is another multi sig that will be controlled by the core UMA team. Basically, the UMA Optimistic Oracle is completely trustless so for the first few months Sherlock has requested to have an "emergency halt" mechanism. This mechanism will be controlled by the UMA core team and allow UMA to deny/halt a claim that is moving through the UMA Optimstic Oracle in case something breaks. The protocol who submitted the claim will then be able resubmit the claim once a fix is made. This mechanism will be removed after a few months and there will be no functionality to add it back, fulfilling the promise of a truly trustless claims process. 
+This is another multi sig that will be controlled by the core UMA team. Basically, the UMA Optimistic Oracle is completely trustless so for the first few months Sherlock has requested to have an "emergency halt" mechanism. This mechanism will be controlled by the UMA core team and allow UMA to deny/halt a claim that is moving through the UMA Optimistic Oracle in case something breaks. The protocol who submitted the claim will then be able to resubmit the claim once a fix is made. This mechanism will be removed after a few months and there will be no functionality to add it back, fulfilling the promise of a truly trustless claims process. 
 
 ### Protocol Agent
 A protocol agent is simply a wallet or multi sig controlled by a covered protocol. This agent will have the ability to do protocol-specific actions like submitting claims and withdrawing unused funds (in the case of overpayment). 
