@@ -20,11 +20,12 @@ Example: If an audit contest goes from January 1st to January 14th, the judging 
 2. Sign up as a Watson if you haven't already.
 3. Find active contests in the `JUDGING CONTESTS` section of the [Contests page](https://app.sherlock.xyz/audits/contests), or find upcoming ones by looking for a "Judge Contest" button on a protocol's detailed contest page
 4.  Click on that contest then click the "Judge Contest" button on the lower right side.\
-    \\
+    \
+
 
     <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 5. A new private repo will be created for you in GitHub.
-6. The repo will contain a Markdown (.md) file with each submitted issue and one folder ("false"). Your job is to sort the Markdown files. See the next section.
+6. The repo will contain a Markdown (.md) file with each submitted issue and two folders ("low" and "false"). Your job is to sort the Markdown files. See the next section.
 
 ## How to judge issues
 
@@ -45,15 +46,11 @@ You've already completed the steps above and now you're ready to start judging:
 
 For each Markdown (.md) file, you will:
 
-{% hint style="danger" %}
-Sherlock judges low, info and invalid issues as false
-{% endhint %}
-
-1\. Decide the severity (High/Medium/False)
+1\. Decide the severity (High/Medium/Low/False)
 
 * If High, create a new folder with a 3 digit number and an “-H” (ex. 001-H) and put the corresponding .md file in the folder
 * If Medium, create a new folder with a 3 digit number and an “-M” (ex. 001-M) and put the corresponding .md file in the folder
-* If False, put the .md file in the “false” folder
+* If Low/False, put the .md file in either the “low” or “false” folder
 
 An example High severity issue might look like this:
 
@@ -101,6 +98,7 @@ Once you’ve gone through all of the issues, every issue should be in a folder.
 001-M/
 002-M/
 003-M/
+low/
 false/
 ```
 
@@ -122,37 +120,38 @@ If you were to open up all the folders above, it might look like this:
   - 011-best.md
   - 016.md
 003-M/
-  - 014.md
-false/
-  - 001.md
-  - 010.md
-  - 015.md
+  - 014.md 
+low/
   - 002.md
   - 004.md
   - 008.md
   - 009.md
+false/
+  - 001.md
+  - 010.md
+  - 015.md
 ```
 
-This structure still means that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities (just like the top-level folder structure above).
+This structure still means that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities (just like the top-level folder structure above).&#x20;
 
 {% hint style="info" %}
-"-best" only needs to be added when there is more than 1 .md file in a folder. The "false" folder will not have "-best" because those issues will not be considered.
+"-best" only needs to be added when there is more than 1 .md file in a folder. "low" and "false" folders will not have "-best" because those issues will not be considered.&#x20;
 {% endhint %}
 
 Once the issues have been sorted into folders and "best" reports labeled, you are done!
 
 ## How to earn USDC from judging
 
-In order to become eligible for a payout, your judging on High/Medium issues must be >20% accurate. Each issue has 3 points:
+In order to become eligible for a payout, your judging must be >=40% accurate. Each issue has 3 points:
 
 1. Severity (Medium/High/else) = 1 point
 2. Duplication (Is it in a folder with at least 1 correct duplicate issue? Or correctly put in a solo folder?) = 1 point
 3. Best issue (Was the best issue of the duplicate family correctly chosen?) = 1 point
 
-Example: Assume there are 100 issues submitted in a contest. Only 3 findings make the cut as being High or Medium. And for each of the 3 findings, there are 5 total duplicates (finding #1 has 5 issues in its folder, finding #2 has 5 issues in its folder, finding #3 has 5 issues in its folder). This means there are 15 issues that are High/Medium out of the original 100 issues submitted. For each of these 15 issues, there are the 3 sub-categories of judging outlined above (Severity, Duplication, Best issue). Each of those categories is worth 1 point, so there are 45 total points available in the 3 High/Medium findings. As long as a judge gets >=20% of those 45 points (20% \* 45 = 9 points), then their full judging submission will count for rewards. However, false positives (issue marked High/Medium that aren't actually High/Medium) are also counted against you.&#x20;
+If there were 100 issues in a repo, and each issue is worth 3 points, then a contestant would need to get at least 120 points (120 correct / 300 possible = 40% score) in order to become eligible for a payout.
 
 {% hint style="info" %}
-Why is >=20% accuracy on High/Medium issues required for a payout? This is required because it helps eliminate "automated" strategies from being effective.&#x20;
+Why is >=40% accuracy required for a payout? If only 5% accuracy received a payout, then audit contest participants could just judge their own submissions and get paid for it, which is not fair.
 {% endhint %}
 
 ## How are USDC payouts calculated in a judging contest:
