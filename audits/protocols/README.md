@@ -2,7 +2,7 @@
 
 Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI\_xD6AQiag/viewform)!
 
-Security is a top priority for high-quality projects shipping code to mainnet given the inherent adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $10M of coverage behind every protocol we cover, Sherlock obsesses over the processes to keep codebases safer.
+Security is a top priority for high-quality projects shipping code to mainnet given the inherent adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $5M of coverage behind every protocol we cover, Sherlock obsesses over the processes to keep codebases safer.
 
 The most well-known process for securing a codebase is an audit.
 
