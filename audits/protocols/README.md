@@ -50,7 +50,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 * Security experts are incentivized to spend time submitting Low/Informational/QA/gas findings
 * The protocol team is expected to sort through hundreds of issues at the end
 
-### The Best of Both Worlds
+### Sherlock's Approach: The Best of Both Worlds
 
 Sherlock’s approach provides a protocol with the focus, collaboration, and assurance of a traditional manual audit, alongside the breadth of security expert participation in contest models.
 
