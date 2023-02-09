@@ -40,6 +40,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 * The likelihood of missed bugs is [very low](https://docs.google.com/spreadsheets/d/1RIJCK3\_9RHvtNPObsDRTAqkP9IbyutZMsqlKNnZCO00/edit#gid=0) because 50-100 security experts try to find bugs in your code
 * Incentives are stronger to find bugs: experts get paid based on the severity of their findings
 * Contests can often be scheduled within days
+* You can decide your own price (size of the prize pool)
 
 **Weaknesses**
 
