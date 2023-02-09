@@ -2,7 +2,7 @@
 
 Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI\_xD6AQiag/viewform)!
 
-Security is a top priority for high-quality projects shipping code to mainnet given the inherent adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $10M of coverage behind every protocol we cover, Sherlock obsesses over the processes to keep codebases safer.
+Security is a top priority for high-quality projects shipping code to mainnet given the inherent adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $5M of coverage behind every protocol we cover, Sherlock obsesses over the processes to keep codebases safer.
 
 The most well-known process for securing a codebase is an audit.
 
@@ -22,7 +22,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 
 **Strengths**
 
-* You know who is going to audit your code (and hopefully they have reputation as an expert)
+* You know who is going to audit your code (and hopefully they have a reputation as an expert)
 * You know how long that expert is going to spend trying to find bugs in your codebase
 * When the expert finds bugs and the protocol team makes fixes, the expert will verify that the fixes don’t have bugs
 
@@ -40,7 +40,6 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 * The likelihood of missed bugs is [very low](https://docs.google.com/spreadsheets/d/1RIJCK3\_9RHvtNPObsDRTAqkP9IbyutZMsqlKNnZCO00/edit#gid=0) because 50-100 security experts try to find bugs in your code
 * Incentives are stronger to find bugs: experts get paid based on the severity of their findings
 * Contests can often be scheduled within days
-* You can decide the price (size of the prize pool)
 
 **Weaknesses**
 
