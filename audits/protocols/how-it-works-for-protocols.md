@@ -1,6 +1,6 @@
 # How it Works for Protocols
 
-Whether this is your protocol’s first audit before launching on mainnet, or latest version, Sherlock’s audit experience is designed to provide the familiarity of a legacy audit, with drastically better results.
+Whether this is your protocol’s first audit before launching on mainnet, or latest version, Sherlock’s audit experience is designed to provide the familiarity of a traditional audit, with drastically better results.
 
 **A protocol’s audit process:**
 
@@ -12,6 +12,6 @@ Whether this is your protocol’s first audit before launching on mainnet, or la
 6. Once the audit begins, Sherlock will ask your team to be available to answer questions from security experts (mostly in a Discord channel).&#x20;
 7. A few days after the audit ends, Sherlock will provide you with a list of all judged high and medium-severity findings.
 8. You then have 72 hours to acknowledge and indicate which submitted issues you intend to fix and schedule a fix review to be completed within 3 weeks.
-9. Sherlock then asks that you implement any fixes (a separate PR for each fix) and deliver a new commit hash and the PRs for every issue to Sherlock 24 hours before your fix review starts.
+9. Sherlock then asks that you implement any fixes (a separate PR for each fix in the GitHub) and deliver the new commit hash to Sherlock 24 hours before your fix review starts.
 10. Post-fix review, you will receive sign-off to launch on mainnet and a final report, which gives you the option to add coverage at any point in the future.
 11. Sherlock works with you to get your coverage and bug bounty live (if you decide you want smart contract exploit coverage).

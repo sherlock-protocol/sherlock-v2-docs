@@ -2,7 +2,7 @@
 
 Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI\_xD6AQiag/viewform)!
 
-Security is a top priority for high-quality projects shipping code to mainnet given the inherent adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $5M of coverage behind every protocol we cover, Sherlock obsesses over the processes to keep codebases safer.
+Security is a top priority for high-quality projects shipping code to mainnet given the inherent adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $10M of coverage behind every protocol we cover, Sherlock obsesses over the processes to keep codebases safer.
 
 The most well-known process for securing a codebase is an audit.
 
@@ -22,7 +22,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 
 **Strengths**
 
-* You know who is going to audit your code (and hopefully they have a reputation as an expert)
+* You know who is going to audit your code (and hopefully they have reputation as an expert)
 * You know how long that expert is going to spend trying to find bugs in your codebase
 * When the expert finds bugs and the protocol team makes fixes, the expert will verify that the fixes don’t have bugs
 
@@ -40,7 +40,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 * The likelihood of missed bugs is [very low](https://docs.google.com/spreadsheets/d/1RIJCK3\_9RHvtNPObsDRTAqkP9IbyutZMsqlKNnZCO00/edit#gid=0) because 50-100 security experts try to find bugs in your code
 * Incentives are stronger to find bugs: experts get paid based on the severity of their findings
 * Contests can often be scheduled within days
-* You can decide your own price (size of the prize pool)
+* You can decide the price (size of the prize pool)
 
 **Weaknesses**
 
@@ -50,7 +50,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 * Security experts are incentivized to spend time submitting Low/Informational/QA/gas findings
 * The protocol team is expected to sort through hundreds of issues at the end
 
-### Sherlock's Approach: The Best of Both Worlds
+### The Best of Both Worlds
 
 Sherlock’s approach provides a protocol with the focus, collaboration, and assurance of a traditional manual audit, alongside the breadth of security expert participation in contest models.
 
@@ -65,4 +65,4 @@ Sherlock’s unique offering assigns a top-ranked senior security expert to act 
 
 The fixed nature of the lead senior auditor gives protocols the assurance that, at minimum, one highly skilled security auditor will be conducting an in-depth review of the codebase, will be there to discuss issues with the protocol team, and will conduct a fix-review to make sure all changes have been implemented securely.
 
-The talents of this one individual will be enhanced by the skillset of an unlimited number of independent security experts / teams participating to win a greater position of the prize pool. And the senior security auditor will only keep their “senior” status as long as they find more vulnerabilities than the rest of the field. And of course, at the core of a Sherlock Audit, is our continued commitment to incentive alignment. Every protocol who goes through an audit has the ability to add smart contract coverage at any point post-audit to reimburse its users in the event of an exploit - helping a protocol build trust with its community whether it’s for first-time LPs, or loyal bag holders.
+The talents of this one individual will be enhanced by the skillset of an unlimited number of independent security experts / teams participating to win a greater position of the prize pool. And the senior security auditor will only keep his “senior” status as long as they find more vulnerabilities than the rest of the field. And of course, at the core of a Sherlock Audit, is our continued commitment to incentive alignment. Every protocol who goes through an audit has the ability to add smart contract coverage at any point post-audit to reimburse its users in the event of an exploit - helping a protocol build trust with its community whether it’s for first-time LPs, or loyal bag holders.
