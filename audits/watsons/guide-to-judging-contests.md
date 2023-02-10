@@ -25,7 +25,7 @@ Example: If an audit contest goes from January 1st to January 14th, the judging 
 
     <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 5. A new private repo will be created for you in GitHub.
-6. The repo will contain a Markdown (.md) file with each submitted issue and one folder ("false"). Your job is to sort the Markdown files. See the next section.
+6. The repo will contain a Markdown (.md) file with each submitted issue. Your job is to sort the Markdown files. See the next section.
 
 ## How to judge issues
 
@@ -54,7 +54,7 @@ Sherlock judges low, info and invalid issues as false
 
 * If High, create a new folder with a 3 digit number and an “-H” (ex. 001-H) and put the corresponding .md file in the folder
 * If Medium, create a new folder with a 3 digit number and an “-M” (ex. 001-M) and put the corresponding .md file in the folder
-* If False, put the .md file in the “false” folder
+* If False, keep the .md file in the root (or create a “false” folder to keep track of them yourself)
 
 An example High severity issue might look like this:
 
@@ -102,7 +102,6 @@ Once you’ve gone through all of the issues, every issue should be in a folder.
 001-M/
 002-M/
 003-M/
-false/
 ```
 
 This would mean that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities.\
@@ -124,39 +123,44 @@ If you were to open up all the folders above, it might look like this:
   - 016.md
 003-M/
   - 014.md
-false/
-  - 001.md
-  - 010.md
-  - 015.md
-  - 002.md
-  - 004.md
-  - 008.md
-  - 009.md
+- 001.md
+- 002.md
+- 004.md
+- 008.md
+- 009.md
+- 010.md
+- 015.md
 ```
 
 This structure still means that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities (just like the top-level folder structure above).&#x20;
 
 {% hint style="info" %}
-"-best" only needs to be added when there is more than 1 .md file in a folder. The "false" folder will not have "-best" because those issues will not be considered.&#x20;
+"-best" only needs to be added when there is more than 1 .md file in a folder.&#x20;
 {% endhint %}
 
 Once the issues have been sorted into folders and "best" reports labeled, you are done!
 
 ## How to earn USDC from judging
 
-In order to become eligible for a payout, your judging must be >=40% accurate. Each issue has 3 points:
+In order to become eligible for a payout, you need to submit more true positives (`false`, `medium` or `high`) than there are false issues* in the final result of the contest
 
-1. Severity (Medium/High/else) = 1 point
+\* *Will be `medium` (or `high`) in case there are more `medium` (or `high`) issues in the final result than `false` issues*
+
+1. Severity (Medium/High) = 1 point
 2. Duplication (Is it in a folder with at least 1 correct duplicate issue? Or correctly put in a solo folder?) = 1 point
 3. Best issue (Was the best issue of the duplicate family correctly chosen?) = 1 point
 
-If there were 100 issues in a repo, and each issue is worth 3 points, then a contestant would need to get at least 120 points (120 correct / 300 possible = 40% score) in order to become eligible for a payout.
+If there were 80 `false`, 10 `medium`, 10 `high` issues in a contest, then a contestant would need to submit at least 81 true positives in order to become eligible for a payout.
 
 {% hint style="info" %}
-Why is >=40% accuracy required for a payout? If only 5% accuracy received a payout, then audit contest participants could just judge their own submissions and get paid for it, which is not fair.
+By default all the issues wil be labeled `false` (80 true positives, 20 false positives in the `false` category), picking 1 valid `medium` or `high` will allow you to exceed the threshold and make you eligble for a payout.
 {% endhint %}
 
 ## How are USDC payouts calculated in a judging contest:
+
+{% hint style="info" %}
+Rewards only count for valid `medium` or `high` issues, `false` issues are excluded from the calculation.
+{% endhint %}
 
 The formula for payouts is very similar to the sybil-resistant formula for audit contests.
 
