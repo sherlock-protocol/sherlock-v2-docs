@@ -25,7 +25,7 @@ Example: If an audit contest goes from January 1st to January 14th, the judging 
 
     <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 5. A new private repo will be created for you in GitHub.
-6. The repo will contain a Markdown (.md) file with each submitted issue and two folders ("low" and "false"). Your job is to sort the Markdown files. See the next section.
+6. The repo will contain a Markdown (.md) file with each submitted issue and one folder ("false"). Your job is to sort the Markdown files. See the next section.
 
 ## How to judge issues
 
@@ -46,11 +46,15 @@ You've already completed the steps above and now you're ready to start judging:
 
 For each Markdown (.md) file, you will:
 
-1\. Decide the severity (High/Medium/Low/False)
+{% hint style="danger" %}
+Sherlock judges low, info and invalid issues as false
+{% endhint %}
+
+1\. Decide the severity (High/Medium/False)
 
 * If High, create a new folder with a 3 digit number and an “-H” (ex. 001-H) and put the corresponding .md file in the folder
 * If Medium, create a new folder with a 3 digit number and an “-M” (ex. 001-M) and put the corresponding .md file in the folder
-* If Low/False, put the .md file in either the “low” or “false” folder
+* If False, put the .md file in the “false” folder
 
 An example High severity issue might look like this:
 
@@ -98,7 +102,6 @@ Once you’ve gone through all of the issues, every issue should be in a folder.
 001-M/
 002-M/
 003-M/
-low/
 false/
 ```
 
@@ -120,22 +123,21 @@ If you were to open up all the folders above, it might look like this:
   - 011-best.md
   - 016.md
 003-M/
-  - 014.md 
-low/
-  - 002.md
-  - 004.md
-  - 008.md
-  - 009.md
+  - 014.md
 false/
   - 001.md
   - 010.md
   - 015.md
+  - 002.md
+  - 004.md
+  - 008.md
+  - 009.md
 ```
 
 This structure still means that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities (just like the top-level folder structure above).&#x20;
 
 {% hint style="info" %}
-"-best" only needs to be added when there is more than 1 .md file in a folder. "low" and "false" folders will not have "-best" because those issues will not be considered.&#x20;
+"-best" only needs to be added when there is more than 1 .md file in a folder. The "false" folder will not have "-best" because those issues will not be considered.&#x20;
 {% endhint %}
 
 Once the issues have been sorted into folders and "best" reports labeled, you are done!
