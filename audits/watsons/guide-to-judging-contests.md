@@ -20,6 +20,7 @@ Example: If an audit contest goes from January 1st to January 14th, the judging 
 2. Sign up as a Watson if you haven't already.
 3. Find active contests in the `JUDGING CONTESTS` section of the [Contests page](https://app.sherlock.xyz/audits/contests), or find upcoming ones by looking for a "Judge Contest" button on a protocol's detailed contest page
 4.  Click on that contest then click the "Judge Contest" button on the lower right side.\
+    \
 
 
     <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
@@ -131,19 +132,19 @@ If you were to open up all the folders above, it might look like this:
 - 015.md
 ```
 
-This structure still means that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities (just like the top-level folder structure above).
+This structure still means that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities (just like the top-level folder structure above).&#x20;
 
 {% hint style="info" %}
-"-best" only needs to be added when there is more than 1 .md file in a folder.
+"-best" only needs to be added when there is more than 1 .md file in a folder.&#x20;
 {% endhint %}
 
 Once the issues have been sorted into folders and "best" reports labeled, you are done!
 
 ## How to earn USDC from judging
 
-In order to become eligible for a payout, you need to submit more true positives (`false`, `medium` or `high`) than there are false issues\* in the final result of the contest
+In order to become eligible for a payout, you need to submit more true positives (`false`, `medium` or `high`) than there are false issues* in the final result of the contest
 
-\* _Will be `medium` (or `high`) in case there are more `medium` (or `high`) issues in the final result than `false` issues_
+\* *Will be `medium` (or `high`) in case there are more `medium` (or `high`) issues in the final result than `false` issues*
 
 1. Severity (Medium/High) = 1 point
 2. Duplication (Is it in a folder with at least 1 correct duplicate issue? Or correctly put in a solo folder?) = 1 point
