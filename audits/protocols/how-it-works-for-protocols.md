@@ -17,12 +17,11 @@ Whether this is your protocol’s first audit before launching on mainnet, or la
 11. Sherlock works with you to get your coverage and bug bounty live (if you decide you want smart contract exploit coverage).
 
 {% hint style="warning" %}
-Important timeline considerations:\
+**Important timeline considerations**\
 \
-The audit contest length will be custom defined by the quote Sherlock gives the protocol team.\
+The length of the audit contest itself will be communicated to the protocol team as part of the initial quote/scoping. However, the post-contest process can take as little as 1 week, or it can take a few weeks, depending on the number of issues found:\
 \
-The post-contest process can take as little as 1 week, or it can take a few weeks, depending on the number of issues found:\
-\
+**Audit Contest:** Communicated in the quote/scoping\
 **Judging Contest:** 3 days immediately after audit contest\
 **Sherlock Judging:** 1-2 days after Judging Contest\
 **Issue Verification:** Depends on the number of issues submitted, but could take 1 day or could take 7 days (also depends on the productivity of the protocol team)\
