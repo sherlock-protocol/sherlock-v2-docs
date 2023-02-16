@@ -15,3 +15,19 @@ Whether this is your protocol’s first audit before launching on mainnet, or la
 9. Sherlock then asks that you implement any fixes (a separate PR for each fix in the GitHub) and deliver the new commit hash to Sherlock 24 hours before your fix review starts.
 10. Post-fix review, you will receive sign-off to launch on mainnet and a final report, which gives you the option to add coverage at any point in the future.
 11. Sherlock works with you to get your coverage and bug bounty live (if you decide you want smart contract exploit coverage).
+
+{% hint style="warning" %}
+Important timeline considerations:\
+\
+The audit contest length will be custom defined by the quote Sherlock gives the protocol team.\
+\
+The post-contest process can take as little as 1 week, or it can take a few weeks, depending on the number of issues found:\
+\
+**Judging Contest:** 3 days immediately after audit contest\
+**Sherlock Judging:** 1-2 days after Judging Contest\
+**Issue Verification:** Depends on the number of issues submitted, but could take 1 day or could take 7 days (also depends on the productivity of the protocol team)\
+**Issues fixes:** Depends on the number of valid issues, but could take 1 day or could take 1-2 weeks (also depends on the productivity of the protocol team)\
+**Fix review:** This will be done by the Lead Senior Watson if it can be accomplished in 0.5 days. If not, it will require a small follow-up audit contest. Could take as little as 1 day, or it could take 1-2 weeks to schedule and complete (depending on Lead Senior Watson availability and number of issues, etc.)\
+\
+**Generally, Sherlock recommends a protocol team not expect to deploy/launch their protocol until 2-3 weeks after the audit contest finishes.**&#x20;
+{% endhint %}
