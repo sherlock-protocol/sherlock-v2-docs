@@ -188,3 +188,11 @@ Where question\_weight is the multiplier for the question type (Severity, Duplic
 After this, each judge will receive an individual score for their performance. And based on the individual\_score / total\_score, a proportional percentage of the contest pot will be awarded.
 
 For example, if the contest pot is $2,500 and a judge receives 50% of all the points, then that judge will receive $1,250.
+
+
+### What to expect during the judging phase
+
+After the juduging contest closes, members of the Sherlock team will perform their own judging using a similar process, but erroring on the side of inclusion. All classified issues are then converted into Github issues. The Sponsor, Lead Senior Watson, and the Sherlock team may then discuss issues in their own threads.
+
+While the judging team may produce an initial classification of issues into folders, note that only the final classification included in the contest report &mdash; after the escalation phase &mdash; counts for scoring judging competitions.
+

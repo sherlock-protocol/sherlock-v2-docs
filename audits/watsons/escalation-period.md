@@ -30,6 +30,10 @@ Scenario #1: A Watson escalates an issue, stakes 10 USDC and the issue gets over
 \
 Scenario #2: A Watson escalates an issue, stakes 10 USDC, and the issue is not overturned (Watson was wrong about the issue). The 10 USDC is removed from the Watson's payout in that contest or the next contest where they receive a payout.
 
+Any Watson may submit an escalation on any issue. It is common for Watsons to submit escalation requests on others' issues marked High or Medium to get them reclassified as Low or as duplicates of another issue.
+
+Multiple escalations on the same Issue will be added together. E.g.: if one person submits an escalation for 10 USDC on an issue, another person can submit an escalation for 1 USDC on the same issue, and the issue will be considered to be escalated for 11 USDC total. This is so even if the two escalators are requesting opposite outcomes (e.g.: one asks a Medium to be reclassified as High; the other asks it to be reclassified as Low or as a duplicate of another). On the other hand, escalations on separate issues are always counted separately even if the two issues are duplicates of each other.
+
 ### How Do I Escalate an Issue?
 
 When a contest's awards are announced, the judging repo is opened up to all participating Watsons. A Watson can see all of the issues that were submitted during the contest in the Issues tab in Github:
@@ -80,3 +84,11 @@ If this becomes a problem, Sherlock may:
 
 1. Only allow Watsons with past contest history to escalate issues.&#x20;
 2. Watsons must put down a small deposit (maybe 20 USDC) in order to participate in the contest in the first place.&#x20;
+
+### What to expect after the Escalation Period
+
+The judging repository will remain publicly visible, but closed for comments except to the Sherlock team, the sponsor, and the Lead Senior Watson. You will be able to watch discussion on escalated issues in real-time but not comment. You can discuss escalation re-judging in the contest Discord channel, although it is not as actively monitored.
+
+After an escalation is accepted, duplicate issues will be re-judged. Note that duplicates are not well-tracked for issues marked Low or False. If you have submitted an issue which is a duplicate of an issue marked False or Low, and there is an escalation on that issue that you believe will succeed, it is recommended that you submit an escalation on your own issue as well and/or a comment on the other escalation pointing out your own issue. Your issue may get rejudged at some point after the other escalation is accepted, but it is safer to add your own escalation or comment.
+
+In cases where there are a large number of escalations, the judging team may re-judge more than the top 10 issues.
