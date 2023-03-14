@@ -46,14 +46,14 @@ You've already completed the steps above and now you're ready to start judging:
 For each Markdown (.md) file, you will:
 
 {% hint style="danger" %}
-Sherlock judges low, info and invalid issues as false
+Sherlock judges low, info and false issues as invalid
 {% endhint %}
 
-1\. Decide the severity (High/Medium/False)
+1\. Decide the severity (High/Medium/Invalid)
 
 * If High, create a new folder with a 3 digit number and an “-H” (ex. 001-H) and put the corresponding .md file in the folder
 * If Medium, create a new folder with a 3 digit number and an “-M” (ex. 001-M) and put the corresponding .md file in the folder
-* If False, keep the .md file in the root (or create a “false” folder to keep track of them yourself)
+* If Invalid, keep the .md file in the root (or create a “invalid” folder to keep track of them yourself)
 
 An example High severity issue might look like this:
 
@@ -141,24 +141,24 @@ Once the issues have been sorted into folders and "best" reports labeled, you ar
 
 ## How to earn USDC from judging
 
-In order to become eligible for a payout, you need to submit more true positives (`false`, `medium` or `high`) than there are false issues\* in the final result of the contest. Basically, if judging is a multiple-choice test ('A' or 'B' or 'C' or 'D'), you need to outperform someone who chooses 'C' for every answer on the test.&#x20;
+In order to become eligible for a payout, you need to submit more true positives (`invalid`, `medium` or `high`) than there are invalid issues\* in the final result of the contest. Basically, if judging is a multiple-choice test ('A' or 'B' or 'C' or 'D'), you need to outperform someone who chooses 'C' for every answer on the test.&#x20;
 
-\* _Will be `medium` (or `high`) in case there are more `medium` (or `high`) issues in the final result than `false` issues_
+\* _Will be `medium` (or `high`) in case there are more `medium` (or `high`) issues in the final result than `invalid` issues_
 
 1. Severity (Medium/High) = 1 point
 2. Duplication (Is it in a folder with at least 1 correct duplicate issue? Or correctly put in a solo folder?) = 1 point
 3. Best issue (Was the best issue of the duplicate family correctly chosen?) = 1 point
 
-If there were 80 `false`, 10 `medium`, 10 `high` issues in a contest, then a contestant would need to submit at least 81 true positives in order to become eligible for a payout.
+If there were 80 `invalid`, 10 `medium`, 10 `high` issues in a contest, then a contestant would need to submit at least 81 true positives in order to become eligible for a payout.
 
 {% hint style="info" %}
-By default all the issues will be labeled`false` (80 true positives, 20 false positives in the `false` category), picking 1 valid `medium` or `high` will allow you to exceed the threshold and make you eligible for a payout.
+By default all the issues will be invalid (80 true positives, 20 false positives in the `invalid` category), picking 1 valid `medium` or `high` will allow you to exceed the threshold and make you eligible for a payout.
 {% endhint %}
 
 ## How are USDC payouts calculated in a judging contest:
 
 {% hint style="info" %}
-Rewards only count for valid `medium` or `high` issues, `false` issues are excluded from the calculation.
+Rewards only count for valid `medium` or `high` issues, `invalid` issues are excluded from the calculation.
 {% endhint %}
 
 The formula for payouts is very similar to the sybil-resistant formula for audit contests.
