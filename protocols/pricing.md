@@ -2,7 +2,7 @@
 
 Sherlock has simplified coverage pricing substantially.&#x20;
 
-Now, every protocol that goes through a Sherlock public audit contest will get a 2.0% price (assuming they meet all other coverage criteria such as a successeful fix review, etc.)
+Now, every protocol that goes through a Sherlock public audit contest will get a 2.0% price (assuming they meet all other coverage criteria such as a successful fix review, etc.)
 
 If a protocol opts to do a private audit contest, then the coverage price will be 2.25% instead of 2.0%. This is because Sherlock believes public audit contests are the #1 way to secure a codebase, but a private audit contest can go a long way as well. \
 \
