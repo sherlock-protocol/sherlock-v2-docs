@@ -6,13 +6,13 @@ description: So you want to be a Sherlock judge...
 
 ## What's in it for you?
 
-5% of the value of the audit contest pot will be up for grabs in each judging contest. If an audit has a $50k pot, then the “judging pot” will be $2,500.
+5% of the value of the audit contest pot will be publicly available. If an audit has a $50k pot, then the portion of the “judging pot” that will be publicly available is $2,500.
+
+The Lead Judge will also receive 5% of the audit contest pot. Here is how you can become a [Lead Judge](lead-judge-selection-process.md).
 
 ## When do judging contests start?
 
-Immediately after an audit contest ends, the 3-day judging contest will begin.
-
-Example: If an audit contest goes from January 1st to January 14th, the judging contest will start on January 14th and run until January 17th.
+Immediately after an audit contest ends, the judging contest will begin. The judging contest will be contingent on the number of issues. More specifically, one day will be added per 75 issues submitted in the contest (200 issues = 3-day judging contest, 250 issues = 4-day judging contest).
 
 ## How to join a judging contest
 

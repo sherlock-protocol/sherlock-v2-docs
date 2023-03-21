@@ -24,7 +24,7 @@ The Escalation Period exists so Watsons can make sure that misjudged issues are 
 
 With the **Escalation Period** feature, there will now be a 48-hour window that opens as soon as awards are announced. During this 48-hour period, any Watson can "escalate" an issue directly in GitHub that they think was misjudged.
 
-**Here's how it works:** Each Watson will stake a USDC amount to their escalation (could be as little as 1 USDC). The Sherlock judges will go back and re-judge the top 10 issues that had the highest USDC amount staked on them. This will make sure that the most important issues always get a second look by the Sherlock judges.
+**Here's how it works:** Each Watson will stake a 10 USDC amount to their escalation. Sherlock and the Lead Judge will go back and re-judge all escalations for $10. There is no maximum amount of escalations. This will make sure that the most important issues always get a second look by Sherlock and the Lead Judge.
 
 Scenario #1: A Watson escalates an issue, stakes 10 USDC and the issue gets overturned (the Watson was correct). The overturned issue will get re-included in the awards and rankings. And the Watson will not lose any of that 10 USDC.\
 \
@@ -74,7 +74,7 @@ If a Watson stakes 10 USDC, loses the escalation and ALSO didn't earn anything i
 
 ### How Does Sherlock Protect Against Sybil Attacks on the Escalation Period?
 
-With this setup, a Watson could simply stake 10,000 USDC on their escalation to make sure the judges re-judge it. If they lose, then they accrue a 10,000 USDC debt on their account, but the Watson will just create a new account.\
+With this setup, a Watson could simply escalate 1000 issues for 10 USDC to make sure the judges re-judge them. If they lose, then they accrue a 10,000 USDC debt on their account, but the Watson will just create a new account.\
 \
 If this becomes a problem, Sherlock may:
 

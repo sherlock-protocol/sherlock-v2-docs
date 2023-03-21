@@ -7,7 +7,7 @@
 
 ## Audits
 
-* [🧑💻 Protocols](audits/protocols/README.md)
+* [🧑💻 🧑💻 Protocols](audits/protocols/README.md)
   * [How it Works for Protocols](audits/protocols/how-it-works-for-protocols.md)
   * [Audit Pricing and Timeline](audits/protocols/audit-pricing-and-timeline.md)
   * [Scheduling Process](audits/protocols/scheduling-process.md)
@@ -18,6 +18,7 @@
   * [Interim Updates and Upgrades](audits/protocols/interim-updates-and-upgrades.md)
 * [🕵 Watsons](audits/watsons/README.md)
   * [Lead Senior Watson Selection Process](audits/watsons/lead-senior-watson-selection-process.md)
+  * [Lead Judge Selection Process](audits/watsons/lead-judge-selection-process.md)
   * [Fix Review Process](audits/watsons/fix-review-process.md)
   * [Contest Points](audits/watsons/contest-points.md)
   * [How to Score Issue Points in a Contest](audits/watsons/how-to-score-issue-points-in-a-contest.md)
