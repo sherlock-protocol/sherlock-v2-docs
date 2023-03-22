@@ -25,6 +25,7 @@
   * [Watson Points Example](audits/watsons/watson-points-example.md)
   * [Judging Guide](audits/watsons/judging.md)
   * [Guide to Judging Contests](audits/watsons/guide-to-judging-contests.md)
+  * [Lead Judging Guide](audits/watsons/lead-judging-guide.md)
   * [Escalation Period](audits/watsons/escalation-period.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
