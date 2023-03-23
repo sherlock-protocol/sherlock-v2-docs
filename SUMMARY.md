@@ -1,13 +1,13 @@
 # Table of contents
 
-* [Intro to Sherlock](README.md)
-* [FAQ](faq.md)
-* [Glossary](glossary.md)
-* [Disclaimers](disclaimers.md)
+* [👋 Intro to Sherlock](README.md)
+* [🙋 FAQ](faq.md)
+* [📚 Glossary](glossary.md)
+* [‼ Disclaimers](disclaimers.md)
 
 ## Audits
 
-* [🧑💻 Protocols](audits/protocols/README.md)
+* [🧑💻 Protocol Teams](audits/protocols/README.md)
   * [How it Works for Protocols](audits/protocols/how-it-works-for-protocols.md)
   * [Audit Pricing and Timeline](audits/protocols/audit-pricing-and-timeline.md)
   * [Scheduling Process](audits/protocols/scheduling-process.md)
@@ -32,18 +32,18 @@
 
 ## Coverage
 
-* [Stakers](coverage/staking-apy/README.md)
+* [💰 Stakers](coverage/staking-apy/README.md)
   * [Overview](stakers/overview.md)
   * [Lockup Period](stakers/lockup-period.md)
   * [Exploit Flow](stakers/exploit-flow.md)
   * [Staking APY](stakers/staking-APY.md)
-* [Protocols](coverage/protocols/README.md)
+* [🧑💻 Protocol Teams](coverage/protocols/README.md)
   * [Getting Started](protocols/getting-started.md)
   * [Coverage Premiums](protocols/premiums.md)
   * [Pricing](protocols/pricing.md)
   * [Composability and Coverage](coverage/protocols/composability-and-coverage.md)
   * [Exploit Flow](protocols/exploit-flow.md)
-* [Claims](coverage/claims/README.md)
+* [📝 Claims](coverage/claims/README.md)
   * [Claims Process](claims/claims-process.md)
 
 ## Tokens
