@@ -1,6 +1,6 @@
 # Coverage Premiums
 
-Once an agreement has been reached on the cover amount (e.g. $5M) and the price of coverage (e.g. 2%), then Sherlock can calculate the per-second USDC premium that the protocol will pay.
+Once an agreement has been reached on the cover amount (e.g. $5M) and the price of coverage (e.g. 3%), then Sherlock can calculate the per-second USDC premium that the protocol will pay.
 
 ### Maintaining an Active Balance
 
