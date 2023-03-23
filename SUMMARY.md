@@ -7,7 +7,7 @@
 
 ## Audits
 
-* [🧑💻 🧑💻 Protocols](audits/protocols/README.md)
+* [🧑💻 Protocols](audits/protocols/README.md)
   * [How it Works for Protocols](audits/protocols/how-it-works-for-protocols.md)
   * [Audit Pricing and Timeline](audits/protocols/audit-pricing-and-timeline.md)
   * [Scheduling Process](audits/protocols/scheduling-process.md)
@@ -18,15 +18,16 @@
   * [Interim Updates and Upgrades](audits/protocols/interim-updates-and-upgrades.md)
 * [🕵 Watsons](audits/watsons/README.md)
   * [Lead Senior Watson Selection Process](audits/watsons/lead-senior-watson-selection-process.md)
-  * [Lead Judge Selection Process](audits/watsons/lead-judge-selection-process.md)
   * [Fix Review Process](audits/watsons/fix-review-process.md)
   * [Contest Points](audits/watsons/contest-points.md)
   * [How to Score Issue Points in a Contest](audits/watsons/how-to-score-issue-points-in-a-contest.md)
   * [Watson Points Example](audits/watsons/watson-points-example.md)
-  * [Judging Guide](audits/watsons/judging.md)
-  * [Guide to Judging Contests](audits/watsons/guide-to-judging-contests.md)
-  * [Lead Judging Guide](audits/watsons/lead-judging-guide.md)
-  * [Escalation Period](audits/watsons/escalation-period.md)
+* [🧑⚖ Judging](audits/judging/README.md)
+  * [Criteria for Issue Validity](audits/judging/judging.md)
+  * [Participating in Judging Contests](audits/judging/guide-to-judging-contests.md)
+  * [Lead Judge Selection Process](audits/judging/lead-judge-selection-process.md)
+  * [The Lead Judge's Role](audits/judging/the-lead-judges-role.md)
+  * [Escalation Period](audits/judging/escalation-period.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
 ## Coverage

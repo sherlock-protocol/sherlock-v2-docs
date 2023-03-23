@@ -1,6 +1,6 @@
 # Coverage Premiums
 
-Once an agreement has been reached on the cover amount (e.g. $10M) and the price of coverage (e.g. 2%), then Sherlock can calculate the per-second USDC premium that the protocol will pay.
+Once an agreement has been reached on the cover amount (e.g. $5M) and the price of coverage (e.g. 2%), then Sherlock can calculate the per-second USDC premium that the protocol will pay.
 
 ### Maintaining an Active Balance
 
@@ -10,4 +10,4 @@ If a protocol decides it wants to withdraw USDC from its active balance, it is p
 
 ### Fluctuating TVL
 
-A protocol may agree to a $10M coverage policy, but find that its TVL is below $10M for a period of time. Instead of charging more than Sherlock is actually covering, the premium gets updated monthly based on the TVL being covered that month. Sherlock has an off-chain script that manages this process. Basically this ensures that a protocol doesn't overpay for coverage. In the same vein, if Sherlock's staking pool TVL sinks below 200% of the coverage policy amount (i.e. $10M) for any reason, then Sherlock will only charge based on the amount of coverage that is being offered (and payouts will max out at 50% of Sherlock's staking pool TVL).&#x20;
+A protocol may agree to a $5M coverage policy, but find that its TVL is below $5M for a period of time. Instead of charging more than Sherlock is actually covering, the premium gets updated monthly based on the TVL being covered that month. Sherlock has an off-chain script that manages this process. Basically this ensures that a protocol doesn't overpay for coverage. In the same vein, if Sherlock's staking pool TVL sinks below 200% of the coverage policy amount (i.e. $5M) for any reason, then Sherlock will only charge based on the amount of coverage that is being offered (and payouts will max out at 50% of Sherlock's staking pool TVL).&#x20;

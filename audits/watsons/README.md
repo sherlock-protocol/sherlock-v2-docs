@@ -1,4 +1,4 @@
-# Watsons
+# 🕵 Watsons
 
 Check out our latest contests [here](https://app.sherlock.xyz/audits/contests)!
 
