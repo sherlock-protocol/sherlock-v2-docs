@@ -1,4 +1,4 @@
-# Intro to Sherlock
+# 👋 Intro to Sherlock
 
 Sherlock is an audit marketplace and smart contract coverage protocol built on the Ethereum blockchain. Sherlock works to protect Decentralized Finance (DeFi) users from smart contract exploits with security reviews from top auditors backed by smart contract coverage on the audited contracts.
 
@@ -36,6 +36,6 @@ In return for these streams, a staker’s funds are at risk of being partially p
 
 ### Watsons
 
-Sherlock’s Watsons (the security experts) do a full audit of each prospective protocol's contracts and provide input as to the risk of the protocol's contracts. \
+Sherlock’s Watsons (the security experts) do a full audit of each prospective protocol's contracts and provide input as to the risk of the protocol's contracts.\
 \
 Sherlock audits feature both dedicated, top-tier auditors who are incentivized to find vulnerabilities in the codebase, as well as a contest pot where anyone in the world can find bugs. See the "Protocols" tab of the "Audits" section for more info on the audit process. And security experts (or those planning to become security experts) can see more information about how they can participate in audits in the "Watsons" tab in the "Audits" section.

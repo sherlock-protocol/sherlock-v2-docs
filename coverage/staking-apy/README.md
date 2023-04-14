@@ -1,3 +1,3 @@
-# Stakers
+# 💰 Stakers
 
 ###

@@ -42,7 +42,7 @@ To escalate an issue, you can simply click on the issue you're interested in esc
 
 Here's the template for your own escalation:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Template for an escalation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Template for an escalation</p></figcaption></figure>
 
 {% hint style="info" %}
 You must be in the 48-hour Escalation Period window in order to submit an escalation.&#x20;
@@ -56,7 +56,7 @@ As the "sherlock-admin" bot says, you can edit your escalation by editing the US
 \
 And you can delete an escalation by simply deleting the comment you've already posted. You should see a confirmation from the bot after a successful deletion:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Successful deletion of an escalation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Successful deletion of an escalation</p></figcaption></figure>
 
 ### Who Keeps the Escalation Stake?
 

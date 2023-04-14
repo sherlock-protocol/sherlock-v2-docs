@@ -6,9 +6,7 @@ A Watson is a security expert who submits vulnerabilities. Watsons can also be t
 
 **Initial Steps:**
 
-1. You can sign up for upcoming audits posted in Sherlock’s Discord channel or [Website](https://app.sherlock.xyz/audits/contests) by providing your GitHub name, Discord handle, and your wallet address (so we know where to pay you).
-
-> Note: If you have competed in Code Arena, we recommend signing up with the same address you’ve used for those contests so that your ranking properly transfers.
+1\. You can sign up for upcoming audits posted in Sherlock’s Discord channel or [Website](https://app.sherlock.xyz/audits/contests) by providing your GitHub name, Discord handle, and your wallet address (so we know where to pay you).
 
 2\. You can submit issues found during the audit to your private GitHub repo that Sherlock will create.
 
