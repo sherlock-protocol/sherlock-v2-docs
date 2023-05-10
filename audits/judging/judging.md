@@ -37,7 +37,6 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 * **User experience and design improvement issues:**  Issues that cause minor inconvenience to users where there is no material loss of funds are not considered valid. Funds are temporarily stuck and can be recovered by the administrator or owner. Also, if a submission is a design opinion/suggestion without any clear indications of loss of funds is not a valid issue.
 * **User Blacklist:** User getting blacklisted by a token/contract causing harm only to themselves is **not** a valid medium/high.
 * **Use of call vs transfer** with the reasoning that the gas price may not be the same value of 2300. This will be considered as a protocol choice and would be considering this issue in the low/informational category.
-* **External Oracle Price Manipulation**: Issues related to price manipulation in an external oracle used by the contracts are not considered valid high/medium.
 * **EIP compliance with no integrations**: If the protocol does not have external integrations then issues related to code not fully complying with the EIP it is implementing and there are no adverse effects of this, is considered informational
 * **Users sending ETH/native tokens accidentally** just because a contract allows is **not** a valid medium/high.
 * **Loss of airdrops or liquidity fees** or any other rewards that are not part of the original protocol design is not considered a valid high/medium. [Example](https://github.com/sherlock-audit/2023-02-openq-judging/issues/323)
