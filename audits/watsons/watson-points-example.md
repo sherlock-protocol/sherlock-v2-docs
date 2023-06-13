@@ -18,7 +18,7 @@ In this example, there are 5 Watsons. Each one has competed in a 7-day contest p
 
 Next, Alice, Bob, Carol, Dan, and Emily compete in their second Sherlock contest. It's a 14-day contest and at the end of the contest, there are 5 legitimate findings. One of them is High severity and four of them are Medium severity. The "1"s represent whether the participant submitted a particular finding or not. As we can see, Alice submitted the M1, M2, M3, and M4 findings. Bob only submitted the M2 finding. H1 represents the first High severity finding and M1 represents the first Medium severity finding.&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 Here are the "sybil-resistant" formulas used to calculate how many "issue points" each participant gets for each finding:
 
@@ -36,13 +36,13 @@ As you can see, Carol and Emily were the only Watsons to find H1 (a High severit
 
 Based on these "issue points," we can now see who performed best in the contest and earned the most from the USDC pot:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Carol and Emily each make over 30% of the contest pot (over 60k USDC), largely driven by their submissions of H1, which no other Watsons found. Dan fared the worst because he only found 2 Medium severity issues, and other participants also found both of those Medium severity issues.&#x20;
 
 Now comes a bit of complexity. The 5 participants have each completed a 7-day contest (previously) and a 14-day contest. Sherlock's scoring system puts a greater weight on the 14-day contest (2x weight to be exact) because it was a longer contest with a presumably larger codebase. So we'll take the old leaderboard points of all 5 participants (based on the 7-day contest) and weigh them against the new performances in the 14-day contest. As a reminder, points gained in the 14-day contest are relative to the % of the pot captured. Emily captured the highest % of the pot in the 14-day contest at \~34%, so she could see the biggest benefit from the second contest. However, the first contest will still make up \~1/3rd (7 days out of 21 days total) of her score.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 The formula being used to calculate Emily's score is the following:
 
@@ -55,3 +55,5 @@ This is how the Sherlock leaderboard would look after these two contests:
 <figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Because of the increased weighting of the 14-day contest vs. the 7-day contest, Carol and Emily ended up higher on the leaderboard than Bob, despite Bob's high ranking after the 7-day contest.&#x20;
+
+Carol and Emily also earned the highest USDC payouts. But every Watson (including Carol and Emily) will need to ensure they clear [both audit contest payout criteria](https://app.gitbook.com/o/-M\_eFb0i0B5bGNIG9sx8/s/IULvDRunHtCHQJQoTsGo/\~/changes/107/audits/watsons/meeting-the-payout-criteria-july-1st-2023) in order to receive their USDC.&#x20;

@@ -34,7 +34,7 @@ Scenario #2: A Watson escalates an issue, stakes 10 USDC, and the issue is not o
 
 When a contest's awards are announced, the judging repo is opened up to all participating Watsons. A Watson can see all of the issues that were submitted during the contest in the Issues tab in Github:
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 To escalate an issue, you can simply click on the issue you're interested in escalating, then create a comment on that issue that looks like this:
 

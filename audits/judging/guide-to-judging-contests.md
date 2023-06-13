@@ -22,7 +22,7 @@ Immediately after an audit contest ends, the judging contest will begin. The jud
 4.  Click on that contest then click the "Judge Contest" button on the lower right side.\
 
 
-    <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption></figcaption></figure>
 5. A new private repo will be created for you in GitHub.
 6. The repo will contain a Markdown (.md) file with each submitted issue. Your job is to sort the Markdown files. See the next section.
 
