@@ -14,6 +14,10 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 ### Some standards observed:
 
+* **Hierarchy of truth:** Contest README > Sherlock rules for valid issues > Historical decisions. \
+  While considering the validity of an issue in case of any conflict the sources of truth are prioritized in the above order. \
+  For example: In case of conflict between Sherlock rules vs Sherlock's historical decision,  Sherlock criteria for issues must be considered the source of truth. \
+  In case of conflict between information in the README vs Sherlock rules, the README overrides Sherlock rules.&#x20;
 * **Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?** It would not count if the DOS, etc. lasts a known, finite amount of time <1 year. If it will result in funds being inaccessible for >=1 year, then it would count as a loss of funds and be eligible for a Medium or High designation. The greater the cost of the attack for an attacker, the less severe the issue becomes.
 * **Low/Informational Issues**:  While Sherlock acknowledges that it would be great to include & reward low-impact/informational issues, we strongly feel that Watsons should focus on finding the most critical vulnerabilities that will potentially cause millions of dollars of losses on mainnet. Sherlock understands that it could be missing out on some potential "value add" for protocol, but it's only because the real task of finding critical vulnerabilities requires 100% of the attention of Watsons. While low/informational issues are not rewarded individually if a Watson identifies an attack vector that combines multiple low's to cause significant loss/damage that would still be categorized as a valid medium/high.
 * **Direct Protocol Owner/Admin rug pulls.**  Sherlock's stance is generally that if a protocol team wants to rug their own project, there are often many avenues for doing this. It would be unrealistic for Sherlock to report all of these vectors in an audit. Sherlock's general assumption is that users of a protocol are taking a risk in trusting the core team of the protocol. However, if a protocol specifically mentions the restrictions imposed on the owner/admin issues describing an attack that results in bypassing these restrictions, they can be considered valid.  Please note that these restrictions must be explicitly described by the protocol and will be considered case by case.&#x20;
@@ -29,8 +33,11 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
     1. Admin incorrectly enters an input parameter. Example: Make sure interestPerMin > 1 ether as it is an important parameter.  This is not a valid issue.
     2. Admin could have an incorrect call order. Example: If an Admin forgets to `setWithdrawAddress()` before calling `withdrawAll()` This is not a valid issue.
+    3. An admin action can break certain assumptions about the functioning of the code. Example: Pausing a collateral causes some users to be unfairly liquidated or any other action causing loss of funds. This is not considered a valid issue.&#x20;
 
-    While most of the admin input issues are invalid, there may be some issues where there could be a valid sanity check. [Example(Valid)](https://github.com/sherlock-audit/2022-10-mycelium-judging-new/issues/164)
+    As mentioned in the standards observed, in the case of a restricted admin, the restriction must be clearly mentioned for any issue in this category to be considered valid&#x20;
+
+
 * **Contract / Admin Address Blocklisting / Blacklisting / Freezing:** If a protocol's smart contracts or admin addresses get added to a "blocklist" and the functionality of the protocol is affected by this blocklist, this is not considered a valid issue. \
   However, there could be cases where an attacker would use a blocklisted address to cause harm to a protocol functioning. [Example(Valid)](https://github.com/sherlock-audit/2022-11-opyn-judging/issues/219)
 * **Front-running initializers:** Front-running initializers where there is no irreversible damage or loss of funds & the protocol could just redeploy and initialize again is not a valid issue.
@@ -46,6 +53,12 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
   **Exception**: However, if the protocol design has a highly complex and branched set of contract inheritance with storage gaps inconsistently applied throughout and the submission clearly describes the necessity of storage gaps it can be considered a valid medium. [Example](https://github.com/sherlock-audit/2022-09-notional-judging/issues/64)
 * **Incorrect values in View functions** are by default considered **low**. \
   **Exception**: In case any of these incorrect values returned by the view functions are used as a part of a larger function which would result in loss of funds then it would be a valid **medium/high** depending on the impact.
+* **Chainlink round completeness** check is invalid. The new OCR does not rely on rounds for reporting.
+* In an update contest, issues from the previous contest with `wont fix` labels are not considered valid.
+* Issues found in mock contracts are not considered valid issues.&#x20;
+* **Chain re-org** related issues are not considered valid.&#x20;
+* **ERC721 unsafe mint:** In case of a protocol implementing minting/claiming of ERC721, users being unable to do so due to incorrect implementation is not a valid issue. \
+  Example: [https://github.com/sherlock-audit/2023-03-teller-judging/issues/8](https://github.com/sherlock-audit/2023-03-teller-judging/issues/8)
 
 ### List of Issue categories that are considered valid:
 
