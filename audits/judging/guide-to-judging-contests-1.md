@@ -53,7 +53,7 @@ Sherlock judges low, info and false issues as invalid
 
 * If High, create a new folder with a 3 digit number and an “-H” (ex. 001-H) and put the corresponding .md file in the folder
 * If Medium, create a new folder with a 3 digit number and an “-M” (ex. 001-M) and put the corresponding .md file in the folder
-* If Invalid, keep the .md file in the root (or create a “invalid” folder to keep track of them yourself)
+* If Invalid, you MUST move the .md file into the "invalid" folder. If you leave an invalid issue in the root, you will not get credit for it (it will be marked as "missing" instead of "invalid")
 
 An example High severity issue might look like this:
 
@@ -122,13 +122,14 @@ If you were to open up all the folders above, it might look like this:
   - 016.md
 003-M/
   - 014.md
-- 001.md
-- 002.md
-- 004.md
-- 008.md
-- 009.md
-- 010.md
-- 015.md
+invalid/
+  - 001.md
+  - 002.md
+  - 004.md
+  - 008.md
+  - 009.md
+  - 010.md
+  - 015.md
 ```
 
 This structure still means that there are 2 High severity vulnerabilities, and 3 Medium severity vulnerabilities (just like the top-level folder structure above).
@@ -194,13 +195,14 @@ The full "truth" repo with all 5 families (and 7 invalid issues) might look like
   - 016.md
 003-M/
   - 014.md
-- 001.md
-- 002.md
-- 004.md
-- 008.md
-- 009.md
-- 010.md
-- 015.md
+invalid/
+  - 001.md
+  - 002.md
+  - 004.md
+  - 008.md
+  - 009.md
+  - 010.md
+  - 015.md
 ```
 
 In order to get 100% on the Recall Threshold formula, you could have put each of 012.md, 006.md, 013.md, 016.md, and 014.md into their own folder and marked them as the best issue in that folder. If you also put 003.md or 005.md into their own folders (and marked them "best) you'd still get 100% on the Recall Threshold formula (the next formula will penalize you for showing the same vulnerability twice as a "best" issue).&#x20;
@@ -232,13 +234,14 @@ For example, if we had the same "truth" repo from above:
   - 016.md
 003-M/
   - 014.md
-- 001.md
-- 002.md
-- 004.md
-- 008.md
-- 009.md
-- 010.md
-- 015.md
+invalid/
+  - 001.md
+  - 002.md
+  - 004.md
+  - 008.md
+  - 009.md
+  - 010.md
+  - 015.md
 ```
 
 If you submitted every single issue (001.md through 015.md) as its own family (marked all 15 issues as "best") then you would get 5 out of 15 correct (33% score). 001.md would not be rewarded because it was invalid. Same with 002.md. You'd get credit for 003.md because it's a valid issue in a valid family in the truth repo. No credit for 004.md. And you also wouldn't get credit for 005.md because you had already gotten credit for that family when you marked 003.md as a "best" issue in its own family.&#x20;
