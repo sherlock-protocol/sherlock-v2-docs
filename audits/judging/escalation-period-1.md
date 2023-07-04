@@ -10,7 +10,7 @@ As a Watson, if you participate in an audit contest, submit issues and then thin
 
 ### Why Do Escalation Periods Exist?
 
-As every Watson knows, audit contest judging is done by humans, which means it isn't perfect. Sherlock judges are extremely good, but sometimes even they make mistakes.
+As every Watson knows, audit contest judging is done by humans, which means it isn't perfect. The Lead Judge and the Sherlock Judge will try very hard, but sometimes even they make mistakes.
 
 Sherlock sometimes receives a lot of re-judge requests after a contest's results are announced. Many times, the judges don't have time to go through all of them or prioritize them. And many of the re-judge requests end up being invalid, so judge time is wasted.&#x20;
 
