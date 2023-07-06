@@ -81,6 +81,29 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 * Breaks core contract functionality, rendering the contract useless (should not be easily replaced without loss of funds) or leading to unknown potential exploits/loss of funds. Eg: Unable to remove malicious user/collateral from the contract.
 * A material loss of funds, no/minimal profit for the attacker at a considerable cost
 
+### Duplication rules:
+
+* Issues identifying a core vulnerability can be considered duplicates. \
+  **Scenario 1:**\
+  There is a root cause/error/vulnerability **A** in the code. This vulnerability **A** -> leads to two attacks paths:\
+  \- **B** -> **high** severity path\
+  \- **C** -> **medium** severity attack path/just identifying the vulnerability.\
+  Both **B** & **C** would not have been possible if error **A** did not exist in the first place. In this case, both **B** & **C** should be put **together as duplicates**.\
+  \- In addition to this, there is a submission **D** which identifies the core issue but does not clearly describe the impact or an attack path. Then **D** is considered low. \
+  \
+  **Scenario 2:**\
+  In the above example if the root issue **A** is one of the following generic vulnerabilities:\
+  \- Reentrancy\
+  \- Access control\
+  \- Front-running \
+  Then the submissions with valid attack paths and higher vulnerability are considered valid. If the submission is vague or does not identify the attack path with higher severity clearly it will be considered low.\
+  \- **B** is a valid issue\
+  \- **C** is low\
+
+* In case the same vulnerability appears across multiple places in different contracts, they can be considered duplicates. \
+  The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately. &#x20;
+* Functions implemented from the same base contract if they have the same vulnerability with the same impact but in different implementations then they can be considered duplicates.
+
 ### Best practices:
 
 * Read the contest readme and documents thoroughly.
