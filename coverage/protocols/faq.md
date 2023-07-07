@@ -6,7 +6,7 @@ description: Common Questions for Adding Smart Contract Coverage to Your Protoco
 
 **Can I see an example coverage agreement?**
 
-Yes. You can look through an example coverage agreement here: [https://docs.google.com/document/d/1ubWlKWrm0cOIddmvE1srKaAPfXPn9iSatDoylS3mepg/edit?usp=sharing](https://docs.google.com/document/d/1ubWlKWrm0cOIddmvE1srKaAPfXPn9iSatDoylS3mepg/edit?usp=sharing)\
+Yes. You can look through an example coverage agreement [here](https://docs.google.com/document/d/1ubWlKWrm0cOIddmvE1srKaAPfXPn9iSatDoylS3mepg/edit?usp=sharing).\
 \
 **What if we change the contract afterwards?**
 
