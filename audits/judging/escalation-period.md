@@ -1,4 +1,10 @@
+---
+description: Escalating an issue that you think was judged incorrectly
+---
+
 # Escalation Period
+
+
 
 {% hint style="info" %}
 For instructions on how to escalate an issue, please see[#how-do-i-escalate-an-issue](escalation-period.md#how-do-i-escalate-an-issue "mention")
@@ -6,11 +12,11 @@ For instructions on how to escalate an issue, please see[#how-do-i-escalate-an-i
 
 ### Summary
 
-As a Watson, if you participate in an audit contest, submit issues and then think your issues (or others' issues) were not properly judged, you can stake some amount of USDC and escalate the issue back to Sherlock, where the judges will re-review it.&#x20;
+As a Watson, if you participate in an audit contest, submit issues and then think your issues (or others' issues) were not properly judged, you can escalate the issue and it will get further consideration.&#x20;
 
 ### Why Do Escalation Periods Exist?
 
-As every Watson knows, audit contest judging is done by humans, which means it isn't perfect. The Lead Judge and the Sherlock Judge will try very hard, but sometimes even they make mistakes., but sometimes they will make mistakes.
+As every Watson knows, audit contest judging is done by humans, which means it isn't perfect. The Lead Judge and the Sherlock Judge will try very hard, but sometimes even they make mistakes.
 
 Sherlock sometimes receives a lot of re-judge requests after a contest's results are announced. Many times, the judges don't have time to go through all of them or prioritize them. And many of the re-judge requests end up being invalid, so judge time is wasted.&#x20;
 
@@ -24,25 +30,58 @@ The Escalation Period exists so Watsons can make sure that misjudged issues are 
 
 With the **Escalation Period** feature, there will now be a 48-hour window that opens as soon as awards are announced. During this 48-hour period, any Watson can "escalate" an issue directly in GitHub that they think was misjudged.
 
-**Here's how it works:** Each Watson will stake a 10 USDC amount to their escalation. Sherlock and the Lead Judge will go back and re-judge all escalations for $10. There is no maximum amount of escalations. This will make sure that the most important issues always get a second look by Sherlock and the Lead Judge.
+**Here's how it works:** Each Watson can make their escalations. Sherlock and the Lead Judge will go back and re-judge all escalations. This will make sure that the most important issues always get a second look. In the Escalation Period, Sherlock will have the final say instead of the Lead Judge.
 
-Scenario #1: A Watson escalates an issue, stakes 10 USDC and the issue gets overturned (the Watson was correct). The overturned issue will get re-included in the awards and rankings. And the Watson will not lose any of that 10 USDC.\
+Scenario #1: A Watson escalates an issue and the issue gets overturned (the Watson was correct). The overturned issue will get re-included in the awards and rankings. And the Watson's Escalations Ratio (see next section) will increase. \
 \
-Scenario #2: A Watson escalates an issue, stakes 10 USDC, and the issue is not overturned (Watson was wrong about the issue). The 10 USDC is removed from the Watson's payout in that contest or the next contest where they receive a payout.
+Scenario #2: A Watson escalates an issue and the issue is not overturned (Watson was wrong about the issue). The issue will stay as it was (valid or invalid, etc.) and the Watson's Escalations Ratio (see next section) will decrease.&#x20;
+
+### Earning the Ability to Submit Escalations
+
+{% hint style="info" %}
+Previously, escalations could be made by anyone and 10 USDC of a future payout would be at stake. Sherlock has transitioned away from this system starting on July 1st, 2023.&#x20;
+{% endhint %}
+
+There is no USDC cost to submitting an escalation, but there are 2 criteria that must be passed in order for a Watson to have the ability to submit escalations:
+
+#### 1. Experienced Participant
+
+In order to meet the "Experienced Participant" criteria you must have either:
+
+1. Submitted 2 or more valid issues in an audit contest OR
+2. Earned a USDC payout (made the leaderboard) in a judging contest
+
+#### 2. Escalation Ratio
+
+You must maintain >=20% on your Escalation Ratio.
+
+The Escalation Ratio is calculated as:
+
+{% code overflow="wrap" %}
+```
+(# of valid audit issues submitted + # of valid escalations submitted + # of judging contest payouts) / (total # of audit issues submitted + total # of escalations submitted + # of judging contest payouts)
+```
+{% endcode %}
+
+These values will all be cumulative starting on July 1st, 2023 so one bad contest where you submit a lot of invalid issues or a lot of invalid escalations could prevent you from being able to submit new escalations for a long time! Be careful with how you approach this.
+
+As long as a Watson meets or exceeds these two criteria (Experienced Participant and Escalation Ratio), then they will be able to submit escalations in any contest and on any issue. There is no USDC penalty for an incorrect escalation anymore. &#x20;
+
+The purpose of this system is to limit the escalations to only the highest signal ones, and to limit the number of invalid escalations submitted to Sherlock as much as possible.&#x20;
 
 ### How Do I Escalate an Issue?
 
-When a contest's awards are announced, the judging repo is opened up to all participating Watsons. A Watson can see all of the issues that were submitted during the contest in the Issues tab in Github:
+When a contest's awards are announced, the main judging repo is opened up to all participating Watsons. A Watson can see all of the issues that were submitted during the contest in the Issues tab in Github:
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 To escalate an issue, you can simply click on the issue you're interested in escalating, then create a comment on that issue that looks like this:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Example escalation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Here's the template for your own escalation:
 
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption><p>Template for an escalation</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You must be in the 48-hour Escalation Period window in order to submit an escalation.&#x20;
@@ -50,33 +89,10 @@ You must be in the 48-hour Escalation Period window in order to submit an escala
 
 If you submitted a successful escalation, you should receive a bot reply almost immediately:
 
-<figure><img src="../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-As the "sherlock-admin" bot says, you can edit your escalation by editing the USDC amount or reason in the comment you've already posted. \
+As the "sherlock-admin" bot says, you can edit your escalation by editing the reason in the comment you've already posted. \
 \
 And you can delete an escalation by simply deleting the comment you've already posted. You should see a confirmation from the bot after a successful deletion:
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Successful deletion of an escalation</p></figcaption></figure>
-
-### Who Keeps the Escalation Stake?
-
-If a Watson stakes 10 USDC and escalates an issue, there are two outcomes:&#x20;
-
-1\) The Watson is correct, the issue's classification changes, and the Watson keeps their 10 USDC
-
-2\) The Watson is incorrect, the issue stays the same, and the Watson loses their 10 USDC stake
-
-In scenario #2, the 10 USDC is simply added back to the contest pool and split equally among all other Watsons who earned points in the contest. If Sherlock kept this 10 USDC, it would create an incentive for Sherlock to deny escalations, and that would be bad.&#x20;
-
-{% hint style="info" %}
-If a Watson stakes 10 USDC, loses the escalation and ALSO didn't earn anything in the contest, then a debt will be carried on the Watson's account until they earn USDC in a future contest. In this case, future contest participants would receive the USDC, not current contest participants.&#x20;
-{% endhint %}
-
-### How Does Sherlock Protect Against Sybil Attacks on the Escalation Period?
-
-With this setup, a Watson could simply escalate 1000 issues for 10 USDC to make sure the judges re-judge them. If they lose, then they accrue a 10,000 USDC debt on their account, but the Watson will just create a new account.\
-\
-If this becomes a problem, Sherlock may:
-
-1. Only allow Watsons with past contest history to escalate issues.&#x20;
-2. Watsons must put down a small deposit (maybe 20 USDC) in order to participate in the contest in the first place.&#x20;
+<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>

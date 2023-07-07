@@ -16,5 +16,5 @@ Sherlock expects Lead Judges to commit to the judging contest fully. This includ
 
 The point system for the Judging Leaderboard will be very similar to the point system implemented for the Audit Contest Leaderboard. More details to come on the point calculations.
 
-For information about how to participate in a judging contest, see the [Guide to Judging Contests](guide-to-judging-contests.md).\
+For information about how to participate in a judging contest, see the [Guide to Judging Contests](broken-reference).\
 \

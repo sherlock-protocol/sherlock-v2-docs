@@ -21,16 +21,14 @@
   * [Fix Review Process](audits/watsons/fix-review-process.md)
   * [Contest Points](audits/watsons/contest-points.md)
   * [How to Score Issue Points in a Contest](audits/watsons/how-to-score-issue-points-in-a-contest.md)
-  * [Meeting the Payout Criteria (July 1st, 2023)](audits/watsons/meeting-the-payout-criteria-july-1st-2023.md)
+  * [Meeting the Payout Criteria](audits/watsons/meeting-the-payout-criteria.md)
   * [Watson Points Example](audits/watsons/watson-points-example.md)
 * [🧑⚖ Judging](audits/judging/README.md)
   * [Criteria for Issue Validity](audits/judging/judging.md)
   * [Participating in Judging Contests](audits/judging/guide-to-judging-contests.md)
-  * [Participating in Judging Contests (July 1st, 2023)](audits/judging/guide-to-judging-contests-1.md)
   * [Lead Judge Selection Process](audits/judging/lead-judge-selection-process.md)
   * [The Lead Judge's Role](audits/judging/the-lead-judges-role.md)
   * [Escalation Period](audits/judging/escalation-period.md)
-  * [Escalation Period (July 1st, 2023)](audits/judging/escalation-period-1.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
 ## Coverage

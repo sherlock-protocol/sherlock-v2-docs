@@ -1,4 +1,8 @@
-# Meeting the Payout Criteria (July 1st, 2023)
+---
+description: How to make sure you get paid for your findings
+---
+
+# Meeting the Payout Criteria
 
 Previously, anyone could sign up as a Watson, join a contest, and get paid for any valid issues they submit. The only caveat is that there was a USDC penalty for invalid issues.&#x20;
 
