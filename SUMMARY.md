@@ -46,6 +46,7 @@
   * [Pricing](protocols/pricing.md)
   * [Composability and Coverage](coverage/protocols/composability-and-coverage.md)
   * [Exploit Flow](protocols/exploit-flow.md)
+  * [FAQ](coverage/protocols/faq.md)
 * [📝 Claims](coverage/claims/README.md)
   * [Claims Process](claims/claims-process.md)
 
