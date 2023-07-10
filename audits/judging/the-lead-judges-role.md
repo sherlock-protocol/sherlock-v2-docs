@@ -28,23 +28,6 @@ The ideal timeline to complete the 2 phases is **two weeks** from the end of the
 * The lead judge comments on every escalation within 48 hours after the escalation period ends. The lead judge is available to answer questions at any time before the final announcement is made.
 * Sherlock resolves the escalations & Final results are announced.
 
-### Borderline issues
-
-In case of issues that the Lead Judge considers low, but can be considered as borderline issues and would be benefitted from a protocol comment, follow the below folder structure.
-
-* Add these issues to the Invalid folder. But put them in the folder within
-
-```
-Invalid/
-	001-H/
-		- 003.md
-	002-M/
-		- 021-best.md
-		- 052.md
-```
-
-* This would keep the above issues `open` for the protocol to review but will be considered as low issues in the Lead judge judging submission.
-
 ### Duplication Instructions:
 
 *   The main issue is to be kept **open** and must have `Has Duplicates` label.  \
