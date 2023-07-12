@@ -5,7 +5,7 @@ Each audit consists of a fixed pay element to properly compensate and incentiviz
 | **Solidity Lines (nSLOC)** | 500      | \~1000   | \~2000    | \~3000    | \~4000    | \~5000    | \~6000    | \~7000    | \~8000    |
 | -------------------------- | -------- | -------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
 | **Pricing**                | \~$19k   | \~$36k   | \~$74k    | \~$115k   | \~$157k   | \~$200k   | \~$244k   | \~$289k   | \~$334k   |
-| **Audit Timeline**         | \~3 days | \~6 days | \~12 days | \~19 days | \~25 days | \~32 days | \~39 days | \~46 days | \~53 days |
+| **Audit Timeline**         | \~3 days | \~6 days | \~12 days | \~18 days | \~25 days | \~32 days | \~38 days | \~45 days | \~53 days |
 
 > Note: Sherlock utilizes the tool [Solidity Metrics](https://github.com/ConsenSys/solidity-metrics) to calculate nSLOC.\
 > \
