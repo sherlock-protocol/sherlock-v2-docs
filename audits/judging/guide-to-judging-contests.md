@@ -2,7 +2,7 @@
 description: So you want to be a Sherlock judge...
 ---
 
-# Participating in Judging Contests (July 1st, 2023)
+# Participating in Judging Contests
 
 ## What's in it for you?
 
@@ -150,7 +150,7 @@ In order to be eligible for payment, your judging repo must pass the following 3
 
 1. **Recall Threshold:** How many of the important vulnerabilities (families) would your repo have shown to the protocol team?
    * Must score >=80%
-2. **Precision Threshold:** Out of all the issues you showed (# of issue families), how many were invalid or unnecessary to show?
+2. **Precision Threshold:** Out of all the issues you showed (# of issue families), how many were valid (duplicates of valid issues don't count)?
    * Must score >=20%
 3. **Duplicates Threshold:** Out of all the potential issues, how many did you duplicate into the correct family (or correctly mark as "invalid")?
    * Must score >=20%
