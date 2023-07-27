@@ -96,3 +96,13 @@ As the "sherlock-admin" bot says, you can edit your escalation by editing the re
 And you can delete an escalation by simply deleting the comment you've already posted. You should see a confirmation from the bot after a successful deletion:
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+
+### Rules for Escalation:
+
+1. Escalation will not be accepted in case the reward distribution is not affected. \
+   Example: If an escalation says \`This issue must be a duplicate of #23\` and if the main #23 is already a low/invalid issue and is not escalated. Then that escalation would be rejected since it would not affect reward distribution.&#x20;
+2. You can combine multiple arguments related to the same issue into one escalation. This prevents getting a double penalty when the escalation is rejected. For example, you might argue that the issue is valid and should be duplicated with #4. \
+   Also, you can mention multiple issues in the same escalation if they need to be duplicated together or separated from the context of the issue you are escalating. For example: 'The issues #12, #145 and #5 are all duplicates of the above issue'
+3. If there were previous escalations for the same issue (let's say it's the second escalation), it won't be accepted unless the new argument proposes new changes or provides stronger reasons for the changes requested earlier.
+
+###
