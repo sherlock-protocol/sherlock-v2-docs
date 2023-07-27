@@ -100,9 +100,8 @@ And you can delete an escalation by simply deleting the comment you've already p
 ### Rules for Escalation:
 
 1. Escalation will not be accepted in case the reward distribution is not affected. \
-   Example: If an escalation says \`This issue must be a duplicate of #23\` and if the main #23 is already a low/invalid issue and is not escalated. Then that escalation would be rejected since it would not affect reward distribution.&#x20;
+   Example: If an escalation says \`This issue must be a duplicate of #23\` and if the main issue #23 is already a low/invalid issue and is not escalated. Then that escalation would be rejected since it would not affect reward distribution.&#x20;
 2. You can combine multiple arguments related to the same issue into one escalation. This prevents getting a double penalty when the escalation is rejected. For example, you might argue that the issue is valid and should be duplicated with #4. \
    Also, you can mention multiple issues in the same escalation if they need to be duplicated together or separated from the context of the issue you are escalating. For example: 'The issues #12, #145 and #5 are all duplicates of the above issue'
 3. If there were previous escalations for the same issue (let's say it's the second escalation), it won't be accepted unless the new argument proposes new changes or provides stronger reasons for the changes requested earlier.
-
-###
+4. Any request to resolve issues outside of the escalation period is not guaranteed to be addressed.&#x20;
