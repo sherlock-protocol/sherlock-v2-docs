@@ -24,7 +24,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 * **External Admin trust assumptions**:
   * When `external-admin=trusted`, issues related to these external admins being able to rug protocol users is **not a valid issue.** (Example: Aave governance has the intention of rugging Index Protocol)
   * When `external-admin=trusted`, issues related to these external admins affecting a protocol (being audited) by updating **the external protocol parameters** is a **valid issue** (Example: Aave governance has the intention to improve the Aave protocol ) as the bug can occur even when the external admin is well intended
-* Discord messages or DM screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
+* **Discord messages or DM** screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
 
 ### List of Issue categories that are not considered valid:
 
