@@ -1,8 +1,8 @@
-# 🧑💻 Protocols
+# 🧑💻 Protocol Teams
 
 Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI\_xD6AQiag/viewform)!
 
-Security is a top priority for high-quality projects shipping code to mainnet given the inherent adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $5M of coverage behind every protocol we cover, Sherlock obsesses over the processes to keep codebases safer.
+Security is a top priority for high-quality projects shipping code to mainnet given the inherent adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $2M of coverage behind every protocol we cover, Sherlock obsesses over the processes to keep codebases safer.
 
 The most well-known process for securing a codebase is an audit.
 
@@ -14,7 +14,7 @@ However, a new approach to auditing has also sprung up and become quite popular:
 
 **An audit contest usually looks something like this:**
 
-* A protocol publicly releases a codebase, creates a prize pool ($30k-$100k usually), and anyone in the world can submit vulnerabilities. The higher the severity, the more of the prize pool they are awarded.
+* A protocol publicly releases a codebase, creates a prize pool ($30k-$200k usually), and anyone in the world can submit vulnerabilities. The higher the severity, the more of the prize pool they are awarded.
 
 Below, we’ll outline the strengths and weaknesses of both traditional audits and audit contests. Then we’ll propose a third approach that features the “best of both worlds.”
 
@@ -37,7 +37,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 
 **Strengths**
 
-* The likelihood of missed bugs is [very low](https://docs.google.com/spreadsheets/d/1RIJCK3\_9RHvtNPObsDRTAqkP9IbyutZMsqlKNnZCO00/edit#gid=0) because 50-100 security experts try to find bugs in your code
+* The likelihood of missed bugs is [very low](https://docs.google.com/spreadsheets/d/1RIJCK3\_9RHvtNPObsDRTAqkP9IbyutZMsqlKNnZCO00/edit#gid=0) because 50-300 security experts try to find bugs in your code
 * Incentives are stronger to find bugs: experts get paid based on the severity of their findings
 * Contests can often be scheduled within days
 * You can decide your own price (size of the prize pool)
@@ -57,7 +57,7 @@ Sherlock’s approach provides a protocol with the focus, collaboration, and ass
 **Overview**
 
 * Top-ranked security expert is incentivized (through ELO-style ranking system) to look for bugs over the entire length of the audit
-* Significant prize pool attracts 50-100 independent auditors who get paid based on the severity of their findings (only High/Medium findings are rewarded)
+* Significant prize pool attracts 50-300 independent auditors who get paid based on the severity of their findings (only High/Medium findings are rewarded)
 * Top-ranked security expert also handles the fix review
 * Sherlock’s internal team takes hundreds of raw, duplicated issues and turns them into a digestible report, saving the protocol team days of work
 
