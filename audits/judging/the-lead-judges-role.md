@@ -13,7 +13,7 @@ Additional Note: The Lead Judge **must allocate sufficient time after the contes
 
 * The Lead Judge takes part in the judging contest.
 * At the end of the contest, the Lead Judge's final judging repository will be synced to the original contest judging repository to generate the issues.
-* Make sure you consider borderline issues during the contest. More details below [#borderline-issues](the-lead-judges-role.md#borderline-issues "mention")
+* Make sure you consider borderline issues during the contest. Read more [https://docs.sherlock.xyz/audits/judging/guide-to-judging-contests#you-must-clear-3-thresholds-to-be-eligible-for-usdc](https://docs.sherlock.xyz/audits/judging/guide-to-judging-contests#you-must-clear-3-thresholds-to-be-eligible-for-usdc)
 
 ### Phase 2:
 
