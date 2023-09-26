@@ -23,6 +23,7 @@
   * [How to Score Issue Points in a Contest](audits/watsons/how-to-score-issue-points-in-a-contest.md)
   * [Meeting the Payout Criteria](audits/watsons/meeting-the-payout-criteria.md)
   * [Watson Points Example](audits/watsons/watson-points-example.md)
+  * [FAQ](audits/watsons/faq.md)
 * [🧑⚖ Judging](audits/judging/README.md)
   * [Criteria for Issue Validity](audits/judging/judging.md)
   * [Participating in Judging Contests](audits/judging/guide-to-judging-contests.md)
