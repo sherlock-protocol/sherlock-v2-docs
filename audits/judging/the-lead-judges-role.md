@@ -1,5 +1,21 @@
 # The Lead Judge's Role
 
+### Lead Judge Fixed Pay
+
+\
+Apart from the USDC earned from the contest pool, where judges compete with each other, the Lead Judge can also receive fixed compensation according to the following breakdown:
+
+* 50% guaranteed payment
+* 25% based on the duration taken for completion
+  * Full 25% if finished within 28 days after the audit contest's end date.
+  * 18.75% if finished within 35 days after the audit contest's end date.
+  * 12.5% if finished within 42 days after the audit contest's end date.
+  * 0% If finished after 42 days
+* 25% based on the number of accepted escalations
+  * First, calculate escalation factor: number of accepted escalations (max 1 per issue) divided by total number of issues. _(2/100 = 0.02)_
+  * Multiply by 20  _(0.02 \* 20 = 0.4)_&#x20;
+  * Subtract from maximum amount _((1-0.4) \* 25% = 15%)_
+
 ### Lead Judge responsibilities
 
 * Judge issues to the best of their abilities in a fair manner.
@@ -17,6 +33,7 @@ Additional Note: The Lead Judge **must allocate sufficient time after the contes
 
 ### Phase 2:
 
+* The judge receives a report, containing potential misjudged issues. This report is based on the submissions from other judging contest participants and their reputation.&#x20;
 * The initial list of issues will then be shared with the protocol team to add comments and relevant labels.
 * The Lead Judge shall coordinate with the protocol team, Lead Senior Watson & Sherlock to resolve the issues based on the comments/labels. You can also add comments on the issues to help with the process.
 

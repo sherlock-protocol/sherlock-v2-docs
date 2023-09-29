@@ -46,7 +46,11 @@ You've already completed the steps above and now you're ready to start judging:
 For each Markdown (.md) file, you will:
 
 {% hint style="danger" %}
-Sherlock judges low, info and false issues as invalid
+Sherlock judges low, info and false issues as invalid.
+{% endhint %}
+
+{% hint style="info" %}
+If there are existing folders in the repository, it indicates that our AI has already organized certain families. Please ensure to review these families!
 {% endhint %}
 
 1\. Decide the severity (High/Medium/Invalid)
