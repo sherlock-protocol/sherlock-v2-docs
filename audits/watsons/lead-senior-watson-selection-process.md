@@ -28,12 +28,10 @@ However, a big advantage of leading a contest is earning fixed pay just for comm
 
 The amount of fixed pay a Senior Watson earns for a contest depends on the length of the contest. But it also depends on the relative ranking of that Senior Watson. Assuming a 1-week audit contest, here are the fixed pay breakdowns for Lead Senior Watsons:
 
-| Relative Position                  | Fixed Pay (per week) |
-| ---------------------------------- | -------------------- |
-| #1-ranked Senior Watson            | 22,500 USDC          |
-| Top 25th percentile Senior Watson  | 20,000 USDC          |
-| Top 50th percentile Senior Watson  | 15,000 USDC          |
-| Top 75th percentile Senior Watson  | 10,000 USDC          |
-| Top 100th percentile Senior Watson | 7,500 USDC           |
+| Relative Position          | Fixed Pay (per week) |
+| -------------------------- | -------------------- |
+| Top 33% of Senior Watsons  | 12,500 USDC          |
+| Top 67% of Senior Watsons  | 10,000 USDC          |
+| Top 100% of Senior Watsons | 7,500 USDC           |
 
-For example, if there are 17 Senior Watsons in total and you are the 6th-ranked Senior Watson, then you are in the 35th percentile (6 divided by 17) of Senior Watsons. If you were selected to lead a contest, you would earn 15,000 USDC of fixed pay per week.&#x20;
+For example, if there are 17 Senior Watsons in total and you are the 7th-ranked Senior Watson, then you are in the 41st percentile (7 divided by 17) of Senior Watsons. If you were selected to lead a contest, you would earn 10,000 USDC of fixed pay per week.&#x20;

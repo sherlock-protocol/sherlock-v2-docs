@@ -6,9 +6,9 @@ The selection window for the Lead Judge role will begin as soon as the audit con
 
 If selected as the Lead Judge, you cannot drop out of a contest once you’ve seen the number of issues. The contest will count for your ranking either way. You will be able to see the codebase when you sign up, but you will not know how many issues will be submitted.
 
-The Lead Judge will receive 5% of the audit contest pot as fixed pay and can also earn part of the judging contest pot that is publicly available. More specifically, the total rewards allocated to judging are 10% of the audit contest pot with 5% as fixed pay to the Lead Judge.&#x20;
+The Lead Judge will receive roughly 5% of the audit contest pot as fixed pay and can also earn part of the judging contest pot that is publicly available. More specifically, the total rewards allocated to judging is \~10% of the audit contest pot with \~5% as fixed pay to the Lead Judge.&#x20;
 
-Everyone who signs up for a judging contest gets opted into competing for ranking on the Judging Contest Leaderboard. It is in your interest to only judge a contest if you think it will help your judging ranking.
+Everyone who signs up for a judging contest gets opted into competing for ranking on the Judging Contest Leaderboard. It is in your interest to only judge a contest if you think it will help your judging ranking. You are eligible to be a Lead Judge once you've completed 15 judging days.&#x20;
 
 Judging contests will now be variable in length, with one day being added per 75 issues submitted in the contest (200 issues = 3-day judging contest, 250 issues = 4-day judging contest).
 

@@ -9,7 +9,7 @@
 
 * [🧑💻 Protocol Teams](audits/protocols/README.md)
   * [How it Works for Protocols](audits/protocols/how-it-works-for-protocols.md)
-  * [Audit Pricing and Timeline](audits/protocols/audit-pricing-and-timeline.md)
+  * [Audit Timeline](audits/protocols/audit-pricing-and-timeline.md)
   * [Scheduling Process](audits/protocols/scheduling-process.md)
   * [Audit Preparation](audits/protocols/audit-preparation.md)
   * [Protocol Involvement During the Audit Process](audits/protocols/protocol-involvement-during-the-audit-process.md)

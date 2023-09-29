@@ -453,7 +453,7 @@ Every participant who signs up for the judging contest will be putting their poi
 
 Whatever % of the total points you earned in that judging contest (based on the same criteria used above to calculate USDC payouts) will also be the % of the Judging Contest points that you'll earn for that contest.&#x20;
 
-Your last 70 days worth of Judging Contest points will be counted. For the points earned in each judging contest, your Judging Leaderboard Points will be weighted by the length of the judging contest (not the length of the audit contest).&#x20;
+Your last 30 days worth of Judging Contest points will be counted. For the points earned in each judging contest, your Judging Leaderboard Points will be weighted by the length of the judging contest (not the length of the audit contest).&#x20;
 
 For example, if you earned 100 points in a 10-day judging contest and 300 points in a 5-day judging contest, then your total Judging Leaderboard Points will be:
 
@@ -461,4 +461,4 @@ For example, if you earned 100 points in a 10-day judging contest and 300 points
 ((10/15)*100)+((5/15)*300) = ~166.67 Leaderboard Points
 ```
 
-You'll have more opportunities to be the Lead Judge for a contest the higher you move up the Judging Leaderboard. Good luck!!
+You'll have more opportunities to be the Lead Judge for a contest the higher you move up the Judging Leaderboard (and once you've completed at least 15 judging days). Good luck!!

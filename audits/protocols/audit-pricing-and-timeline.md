@@ -1,14 +1,15 @@
-# Audit Pricing and Timeline
+# Audit Timeline
 
-Each audit consists of a fixed pay element to properly compensate and incentivize dedicated senior auditors, as well as a prize pool for all contestants to compete to win. In order to properly align incentives with protocols, Sherlock offers up to $5M in smart contract exploit coverage behind every audit (not included in audit cost below), which can be activated at any point after the audit is completed, provided there haven’t been subsequent changes to the code base. As a result, Sherlock has developed the following broad underwriting guidelines for how much time is needed to complete an audit of codebases of various sizes in order to offer smart contract coverage on the protocol in the future.
+Each Sherlock audit consists of a fixed pay element to adequately incentivize at least 1 dedicated Senior Watson to lead the audit as well as a prize pool element that often draws 200-400 independent auditors.&#x20;
 
-| **Solidity Lines (nSLOC)** | 500      | \~1000   | \~2000    | \~3000    | \~4000    | \~5000    | \~6000    | \~7000    | \~8000    |
-| -------------------------- | -------- | -------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| **Pricing**                | \~$19k   | \~$36k   | \~$74k    | \~$115k   | \~$157k   | \~$200k   | \~$244k   | \~$289k   | \~$334k   |
-| **Audit Timeline**         | \~3 days | \~6 days | \~12 days | \~18 days | \~25 days | \~32 days | \~38 days | \~45 days | \~53 days |
+In order to properly align incentives with protocols, Sherlock offers up to $2M in smart contract exploit coverage behind qualifying audits (not included in the audit cost), which can be activated at any point after the audit is completed, provided the fix review has been completed and there haven’t been subsequent changes to the code base.&#x20;
+
+Sherlock has developed the following broad underwriting guidelines for how much time is needed to complete an audit of codebases of various sizes in order to offer smart contract coverage on the protocol in the future:
+
+<table data-header-hidden><thead><tr><th width="229">Solidity Lines (nSLOC)</th><th width="145">Audit Timeline</th></tr></thead><tbody><tr><td>~500</td><td>~3 days</td></tr><tr><td>~1000</td><td>~6 days</td></tr><tr><td>~2000</td><td>~12 days</td></tr><tr><td>~3000</td><td>~18 days</td></tr><tr><td>~4000</td><td>~25 days</td></tr><tr><td>~5000</td><td>~32 days</td></tr><tr><td>~6000</td><td>~38 days</td></tr></tbody></table>
 
 > Note: Sherlock utilizes the tool [Solidity Metrics](https://github.com/ConsenSys/solidity-metrics) to calculate nSLOC.\
 > \
 > \*Given the exponential complexity of very large codebases for any security expert, Sherlock will have final discretion whether to write smart contract coverage behind its audit for protocols with >6000 nSLOC
 
-Sometimes a protocol will need extra audit time instead of a 0.5 day fix review after their initial audit. This is very normal. In this case, Sherlock believes the protocol should do another (shorter) contest. This "shorter" contest will not need to follow the nSLOC guidelines above, because most auditors will already be familiar with it and have audited it a couple weeks prior. The cost/length of the follow-up audits will be dependent on the scoping of the Lead Senior Watson of follow-up audit (Sherlock has a 3-day, $19k minimum size of contests currently).&#x20;
+Sometimes a protocol will need extra audit time instead of a 0.5 day fix review after their initial audit. This is very normal. In this case, Sherlock recommends another (shorter) contest in order to be eligible for smart contract coverage. This "shorter" contest will not need to follow the nSLOC guidelines above, because most auditors will already be familiar with it and will have audited it very recently. The cost/length of the follow-up audits will depend on the scoping/judgment of the Lead Senior Watson.
