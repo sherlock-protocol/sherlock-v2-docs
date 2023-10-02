@@ -159,6 +159,10 @@ In order to be eligible for payment, your judging repo must pass the following 3
 3. **Duplicates Threshold:** Out of all the potential issues, how many did you duplicate into the correct family (or correctly mark as "invalid")?
    * Must score >=20%
 
+{% hint style="info" %}
+If there are fewer than 3 duplicates in the contest, meeting a combined score of 150% on Recall Threshold and Precision Threshold allows you to be eligible for a USDC payout as well.
+{% endhint %}
+
 If you clear these 3 thresholds, your judging repo will be eligible for a USDC payout!
 
 Let's look at the 3 thresholds in more depth:
