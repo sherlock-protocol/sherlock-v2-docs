@@ -36,6 +36,17 @@ Additional Note: The Lead Judge **must allocate sufficient time after the contes
 * The judge receives a report, containing potential misjudged issues. This report is based on the submissions from other judging contest participants and their reputation.&#x20;
 * The initial list of issues will then be shared with the protocol team to add comments and relevant labels.
 * The Lead Judge shall coordinate with the protocol team, Lead Senior Watson & Sherlock to resolve the issues based on the comments/labels. You can also add comments on the issues to help with the process.
+* These are the **actions** the Lead Judge is **allowed** to do during this phase:&#x20;
+  * &#x20;**Validity related**: In the case of `Sponsor disputed` issues, the Lead judge must **close the issue** if you **agree** with the Sponsor's comment, or **keep it open** as is if you **disagree** with the Sponsor's comment. In both cases, relevant comments must be added.&#x20;
+  *   **Severity related**: In case of valid issues with `Sponsor confirmed`, but `Disagree with Severity` issues, if you agree with the Sponsor's argument for downgrading/upgrading the issue severity, please change the respective labels:
+
+      * If the final state of the issue should be a `Medium/High` Please remove the old severity label, remove `Disagree with severity` label and **add the new severity label**.&#x20;
+      * If the final state of the issue should be a `low` then please **remove** the previous severity label and **close the issue.**
+
+      In case you disagree with the Sponsor's comment on the issue's severity, please **keep it as is** and add relevant comments to it.&#x20;
+  * **Duplication related:** If the Sponsor disagrees with the duplication, please change the duplication accordingly if you agree based on [#duplication-instructions](the-lead-judges-role.md#duplication-instructions "mention").  \
+    In case you disagree you can add the relevant comment and keep the issue **as is**.
+  * The final list of **open** issues must only have valid issues that are to be rewarded.&#x20;
 
 The ideal timeline to complete the 2 phases is **two weeks** from the end of the contest. Initial results must be announced within this period.
 
@@ -43,7 +54,8 @@ The ideal timeline to complete the 2 phases is **two weeks** from the end of the
 
 * Initial results will be generated & announced based on the final issue state from Phase 2. Completion of this step opens up the Escalation period.
 * The lead judge comments on every escalation within 48 hours after the escalation period ends. The lead judge is available to answer questions at any time before the final announcement is made.
-* Sherlock resolves the escalations & Final results are announced.
+* During this phase, the Lead judge must only **comment** on escalations and suggest necessary actions to be taken by Sherlock. Please **do not** open/close issues and **do not** change severity labels in this phase.&#x20;
+* Sherlock will make necessary changes to the issues, resolve the escalations, and announce the final results.
 
 ### Duplication Instructions:
 
@@ -52,7 +64,7 @@ The ideal timeline to complete the 2 phases is **two weeks** from the end of the
 
 
     <figure><img src="../../.gitbook/assets/Screenshot 2023-05-31 at 12.12.10 PM.png" alt=""><figcaption></figcaption></figure>
-*   The duplicate issues must be closed, have a `Duplicate` label, and **should have a "Duplicate of ##" in the body of the issue at the end.** Please refer image below. \
+*   The duplicate issues must be **closed**, have a `Duplicate` label, and **should have a "Duplicate of ##" in the body of the issue at the end.** Please refer image below. \
     [Duplicate issue example](https://github.com/sherlock-audit/2023-02-olympus-judging/issues/49)\
 
 
