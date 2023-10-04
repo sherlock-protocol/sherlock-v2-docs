@@ -11,8 +11,8 @@ Apart from the USDC earned from the contest pool, where judges compete with each
   * 18.75% if finished within 35 days after the audit contest's end date.
   * 12.5% if finished within 42 days after the audit contest's end date.
   * 0% If finished after 42 days
-* 25% based on the number of accepted escalations
-  * First, calculate escalation factor: number of accepted escalations (max 1 per issue) divided by total number of issues. _(2/100 = 0.02)_
+* 25% based on the outcome of escalations
+  * First, calculate the escalation factor: number of issues that undergo a change in state(severity or duplication) due to escalations divided by the total number of issues. _(2/100 = 0.02)_
   * Multiply by 20  _(0.02 \* 20 = 0.4)_&#x20;
   * Subtract from maximum amount _((1-0.4) \* 25% = 15%)_
 
