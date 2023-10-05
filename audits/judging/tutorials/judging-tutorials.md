@@ -24,3 +24,5 @@ Please watch the video below where I do a quick walkthrough of filtering out som
 In the next video let us look at issue duplication. However in future contests, you will be provided with the AI de-duplicated issues, it may not be 100% accurate and you still need to make sure the duplication is valid. This video might help with the process.
 
 {% embed url="https://youtu.be/H7nhhEpqeQ4" %}
+
+### Phase 4: (Coming Soon)
