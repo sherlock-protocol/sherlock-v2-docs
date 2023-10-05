@@ -30,6 +30,8 @@
   * [Lead Judge Selection Process](audits/judging/lead-judge-selection-process.md)
   * [The Lead Judge's Role](audits/judging/the-lead-judges-role.md)
   * [Escalation Period](audits/judging/escalation-period.md)
+  * [Tutorials](audits/judging/tutorials/README.md)
+    * [Judging Tutorials](audits/judging/tutorials/judging-tutorials.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
 ## Coverage
