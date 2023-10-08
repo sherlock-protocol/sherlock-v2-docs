@@ -1,42 +1,30 @@
-# 🙋 FAQ
+# FAQ
 
 ## General
 
 ### What is Sherlock?
 
-* Sherlock is an audit marketplace and smart contract coverage protocol built on the Ethereum blockchain. Sherlock works to protect Decentralized Finance (DeFi) users from smart contract exploits with security reviews from top auditors backed by smart contract coverage on the audited contracts.
+* Sherlock is a risk management platform designed to provide protocols with affordable, reliable coverage against smart contract exploits. After the guarded launch, anyone will be able to stake in Sherlock's staking pools and receive what will likely be one of the highest risk-adjusted returns in DeFi. This is made possible by our expert smart contract security team, who reviews and prices coverage for every protocol we take on and has “skin-in-the-game” alongside our stakers.
 
-### How is Sherlock different from other audit firms?
+### How is it different from other risk management protocols?
 
-* Most audit firms rely on their reputation to convince protocol teams to use them. This is a poor way to guarantee incentive alignment. Sherlock provides something far more valuable than reputation: millions of dollars. If a contract that is audited and covered by Sherlock gets exploited, then Sherlock's staking pools can lose millions of dollars. This is a much stronger incentive to do a good job vs. maintaining an amorphous reputation across thousand of audits and dozens of individual auditors.
-* Many audit firms charge 100% more than what they pay individual auditors. This is the "reputation premium." Sherlock can pay top independent security experts more than they would make at leading audit firms. Then Sherlock can offer millions in backing behind the audit. And the cost is STILL lower than what most traditional firms charge.
-* Good security work is done by talented individuals. Many audit firms have been known to hide lesser talented individuals behind their overall audit firm reputation. This means the quality of audit you will get from other firms is highly variable. You should always check to see who the individual auditors are. Sherlock is very transparent about the qualifications of our individual auditors.
-
-### How is Sherlock different from other risk management protocols?
-
-Coverage is managed by protocols/DAOs instead of users
-
-* Right now, the burden of managing smart contract risk is borne entirely by users. By working directly with protocols, smart contract coverage can be applied to all users with no extra work required. Not to mention, when an exploit happens, protocol teams often find themselves deciding to reimburse users who did not purchase insurance (all of them, usually), so getting covered at the protocol level helps teams sleep better.
-
-Sherlock can price coverage the lowest because we do the most up-front work
-
-* Because Sherlock requires a full audit from Sherlock before coverage can go live, Sherlock gains more confidence in the security of the smart contracts than anyone else. This allows us to reward safe protocols for being safe by pricing our coverage lower than anyone else can offer.&#x20;
-
-Claims decisions are made by an unbiased 3rd party
-
-* Follow the incentives. Does a successful payout rely on a decision made by someone who will lose a lot of money if they decide in your favor? Sherlock has partnered with UMA to offer an unbiased claims process handled by objective, third-party voters who have economic guarantees around their incentives. Read more [here](https://docs.umaproject.org/getting-started/oracle).
+* Sherlock was created because existing solutions have failed to scale for two major reasons: 1) Poor user experience and 2) bad pricing. 1) DeFi users don't like buying exploit coverage which is why Sherlock doesn’t make them do it. Sherlock works with protocols to bake in coverage so users don’t need to worry. 2) Existing protocols outsource pricing by either making users decide which protocols are safe or by relying on a utilization curve. Sherlock has a team of expert smart contract security analysts who price coverage and have “skin in the game” alongside stakers.
 
 ### How does staking work?
 
-* A user stakes USDC for a fixed term (6 months or 12 months) and receives a market-leading yield in return. The yield is partially fixed, partially variable. The amount of SHER tokens a staker will receive is known at the time of staking and is fixed for the duration of the stake. Other yield strategies employed by Sherlock (depositing in Aave, etc.) may be fixed or floating. And the premiums received by stakers would be expected to increase as more protocols become covered. If there is a covered smart contract exploit during the term, a staker's funds can be slashed up to 50%.
+* A user stakes into the Sherlock staking pools and receives a market-leading yield comprised of protocol premiums, SHER token incentives, and lending platform rates. These pools cover the risk of smart contract exploits among covered protocols and can be partially slashed in the event of an exploit. There is currently a 7-day cooldown period to unstake funds from the pool.
 
-### How can I get an audit or coverage from Sherlock?
+### How can I get coverage as a protocol?
 
-* Please reach out to contact@sherlock.xyz.
+* We are currently in a guarded launch with a select number of protocols. Please email us at contact@sherlock.xyz to join the waitlist.
 
-### Is coverage for a protocol always fully collateralized?
+### Is cover for a protocol always fully collateralized?
 
-* One of the superpowers of a risk management protocol like Sherlock is using diversification to increase the affordability of coverage and limit the need for full collateralization. This is what allows coverage to be affordable in traditional markets. The value staked into Sherlock's staking pools is designed to be less than the total funds that Sherlock is covering. By the same token, the staking pool is also designed to be significantly larger than the max size of coverage at any one protocol.
-* Isolated exploits should always be 100% paid out. Sherlock is designed to have at least 200% overcollateralization for any singular exploit event.
-* Things get more interesting if an exploit occurs at multiple covered protocols and drains 100% of the funds of multiple protocols at the same time. In this situation, depending on the capital efficiency of Sherlock, Sherlock may not be able to reimburse each exploit (assuming 4 or more simultaneous exploits) at 100 cents on the dollar. However, Sherlock's risk models are designed to mitigate the risk of multiple protocols being affected by the same type of exploit. Consequently, it would constitute an extremely unlikely event (never before seen in DeFi) to have multiple covered protocols hacked for nearly all of their TVL at the same time -- but it is theoretically possible.
-* Even in extreme scenarios where Sherlock's capitalization falls below the coverage amount for a single protocol, that protocol will only be charged for the amount it would receive in a payout. This ensures that, at any given time, a protocol NEVER overpays for coverage.
+* Not necessarily. One of the main powers of insurance is using diversification to limit the need for full collateralization. This is what allows insurance to be affordable in traditional markets. We expect the value staked into Sherlock's staking pools to be less than the total funds that Sherlock is covering. That said, we expect the staking pool to be significantly larger than the size of the coverage at any one protocol.
+* So a single exploit event, even if it drains all of the funds of the covered protocol, will always be able to be 100% reimbursed.
+* A complication arises if an exploit were to occur that affected multiple protocols and drained nearly all of the funds of multiple protocols. In this situation, depending on the capital efficiency of Sherlock, Sherlock may not be able to reimburse the exploits 100 cents on the dollar. However, Sherlock is designed to manage the risk of multiple protocols being affected by the same type of exploit, consequently, it seems like it would constitute an extremely rare event to see multiple covered protocols hacked for nearly all of their TVL at the same time -- but it is theoretically possible.
+
+### How do I start using it on Kovan?
+
+* Get ETH on Kovan [here](https://github.com/kovan-testnet/faucet)
+* Get USDC from [AAVE](https://testnet.aave.com/faucet)

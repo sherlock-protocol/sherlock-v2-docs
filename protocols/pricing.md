@@ -1,11 +1,7 @@
 # Pricing
 
-Sherlock has simplified coverage pricing substantially.
+Before Sherlock initiates coverage on a protocol, a security assessment is conducted to determine the price of that coverage. Both parties will also need to come to a consensus around the coverage agreement. Most protocols will be able to use Sherlock's off-the-shelf coverage agreement to great effect, but in certain cases, there will need to be language to account for special, protocol-specific situations. We will also agree on a deductible amount with the protocol and a bug bounty amount before initiation of coverage.
 
-Now, every protocol that goes through a Sherlock public audit contest will get a 4.0% price (assuming they meet all other coverage criteria such as a successful fix review, etc.)
+**Side note on protocol deductibles:** The deductible is simply a USD value of money the protocol agrees to set aside (outside of Sherlock) to compensate for hacks. Protocols will likely commit to a fixed USD value deductible.
 
-If a protocol opts to do a private audit contest, then the coverage price will be 4.75% instead of 4.0%. This is because Sherlock believes public audit contests are the #1 way to secure a codebase, but a private audit contest can go a long way as well.\
-\
-Sherlock usually requires a month or so of upfront payment before coverage can be activated. From there, it's up to the protocol team in terms of paying bi-weekly, monthly etc. All Sherlock monitors is that the balance of payment does not reach zero. If it reaches zero (technically if it reaches 500 USDC) a protocol will be auto-removed from coverage by an arb bot.
-
-A protocol team can manage payments directly using the [protocol payment portal](https://app.sherlock.xyz/protocols/balance).&#x20;
+Once the coverage agreement is established and a deductible and bug bounty amount agreed on, the initial security assessment is conducted to decide the starting price for coverage. The security assessment will technically never "end" because Sherlock security experts will be incentivized to keep protocols safe over time. This means that the price charged to protocols may fluctuate over time as a protocol takes actions that make it less risky or more risky. Hopefully the security team will be working closely with protocols to instill more robust development practices over time which will lower those protocols’ premiums over time as well. Sherlock will strive not to make pricing changes for protocol premiums unless a protocol is actually making a material update to their mainnet contracts.

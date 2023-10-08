@@ -1,6 +1,6 @@
-# 👋 Intro to Sherlock
+# Introduction to Sherlock
 
-Sherlock is an audit marketplace and smart contract coverage protocol built on the Ethereum blockchain. Sherlock works to protect Decentralized Finance (DeFi) users from smart contract exploits with security reviews from top auditors backed by smart contract coverage on the audited contracts.
+Sherlock is a protocol on the Ethereum blockchain that protects Decentralized Finance (DeFi) users from smart contract exploits with proprietary security analysis and protocol-level coverage.
 
 You can find a brief overview of the Sherlock ecosystem below.
 
@@ -10,32 +10,30 @@ There are 3 main participants in the Sherlock ecosystem:
 
 1. Protocols
 2. Stakers
-3. Watsons
+3. Security team
 
-![](https://i.imgur.com/bQxJd02.png)
+![](https://i.imgur.com/HTmUxBi.png)
 
 ### Protocols
 
-Protocols come to Sherlock for audits from top independent security experts. Sherlock offers smart contract coverage on any contracts that are reviewed as part of the audit. Sherlock offers coverage on white-hat bounties and/or black-hat exploits. The coverage is optional, but adding the coverage allows protocols to know that Sherlock has "skin in the game" in terms of auditing the smart contracts. Basically, if the audited smart contracts have a critical bug, Sherlock will likely have to pay out millions of dollars. No other auditor offers this kind of backing for their audits.
-
-In return, whenever an exploit occurs at the protocol (on an audited contract), Sherlock will repay the amount of the exploit up to the coverage limit. Sherlock's [claims process](claims/claims-process.md) will decide whether or not an exploit falls under coverage and should be paid out.
+Protocols pay Sherlock a small fee in return for repayment in the event of a hack. A protocol will indicate how much value they want insured ($1Bn, a specific pool, etc.), and Sherlock will work with each protocol to tailor a coverage agreement to their unique needs. Then Sherlock's security team will conduct a thorough assessment over the course of a few days or weeks to understand the risks related to a protocol. The security team will work with Sherlock's risk team to determine the pricing for the protocol. If the protocol agrees to the pricing, they will start streaming payment to Sherlock. In return, whenever an exploit occurs at the protocol (within coverage), Sherlock will repay the amount of the exploit up to the coverage limit. Sherlock's [claims process](claims-assessment/deciding-on-payouts.md) will decide whether or not an exploit falls under coverage and should be paid out.
 
 ### Stakers
 
-Stakers deposit USDC into the staking pools in return for one of the highest USDC APYs (as of 6/18/22) in DeFi. The APY stakers will receive is made up of 3 streams:
+Stakers deposit funds into the staking pools in return for what should be one of the highest APYs in DeFi. Right now, only USDC can be staked, but we may expand this to more currencies in the future. The APY stakers will receive is made up of 3 streams:
 
-1. Premiums from protocol customers
-2. Interest earned from depositing staker funds into yield strategies (Aave, Compound etc.)
+1. Premiums from protocol customers (this will eventually be the biggest stream)
+2. Interest earned from depositing user stakes on lending protocols (Aave, Compound etc.)
 3. Incentive rewards paid in SHER (Sherlock’s governance token)
 
-In return for these streams, a staker’s funds are at risk of being partially paid out (up to 50%) if a significant covered event (i.e. exploit) occurs on one of the audited contracts covered by Sherlock. Despite the risk, stakers are incentivized to stake because:
+In return for these streams, a staker’s funds are at risk of being partially liquidated if a significant covered event (e.g. exploit) occurs at one of the protocols covered by Sherlock (or possibly a protocol that the covered protocol depends on). Despite the risk, stakers are incentivized to stake because:
 
-1. There is a healthy APY to be earned for doing so
-2. Sherlock's auditors are some of the top security experts in the space
-3. Each covered protocol is required to have a large bug bounty program which can further protect stakers against losses
+1. They are paid a high and commensurate APY for the risk
+2. They see that the security team’s incentives are aligned with theirs
+3. Each covered protocol should have a deductible amount as well as a bug bounty program which should further protect stakers from losses
 
-### Watsons
+### Security Team
 
-Sherlock’s Watsons (the security experts) do a full audit of each prospective protocol's contracts and provide input as to the risk of the protocol's contracts.\
-\
-Sherlock audits feature both dedicated, top-tier auditors who are incentivized to find vulnerabilities in the codebase, as well as a contest pot where anyone in the world can find bugs. See the "Protocols" tab of the "Audits" section for more info on the audit process. And security experts (or those planning to become security experts) can see more information about how they can participate in audits in the "Watsons" tab in the "Audits" section.
+Sherlock’s Watsons (the security team) will do a fundamental assessment of a protocol and provide input to the pricing of coverage (alongside the Sherlock risk team). For security team incentive alignment, we guarantee a certain amount of SHER tokens if the protocol a security team is in charge of pricing/securing stays safe (relative to the pricing they helped inform). The security team will be incentivized to set a floor on the coverage pricing because the bulk of their compensation will depend on the dollar value of hacks vs. the price paid by the protocol for coverage over defined time intervals.
+
+To put it simply, if stakers are well-compensated by a protocol’s fees (net of hacks), then the security team gets rewarded handsomely. If hacks eat away at most or all of the fees to stakers, the security team responsible for that protocol makes far less. Once a relationship has been initiated with a protocol, the security team will work closely with the protocol’s developers to maintain and improve the security of the protocol as it changes over time.
