@@ -1,8 +1,9 @@
 # SHER
 
-SHER token is the governance token for the Sherlock protocol. The governance functions of the SHER token will increase over time as the protocol matures. In the short-term, SHER token will be used for added incentives to stakers in staking pools as well as for compensation to the security team.
+SHER token is the governance token for the Sherlock protocol.
 
-Allowing staking into a staking pool with SHER tokens is not allowed for two reasons:
+The governance functions of the SHER token will increase over time as the protocol matures.
 
-1. As stakers in the staking pools, SHER holders will be biased to favor stakers' priorities over protocols' priorities which could hurt their objectivity in making good decisions for the Sherlock protocol as a whole.
-2. In the event of an exploit at one of our covered protocols, it's reasonable to assume SHER might drop in price. For this reason, SHER is not well-suited to being collateral in the staking pools.
+In the short-term, the SHER token will be used as incentives for stakers and protocols as well as for compensation to the security team.
+
+In the long-term, the SHER token is expected to play a role in managing which Watsons are assigned to which protocols, as well as other critical protocol parameters.

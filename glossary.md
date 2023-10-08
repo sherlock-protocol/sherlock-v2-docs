@@ -1,49 +1,40 @@
-# Glossary
+# 📚 Glossary
 
 ## Sherlock Terminology
 
-### Cooldown
+### Claim
 
-* In order to remove a staked funds from a staking pool, a user must first activate the cooldown period. This period represents the time between the activation (or intention to remove the stake) and the time at which the stake is actually released from the protocol.
+* A claim occurs when a protocol covered by Sherlock believes it has been hacked and believes Sherlock has a responsibility to repay the hack. See the [claims section](https://docs.sherlock.xyz/claims/claims-process) for details.
 
 ### Coverage
 
-* If funds at a protocol are covered, it means that Sherlock will reimburse the funds in the event of an exploit (as long as the exploit falls is a covered event according to the coverage agreement).
+* If Sherlock takes on a protocol as a customer, the "coverage" is the amount of tokens (USDC) that Sherlock will reimburse when an exploit (that falls under the coverage agreement) occurs.
 
-### "First Money Out" Pool <a href="#buffer-for-stakers" id="buffer-for-stakers"></a>
+### Exploit
 
-* This is the pool of tokens that needs to be completely liquidated (in the event of a hack on one of Sherlock's covered protocols) before any staker tokens can be used to pay out the hack. This pool of money is "protection" for stakers. The entire pool is "junior" to the staking pools in terms of liquidation priority. Most or all of the tokens in this pool will be contributed by the Sherlock protocol (from fees) as an added protection for stakers. Deductibles at covered protocols can also serve as protection for stakers.
-
-### Harvesting
-
-* When a user stakes tokens into a staking pool, they earn SherX. As SherX accumulates over time, it may make sense to stake the SherX itself (into the SherX staking pool). This will allow the staker to begin to earn SherX on their staked SherX. Harvesting is the act of taking the SherX earned on the original stake and staking it so it can accumulate SherX as well. Note: Harvesting will likely not be turned on during the guarded launch. Harvesting will still be possible, it will just accrue no interest.
-
-### lockToken
-
-* The token that represents a staker's proportional claim to the tokens in a Sherlock staking pool. See the [lockTokens section](tokens/locktokens.md) for more info.
+* For Sherlock's purposes, an exploit is the act of maliciously removing tokens (usually tokens deposited by others) from a protocol in an unintended way. Sherlock covers most (but not all) exploits that a protocol could experience. For a detailed breakdown of which exploits are generally covered, take a look at our current coverage agreements [here](https://github.com/sherlock-protocol/sherlock-reports/tree/main/coverage-agreements).
 
 ### Premium
 
-* The amount a protocol pays Sherlock. In return, Sherlock reimburses covered exploits experienced by the protocol.
-
-### Recover
-
-* When the unstake window expires, a user needs to "recover" their position. This is because the user has transferred their lockTokens to Sherlock in order to prepare for unstake. If an unstake does not occur in the window, a user must call "recover" in order to get their lockTokens back and continue accruing interest. Importantly, once this function has been called, the tokens are still in the staking pool and it is necessary to activate the cooldown period again in order to attempt another unstake.
-
-Note for developers: Recover actually refers to the unstakeWindowExpiry() function in our smart contracts.
+* The amount of USDC a protocol pays Sherlock over a specified time interval. In return, Sherlock reimburses covered exploits experienced by the protocol over that same time interval.
 
 ### SHER
 
-* Sherlock's governance token. See the [SHER section](tokens/sher.md) for more info. The SHER token has not been launched yet.
-
-### SHERX
-
-* A tokenized version of interest paid to stakers from protocol premiums. See the [SHERX section](tokens/sherx.md) for more info.
+* Sherlock's governance token. See the [SHER section](https://docs.sherlock.xyz/tokens/sher) for more info.
 
 ### Staking
 
-* The act of depositing money into a Sherlock staking pool. Once money has been deposited, tokens accrue to the depositor in the form of APY. A portion of tokens in the staking pools are at risk of being liquidated due to an exploit at one of the protocols covered by Sherlock.
+* The act of depositing USDC into a Sherlock staking pool for a fixed period (6 months, 12 months, etc.). Once USDC has been deposited, USDC and SHER tokens accrue to the depositor in the form of APY. A portion of the staked tokens (up to 50% for an individual exploit) in the staking pool is at risk of being liquidated due to an exploit at one of the protocols covered by Sherlock.
 
 ### Unstaking
 
-* The act of removing money from a Sherlock staking pool. This action can only be taken once the cooldown period for the stake has expired.
+* The act of removing staked USDC from the Sherlock staking pool. This action can only be taken once the staking period (6 months, 12 months, etc.) for that USDC has ended.
+
+### Watsons
+
+* "You know my methods, Watson. There was not one of them which I did not apply to the inquiry." - _The Memoirs of Sherlock Holmes_ (1893)
+* Watsons are the individuals without which Sherlock would be nothing. These are the security experts who do the deep fundamental analyses (audits) that allow Sherlock to confidently provide coverage for a given protocol's smart contracts.
+
+### Yield Strategy
+
+* If Sherlock didn't have yield strategies, then a staker's USDC stake would sit idly in Sherlock's contracts until the staking period ends. Instead, Sherlock puts that USDC to work in other protocols in an effort to earn more APY for stakers. View the current yield strategies on our [dashboard](https://app.sherlock.xyz/overview)
