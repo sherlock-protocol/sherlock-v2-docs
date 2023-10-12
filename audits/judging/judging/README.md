@@ -6,15 +6,15 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 ### **I. Table of Contents:**
 
-* [#ii.-criteria-for-issue-severity](judging.md#ii.-criteria-for-issue-severity "mention")
-* [#iii.-some-standards-observed](judging.md#iii.-some-standards-observed "mention")
-* [#iv.-how-to-identify-a-high-issue](judging.md#iv.-how-to-identify-a-high-issue "mention")
-* [#v.-how-to-identify-a-medium-issue](judging.md#v.-how-to-identify-a-medium-issue "mention")
-* [#vi.-requirements](judging.md#vi.-requirements "mention")
-* [#vii.-list-of-issue-categories-that-are-not-considered-valid](judging.md#vii.-list-of-issue-categories-that-are-not-considered-valid "mention")
-* [#viii.-list-of-issue-categories-that-are-considered-valid](judging.md#viii.-list-of-issue-categories-that-are-considered-valid "mention")
-* [#ix.-duplication-rules](judging.md#ix.-duplication-rules "mention")
-* [#x.-best-practices](judging.md#x.-best-practices "mention")
+* [#ii.-criteria-for-issue-severity](./#ii.-criteria-for-issue-severity "mention")
+* [#iii.-some-standards-observed](./#iii.-some-standards-observed "mention")
+* [#iv.-how-to-identify-a-high-issue](./#iv.-how-to-identify-a-high-issue "mention")
+* [#v.-how-to-identify-a-medium-issue](./#v.-how-to-identify-a-medium-issue "mention")
+* [#vi.-requirements](./#vi.-requirements "mention")
+* [#vii.-list-of-issue-categories-that-are-not-considered-valid](./#vii.-list-of-issue-categories-that-are-not-considered-valid "mention")
+* [#viii.-list-of-issue-categories-that-are-considered-valid](./#viii.-list-of-issue-categories-that-are-considered-valid "mention")
+* [#ix.-duplication-rules](./#ix.-duplication-rules "mention")
+* [#x.-best-practices](./#x.-best-practices "mention")
 
 ### **II. Criteria for Issue Severity:**
 
@@ -28,7 +28,10 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 1. **Hierarchy of truth:** Contest README > Sherlock rules for valid issues > Historical decisions. \
    While considering the validity of an issue in case of any conflict the sources of truth are prioritized in the above order. \
    For example: In case of conflict between Sherlock rules vs Sherlock's historical decision,  Sherlock criteria for issues must be considered the source of truth. \
-   In case of conflict between information in the README vs Sherlock rules, the README overrides Sherlock rules.&#x20;
+   In case of conflict between information in the README vs Sherlock rules, the README overrides Sherlock rules. \
+   Also, in case of any updates in the rule book:
+   1. If the updated rules are in conflict with historical decisions then the new rules apply only to contests that start after the date of change. \
+      Please check [criteria-changelog.md](criteria-changelog.md "mention") for information on the latest changes in the judging criteria/rules.
 2. **Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?** It would not count if the DOS, etc. lasts a known, finite amount of time <1 year. If it will result in funds being inaccessible for >=1 year, then it would count as a loss of funds and be eligible for a Medium or High designation. The greater the cost of the attack for an attacker, the less severe the issue becomes.
 3. **Low/Informational Issues**:  While Sherlock acknowledges that it would be great to include & reward low-impact/informational issues, we strongly feel that Watsons should focus on finding the most critical vulnerabilities that will potentially cause millions of dollars of losses on mainnet. Sherlock understands that it could be missing out on some potential "value add" for protocol, but it's only because the real task of finding critical vulnerabilities requires 100% of the attention of Watsons. While low/informational issues are not rewarded individually if a Watson identifies an attack vector that combines multiple lows to cause significant loss/damage that would still be categorized as a valid medium/high.
 4. **Direct Protocol Owner/Admin rug pulls.**  Sherlock's stance is generally that if a protocol team wants to rug their own project, there are often many avenues for doing this. It would be unrealistic for Sherlock to report all of these vectors in an audit. Sherlock's general assumption is that users of a protocol are taking a risk in trusting the core team of the protocol. However, if a protocol specifically mentions the restrictions imposed on the owner/admin issues describing an attack that results in bypassing these restrictions, they can be considered valid.  Please note that these restrictions must be explicitly described by the protocol and will be considered case by case.&#x20;
