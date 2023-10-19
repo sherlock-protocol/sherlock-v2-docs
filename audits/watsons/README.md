@@ -18,7 +18,7 @@ A Watson is a security expert who submits vulnerabilities. Watsons can also be t
 
 You are eligible to be a Senior Watson if you make it into the top 10% of ranked Watsons. Senior Watsons have the chance to become the Lead Senior Watson for a contest and receive fixed pay (\~$10k per audit week).
 
-**Steps for Senior Watsons:**
+**Steps for Lead Senior Watsons:**
 
 1\. Sherlock posts the details of an upcoming audit in the Senior Watson Discord Channel. You have 72 hours to indicate your interest in being selected as the Lead Senior Watson, or propose a set of alternative dates that work better.
 
