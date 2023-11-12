@@ -4,12 +4,18 @@ description: All future changes to the Issue criteria page will be logged here.
 
 # Criteria Changelog
 
+## 1.4 - 10/11/2023
+
+***
+
+* Made network liveness our of scope, with an exception of sequencer-like issues if they are preventable and the external admin is restricted in the [#vii.-list-of-issue-categories-that-are-not-considered-valid](./#vii.-list-of-issue-categories-that-are-not-considered-valid "mention") section.
+
 ## 1.3 - 12/10/2023
 
 ***
 
 * Addition of CHANGELOG to the docs.&#x20;
-* Addition of rule related to CHANGELOG in the point `Hierarchy of truth` in the [#iii.-some-standards-observed](./#iii.-some-standards-observed "mention")section
+* Addition of rule related to CHANGELOG in the point `Hierarchy of truth` in the [#iii.-some-standards-observed](./#iii.-some-standards-observed "mention") section
 
 ## 1.2 - 12/09/2023&#x20;
 
