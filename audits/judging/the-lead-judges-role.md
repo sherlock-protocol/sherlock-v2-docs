@@ -23,11 +23,12 @@ Apart from the USDC earned from the contest pool, where judges compete with each
 * Must communicate effectively with all parties involved
 * Must add relevant comments if required on valid/invalid issues to make the process easier for everyone involved.
 
-Additional Note: The Lead Judge **must allocate sufficient time after the contest to judge & take it through to the final state**. Hence please understand the role & commitment to take up the Lead judge opportunities wisely based on your availability.
+Additional Note: The Lead Judge **must allocate sufficient time after the contest to judge & take it through to the final state**. Hence please understand the role & commitment to take up the Lead Judge opportunities wisely based on your availability.
 
 ### Phase 1:
 
 * The Lead Judge takes part in the judging contest.
+* If the predicted time for a judging contest is too short, the Lead Judge can ask Sherlock to lengthen it by up to 3 days. This needs to be communicated with Sherlock at least 24h before the initial judging contest end time.
 * At the end of the contest, the Lead Judge's final judging repository will be synced to the original contest judging repository to generate the issues.
 * Make sure you consider borderline issues during the contest. Read more [https://docs.sherlock.xyz/audits/judging/guide-to-judging-contests#you-must-clear-3-thresholds-to-be-eligible-for-usdc](https://docs.sherlock.xyz/audits/judging/guide-to-judging-contests#you-must-clear-3-thresholds-to-be-eligible-for-usdc)
 
@@ -37,7 +38,7 @@ Additional Note: The Lead Judge **must allocate sufficient time after the contes
 * The initial list of issues will then be shared with the protocol team to add comments and relevant labels.
 * The Lead Judge shall coordinate with the protocol team, Lead Senior Watson & Sherlock to resolve the issues based on the comments/labels. You can also add comments on the issues to help with the process.
 * These are the **actions** the Lead Judge is **allowed** to do during this phase:&#x20;
-  * &#x20;**Validity related**: In the case of `Sponsor disputed` issues, the Lead judge must **close the issue** if you **agree** with the Sponsor's comment, or **keep it open** as is if you **disagree** with the Sponsor's comment. In both cases, relevant comments must be added.&#x20;
+  * &#x20;**Validity related**: In the case of `Sponsor disputed` issues, the Lead Judge must **close the issue** if you **agree** with the Sponsor's comment, or **keep it open** as is if you **disagree** with the Sponsor's comment. In both cases, relevant comments must be added.&#x20;
   *   **Severity related**: In case of valid issues with `Sponsor confirmed`, but `Disagree with Severity` issues, if you agree with the Sponsor's argument for downgrading/upgrading the issue severity, please change the respective labels:
 
       * If the final state of the issue should be a `Medium/High` Please remove the old severity label, remove `Disagree with severity` label and **add the new severity label**.&#x20;
@@ -53,8 +54,8 @@ The ideal timeline to complete the 2 phases is **two weeks** from the end of the
 ### Phase 3:
 
 * Initial results will be generated & announced based on the final issue state from Phase 2. Completion of this step opens up the Escalation period.
-* The lead judge comments on every escalation within 48 hours after the escalation period ends. The lead judge is available to answer questions at any time before the final announcement is made.
-* During this phase, the Lead judge must only **comment** on escalations and suggest necessary actions to be taken by Sherlock. Please **do not** open/close issues and **do not** change severity labels in this phase.&#x20;
+* The Lead Judge comments on every escalation within 48 hours after the escalation period ends. The Lead Judge facilitates the discussion between parties to achieve consensus on the technical impact of the issue, leaving the severity judgement to Sherlock. The Lead Judge is available to answer questions at any time before the final announcement is made.
+* During this phase, the Lead Judge must only **comment** on escalations and suggest necessary actions to be taken by Sherlock. Please **do not** open/close issues and **do not** change severity labels in this phase.&#x20;
 * Sherlock will make necessary changes to the issues, resolve the escalations, and announce the final results.
 
 ### Duplication Instructions:

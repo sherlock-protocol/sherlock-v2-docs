@@ -12,7 +12,9 @@ The Lead Judge will also receive 5% of the audit contest pot. Here is how you ca
 
 ## When do judging contests start?
 
-Immediately after an audit contest ends, the judging contest will begin. The judging contest will be contingent on the number of issues. More specifically, one day will be added per 75 issues submitted in the contest (200 issues = 3-day judging contest, 250 issues = 4-day judging contest).
+Immediately after an audit contest ends, the judging contest will begin. The judging contest will be contingent on the number of issues. More specifically, one day will be added per 75 issues submitted in the contest (200 issues = 3-day judging contest, 250 issues = 4-day judging contest). The minimum judging contest time is 2 days.
+
+Additionally, the Lead Judge is able to ask Sherlock to lengthen the judging contest. The duration may be increased by up to 3 days that way.
 
 ## How to join a judging contest
 
