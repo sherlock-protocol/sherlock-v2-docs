@@ -2,7 +2,7 @@
 
 Each Sherlock audit consists of a fixed pay element to adequately incentivize at least 1 dedicated Senior Watson to lead the audit as well as a prize pool element that often draws 200-400 independent auditors.&#x20;
 
-In order to properly align incentives with protocols, Sherlock offers up to $2M in smart contract exploit coverage behind qualifying audits (not included in the audit cost), which can be activated at any point after the audit is completed, provided the fix review has been completed and there haven’t been subsequent changes to the code base.&#x20;
+In order to properly align incentives with protocols, Sherlock offers smart contract coverage behind qualifying audits (not included in the audit cost), which can be activated at any point after the audit is completed, provided the fix review has been completed and there haven’t been subsequent changes to the code base.&#x20;
 
 Sherlock has developed the following broad underwriting guidelines for how much time is needed to complete an audit of codebases of various sizes in order to offer smart contract coverage on the protocol in the future:
 

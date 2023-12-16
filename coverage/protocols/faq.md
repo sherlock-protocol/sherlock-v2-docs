@@ -12,9 +12,9 @@ Yes. You can look through an example coverage agreement [here](https://docs.goog
 
 Ideally protocol teams will do update audits (through Sherlock) for any code changes that will go to mainnet. Sherlock offers 3-day micro contests for this purpose.&#x20;
 
-But sometimes a protocol isn't able to get code audited before putting it live, so Sherlock will continue to cover the audited contract code even if other code within the contract is changed, but only exploits that would have been possible without the unaudited, changed code would be eligible for coverage.
+But sometimes a protocol isn't able to get code audited before putting it live, so Sherlock will continue to cover the audited contract code even if other code within the contract is changed, but only payouts resulting from exploits that would have been possible without the unaudited, changed code would be eligible for coverage.
 
-New unaudited contracts are not covered by Sherlock, and any exploits resulting from them will not be reimbursed.&#x20;
+New unaudited contracts are not covered by Sherlock, and any payouts resulting from exploits possible in those contracts will not be reimbursed.&#x20;
 
 **Does the audit contest cost include coverage?**
 
@@ -22,13 +22,13 @@ No. Coverage is an additional investment and is completely optional. You can dec
 
 **Does Sherlock offer a bug bounty program?**
 
-Sherlock will also help you set up a bug bounty program (through Immunefi) and Sherlock will cover up to 200k USDC of a Critical bug bounty payout. Bug bounty programs are highly recommended (may be mandatory soon) for protocol teams looking for Sherlock coverage.&#x20;
+Sherlock will help you set up a bug bounty program (through Immunefi) and Sherlock coverage will apply to Critical bug bounty payouts as defined by Sherlock. Bug bounty programs and audits are the best means available to prevent exploits and protect users.&#x20;
 
 **Who qualifies for coverage?**
 
-Protocols that have: (1) completed an audit contest with Sherlock and (2) have received a sign-off on every fix completed during the fix review may request coverage from Sherlock. Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI\_xD6AQiag/viewform).
+Protocols that have: (1) completed a "non-best efforts" audit contest with Sherlock and (2) have received a sign-off on every fix completed during the fix review (3) have an nSLOC amount that is acceptable in Sherlock's pricing tables may request coverage from Sherlock. Request an audit [here](https://audits.sherlock.xyz/request-audit).
 
-If the fixes made after a Sherlock audit are extensive, Sherlock and the Lead Senior Watson may recommend an additional follow-up contest. This recommendation does not need to be followed, but it is mandatory to follow the recommendation in order to receive coverage.&#x20;
+If the fixes made after a Sherlock audit are extensive, Sherlock and the Lead Senior Watson may recommend an additional follow-up contest. This recommendation does not need to be followed, but it is mandatory to follow the recommendation to receive coverage.&#x20;
 
 **If I don't get coverage after the audit contest, can I get coverage later?**
 
@@ -42,15 +42,11 @@ All Sherlock needs to get things live are:&#x20;
 
 2\) The initial coverage payment. Here's Sherlock multi-sig address for the initial coverage payment: 0x666B8EbFbF4D5f0CE56962a25635CfF563F13161&#x20;
 
-3\) The amount of coverage desired. Most teams opt for coverage to roughly track their TVL (so that the protocol never overpays for coverage). If this is the case, then Sherlock asks for a methodology for calculating the protocol's TVL periodically (Etherscan contracts, DeFi Llama, etc.)
+3\) The amount of coverage desired
 
-**How much will monthly premiums cost if: (1) we have $2M TVL, (2) we went through a public contest with Sherlock, and (3) we got all of our fixes signed-off?**
+**How much will monthly premiums cost if we went through a public contest with Sherlock, and got all of our fixes signed-off?**
 
-If you want coverage for $2M, and the fixes after completing the Sherlock audit contest have been signed-off on, the monthly premium will be 4% annualized on the TVL which will be \~6,700 USDC per month.&#x20;
-
-**What happens if my TVL is lower than $2M?**
-
-If your TVL starts out lower than $2M, you will only be charged on what your TVL is (assuming you've opted for the coverage to track your TVL).&#x20;
+Sherlock can present a quote to you based on Sherlock's pricing tables. These tables take into account the nSLOC of the codebase that was audited as well as the public/private nature of the audit.&#x20;
 
 **What is the address for the initial coverage payment?**&#x20;
 
@@ -58,7 +54,7 @@ The address (on Ethereum mainnet) for the initial coverage payment is: 0x666B8Eb
 
 **Who should get coverage?**
 
-Sherlock recommends coverage to protocols that are interested in protecting their users from net losses due to exploits (for example, situations where a protocol is exploited and the hacker does not return any funds).
+Sherlock recommends coverage to any protocol team that is interested in protecting their users from losses due to exploits. Audits and bug bounty programs are two of the best ways to protect users against losses and coverage can allow protocol teams to afford bigger bug bounties.&#x20;
 
-**I already got an audit. Can I get coverage with Sherlock?**\
-Unfortunately Sherlock requires protocols to conduct a Sherlock contest audit for the opportunity to qualify for coverage.
+**I already got an audit from someone else. Can I get coverage with Sherlock?**\
+Unfortunately, Sherlock requires protocols to conduct a Sherlock audit contest for the opportunity to qualify for coverage.

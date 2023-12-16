@@ -39,7 +39,7 @@ Each object and their lifecycle can be viewed in the specific docs
 
 Some of the contracts used in Sherlock V2 implement access control for certain functions.
 
-For Ownable, the openZeppelin's Ownable library is being used. The owner address will belong to Sherlock governance.
+For Ownable, OpenZeppelin's Ownable library is being used. The owner address will belong to Sherlock governance.
 
 ### Sherlock.sol
 

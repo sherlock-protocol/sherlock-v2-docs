@@ -8,19 +8,19 @@
 
 ### How is Sherlock different from other audit firms?
 
-* Most audit firms rely on their reputation to convince protocol teams to use them. This is a poor way to guarantee incentive alignment. Sherlock provides something far more valuable than reputation: millions of dollars. If a contract that is audited and covered by Sherlock gets exploited, then Sherlock's staking pools can lose millions of dollars. This is a much stronger incentive to do a good job vs. maintaining an amorphous reputation across thousand of audits and dozens of individual auditors.
-* Many audit firms charge 100% more than what they pay individual auditors. This is the "reputation premium." Sherlock can pay top independent security experts more than they would make at leading audit firms. Then Sherlock can offer millions in backing behind the audit. And the cost is STILL lower than what most traditional firms charge.
-* Good security work is done by talented individuals. Many audit firms have been known to hide lesser talented individuals behind their overall audit firm reputation. This means the quality of audit you will get from other firms is highly variable. You should always check to see who the individual auditors are. Sherlock is very transparent about the qualifications of our individual auditors.
+* Most audit firms rely on their reputation to convince protocol teams to use them. This is a poor way to guarantee incentive alignment. Sherlock provides something far more valuable than reputation: USDC. If a contract that is audited and covered by Sherlock has a bug bounty payout (or gets exploited), then Sherlock's staking pool can pay out USDC to reimburse the entire bug bounty (minus a deductible) or part of the exploit. This is a much stronger incentive to do a good job vs. relying on an amorphous reputation across hundreds of audits and dozens of individual auditors.
+* Many audit firms charge 100% more than what they pay individual auditors. This is the "reputation premium." Sherlock can pay top independent security experts more than they would make at leading audit firms. Then Sherlock can offer USDC backing behind Sherlock's audit. And the cost can often STILL be lower than what most traditional firms charge.
+* Good security work is done by talented individuals. Many audit firms have been known to hide lesser talented individuals behind their overall audit firm reputation. This means the quality of audit you will get from other firms is highly variable. You should always check to see who the individual auditors are. Sherlock is very transparent about the [qualifications of individual auditors](https://audits.sherlock.xyz/leaderboard).
 
 ### How is Sherlock different from other risk management protocols?
 
 Coverage is managed by protocols/DAOs instead of users
 
-* Right now, the burden of managing smart contract risk is borne entirely by users. By working directly with protocols, smart contract coverage can be applied to all users with no extra work required. Not to mention, when an exploit happens, protocol teams often find themselves deciding to reimburse users who did not purchase insurance (all of them, usually), so getting covered at the protocol level helps teams sleep better.
+* Right now, the burden of managing smart contract risk is borne entirely by users. By working directly with protocols, smart contract coverage can be applied to all users with no extra work required. It's very difficult for users to coordinate on a whitehat bug bounty, so this is better managed by the protocol team. Not to mention, when an exploit happens, protocol teams often find themselves deciding to reimburse all users as much as possible, so getting covered at the protocol level helps builders sleep better.
 
 Sherlock can price coverage the lowest because we do the most up-front work
 
-* Because Sherlock requires a full audit from Sherlock before coverage can go live, Sherlock gains more confidence in the security of the smart contracts than anyone else. This allows us to reward safe protocols for being safe by pricing our coverage lower than anyone else can offer.&#x20;
+* Because Sherlock requires a full audit from Sherlock before coverage can go live, Sherlock gains more confidence in the security of the smart contracts than anyone else. This allows Sherlock to reward safe protocols for being safe by pricing coverage lower than anyone else can offer.
 
 Claims decisions are made by an unbiased 3rd party
 
@@ -28,7 +28,7 @@ Claims decisions are made by an unbiased 3rd party
 
 ### How does staking work?
 
-* A user stakes USDC for a fixed term (6 months or 12 months) and receives a market-leading yield in return. The yield is partially fixed, partially variable. The amount of SHER tokens a staker will receive is known at the time of staking and is fixed for the duration of the stake. Other yield strategies employed by Sherlock (depositing in Aave, etc.) may be fixed or floating. And the premiums received by stakers would be expected to increase as more protocols become covered. If there is a covered smart contract exploit during the term, a staker's funds can be slashed up to 50%.
+* A user stakes USDC for a fixed term (6 months or 12 months) and receives a market-leading yield in return. The yield is partially fixed, partially variable. The amount of SHER tokens a staker will receive is known at the time of staking and is fixed for the duration of the stake. Premiums received by stakers would be expected to increase as more protocols become covered. If there is a covered smart contract exploit during the term, a staker's funds can be slashed up to 50%.
 
 ### How can I get an audit or coverage from Sherlock?
 

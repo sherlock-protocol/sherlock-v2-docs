@@ -2,7 +2,7 @@
 
 Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI\_xD6AQiag/viewform)!
 
-Security is a top priority for high-quality projects shipping code to mainnet given the inherently adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to write up to $2M of exploit coverage (or bug bounty coverage) behind every protocol Sherlock covers, we obsess over the processes to keep codebases safer.
+Security is a top priority for high-quality projects shipping code to mainnet given the inherently adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to offer bug bounty and exploit coverage to qualifying codebases, Sherlock obsesses over the processes to keep codebases safer.
 
 The most well-known process for securing a codebase is an audit.
 
@@ -62,10 +62,10 @@ Sherlock’s approach provides a protocol with the focus, collaboration, and ass
 * The Lead Senior Watson comes back to help the protocol team with fixes (provides a half-day complimentary fix review)
 * Sherlock’s decentralized judging process takes hundreds of raw, duplicate issues and turns them into a digestible report, saving the protocol team days of work and reducing the possibility of overlooked vulnerabilities
 * Sherlock's process is the most cost-effective: 80% of what you pay to Sherlock goes directly to security experts
-* Sherlock is the only auditor to offer exploit and/or bug bounty coverage after the audit is conducted (once the fix review is finished), ensuring that Sherlock's incentives are aligned in shipping the most secure protocol possible.&#x20;
+* Sherlock is the only auditor to offer bug bounty and exploit coverage after the audit is conducted (once the fix review is finished), ensuring that Sherlock's incentives are aligned in shipping the most secure protocol possible.&#x20;
 
 Sherlock’s unique offering assigns a top-ranked senior security expert (Senior Watson) to act as the lead security auditor throughout the duration of the contest, earning attractive fixed pay alongside the ability to compete for the entire prize pool.
 
 The fixed nature of the lead senior auditor gives protocols the assurance that, at minimum, one highly skilled security auditor will be conducting an in-depth review of the codebase, will be there to discuss issues with the protocol team, and will conduct a half-day fix-review to make sure any fixes have been implemented securely.
 
-The talents of this one individual will be enhanced by the skillset of an unlimited number of independent security experts / teams competing to win a greater portion of the prize pool. And the Senior Watson will only keep their “senior” status as long as they find more vulnerabilities than the rest of the field. And of course, at the core of a Sherlock audit is our continued commitment to incentive alignment. Every protocol that goes through an audit (and completes the fix review) has the ability to add exploit coverage or bug bounty coverage at any point post-audit to reimburse its users in the event of a hack - helping the protocol team build trust with its early LPs, users and/or community.
+The talents of this one individual will be enhanced by the skillset of an unlimited number of independent security experts / teams competing to win a greater portion of the prize pool. And the Senior Watson will only keep their “senior” status as long as they find more vulnerabilities than the rest of the field. And of course, Sherlock's continued commitment to incentive alignment is at the core of a Sherlock audit. Qualifying protocols that go through an audit (and complete the fix review) can add smart contract coverage at any point post-audit to reimburse its users in the event of a hack - helping the protocol team build trust with its early LPs, users and/or community.
