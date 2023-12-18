@@ -4,6 +4,17 @@ description: All future changes to the Issue criteria page will be logged here.
 
 # Criteria Changelog
 
+## 1.5 - 18/12/2023
+
+***
+
+* Changed words in several places to ensure ease of understanding. Typo fixes.
+* Added an exception to the hierarchy of truth for caes where blatant mistakes in the higher source of truth were made.
+* Specified opportunity loss as out of scope.
+* Updated the [Requirements](./#vi.-requirements "mention") section to require the PoC in all reasonable cases and ensure that Watsons need to discover the limitations and constraints of the issue being triggered.
+* Rephrased the "Future issues" rule to remove ambiguity.
+* Updated the [#iv.-how-to-identify-a-high-issue](./#iv.-how-to-identify-a-high-issue "mention") and [#v.-how-to-identify-a-medium-issue](./#v.-how-to-identify-a-medium-issue "mention") sections to better explain what high and medium severity issues are.
+
 ## 1.4 - 10/11/2023
 
 ***
