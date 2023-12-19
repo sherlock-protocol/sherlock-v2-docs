@@ -119,7 +119,7 @@ Returns if `_protocol` is whitelisted for `_token`
 
 ### `getProtocols(contract IERC20 _token) → bytes32[]`
 
-Returns array of whitelisted protcols
+Returns array of whitelisted protocols
 
 #### Parameters:
 
