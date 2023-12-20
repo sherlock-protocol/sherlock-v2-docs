@@ -44,7 +44,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
    1. If a contract is in contest Scope, then all its parent contracts are included by default. 
    2. In case the vulnerability exists in a library and an in-scope contract uses it and is affected by this bug this is a valid issue.
    3. ﻿﻿If there is a vulnerability in a contract from the contest repository but is not included in the scope then issues related to it cannot be considered valid.
-8. **Opportunity Loss** is not considered a loss of funds by Sherlock. For example, loss of funcitonality is not considered a loss of protocol revenue, nevertheless it may be a valid issue.
+8. **Opportunity Loss** is not considered a loss of funds by Sherlock. For example, loss of functionality is not considered a loss of protocol revenue, nevertheless issues involving opportunity loss may be valid issues (for example, due to a loss of core functionality).
 
 ### IV. How to identify a high issue:
 
