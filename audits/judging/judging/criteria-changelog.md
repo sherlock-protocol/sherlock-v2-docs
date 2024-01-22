@@ -4,16 +4,17 @@ description: All future changes to the Issue criteria page will be logged here.
 
 # Criteria Changelog
 
-## 1.5 - 18/12/2023
+## 1.5 - 22/01/2024
 
 ***
 
-* Changed words in several places to ensure ease of understanding. Typo fixes.
+* Historical decisions are no longer considered sources of truth. They may guide Watsons, but judgments should always be based on rules as they are and mistakes should not be repeated.
+* Updated the [#iv.-how-to-identify-a-high-issue](./#iv.-how-to-identify-a-high-issue "mention") and [#v.-how-to-identify-a-medium-issue](./#v.-how-to-identify-a-medium-issue "mention") sections to better explain what high and medium severity issues are. Repealed the [#ii.-criteria-for-issue-severity](./#ii.-criteria-for-issue-severity "mention") description.
 * Added an exception to the hierarchy of truth for cases where blatant mistakes in a higher source of truth were made.
-* Specified opportunity loss to be out of scope.
-* Updated the [Requirements](./#vi.-requirements "mention") section to require the PoC in all reasonable cases and ensure that Watsons need to discover the limitations and constraints of the issue being triggered.
+* Specified opportunity loss and design choices to be out of scope.
+* Updated the [Requirements](./#vi.-requirements "mention") section to require the PoC in more cases and ensure that Watsons need to discover the limitations and constraints of the issue being triggered.
 * Rephrased the "Future issues" rule to remove ambiguity.
-* Updated the [#iv.-how-to-identify-a-high-issue](./#iv.-how-to-identify-a-high-issue "mention") and [#v.-how-to-identify-a-medium-issue](./#v.-how-to-identify-a-medium-issue "mention") sections to better explain what high and medium severity issues are.
+* Changed words in several places to ensure ease of understanding. Typo fixes.
 
 ## 1.4 - 10/11/2023
 
