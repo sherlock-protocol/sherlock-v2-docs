@@ -56,9 +56,8 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 ### V. How to identify a medium issue:
 
-1. Causes a loss of funds but requires certain external conditions or specific states.
+1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The losses must exceed small, finite amount of funds, any amount relevant based on the precision (i.e. rounding to $10 ^ {-18}$ of the amount is fine), and 0.05% APY. Some concepts used in the README/codebase may override these parameters to more sensible ones depending on the context.
 2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds.
-3. A material loss of funds, no/minimal profit for the attacker at a considerable cost. The losses must exceed small, finite amount of funds, any amount relevant based on the precision (i.e. rounding to $10 ^ {-18}$ of the amount is fine), and 0.05% APY. Some concepts used in the README/codebase may override these parameters to more sensible ones depending on the context.
 
 ### VI. Requirements:
 
