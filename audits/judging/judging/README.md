@@ -22,7 +22,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 ### III. Sherlock's standards:
 
-1. **Hierarchy of truth:** Contest README > Sherlock rules for valid issues. \
+1. **Hierarchy of truth:** Contest README > Sherlock rules for valid issues > protocol documentation (including code comments) > protocol answers on the contest public Discord channel. \
    While considering the validity of an issue in case of any conflict the sources of truth are prioritized in the above order. \
    For example: In case of conflict between information in the README vs Sherlock rules, the README overrides Sherlock rules. \
    **Exception**: Sometimes the README would take a wider group of impact/issue types out of scope than intended. In those cases, Sherlock may decide to consider an issue valid, while it would otherwise be considered out of scope. [Example(Valid)](https://github.com/sherlock-audit/2023-10-looksrare-judging/issues/136) \
@@ -36,7 +36,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 If at least one of these are describing the case, the issue can be a Medium. If both apply, the issue can be considered of High severity. Additional constraints related to the issue may decrease its severity accordingly. \
 Griefing for gas (frontrunning a transaction to fail, even if can be done perpetually) is considered a DoS of a single block, hence only if the function is clearly time-sensitive, it can be a Medium severity issue.
 3. **Low/Informational Issues**:  While Sherlock acknowledges that it would be great to include & reward low-impact/informational issues, we strongly feel that Watsons should focus on finding the most critical vulnerabilities that will potentially cause millions of dollars of losses on mainnet. Sherlock understands that it could be missing out on some potential "value add" for protocol, but it's only because the real task of finding critical vulnerabilities requires 100% of the attention of Watsons. While low/informational issues are not rewarded individually if a Watson identifies an attack vector that combines multiple lows to cause significant loss/damage that would still be categorized as a valid medium/high.
-4. **Direct Protocol Owner/Admin rug pulls.** If a protocol specifically mentions the restrictions imposed on the owner/admin issues describing an attack that results in bypassing these restrictions, issues can be considered valid, otherwise admin is considered trusted. Please note that these restrictions must be explicitly described by the protocol and will be considered case by case. \
+4. **Direct Protocol Owner/Admin rug pulls.** If a protocol specifically mentions the restrictions imposed on the owner/admin, issues describing an attack that results in bypassing these restrictions can be considered valid. Please note that these restrictions must be explicitly described by the protocol and will be considered case by case. \
    Admin functions are assumed to be used properly, unless a list of requirements is listed and it's incomplete or if there is no scenario where a permissioned funtion can be used properly.
 5. **External Admin trust assumptions**:
    1. When `external-admin=trusted`, issues related to these external admins being able to rug protocol users is **not a valid issue.** (Example: Aave governance has the intention of rugging Index Protocol)
@@ -48,6 +48,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
    3. ﻿﻿If there is a vulnerability in a contract from the contest repository but is not included in the scope then issues related to it cannot be considered valid.
 8. **Opportunity Loss** is not considered a loss of funds by Sherlock. For example, loss of functionality is not considered a loss of protocol revenue, nevertheless issues involving opportunity loss may be valid issues (for example, due to a loss of core functionality).
 9. **Design decisions** are not valid issues. Even if the design is suboptimal, but doesn't imply any loss of funds, these issues are considered informational.
+10. Watsons are expected to keep up to date with the contest's Discord channel as important announcements impacting judging may arise. They should keep in mind that any message the Sponsor sends will be considered a source of truth.
 
 ### IV. How to identify a high issue:
 
@@ -56,17 +57,17 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 ### V. How to identify a medium issue:
 
-1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The losses must exceed small, finite amount of funds, any amount relevant based on the precision (i.e. rounding to $10 ^ {-18}$ of the amount is fine), and 0.05% APY. Some concepts used in the README/codebase may override these parameters to more sensible ones depending on the context.
+1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The losses must exceed small, finite amount of funds, and any amount relevant based on the precision or significance of the loss.
 2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds.
 
 ### VI. Requirements:
 
 PoC is required for all issues falling into any of the following groups:
 - non-obvious ones with complex vulnerabilities/attack paths
-- for which there are nontrivial limitations/constraints on inputs, to show that the attack is possible despite those
+- for which there are non-trivial limitations/constraints on inputs, to show that the attack is possible despite those
 - related to precision loss
 - reentrancy attacks
-- attacks related to the gas consumption
+- attacks related to the gas consumption and/or reverting message calls
 
 Also, Watsons must outline all constraints of the issue being triggered and specify in which situations these constraints may trigger the issue.
 
@@ -90,7 +91,7 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 9. **User Blacklist:** User getting blacklisted by a token/contract causing harm only to themselves is **not** a valid medium/high.
 10. Issues assuming future opcode gas repricing are not considered to be of Medium/High severity. \
    **Use of call vs transfer** will be considered as a protocol design choice if there is no good reason why the call may consume more than 2300 gas without opcode repricings.
-11. _External Oracle price manipulation rule is currently under review and will be updated soon. Until further notice, issues related to the topic would be considered valid if it follows general Sherlock issue rules._
+11. (repealed)
 12. **EIP compliance with no integrations**: If the protocol does not have external integrations then issues related to code not fully complying with the EIP it is implementing and there are no adverse effects of this, are considered informational
 13. **Users sending ETH/native tokens accidentally** just because a contract allows is **not** a valid medium/high.
 14. **Loss of airdrops or liquidity fees** or any other rewards that are not part of the original protocol design is not considered a valid high/medium. [Example](https://github.com/sherlock-audit/2023-02-openq-judging/issues/323)
@@ -107,7 +108,7 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
     Example: [https://github.com/sherlock-audit/2023-03-teller-judging/issues/8](https://github.com/sherlock-audit/2023-03-teller-judging/issues/8)
 22. **Future issues:** Issues that result out of a future integration/implementation that was not mentioned in the docs/README or because of a future change in the code (as a fix to another issue) are **not** valid issues.
 23. **Non-Standard tokens:** Issues related to tokens with non-standard behaviors, such as [weird-tokens](https://github.com/d-xo/weird-erc20) are not considered valid by default unless these tokens are explicitly mentioned in the README.
-24. Using solidity versions that support **EVM opcodes that don't work** on networks on which the protocol is deployed is not a valid issue beacause one can manage compilation flags to compile for past EVM versions on newer Solidity versions.
+24. Using Solidity versions that support **EVM opcodes that don't work** on networks on which the protocol is deployed is not a valid issue beacause one can manage compilation flags to compile for past EVM versions on newer Solidity versions.
 
 ### VIII. List of Issue categories that are considered valid:
 
