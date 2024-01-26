@@ -64,8 +64,8 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 PoC is required for all issues falling into any of the following groups:
 - non-obvious ones with complex vulnerabilities/attack paths
-- for which there are non-trivial limitations/constraints on inputs, to show that the attack is possible despite those
-- related to precision loss
+- issues for which there are non-trivial limitations/constraints on inputs, to show that the attack is possible despite those
+- issues related to precision loss
 - reentrancy attacks
 - attacks related to the gas consumption and/or reverting message calls
 
