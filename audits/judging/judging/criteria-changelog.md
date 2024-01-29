@@ -4,7 +4,7 @@ description: All future changes to the Issue criteria page will be logged here.
 
 # Criteria Changelog
 
-## 1.5 - 26/01/2024
+## 1.5 - 29/01/2024
 
 ***
 
