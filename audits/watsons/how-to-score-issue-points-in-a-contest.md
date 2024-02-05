@@ -1,6 +1,6 @@
 # How to Score Issue Points in a Contest
 
-The total Contest Points which can be earned in a contest is the sum of the average Contest Points of each competitor (plus an inflation amount: currently 2%). In this way, Watsons aren’t given an unfair advantage or disadvantage if they compete in an audit with relatively weak or relatively strong participants.
+The total Contest Points which can be earned in a contest is the sum of the average Contest Points of each competitor (plus an inflation amount to offset new entrants). In this way, Watsons aren’t given an unfair advantage or disadvantage if they compete in an audit with relatively weak or relatively strong participants.
 
 Then, each Watson generates a score based on the amount of high and medium severity findings they submit.&#x20;
 

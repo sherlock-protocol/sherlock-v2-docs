@@ -10,7 +10,7 @@ How are those leaderboard points calculated? And how you can move up the leaderb
 
 ### **Where do leaderboard points come from?**
 
-For the first \~6 months of Sherlock, Leaderboard Points were calculated based on each Watson's Code Arena ranking. Now that the bootstrapping phase is over, the only "new" Leaderboard Points (which come from Contest Points) are created from a small amount of inflation in each contest. Currently, there is 2% inflation on the Contest Points available in each contest. And each Watson brings their Leaderboard Points into each contest, and the sum of every Watson's Leaderboard Points make up the amount of Contest Points available in that contest (+2% inflation).&#x20;
+For the first \~6 months of Sherlock, Leaderboard Points were calculated based on each Watson's Code Arena ranking. Now that the bootstrapping phase is over, the only "new" Leaderboard Points (which come from Contest Points) are created from a small amount of inflation in each contest. And each Watson brings their Leaderboard Points into each contest, and the sum of every Watson's Leaderboard Points make up the amount of Contest Points available in that contest (plus the inflation amount).&#x20;
 
 In this example, there are 5 Watsons. Each one has competed in a 7-day contest previously, so each one has some Leaderboard Points:
 
@@ -48,7 +48,7 @@ The formula being used to calculate Emily's score is the following:
 
 > (50.0 \* (7 / 21)) + ((33.7% \* 714) \* (14 / 21))
 
-The 714 represents the cumulative amount of leaderboard points in the second contest from all the competitors, adding 2% inflation (14 extra points). This is a simplified example where only the same 5 competitors happened to compete in similar-length contests.&#x20;
+The 714 represents the cumulative amount of leaderboard points in the second contest from all the competitors, adding 2% inflation (14 extra points) for example. This is a simplified example where only the same 5 competitors happened to compete in similar-length contests.&#x20;
 
 This is how the Sherlock leaderboard would look after these two contests:
 
