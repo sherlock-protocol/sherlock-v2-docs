@@ -10,11 +10,13 @@ The Lead Judge will receive roughly 5% of the audit contest pot as fixed pay and
 
 Everyone who signs up for a judging contest gets opted into competing for ranking on the Judging Contest Leaderboard. It is in your interest to only judge a contest if you think it will help your judging ranking. You are eligible to be a Lead Judge once you've completed 15 judging days.&#x20;
 
-Judging contests will now be variable in length, with one day being added per 75 issues submitted in the contest (200 issues = 3-day judging contest, 250 issues = 4-day judging contest).
+Judging contests will now be variable in length, with one day being added per 75 issues submitted in the contest (200 issues = 3-day judging contest, 250 issues = 4-day judging contest). The jugding contest takes at least 2 days.
 
 Sherlock expects Lead Judges to commit to the judging contest fully. This includes working with the protocol team after the judging contest has finished and helping with escalations.&#x20;
 
 The point system for the Judging Leaderboard will be very similar to the point system implemented for the Audit Contest Leaderboard. More details to come on the point calculations.
+
+The points that are to be received by the Lead Judge from the judging contest are multiplied by the Lead Judge's payout multiplier. For more information, see [the-lead-judges-role.md](the-lead-judges-role.md "mention").
 
 For information about how to participate in a judging contest, see the [Guide to Judging Contests](broken-reference).\
 \
