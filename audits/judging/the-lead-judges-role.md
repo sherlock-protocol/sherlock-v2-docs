@@ -7,7 +7,7 @@ Apart from the USDC earned from the contest pool, where judges compete with each
 
 * 110% base payment
 * Up to 10% subjective helpfulness score. Achieved by being helpful to the Sherlock Judge during the escalation resolution stage. It's a subjective metric.
-* A penalty of a minimum of 5% and (num_issues / 300) * 5% per every day of delay beyond the unpenalized judging days' time.
+* A penalty of (300 / num_issues) * 5% with a maximum of 5% per every day of delay beyond the unpenalized judging days' time.
   * The unpenalized judging time is 48 hours plus 24 hours for every 150 issues submitted in a contest. For example, if there are 100 issues submitted, then the unpenalized judging time is 48 + 24 * 100/150 = 64 hours.
 * A penalty of 10 times the accepted escalation ratio
   * The accepted escalation ratio is the ratio of the accepted escalations (equal to the number of changes that the preliminary results need to undergo) to the number of all issues. For example, if there are 200 submissions and 2 escalations are accepted, the escalation ratio is 2/200 = 1%, and this will result in a 10% penalty.
