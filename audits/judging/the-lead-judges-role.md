@@ -3,23 +3,27 @@
 ### Lead Judge Fixed Pay
 
 \
-Apart from the USDC earned from the contest pool, where judges compete with each other, the Lead Judge can also receive fixed compensation according to the following breakdown:
+Apart from the USDC earned from the contest pool, where judges compete with each other, the Lead Judge also receives fixed compensation according to the following breakdown:
 
-* 50% guaranteed payment
-* 25% based on the duration taken for completion
-  * Full 25% if finished within 28 days after the audit contest's end date.
-  * 18.75% if finished within 35 days after the audit contest's end date.
-  * 12.5% if finished within 42 days after the audit contest's end date.
-  * 0% If finished after 42 days
-* 25% based on the outcome of escalations
-  * First, calculate the escalation factor: number of issues that undergo a change in state(severity or duplication) due to escalations divided by the total number of issues. _(2/100 = 0.02)_
-  * Multiply by 20  _(0.02 \* 20 = 0.4)_&#x20;
-  * Subtract from maximum amount _((1-0.4) \* 25% = 15%)_
+* 110% base payment
+* Up to 10% subjective helpfulness score. Achieved by being helpful to the Sherlock Judge during the escalation resolution stage. It's a subjective metric.
+* A penalty of a minimum of 5% and (num_issues / 300) * 5% per every day of delay beyond the unpenalized judging days' time.
+  * The unpenalized judging time is 48 hours plus 24 hours for every 150 issues submitted in a contest. For example, if there are 100 issues submitted, then the unpenalized judging time is 48 + 24 * 100/150 = 64 hours.
+* A penalty of 10 times the accepted escalation ratio
+  * The accepted escalation ratio is the ratio of the accepted escalations (equal to the number of changes that the preliminary results need to undergo) to the number of all issues. For example, if there are 200 submissions and 2 escalations are accepted, the escalation ratio is 2/200 = 1%, and this will result in a 10% penalty.
+
+Simply put, we expect the judging (including the judging contest) of a 300-issue contest to be completed within 8-10 days with a minimal number of accepted escalations. If there were 300 issues, the Judging contest took 4 days, followed by 4 days of preliminary judging without a penalty. If the preliminary judging took 6 days in total, it would amount to (6 - 4) * 5% = 10% time penalty. Then, 3 escalations were accepted, but the highest mark possible was chosen for the escalation usefulness – 10%. This means that the final multiplier is 110% + 10% - (6 - 4) * 5% - 10 * 3 / 300 = 110% + 10% - 10% - 10% = 100%. The Lead Judge receives their base pay and their contest points remain unaltered.
+
+The above multiplier scales not only the USDC payout but also the number of Judging (leaderboard) Points received by the Lead Judge from the contest. If the multiplier is below 0, the USDC Payout is capped at $0, but the Judging Points for the contest are assumed to be the Lead Judge's ranking points multiplied by the multiplier (negative). So, for example, if a Lead Judge had 500 Leaderboard points at the time of the contest and gets a -20% multiplier, they get a $0 payout and a -100 points contest result.
+
+Sherlock reserves the right to alter the above formulas or inputted values in rare cases, especially in those when the complexity, number, or accuracy of issues is unusual.
+
+An example of the calculated multiplier can be seen in [this spreadsheet](https://docs.google.com/spreadsheets/d/1kuiDbXKl7VjOVQZvqMmj9wHLV73Vj2fMulXiRKFr6H0/edit?usp=sharing).
 
 ### Lead Judge responsibilities
 
 * Judge issues to the best of their abilities in a fair manner.
-* Lead the judging through all the phases and achieve the two-week timeline goal to announce initial results.
+* Lead the judging through all the phases and achieve the best possible timeline goal to announce preliminary results.
 * Must communicate effectively with all parties involved
 * Must add relevant comments if required on valid/invalid issues to make the process easier for everyone involved.
 
@@ -49,11 +53,11 @@ Additional Note: The Lead Judge **must allocate sufficient time after the contes
     In case you disagree you can add the relevant comment and keep the issue **as is**.
   * The final list of **open** issues must only have valid issues that are to be rewarded.&#x20;
 
-The ideal timeline to complete the 2 phases is **two weeks** from the end of the contest. Initial results must be announced within this period.
+The ideal timeline to complete the 2 phases is about **two weeks** from the end of the audit contest.
 
 ### Phase 3:
 
-* Initial results will be generated & announced based on the final issue state from Phase 2. Completion of this step opens up the Escalation period.
+* Preliminary results will be generated & announced based on the final issue state from Phase 2. Completion of this step opens up the Escalation period.
 * The Lead Judge comments on every escalation within 48 hours after the escalation period ends. The Lead Judge facilitates the discussion between parties to achieve consensus on the technical impact of the issue, leaving the severity judgement to Sherlock. The Lead Judge is available to answer questions at any time before the final announcement is made.
 * During this phase, the Lead Judge must only **comment** on escalations and suggest necessary actions to be taken by Sherlock. Please **do not** open/close issues and **do not** change severity labels in this phase.&#x20;
 * Sherlock will make necessary changes to the issues, resolve the escalations, and announce the final results.
