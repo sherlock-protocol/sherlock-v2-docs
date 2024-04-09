@@ -9,6 +9,8 @@ The Virtual Judging Leaderboard is the Judging Leaderboard with additional Virtu
 - if the judging has begun, but the escalation period hasn't ended yet, the contest will be as long as the issues indicate (1 day per 75 issues rounded up, minimum 2 days) (Judging Contest weights), and the result is the current points X times the negative time penalty,
 - if the escalation period ended, the length of the Virtual Contest is the Judging Contest's length, and the result is as above, but not more than the final result assuming all remaining escalations will be rejected (and the helpfulness bonus is 0), and not less than the final result assuming all remaining escalations will be accepted (and assuming the helpfulness bonus of 0).
 
+A spreadsheet that can be used to calculate the Virtual Contest parameters can be accessed [here](https://docs.google.com/spreadsheets/d/1kuiDbXKl7VjOVQZvqMmj9wHLV73Vj2fMulXiRKFr6H0).
+
 If selected as the Lead Judge, you cannot drop out of a contest once you’ve seen the number of issues. The contest will count for your ranking either way. You will be able to see the codebase when you sign up, but you will not know how many issues will be submitted.
 
 The Lead Judge will receive roughly 5% of the audit contest pot as fixed pay and can also earn part of the judging contest pot that is publicly available. More specifically, the total rewards allocated to judging is \~10% of the audit contest pot with \~5% as fixed pay to the Lead Judge.&#x20;
