@@ -26,6 +26,10 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    If the protocol team provides specific information in the README or CODE COMMENTS, that information stands above all judging rules. In case of contradictions between the README and CODE COMMENTS, the README is the chosen source of truth.
 
+   The judge can decide that CODE COMMENTS are outdated based on contextual evidence. In that case, the judging guidelines are the chosen source of truth.
+
+   > Example: The code comments state that "a swap can never fail" even though the code is built to support failing swaps.
+
    The protocol team can only use public statements to clarify language in the chosen source of truth.
    - Public statements will not change the interpretation of the chosen source of truth.
    - Contradicting public statements against the chosen source of truth (JUDGING GUIDELINES, README, or CODE COMMENTS) are discarded.
