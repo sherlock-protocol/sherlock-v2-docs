@@ -30,8 +30,8 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    > Example: The code comments state that "a swap can never fail" even though the code is built to support failing swaps.
 
-   The protocol team can use the README (and only the README) to define invariants. Issues that break these invariants will be assigned Medium severity. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
-   
+   The protocol team can use the README (and only the README) to define language that indicates the codebase's restrictions and/or expected functionality. Issues that break these statements will be assigned Medium severity. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
+
    > Example: The README states "Admin can only call XYZ function once" but the code allows the Admin to call XYZ function twice; this is a valid Medium
 
    The protocol team can only use public statements to clarify language in the chosen source of truth.
