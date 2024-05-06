@@ -34,9 +34,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    > Example: The README states "Admin can only call XYZ function once" but the code allows the Admin to call XYZ function twice; this is a valid Medium
 
-   The protocol team can only use public statements to clarify language in the chosen source of truth.
-   - Public statements will not change the interpretation of the chosen source of truth.
-   - Contradicting public statements against the chosen source of truth (JUDGING GUIDELINES, README, or CODE COMMENTS) are discarded.
+   The Sherlock Judge can use public statements up until 24h before the contest ends to override the language in the chosen source of truth.
 
    If rules are updated, the new rules apply only to contests that start after the date of change. Please check [criteria-changelog.md](criteria-changelog.md "mention") for information on the latest changes in the judging criteria/rules.
 
