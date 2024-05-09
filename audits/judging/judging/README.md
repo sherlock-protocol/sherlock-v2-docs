@@ -28,7 +28,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
    **Exception**: Sometimes the README would take a wider group of impact/issue types out of scope than intended. In those cases, Sherlock may decide to consider an issue valid, while it would otherwise be considered out of scope. [Example(Valid)](https://github.com/sherlock-audit/2023-10-looksrare-judging/issues/136) \
    1. If rules are updated, the new rules apply only to contests that start after the date of change. \
       Please check [criteria-changelog.md](criteria-changelog.md "mention") for information on the latest changes in the judging criteria/rules.
-   
+
    **Historical decisions are not considered sources of truth.**
 2. **Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?** DoS has two separate scores on which it can become an issue:
    1. The issue causes locking of funds for users for more than a week.
@@ -43,7 +43,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
    2. When `external-admin=restricted`, issues related to these external admins affecting a protocol (being audited) by updating **the external protocol parameters** is a **valid issue** (Example: Aave governance has the intention to improve the Aave protocol) as the bug can occur even when the external admin is well intended
 6. **Discord messages or DM** screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
 7. **Contract Scope:**
-   1. If a contract is in contest Scope, then all its parent contracts are included by default. 
+   1. If a contract is in contest Scope, then all its parent contracts are included by default.
    2. In case the vulnerability exists in a library and an in-scope contract uses it and is affected by this bug this is a valid issue.
    3. ﻿﻿If there is a vulnerability in a contract from the contest repository but is not included in the scope then issues related to it cannot be considered valid.
 8. **Opportunity Loss** is not considered a loss of funds by Sherlock. For example, loss of functionality is not considered a loss of protocol revenue, nevertheless issues involving opportunity loss may be valid issues (for example, due to a loss of core functionality).
@@ -104,6 +104,7 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 19. Issues found in mock contracts are not considered valid issues.&#x20;
 20. **Chain re-org** and **network liveness** related issues are not considered valid.&#x20;\
     **Exception**: If an issue concerns any kind of a network admin (e.g. a sequencer), can be remedied by a smart contract modification, the protocol team considers external admins restricted and the considered network was explicitly mentioned in the contest README, it may be a valid medium. It should be assumed that any such network issues will be resolved within 7 days, if that may be possible.
+    **Exception**: If the protocol depends on cross-chain communication, issues will be judged as normal. 
 21. **ERC721 unsafe mint:** In case of a protocol implementing minting/claiming of ERC721, users being unable to do so due to incorrect implementation is not a valid issue. \
     Example: [https://github.com/sherlock-audit/2023-03-teller-judging/issues/8](https://github.com/sherlock-audit/2023-03-teller-judging/issues/8)
 22. **Future issues:** Issues that result out of a future integration/implementation that was not mentioned in the docs/README or because of a future change in the code (as a fix to another issue) are **not** valid issues.
