@@ -4,6 +4,15 @@ description: All future changes to the Issue criteria page will be logged here.
 
 # Criteria Changelog
 
+## 1.6 - 17/05/2024
+
+***
+
+Batch 1: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/24
+
+* SJIP-5: Update hierarchy of truth
+* SJIP-6: Improve known issue question in contest QA
+
 ## 1.5 - 29/01/2024
 
 ***

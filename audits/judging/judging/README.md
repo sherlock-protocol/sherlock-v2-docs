@@ -22,14 +22,24 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 ### III. Sherlock's standards:
 
-1. **Hierarchy of truth:** Contest README > Sherlock rules for valid issues > protocol documentation (including code comments) > protocol answers on the contest public Discord channel. \
-   While considering the validity of an issue in case of any conflict the sources of truth are prioritized in the above order. \
-   For example: In case of conflict between information in the README vs Sherlock rules, the README overrides Sherlock rules. \
-   **Exception**: Sometimes the README would take a wider group of impact/issue types out of scope than intended. In those cases, Sherlock may decide to consider an issue valid, while it would otherwise be considered out of scope. [Example(Valid)](https://github.com/sherlock-audit/2023-10-looksrare-judging/issues/136) \
-   1. If rules are updated, the new rules apply only to contests that start after the date of change. \
-      Please check [criteria-changelog.md](criteria-changelog.md "mention") for information on the latest changes in the judging criteria/rules.
-   
+1. **Hierarchy of truth:** If the protocol team provides no specific information, the default rules apply (judging guidelines).
+
+   If the protocol team provides specific information in the README or CODE COMMENTS, that information stands above all judging rules. In case of contradictions between the README and CODE COMMENTS, the README is the chosen source of truth.
+
+   The judge can decide that CODE COMMENTS are outdated based on contextual evidence. In that case, the judging guidelines are the chosen source of truth.
+
+   > Example: The code comments state that "a swap can never fail" even though the code is built to support failing swaps.
+
+   The protocol team can use the README (and only the README) to define language that indicates the codebase's restrictions and/or expected functionality. Issues that break these statements, irrespective of whether the impact is low/unknown, will be assigned Medium severity. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
+
+   > Example: The README states "Admin can only call XYZ function once" but the code allows the Admin to call XYZ function twice; this is a valid Medium
+
+   The Sherlock Judge can use public statements up until 24h before the contest ends to override the language in the chosen source of truth.
+
+   If rules are updated, the new rules apply only to contests that start after the date of change. Please check [criteria-changelog.md](criteria-changelog.md "mention") for information on the latest changes in the judging criteria/rules.
+
    **Historical decisions are not considered sources of truth.**
+
 2. **Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?** DoS has two separate scores on which it can become an issue:
    1. The issue causes locking of funds for users for more than a week.
    2. The issue impacts the availability of time-sensitive functions (cutoff functions are not considered time-sensitive).
@@ -43,7 +53,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
    2. When `external-admin=restricted`, issues related to these external admins affecting a protocol (being audited) by updating **the external protocol parameters** is a **valid issue** (Example: Aave governance has the intention to improve the Aave protocol) as the bug can occur even when the external admin is well intended
 6. **Discord messages or DM** screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
 7. **Contract Scope:**
-   1. If a contract is in contest Scope, then all its parent contracts are included by default. 
+   1. If a contract is in contest Scope, then all its parent contracts are included by default.
    2. In case the vulnerability exists in a library and an in-scope contract uses it and is affected by this bug this is a valid issue.
    3. ﻿﻿If there is a vulnerability in a contract from the contest repository but is not included in the scope then issues related to it cannot be considered valid.
 8. **Opportunity Loss** is not considered a loss of funds by Sherlock. For example, loss of functionality is not considered a loss of protocol revenue, nevertheless issues involving opportunity loss may be valid issues (for example, due to a loss of core functionality).
