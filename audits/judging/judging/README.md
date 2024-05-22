@@ -130,23 +130,24 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 
 ### IX. Duplication rules:
 
-1. Issues identifying a core vulnerability can be considered duplicates.&#x20;
-   1. **Scenario A:**\
-      There is a root cause/error/vulnerability **A** in the code. This vulnerability **A** -> leads to two attack paths:\
-      \- **B** -> **high** severity path\
-      \- **C** -> **medium** severity attack path/just identifying the vulnerability.\
-      Both **B** & **C** would not have been possible if error **A** did not exist in the first place. In this case, both **B** & **C** should be put **together as duplicates**.\
-      \- In addition to this, there is a submission **D** which identifies the core issue but does not clearly describe the impact or an attack path. Then **D** is considered low.
-   2. **Scenario B:**\
-      In the above example if the root issue **A** is one of the following generic vulnerabilities:\
-      \- Reentrancy\
-      \- Access control\
-      \- Front-running \
-      Then the submissions with valid attack paths and higher vulnerability are considered valid. If the submission is vague or does not identify the attack path with higher severity clearly it will be considered low.\
-      \- **B** is a valid issue\
-      \- **C** is low
-2. In case the same vulnerability appears across multiple places in different contracts, they can be considered duplicates. \
-   The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately. &#x20;
+1. Did the issue identify the root cause?
+2. Did the issue identify at least a Medium impact?
+
+If both answers to these questions are Yes, the issue is a duplicate.
+
+**Root cause groupings**
+
+If the following issues appear in multiple places, even in different contracts. In that case, they are considered to have the same root cause.
+
+1. Issues with the same logic mistake.
+   > Example: uint256 is cast to uint128 unsafely.
+2. Issues with the same conceptual mistake.
+   > Example: different untrusted external admins can steal funds.
+3. Issues in the category
+   - Slippage protection
+   - Reentrancy
+   - Access control
+   - Front-running
 
 ### X. Best practices:
 
