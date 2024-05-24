@@ -136,7 +136,7 @@ The duplication rules assume we have a "target issue", and the "potential duplic
 2. Identify at least a Medium impact
 3. Identify a valid attack path
 
-Only when the "potential duplicate" meets all three requirements, the "potential duplicate" will be duplicated with the "target issue".
+Only when the "potential duplicate" meets all three requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
 
 Otherwise, if the "potential duplicate" doesn't meet all requirements, the "potential duplicate" will not be duplicated but could still be judged any other way (solo, a duplicate of another issue, invalid, or any other severity)
 
