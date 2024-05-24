@@ -152,7 +152,7 @@ If the following issues appear in multiple places, even in different contracts. 
    - Slippage protection
    - Reentrancy
    - Access control
-   - Front-running
+   - Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
 
 ### X. Best practices:
 
@@ -166,3 +166,9 @@ If the following issues appear in multiple places, even in different contracts. 
 6. Do not copy-paste issues from other contests/reports/past audits. They are extremely unlikely to be valid to the respective contest.&#x20;
 
 This guide shall be regularly updated as more contests are judged and with evolving Smart contract security principles, the judging standards are subject to change over time.
+
+### XI. Glossary
+
+**front-run**: There is operation A; if executed, it typically has no losses for anyone. If some other operation B executes before A, either in the same transaction or a separate transaction, there is a loss of some sort for either the protocol or some user(s) (it can be the same user)
+
+**sandwich**: A front-run, followed by operation C controlled by the attacker who also executed operation B. The goal of operation C is to revert the contract to its initial state.
