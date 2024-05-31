@@ -55,7 +55,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
    Note: if the attack path is possible with any possible value, it will be a valid issue.
 
-   Exception: if the attack path is based on a value that's currently live on-chain, it will be a valid issue.
+   Exception: It will be a valid issue if the attack path is based on a value currently live on the network to which the protocol will be deployed.
 6. **Discord messages or DM** screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
 7. **Contract Scope:**
    1. If a contract is in contest Scope, then all its parent contracts are included by default.
