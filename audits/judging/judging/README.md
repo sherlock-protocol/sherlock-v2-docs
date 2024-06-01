@@ -145,8 +145,8 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
       Then the submissions with valid attack paths and higher vulnerability are considered valid. If the submission is vague or does not identify the attack path with higher severity clearly it will be considered low.\
       \- **B** is a valid issue\
       \- **C** is low
-2. In case the same vulnerability appears across multiple places in different contracts, they can be considered duplicates.
-The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately.
+2. In case the same vulnerability appears across multiple places in different contracts, they can be considered duplicates. \
+   The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately. &#x20;
 
 ### X. Best practices:
 
