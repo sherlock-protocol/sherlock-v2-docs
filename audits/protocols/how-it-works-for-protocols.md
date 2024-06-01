@@ -29,7 +29,7 @@ The length of the audit contest itself will be communicated to the protocol team
 **Issue Verification:** Depends on the number of issues submitted, but could take 1 day or could take 7 days (also depends on the productivity of the protocol team)\
 **Issues fixes:** Depends on the number of valid issues, but could take 1 day or could take 1-2 weeks (also depends on the productivity of the protocol team)\
 **Escalation Period:** Once the issues have been verified, this is a "double-checking" process that takes 48-72 hours in total and usually occurs while the protocol team is fixing issues.\
-**Fix review:** This will be done by the Lead Senior Watson if it can be accomplished in 0.5 days. If not, Sherlock suggests a small follow-up audit contest. Could take as little as 1 day, or it could take 1-2 weeks to schedule and complete (depending on number of issues and Lead Senior Watson availability, etc.)\
+**Fix review:** This will be done by the Lead Senior Watson if it can be accomplished in 1 day or less. If not, Sherlock suggests a small follow-up audit contest. Could take as little as 1 day, or it could take 1-2 weeks to schedule and complete (depending on number of issues and Lead Senior Watson availability, etc.)\
 \
 **Generally, Sherlock recommends a protocol team not expect to deploy/launch their protocol until 2-3 weeks after the audit contest finishes. However, if not issues are found, a protocol team could launch as soon as 3 days after the audit contest ends.**&#x20;
 {% endhint %}
