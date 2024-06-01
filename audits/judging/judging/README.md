@@ -119,7 +119,6 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 22. **Future issues:** Issues that result out of a future integration/implementation that was not mentioned in the docs/README or because of a future change in the code (as a fix to another issue) are **not** valid issues.
 23. **Non-Standard tokens:** Issues related to tokens with non-standard behaviors, such as [weird-tokens](https://github.com/d-xo/weird-erc20) are not considered valid by default unless these tokens are explicitly mentioned in the README.
 24. Using Solidity versions that support **EVM opcodes that don't work** on networks on which the protocol is deployed is not a valid issue beacause one can manage compilation flags to compile for past EVM versions on newer Solidity versions.
-25. **Missing circuit breaker checks:** `minAnswer` and `maxAnswer` checks for price from Chanlink Price Feeds are considered low severity because on most price feeds they're deprecated or are sanity checks for extreme values ($1 for ETH/USD).
 
 ### VIII. List of Issue categories that are considered valid:
 
@@ -148,7 +147,6 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
       \- **C** is low
 2. In case the same vulnerability appears across multiple places in different contracts, they can be considered duplicates.
 The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately.
-    
 
 ### X. Best practices:
 
