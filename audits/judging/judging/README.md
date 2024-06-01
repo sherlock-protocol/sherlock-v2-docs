@@ -146,30 +146,8 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
       Then the submissions with valid attack paths and higher vulnerability are considered valid. If the submission is vague or does not identify the attack path with higher severity clearly it will be considered low.\
       \- **B** is a valid issue\
       \- **C** is low
-2. **Root cause groupings**
-
-If the following issues appear in multiple places, even in different contracts. In that case, they are considered to have the same root cause.
-
-1. Issues with the same logic mistake.
-   > Example: uint256 is cast to uint128 unsafely.
-2. Issues with the same conceptual mistake.
-   > Example: different untrusted external admins can steal funds.
-3. Issues in the category
-   - Slippage protection
-   - Reentrancy
-   - Access control
-   - Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
-  
-   The consideration is based on the following groups:
-   1. Reentrancy:
-      - Classical Reentrancy;
-      - Cross-function Reentrancy;
-      - Cross-contract Reentrancy;
-      - Read-only Reentrancy.
-      If several reports find different scenarios for the same type of reentrancy within the codebase, they can be considered to have the same root cause.
-   2. Front-running/sandwich/slippage protection:
-      -  Can be fixed by slippage protection;
-      -  Can be fixed by a commit-reveal mechanism (e.g. the user front-runs the admin, who's trying to blacklist him).
+2. In case the same vulnerability appears across multiple places in different contracts, they can be considered duplicates.
+The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately.
     
 
 ### X. Best practices:
