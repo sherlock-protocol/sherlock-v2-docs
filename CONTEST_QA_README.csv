@@ -15,5 +15,4 @@ We will report issues where the core protocol functionality is inaccessible for 
 Please provide links to previous audits (if any).,"Please note that listing the audits here only provides context to Watsons and doesn't invalidate findings acknowledged in these audits, unless the past audit was Sherlock's, the issue was marked ""Won't fix"" and this is an Update Contest of that codebase.",14
 Please list any relevant protocol resources.,"Feel free to link the docs, whitepaper, and the website for Watsons to gather context on the audit.",15
 Additional audit information.,"If you'd like to modify Sherlock's rules or specify what areas would you like Watsons to look into, this is a perfect place to do so.
-In case you forked any contracts, please provide a diff from the original ones. You can also provide a diff of the contracts after your last audit(s). This will direct Watsons' focus on the least battle-tested parts.",16
-
+In case you forked any contracts, please provide a diff from the original ones. You can also provide a diff of the contracts after your last audit(s). This will direct Watsons' focus on the least battle-tested parts.",16 
