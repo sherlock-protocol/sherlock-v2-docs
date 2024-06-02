@@ -161,10 +161,10 @@ If the following issues appear in multiple places, even in different contracts. 
   
    The consideration is based on the following groups:
    1. Reentrancy:
-      - Reenter in the same function;
-      - Cross function reentrancy (in a different function inside the contract);
+      - [Reenter in the same function](https://solodit.xyz/issues/h-3-reentrancy-in-vestingsolclaim-will-allow-users-to-drain-the-contract-due-to-executing-call-on-users-address-before-setting-sindex-uint128i-sherlock-zap-protocol-git);
+      - [Cross function reentrancy](https://github.com/sherlock-audit/2022-11-bullvbear-judging/issues/88) (in a different function inside the contract);
       - Cross contract reentrancy (in a different contract within the codebase);
-      - Read-only reentrancy.
+      - [Read-only reentrancy]{https://github.com/sherlock-audit/2022-11-bond-judging/issues/23).
       If several reports find different scenarios for the same type of reentrancy within the codebase, they can be considered to have the same root cause.
    2. Front-running/sandwich/slippage protection:
       -  Can be fixed by slippage protection;
