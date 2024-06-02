@@ -56,6 +56,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
    1. If a contract is in contest Scope, then all its parent contracts are included by default.
    2. In case the vulnerability exists in a library and an in-scope contract uses it and is affected by this bug this is a valid issue.
    3. ﻿﻿If there is a vulnerability in a contract from the contest repository but is not included in the scope then issues related to it cannot be considered valid.
+   4. If the contracts of the external protocol can be used to exploit the contest's codebase (e.g. for read-only reentrancy), then this bug is a valid issue.
 8. **Opportunity Loss** is not considered a loss of funds by Sherlock. For example, loss of functionality is not considered a loss of protocol revenue, nevertheless issues involving opportunity loss may be valid issues (for example, due to a loss of core functionality).
 9. **Design decisions** are not valid issues. Even if the design is suboptimal, but doesn't imply any loss of funds, these issues are considered informational.
 10. Watsons are expected to keep up to date with the contest's Discord channel as important announcements impacting judging may arise. They should keep in mind that any message the Sponsor sends will be considered a source of truth.
