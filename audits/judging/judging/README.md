@@ -168,7 +168,7 @@ If the following issues appear in multiple places, even in different contracts. 
       If several reports find different scenarios for the same type of reentrancy within the codebase, they can be considered to have the same root cause.
    2. Front-running/sandwich/slippage protection:
       -  Can be fixed by slippage protection;
-      -  Can be fixed by a commit-reveal mechanism (e.g. the user front-runs the admin, who's trying to blacklist him).
+      -  Can be fixed by a commit-reveal mechanism (e.g. the user front-runs the admin, who's trying to blacklist them).
 
 ### X. Best practices:
 
