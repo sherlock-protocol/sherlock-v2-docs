@@ -161,10 +161,10 @@ If the following issues appear in multiple places, even in different contracts. 
   
    The consideration is based on the following groups:
    1. Reentrancy:
-      - Classical Reentrancy;
-      - Cross-function Reentrancy;
-      - Cross-contract Reentrancy;
-      - Read-only Reentrancy.
+      - Reenter in the same function;
+      - Cross function reentrancy (in a different function inside the contract);
+      - Cross contract reentrancy (in a different contract within the codebase);
+      - Read-only reentrancy.
       If several reports find different scenarios for the same type of reentrancy within the codebase, they can be considered to have the same root cause.
    2. Front-running/sandwich/slippage protection:
       -  Can be fixed by slippage protection;
