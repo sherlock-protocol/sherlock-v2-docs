@@ -137,14 +137,13 @@ The duplication rules assume we have a "target issue", and the "potential duplic
 3. Identify a valid attack path or vulnerability path
 4. Fulfills other submission quality requirements (e.g. provides a PoC for categories that require one)
 
-
 Only when the "potential duplicate" meets all three requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
 
 Otherwise, if the "potential duplicate" doesn't meet all requirements, the "potential duplicate" will not be duplicated but could still be judged any other way (solo, a duplicate of another issue, invalid, or any other severity)
 
 **Root cause groupings**
 
-If the following issues appear in multiple places, even in different contracts. In that case, they are considered to have the same root cause.
+If the following issues appear in multiple places, even in different contracts. In that case, they may be considered to have the same root cause.
 
 1. Issues with the same logic mistake.
    > Example: uint256 is cast to uint128 unsafely.
@@ -155,6 +154,8 @@ If the following issues appear in multiple places, even in different contracts. 
    - Reentrancy
    - Access control
    - Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
+
+The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately.
 
 ### X. Best practices:
 
