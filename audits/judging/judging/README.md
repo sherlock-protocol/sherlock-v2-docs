@@ -134,7 +134,7 @@ The duplication rules assume we have a "target issue", and the "potential duplic
 
 1. Identify the root cause
 2. Identify at least a Medium impact
-3. Identify a valid attack path
+3. Identify a valid attack path or vulnerability path
 4. Fulfills other submission quality requirements (e.g. provides a PoC for categories that require one)
 
 
