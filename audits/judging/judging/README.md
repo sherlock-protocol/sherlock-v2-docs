@@ -172,6 +172,8 @@ This guide shall be regularly updated as more contests are judged and with evolv
 
 ### XI. Glossary
 
-**front-run**: There is operation A; if executed, it typically has no losses for anyone. If some other operation B executes before A, either in the same transaction or a separate transaction, there is a loss of some sort for either the protocol or some user(s) (it can be the same user)
+**Attack Path**: A sequence of steps or actions a malicious actor takes to cause losses or grief to the protocol or users and/or gain value or profit.
 
-**sandwich**: A front-run, followed by operation C controlled by the attacker who also executed operation B. The goal of operation C is to revert the contract to its initial state.
+**Front-run**: There is operation A; if executed, it typically has no losses for anyone. If some other operation B executes before A, either in the same transaction or a separate transaction, there is a loss of some sort for either the protocol or some user(s) (it can be the same user)
+
+**Sandwich**: A front-run, followed by operation C controlled by the attacker who also executed operation B. The goal of operation C is to revert the contract to its initial state.
