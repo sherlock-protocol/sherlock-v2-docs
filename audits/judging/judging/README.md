@@ -176,4 +176,8 @@ This guide shall be regularly updated as more contests are judged and with evolv
 
 **Front-run**: There is operation A; if executed, it typically has no losses for anyone. If some other operation B executes before A, either in the same transaction or a separate transaction, there is a loss of some sort for either the protocol or some user(s) (it can be the same user)
 
+**Root Cause**: The primary factor or a fundamental reason that imposes an unwanted outcome
+
 **Sandwich**: A front-run, followed by operation C controlled by the attacker who also executed operation B. The goal of operation C is to revert the contract to its initial state.
+
+**Vulnerability Path**: A sequence of steps showcasing how an issue causes losses or grief to the protocol or users through well-intended usage of the protocol.
