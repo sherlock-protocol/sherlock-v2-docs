@@ -135,6 +135,8 @@ The duplication rules assume we have a "target issue", and the "potential duplic
 1. Identify the root cause
 2. Identify at least a Medium impact
 3. Identify a valid attack path
+4. Fulfills other submission quality requirements (e.g. provides a PoC for categories that require one)
+
 
 Only when the "potential duplicate" meets all three requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
 
