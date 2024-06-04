@@ -127,6 +127,7 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 3. **Identifies the core issue:** In case of issues that have a large number of duplicates, Issues that identify the core issue and show valid loss of funds should be grouped.
 4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**. \
    **Exception:** In case the array length is controlled by the trusted admin/owner or the issue describes an impractical usage of parameters to reach OOG state then these submissions would be considered as **low**.
+5. **Missing circuit breaker checks** from Chainlink's Price Feeds (checking for price being below `minAnswer` or above `maxAnswer`) are considered valid mediums **only** if Watson explicitly mentions which Price Feeds still have them, since on most of them circuit breakers are deprecated
 
 ### IX. Duplication rules:
 
