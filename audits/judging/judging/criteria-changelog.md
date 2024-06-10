@@ -4,6 +4,16 @@ description: All future changes to the Issue criteria page will be logged here.
 
 # Criteria Changelog
 
+## 1.7 - 10/06/2025
+
+***
+
+Batch 2: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/34
+
+* SJIP-7: Duplication
+* SJIP-8: Missing Curcuit Breaker Checks
+* SJIP-9: Change Trusted/Restricted Logic
+
 ## 1.6 - 17/05/2024
 
 ***
