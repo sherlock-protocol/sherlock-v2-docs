@@ -48,9 +48,14 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 3. **Low/Informational Issues**:  While Sherlock acknowledges that it would be great to include & reward low-impact/informational issues, we strongly feel that Watsons should focus on finding the most critical vulnerabilities that will potentially cause millions of dollars of losses on mainnet. Sherlock understands that it could be missing out on some potential "value add" for protocol, but it's only because the real task of finding critical vulnerabilities requires 100% of the attention of Watsons. While low/informational issues are not rewarded individually if a Watson identifies an attack vector that combines multiple lows to cause significant loss/damage that would still be categorized as a valid medium/high.
 4. **Direct Protocol Owner/Admin rug pulls.** If a protocol specifically mentions the restrictions imposed on the owner/admin, issues describing an attack that results in bypassing these restrictions can be considered valid. Please note that these restrictions must be explicitly described by the protocol and will be considered case by case. \
    Admin functions are assumed to be used properly, unless a list of requirements is listed and it's incomplete or if there is no scenario where a permissioned funtion can be used properly.
-5. **External Admin trust assumptions**:
-   1. When `external-admin=trusted`, issues related to these external admins being able to rug protocol users is **not a valid issue.** (Example: Aave governance has the intention of rugging Index Protocol)
-   2. When `external-admin=restricted`, issues related to these external admins affecting a protocol (being audited) by updating **the external protocol parameters** is a **valid issue** (Example: Aave governance has the intention to improve the Aave protocol) as the bug can occur even when the external admin is well intended
+5. **(External) Admin trust assumptions**:
+   When a function is access restricted, only values for specific function variables mentioned in the README can be taken into account when identifying an attack path.
+
+   If no values are provided, the (external) admin is trusted to use values that will not cause any issues.
+
+   Note: if the attack path is possible with any possible value, it will be a valid issue.
+
+   Exception: It will be a valid issue if the attack path is based on a value currently live on the network to which the protocol will be deployed.
 6. **Discord messages or DM** screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
 7. **Contract Scope:**
    1. If a contract is in contest Scope, then all its parent contracts are included by default.
@@ -87,13 +92,9 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 2. **Incorrect Event values:**  Incorrectly calculated/wrong values in emitted events are not considered valid medium or high.
 3. **Zero address checks:**  Check to make sure input values are not zero addresses.
 4. **User input validation:** User input validation to prevent user mistakes is not considered a valid issue. However, if a user input could result in a major protocol malfunction or significant loss of funds could be a valid high. [Example(Valid)](https://github.com/sherlock-audit/2022-10-illuminate-judging/issues/47)
-5.  **Admin Input/call validation:**  Protocol admin is considered to be trusted in most cases, hence issues where
-
-    1. Admin incorrectly enters an input parameter. Example: Make sure interestPerMin > 1 ether as it is an important parameter.  This is not a valid issue.
-    2. Admin could have an incorrect call order. Example: If an Admin forgets to `setWithdrawAddress()` before calling `withdrawAll()` This is not a valid issue.
-    3. An admin action can break certain assumptions about the functioning of the code. Example: Pausing a collateral causes some users to be unfairly liquidated or any other action causing loss of funds. This is not considered a valid issue.&#x20;
-
-    As mentioned in the standards observed, in the case of a restricted admin, the restriction must be clearly mentioned for any issue in this category to be considered valid&#x20;
+5.  **Admin Input/call validation:**
+    1. Admin could have an incorrect call order. Example: If an Admin forgets to `setWithdrawAddress()` before calling `withdrawAll()` This is not a valid issue.
+    2. An admin action can break certain assumptions about the functioning of the code. Example: Pausing a collateral causes some users to be unfairly liquidated or any other action causing loss of funds. This is not considered a valid issue.&#x20;
 6. **Contract / Admin Address Blacklisting / Freezing:** If a protocol's smart contracts or admin addresses get added to a "blacklist" and the functionality of the protocol is affected by this blacklist, this is not considered a valid issue. \
    However, there could be cases where an attacker would use a blacklisted address to cause harm to a protocol functioning. [Example(Valid)](https://github.com/sherlock-audit/2022-11-opyn-judging/issues/219)
 7. **Front-running initializers:** Front-running initializers where there is no irreversible damage or loss of funds & the protocol could just redeploy and initialize again is not a valid issue.
@@ -125,28 +126,38 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 1. **Slippage** related issues showing a definite loss of funds with a detailed explanation for the same can be considered valid **high**
 2. **EIP Compliance:** For issues related to EIP compliance, the protocol & codebase must show that there are important external integrations that would require strong compliance with the EIP's implemented in the code. The EIP must be in regular use or in the **final state** for EIP implementation issues to be considered valid
 3. **Identifies the core issue:** In case of issues that have a large number of duplicates, Issues that identify the core issue and show valid loss of funds should be grouped.
-4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**. \
+4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**. 
    **Exception:** In case the array length is controlled by the trusted admin/owner or the issue describes an impractical usage of parameters to reach OOG state then these submissions would be considered as **low**.
+5. **Chainlink Price Checks:** Issues related to `minAnswer` and `maxAnswer` checks on Chainlink's Price Feeds are considered medium **only** if the Watson explicitly mentions the price feeds (e.g. USDC/ETH) that require this check.
 
 ### IX. Duplication rules:
 
-1. Issues identifying a core vulnerability can be considered duplicates.&#x20;
-   1. **Scenario A:**\
-      There is a root cause/error/vulnerability **A** in the code. This vulnerability **A** -> leads to two attack paths:\
-      \- **B** -> **high** severity path\
-      \- **C** -> **medium** severity attack path/just identifying the vulnerability.\
-      Both **B** & **C** would not have been possible if error **A** did not exist in the first place. In this case, both **B** & **C** should be put **together as duplicates**.\
-      \- In addition to this, there is a submission **D** which identifies the core issue but does not clearly describe the impact or an attack path. Then **D** is considered low.
-   2. **Scenario B:**\
-      In the above example if the root issue **A** is one of the following generic vulnerabilities:\
-      \- Reentrancy\
-      \- Access control\
-      \- Front-running \
-      Then the submissions with valid attack paths and higher vulnerability are considered valid. If the submission is vague or does not identify the attack path with higher severity clearly it will be considered low.\
-      \- **B** is a valid issue\
-      \- **C** is low
-2. In case the same vulnerability appears across multiple places in different contracts, they can be considered duplicates. \
-   The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately. &#x20;
+The duplication rules assume we have a "target issue", and the "potential duplicate" of that issue needs to meet the following requirements to be considered a duplicate.
+
+1. Identify the root cause
+2. Identify at least a Medium impact
+3. Identify a valid attack path or vulnerability path
+4. Fulfills other submission quality requirements (e.g. provides a PoC for categories that require one)
+
+Only when the "potential duplicate" meets all three requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
+
+Otherwise, if the "potential duplicate" doesn't meet all requirements, the "potential duplicate" will not be duplicated but could still be judged any other way (solo, a duplicate of another issue, invalid, or any other severity)
+
+**Root cause groupings**
+
+If the following issues appear in multiple places, even in different contracts. In that case, they may be considered to have the same root cause.
+
+1. Issues with the same logic mistake.
+   > Example: uint256 is cast to uint128 unsafely.
+2. Issues with the same conceptual mistake.
+   > Example: different untrusted external admins can steal funds.
+3. Issues in the category
+   - Slippage protection
+   - Reentrancy
+   - Access control
+   - Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
+
+The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately.
 
 ### X. Best practices:
 
@@ -160,3 +171,15 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 6. Do not copy-paste issues from other contests/reports/past audits. They are extremely unlikely to be valid to the respective contest.&#x20;
 
 This guide shall be regularly updated as more contests are judged and with evolving Smart contract security principles, the judging standards are subject to change over time.
+
+### XI. Glossary
+
+**Attack Path**: A sequence of steps or actions a malicious actor takes to cause losses or grief to the protocol or users and/or gain value or profit.
+
+**Front-run**: There is operation A; if executed, it typically has no losses for anyone. If some other operation B executes before A, either in the same transaction or a separate transaction, there is a loss of some sort for either the protocol or some user(s) (it can be the same user)
+
+**Root Cause**: The primary factor or a fundamental reason that imposes an unwanted outcome
+
+**Sandwich**: A front-run, followed by operation C controlled by the attacker who also executed operation B. The goal of operation C is to revert the contract to its initial state.
+
+**Vulnerability Path**: A sequence of steps showcasing how an issue causes losses or grief to the protocol or users through well-intended usage of the protocol.
