@@ -1,4 +1,4 @@
-# 🧑💻 Protocol Teams
+# 🧑‍💻 Protocol Teams
 
 Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI\_xD6AQiag/viewform)!
 
@@ -59,7 +59,7 @@ Sherlock’s approach provides a protocol with the focus, collaboration, and ass
 
 * At least 1 Senior Watson (top-ranked security expert) is heavily incentivized (through fixed pay and an ELO-style ranking system) to find as many bugs as possible over the entire length of the audit
 * The significant prize pool attracts 200-400 independent auditors who get paid based on the severity of their findings (only High/Medium severity findings are rewarded)
-* The Lead Senior Watson comes back to help the protocol team with fixes (provides a half-day complimentary fix review)
+* The Lead Senior Watson comes back to help the protocol team with fixes (provides a 1-day complimentary fix review)
 * Sherlock’s decentralized judging process takes hundreds of raw, duplicate issues and turns them into a digestible report, saving the protocol team days of work and reducing the possibility of overlooked vulnerabilities
 * Sherlock's process is the most cost-effective: 80% of what you pay to Sherlock goes directly to security experts
 * Sherlock is the only auditor to offer bug bounty and exploit coverage after the audit is conducted (once the fix review is finished), ensuring that Sherlock's incentives are aligned in shipping the most secure protocol possible.&#x20;
