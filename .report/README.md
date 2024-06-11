@@ -39,7 +39,7 @@ Example
 
 ### External pre-conditions
 
-> Similar to internal but it describes changes in the external environment
+> Similar to internal but it describes changes in the external protocols 
 
 - The ETH oracle needs to go from 4000 to 5000 within 2 minutes
 - The gas price needs to be exactly 100 wei
