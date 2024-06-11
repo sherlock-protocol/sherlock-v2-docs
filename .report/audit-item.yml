@@ -1,0 +1,108 @@
+name: Audit Item
+description: Current version of the audit items that end up in the report
+labels: []
+projects: []
+title: "{actor} will {impact} {affected party}"
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: "A summary with the following structure: **{root cause} will cause [a/an] {impact} for {affected party} as {actor} will {attack path}** [example](https://gist.github.com/WangSecurity/9d4647826837fe6a4529ec1835b0dd4b)"
+      placeholder: "The missing check in stake.sol will cause a complete loss of funds for stakers as an attacker will frontrun their transactions"
+    validations:
+      required: true
+  - type: textarea
+    id: root
+    attributes:
+      label: Root Cause
+      description: >
+        In case its a mistake in the code, use the following structure: **In {link to code} the {root cause}**
+
+        Example:
+
+        - In [stake.sol:551](https://github.com/sherlock-protocol/sherlock-v2-core/blob/main/contracts/Sherlock.sol#L2) there is a missing check on transfer function
+
+        - In [lp.sol:12](https://github.com/sherlock-protocol/sherlock-v2-core/blob/main/contracts/Sherlock.sol#L2) the fee calculation does division before multiplication which will revert the transaction on [lp.sol:18](https://github.com/sherlock-protocol/sherlock-v2-core/blob/main/contracts/Sherlock.sol#L2)
+
+
+        In case its a conceptual mistake, use the following structure: **The choice to {design choice} is a mistake as {root cause}**
+
+        Example:
+
+        - The choice to use Uniswap as an oracle is a mistake as the price can be manipulated
+
+        - The choice to depend on Protocol X for admin calls is a mistake as it will cause any call to revert
+
+
+        [more info](https://gist.github.com/WangSecurity/b8450ba72aaf2a2f7675d35a4309d1a4)
+    validations:
+      required: true
+  - type: textarea
+    id: pre
+    attributes:
+      label: Pre Conditions
+      description: >
+        A numbered list of conditions to allow the attack path or vulnerability path to happen:
+
+        1. {Role} needs to do {action} to set {variable} to {value}.
+
+
+        [more info](https://gist.github.com/WangSecurity/b8450ba72aaf2a2f7675d35a4309d1a4)
+    validations:
+      required: true
+  - type: textarea
+    id: attack
+    attributes:
+      label: Attack Path
+      description: >
+        A numbered list of steps, talking through the attack path:
+
+        1. Attacker calls {function}
+
+
+        [more info](https://gist.github.com/WangSecurity/b8450ba72aaf2a2f7675d35a4309d1a4)
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: >
+        In case it's an attack path, use the following structure: **The {affected party} suffers a {approximate loss}. The attacker gains {approximate profit if any} or loses {approximate loss if a grief attack}.**
+
+        Example:
+
+        - The stakers suffer a 50% loss during staking. The attacker gains this 50% from stakers.
+
+        - The protocol suffers a 0.0006 ETH minting fee. The attacker loses their portion of the fee and doesn't gain anything (griefing).
+
+
+        In case it's a vulnerability path, use the following structure: **The {affected party} (suffers an {approximate loss} OR cannot {execute action}.**
+
+        Example:
+
+        - Based on the described above scenario, the users suffer an approximate loss of 0.01% due to precision loss.
+
+        - Based on the described above scenario, the user cannot mint tokens.
+
+
+        [more info](https://gist.github.com/WangSecurity/b8450ba72aaf2a2f7675d35a4309d1a4)
+    validations:
+      required: true
+  - type: textarea
+    id: mitigaton
+    attributes:
+      label: Mitigation
+      description: >
+        The mitigation
+    validations:
+      required: false
+  - type: textarea
+    id: poc
+    attributes:
+      label: PoC
+      description: >
+        The poc
+    validations:
+      required: false
