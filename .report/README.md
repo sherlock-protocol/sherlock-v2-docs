@@ -39,7 +39,7 @@ Example
 
 ### External pre-conditions
 
-> Similar to internal but it describes changes in the external protocols 
+> Similar to internal but it describes changes in the external protocols
 
 - The ETH oracle needs to go from 4000 to 5000 within 2 minutes
 - The gas price needs to be exactly 100 wei
@@ -63,8 +63,8 @@ In case it's a __vulnerability path:__
 The {affected party} [(suffers an  approximate loss of {value} OR cannot {execute action})].
 
 Example:
-- Based on the described above scenario, the users suffer an approximate loss of 0.01% due to precision loss.
-- Based on the described above scenario, the user cannot mint tokens.
+- The users suffer an approximate loss of 0.01% due to precision loss.
+- The user cannot mint tokens.
 
 ### PoC
 

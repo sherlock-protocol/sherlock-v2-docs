@@ -2,8 +2,7 @@
 original: https://github.com/sherlock-audit/2024-04-titles-judging/issues/269
 ---
 
-# Title
-Protocol will not refund excess fees to users
+# Protocol will not refund excess fees to users
 
 ### Description
 The incorrect `msg.value` in Edition.sol will cause a loss of excess fees for users as the protocol will send the entire `msg.value` into `FeeManager` contract instead of `mintFee`.

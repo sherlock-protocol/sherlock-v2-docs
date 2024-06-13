@@ -2,8 +2,7 @@
 original: https://github.com/sherlock-audit/2024-02-perpetual-judging/issues/123
 ---
 
-# Title
-Attacker will steal funds from LPs
+# Attacker will steal funds from LPs
 
 ### Summary
 
@@ -28,7 +27,12 @@ The choice to depend on Pyth oracles is a mistake as there is no guarantee that 
 
 ### Impact
 
-The LPs suffers an approximate loss of ...?
+LPs suffer an approximate loss equal to the attacker's profit
+
+
+### PoC
+
+-
 
 ### Mitigation
 
