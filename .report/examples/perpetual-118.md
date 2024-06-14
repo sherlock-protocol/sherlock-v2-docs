@@ -16,7 +16,7 @@ The choice to denominate all the tokens value in USD is a mistake as USDT/USDC (
 -
 
 ### External pre-conditions
-The USDC/USDT price to be other than $1
+The USDC/USDT price to be less than $1
 
 ### Attack Path:
 1. The attacker calls [`withdraw`] during USDC/USDT 30% de-peg, but their collateral is still valued as there's no de-peg (100% instead of 70%).
@@ -29,4 +29,4 @@ The other LPs suffer an approximate loss of 30%. The attacker gains this 30%.
 -
 
 ### Mitigation
-Use the <quote-token>/USD oracle to convert the <base-token>/USD price to a <base-token>/<quote-token> oracle
+Use the \<quote-token>/USD oracle to convert the \<base-token>/USD price to a \<base-token>/\<quote-token> oracle
