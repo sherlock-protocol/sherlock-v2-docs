@@ -30,19 +30,19 @@ Example:
 ### Internal pre-conditions
 
 A numbered list of conditions to allow the attack path or vulnerability path to happen:
-1. [{Role} needs to {action} to set] {variable} to be [at least / at most / exactly] {value}
+1. [{Role} needs to {action} to set] {variable} to be [at least / at most / exactly / other than] {value}
 2. [{Role} needs to {action} to set] {variable} to go from {value} to {value} [within {time}]
 
 Example
 - Admin needs to call `setFee()` to set `fee` to be exactly `1 ETH`
-- The number ETH in the `stake.sol` contract to be at least `500 ETH`
+- Number ETH in the `stake.sol` contract to be at least `500 ETH`
 
 ### External pre-conditions
 
 > Similar to internal but it describes changes in the external protocols
 
-- The ETH oracle needs to go from 4000 to 5000 within 2 minutes
-- The gas price needs to be exactly 100 wei
+- ETH oracle needs to go from 4000 to 5000 within 2 minutes
+- Gas price needs to be exactly 100 wei
 
 ### Attack Path:
 
@@ -52,7 +52,7 @@ A numbered list of steps, talking through the attack path:
 ### Impact
 In case it's an __attack path:__
 
-The {affected party} suffers an approximate loss of {value}. [The attacker gains {gain} or loses {loss}.]
+The {affected party} suffers an approximate loss of {value}. [The attacker gains {gain} or loses {loss}].
 
 Example:
 - The stakers suffer a 50% loss during staking. The attacker gains this 50% from stakers.

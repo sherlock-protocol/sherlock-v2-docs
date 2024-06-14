@@ -12,11 +12,11 @@ In [`Edition::mintBatch`](https://github.com/sherlock-audit/2024-04-titles/blob/
 
 ### Internal pre-conditions
 
-__-__
+-
 
 ### External pre-conditions
 
-__-__
+-
 
 ### Attack path
 
@@ -26,6 +26,8 @@ __-__
 The protocol and fee recepients suffer a 0.999 ETH loss.
 
 ### PoC
+
+-
 
 ### Mitigation
 Consider the following change to ensure that the minting is computed based on the total number of tokens minted to all receivers:

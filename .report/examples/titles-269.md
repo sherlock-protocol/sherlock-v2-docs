@@ -16,7 +16,7 @@ In [`Edition.sol::mint::L236`](https://github.com/sherlock-audit/2024-04-titles/
 
 ### External pre-conditions
 
-__-__
+-
 
 ### Attack Path
 1. The work publisher calls and decreases the `mintFee` from 0.05 ETH to 0.03 ETH.
@@ -26,6 +26,8 @@ __-__
 The user suffers an approximate loss of 0.02 ETH. In reality, the loss is equal to any value by which this parameter was reduced
 
 ### PoC
+
+-
 
 ### Mitigation
 Call `mintFee` at the very start of `mint` function and send the received value to `FeeManager`:
