@@ -157,7 +157,7 @@ If the following issues appear in multiple places, even in different contracts. 
    - Access control
    - Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
 
-The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately.
+The exception to this would be if underlying code implementations **OR** impact **OR** the fixes are different, then they can be treated separately.
 
 The consideration is based on the following groups:
    1. Reentrancy:
