@@ -164,7 +164,8 @@ The consideration is based on the following groups:
       - [Reenter in the same function](https://github.com/sherlock-audit/2024-03-zap-protocol-judging/issues/157);
       - [Cross function reentrancy](https://github.com/sherlock-audit/2022-11-bullvbear-judging/issues/88) (in a different function inside the contract);
       - Cross contract reentrancy (in a different contract within the codebase);
-      - [Read-only reentrancy]{https://github.com/sherlock-audit/2022-11-bond-judging/issues/23).
+      - [Read-only reentrancy](https://github.com/sherlock-audit/2022-11-bond-judging/issues/23).
+      - [Cross-chain reentrancy](https://medium.com/immunefi/the-ultimate-guide-to-reentrancy-19526f105ac#8256).
       If several reports find different scenarios for the same type of reentrancy within the codebase, they can be considered to have the same root cause.
    2. Front-running/sandwich/slippage protection:
       -  Can be fixed by slippage protection;
