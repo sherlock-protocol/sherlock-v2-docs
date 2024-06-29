@@ -161,7 +161,7 @@ The exception to this would be if underlying code implementations **OR** impact 
 
 The consideration is based on the following groups:
    1. Reentrancy:
-      - [Reenter in the same function](https://solodit.xyz/issues/h-3-reentrancy-in-vestingsolclaim-will-allow-users-to-drain-the-contract-due-to-executing-call-on-users-address-before-setting-sindex-uint128i-sherlock-zap-protocol-git);
+      - [Reenter in the same function](https://github.com/sherlock-audit/2024-03-zap-protocol-judging/issues/157);
       - [Cross function reentrancy](https://github.com/sherlock-audit/2022-11-bullvbear-judging/issues/88) (in a different function inside the contract);
       - Cross contract reentrancy (in a different contract within the codebase);
       - [Read-only reentrancy]{https://github.com/sherlock-audit/2022-11-bond-judging/issues/23).
