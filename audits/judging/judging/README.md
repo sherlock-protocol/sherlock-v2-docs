@@ -67,12 +67,12 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 ### IV. How to identify a high issue:
 
-1. Definite loss of funds without (extensive) limitations of external conditions.
+1. Definite loss of funds without (extensive) limitations of external conditions. Extensive limitations cannot be controlled by the attacker.
 2. Inflicts serious non-material losses (doesn't include contract simply not working).
 
 ### V. How to identify a medium issue:
 
-1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The losses must exceed small, finite amount of funds, and any amount relevant based on the precision or significance of the loss.
+1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The losses must exceed 0.01% and any amount relevant based on the precision or significance of the loss.
 2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds.
 
 ### VI. Requirements:
