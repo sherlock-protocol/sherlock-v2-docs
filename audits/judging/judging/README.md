@@ -139,7 +139,7 @@ The duplication rules assume we have a "target issue", and the "potential duplic
 3. Identify a valid attack path or vulnerability path
 4. Fulfills other submission quality requirements (e.g. provides a PoC for categories that require one)
 
-Only when the "potential duplicate" meets all three requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
+Only when the "potential duplicate" meets all four requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
 
 Otherwise, if the "potential duplicate" doesn't meet all requirements, the "potential duplicate" will not be duplicated but could still be judged any other way (solo, a duplicate of another issue, invalid, or any other severity)
 
