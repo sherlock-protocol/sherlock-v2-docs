@@ -157,9 +157,9 @@ If the following issues appear in multiple places, even in different contracts. 
    - Access control
    - Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
 
-The exception to this would be if underlying code implementations **OR** impact **OR** the fixes are different, then they can be treated separately.
+The exception to this would be if underlying code implementations **OR** impact **OR** the fixes are different, then they may be treated separately.
 
-The consideration is based on the following groups:
+For the root cause categories above, the duplication should be based on the following groups:
    1. Reentrancy:
       - [Reenter in the same function](https://github.com/sherlock-audit/2024-03-zap-protocol-judging/issues/157);
       - [Cross function reentrancy](https://github.com/sherlock-audit/2022-11-bullvbear-judging/issues/88) (in a different function inside the contract);
