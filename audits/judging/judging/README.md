@@ -166,7 +166,7 @@ For the root cause categories above, the duplication should be based on the foll
       - Cross contract reentrancy (in a different contract within the codebase);
       - [Read-only reentrancy](https://github.com/sherlock-audit/2022-11-bond-judging/issues/23).
       - [Cross-chain reentrancy](https://medium.com/immunefi/the-ultimate-guide-to-reentrancy-19526f105ac#8256).
-      If several reports find different scenarios for the same type of reentrancy within the codebase, they can be considered to have the same root cause.
+      If several reports find different scenarios for the same type of reentrancy within the codebase, they should be be considered to have the same root cause.
    2. Front-running/sandwich/slippage protection:
       -  Can be fixed by slippage protection;
       -  Can be fixed by a commit-reveal mechanism (e.g. the user front-runs the admin, who's trying to blacklist them).
