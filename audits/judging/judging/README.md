@@ -67,7 +67,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 ### IV. How to identify a high issue:
 
-1. Definite loss of funds without (extensive) limitations of external conditions. Extensive limitations cannot be controlled by the attacker. The loss must exceed 1%.
+1. Definite loss of funds without (extensive) limitations of external conditions. The loss must exceed 1%.
 2. Inflicts serious non-material losses (doesn't include contract simply not working).
 
 ### V. How to identify a medium issue:
