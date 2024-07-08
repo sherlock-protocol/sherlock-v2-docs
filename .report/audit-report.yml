@@ -1,0 +1,124 @@
+name: Audit Item
+description: Current version of the audit items that end up in the report
+labels: []
+projects: []
+title: "{actor} will {impact} {affected party}"
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: "A summary with the following structure: **{root cause} will cause [a/an] {impact} for {affected party} as {actor} will {attack path}**"
+      placeholder: "The missing check in `stake.sol` will cause a complete loss of funds for stakers as an attacker will frontrun their transactions"
+    validations:
+      required: true
+  - type: textarea
+    id: root
+    attributes:
+      label: Root Cause
+      description: |
+        In case it’s a mistake in the code: **In {link to code} the {root cause}**
+
+        _Example:_
+            _- In `stake.sol:551` there is a missing check on transfer function_
+            _- In `lp.sol:12` the fee calculation does division before multiplication which will revert the transaction on `lp.sol:18`_
+
+        In case it’s a conceptual mistake: **The choice to {design choice} is a mistake as {root cause}**
+
+        _Example:_
+            _- The choice to use Uniswap as an oracle is a mistake as the price can be manipulated_
+            _- The choice to depend on Protocol X for admin calls is a mistake as it will cause any call to revert_
+      placeholder: "In `stake.sol:551` there is a missing check on transfer function"
+    validations:
+      required: true
+  - type: textarea
+    id: internal-pre
+    attributes:
+      label: Internal pre-conditions
+      description: |
+        A numbered list of conditions to allow the attack path or vulnerability path to happen:
+        1. [{Role} needs to {action} to set] {variable} to be [at least / at most / exactly / other than] {value}
+        2. [{Role} needs to {action} to set] {variable} to go from {value} to {value} [within {time}]
+
+        _Example:_
+            _- Admin needs to call `setFee()` to set `fee` to be exactly `1 ETH`_
+            _- Number of ETH in the `stake.sol` contract to be at least `500 ETH`_
+      placeholder: |
+        1. Admin needs to call `setFee()` to set `fee` to be exactly `1 ETH`
+        2. `lendingRate` to be other than `1.0`
+        3. Number of ETH in `stake.sol` to go from `10 ETH` to `100 ETH` within 24 hours
+    validations:
+      required: true
+  - type: textarea
+    id: external-pre
+    attributes:
+      label: External pre-conditions
+      description: |
+        > Similar to internal pre-conditions but it describes changes in the external protocols
+
+        _Example:_
+            _- ETH oracle needs to go from `4000` to `5000` within 2 minutes_
+            _- Gas price needs to be exactly `100 wei`_
+      placeholder: |
+        1. ETH oracle needs to go from `4000` to `5000` within 2 minutes
+        2. Gas price needs to be exactly `100 wei`
+    validations:
+      required: true
+  - type: textarea
+    id: attack
+    attributes:
+      label: Attack Path
+      description: |
+        A numbered list of steps, talking through the attack path:
+
+        1. **{Role} calls {function} {extra context}**
+        2. ..
+      placeholder: |
+        1. The work calls `decrease()` and sets `mintFee` to 0.03 ETH.
+        2. The user calls `mint()` and uses an outdated version as he calls with 0.05 ETH as `msg.value` to pay the 0.03 ETH `mintFee`
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: |
+        In case it's an attack path: **The {affected party} suffers an approximate loss of {value}. [The attacker gains {gain} or loses {loss}].**
+
+        _Example:_
+            _- The stakers suffer a 50% loss during staking. The attacker gains this 50% from stakers._
+            _- The protocol suffers a `0.0006` ETH minting fee. The attacker loses their portion of the fee and doesn't gain anything (griefing)._
+
+        In case it's a vulnerability path: **The {affected party} [suffers an  approximate loss of {value} OR cannot {execute action}].**
+
+        _Example:_
+            _- The users suffer an approximate loss of 0.01% due to precision loss._
+            _- The user cannot mint tokens._
+      placeholder: |
+        The protocol suffers a `0.0006` ETH minting fee. The attacker loses their portion of the fee and doesn't gain anything
+    validations:
+      required: true
+  - type: textarea
+    id: poc
+    attributes:
+      label: PoC
+      description: |
+        A coded PoC. [Required in some cases](https://docs.sherlock.xyz/audits/judging/judging#vi.-requirements) but optional for other cases.
+      placeholder: |
+        ```solidity
+        // SPDX-License-Identifier: GPL-3.0-or-later
+        pragma solidity >=0.8.0;
+
+        import "forge-std/Test.sol";
+        ...
+        ```
+    validations:
+      required: false
+  - type: textarea
+    id: mitigaton
+    attributes:
+      label: Mitigation
+      description: |
+        Mitigation of the issue (optional)
+    validations:
+      required: false

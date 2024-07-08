@@ -139,7 +139,7 @@ The duplication rules assume we have a "target issue", and the "potential duplic
 3. Identify a valid attack path or vulnerability path
 4. Fulfills other submission quality requirements (e.g. provides a PoC for categories that require one)
 
-Only when the "potential duplicate" meets all three requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
+Only when the "potential duplicate" meets all four requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
 
 Otherwise, if the "potential duplicate" doesn't meet all requirements, the "potential duplicate" will not be duplicated but could still be judged any other way (solo, a duplicate of another issue, invalid, or any other severity)
 
@@ -157,7 +157,19 @@ If the following issues appear in multiple places, even in different contracts. 
    - Access control
    - Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
 
-The exception to this would be if underlying code implementations, impact, and the fixes are different, then they can be treated separately.
+The exception to this would be if underlying code implementations **OR** impact **OR** the fixes are different, then they may be treated separately.
+
+For the root cause categories above, the duplication should be based on the following groups:
+   1. Reentrancy:
+      - [Reenter in the same function](https://github.com/sherlock-audit/2024-03-zap-protocol-judging/issues/157);
+      - [Cross function reentrancy](https://github.com/sherlock-audit/2022-11-bullvbear-judging/issues/88) (in a different function inside the contract);
+      - Cross contract reentrancy (in a different contract within the codebase);
+      - [Read-only reentrancy](https://github.com/sherlock-audit/2022-11-bond-judging/issues/23).
+      - [Cross-chain reentrancy](https://medium.com/immunefi/the-ultimate-guide-to-reentrancy-19526f105ac#8256).
+      If several reports find different scenarios for the same type of reentrancy within the codebase, they should be considered to have the same root cause.
+   2. Front-running/sandwich/slippage protection:
+      -  Can be fixed by slippage protection;
+      -  Can be fixed by a commit-reveal mechanism (e.g. the user front-runs the admin, who's trying to blacklist them).
 
 ### X. Best practices:
 
