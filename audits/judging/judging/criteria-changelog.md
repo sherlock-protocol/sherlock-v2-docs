@@ -4,6 +4,16 @@ description: All future changes to the Issue criteria page will be logged here.
 
 # Criteria Changelog
 
+## 1.8 - 08/07/2024
+
+***
+
+Batch 3: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/41/
+
+* SJIP-11: Introduce new report template
+* SJIP-12: Clarify duplication considerations
+* SJIP-13: Fix typo
+
 ## 1.7 - 10/06/2025
 
 ***
