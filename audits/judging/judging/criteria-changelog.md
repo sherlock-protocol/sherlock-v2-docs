@@ -14,7 +14,7 @@ Batch 3: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/41/
 * SJIP-12: Clarify duplication considerations
 * SJIP-13: Fix typo
 
-## 1.7 - 10/06/2025
+## 1.7 - 10/06/2024
 
 ***
 
