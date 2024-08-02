@@ -30,8 +30,8 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    > Example: The code comments state that "a swap can never fail" even though the code is built to support failing swaps.
 
-   The protocol team can use the README (and only the README) to define language that indicates the codebase's restrictions and/or expected functionality. Additionally, the protocol team can use only the following question to define protocol's invariants/properties:
-   > What properties/invariants do you want to hold even if breaking them has low/unknown impact?
+   The protocol team can use the README (and only the README) to define language that indicates the codebase's restrictions and/or expected functionality. Additionally, the protocol team can use only the following question to define the protocol's invariants/properties:
+   > What properties/invariants do you want to hold even if breaking them has a low/unknown impact?
    
    Issues that break the invariants from the above question, irrespective of whether the impact is low/unknown, will be assigned Medium severity. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
 
