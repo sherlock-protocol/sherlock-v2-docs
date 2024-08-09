@@ -37,8 +37,8 @@
 
 ## Bug Bounties
 
-* [Platform Rules](bug-bounties/platform-rules.md)
-* [Dispute Resolution](bug-bounties/dispute-resolution.md)
+* [📜 Platform Rules](bug-bounties/platform-rules.md)
+* [⚖️ Dispute Resolution](bug-bounties/dispute-resolution.md)
 
 ## Coverage
 
