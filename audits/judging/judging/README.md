@@ -71,8 +71,10 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 ### V. How to identify a medium issue:
 
-1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The loss of the affected party must exceed 0.01%.
+1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The loss of the affected party must exceed 0.01% and 0.01 USD.
 2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds of the affected party larger than 0.01%.
+
+Note: If a single attack can cause a 0.01% loss but can be replayed indefinitely (assuming little to no costs), it will considered a 100% loss.
 
 ### VI. Requirements:
 
