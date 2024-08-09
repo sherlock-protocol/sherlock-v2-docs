@@ -52,6 +52,11 @@
 * [📝 Claims](coverage/claims/README.md)
   * [Claims Process](claims/claims-process.md)
 
+## Bug Bounties
+
+* [Platform Rules](bug-bounties/platform-rules.md)
+* [Dispute Resolution](bug-bounties/dispute-resolution.md)
+
 ## Tokens
 
 * [SHER](tokens/sher.md)
