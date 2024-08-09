@@ -35,6 +35,11 @@
     * [Judging Tutorials](audits/judging/tutorials/judging-tutorials.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
+## Bug Bounties
+
+* [Platform Rules](bug-bounties/platform-rules.md)
+* [Dispute Resolution](bug-bounties/dispute-resolution.md)
+
 ## Coverage
 
 * [💰 Stakers](coverage/staking-apy/README.md)
@@ -51,11 +56,6 @@
   * [FAQ](coverage/protocols/faq.md)
 * [📝 Claims](coverage/claims/README.md)
   * [Claims Process](claims/claims-process.md)
-
-## Bug Bounties
-
-* [Platform Rules](bug-bounties/platform-rules.md)
-* [Dispute Resolution](bug-bounties/dispute-resolution.md)
 
 ## Tokens
 
