@@ -1,7 +1,7 @@
 question,description,order
 On what chains are the smart contracts going to be deployed?,"e.g. Ethereum, Arbitrum, Base, or any EVM-compatible network",1
 "If you are integrating tokens, are you allowing only whitelisted tokens to work with the codebase or any complying with the standard? Are they assumed to have certain properties, e.g. be non-reentrant? Are there any types of [weird tokens](https://github.com/d-xo/weird-erc20) you want to integrate?","Please specify the token standards, whether you want to use only certain implementations or any tokens, and what weird traits can these tokens have. Also, feel free to provide examples of the tokens you intend to use. Please make sure they do not exhibit any [weird traits](https://github.com/d-xo/weird-erc20).",2
-"Are there any limitations on values set by admins (or other roles) in the codebase, including restrictions on array lengths?","This question applies to all access-restricted functions in the codebase, including out-of-scope contracts. Access-restricted functions are only callable by a protocol role (Owner, Keeper, FeeManager, or any custom role specified in the codebase).
+"Are there any limitations on values set by admins (or other roles) in the codebase, including restrictions on array lengths?","This question applies to all access-restricted functions in the codebase, including out-of-scope contracts. Access-restricted functions are only callable by a protocol role (Owner, Keeper, FeeManager, or any custom role specified in the codebase). Also, list any hardcoded variables that you plan to change and the values you plan to apply.
 
 It's possible to answer ""No."" and not put any limitations on possible values.
 
