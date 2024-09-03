@@ -75,6 +75,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds of the affected party larger than 0.01% and 10 USD.
 
 > Note: If a single attack can cause a 0.01% loss but can be replayed indefinitely, it will be considered a 100% loss and can be invalid, medium or high, depending on the constraints.
+> 
 > Note: if the loss is fixed and below $10, but is 100% loss of the affected party, then it's considered valid. Example: if the protocol has fixed fee of 9 USD and the attack causes 100% loss of this fee.
 
 ### VI. Requirements:
