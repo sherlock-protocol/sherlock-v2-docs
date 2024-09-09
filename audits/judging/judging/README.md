@@ -70,13 +70,16 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 ### IV. How to identify a high issue:
 
-1. Definite loss of funds without (extensive) limitations of external conditions.
-2. Inflicts serious non-material losses (doesn't include contract simply not working).
+1. Definite loss of funds without (extensive) limitations of external conditions. The loss of the affected party must exceed 1%.
 
 ### V. How to identify a medium issue:
 
-1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The losses must exceed small, finite amount of funds, and any amount relevant based on the precision or significance of the loss.
-2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds.
+1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The loss of the affected party must exceed 0.01% and 10 USD.
+2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds of the affected party larger than 0.01% and 10 USD.
+
+> Note: If a single attack can cause a 0.01% loss but can be replayed indefinitely, it will be considered a 100% loss and can be medium or high, depending on the constraints.
+> 
+> Note: if the loss is fixed and below $10, but is 100% loss of the affected party, then it's considered valid. Example: if the protocol has fixed fee of 9 USD and the attack causes 100% loss of this fee.
 
 ### VI. Requirements:
 
