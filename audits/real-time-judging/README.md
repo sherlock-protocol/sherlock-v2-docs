@@ -1,12 +1,8 @@
 ---
-description: Documentation about real-time judging
+description: You’re going to review some issues anyway, why not get paid for it?
 ---
 
 # 🧑‍⚖️ Real-Time Judging
-
-## Participating in Real-Time Judging
-
-You’re going to review some issues anyway, why not get paid for it?
 
 ### What’s in it for me?
 
