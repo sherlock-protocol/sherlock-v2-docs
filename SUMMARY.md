@@ -26,6 +26,7 @@
   * [FAQ](audits/watsons/faq.md)
 * [🧑‍⚖️ Real-Time Judging](audits/real-time-judging/README.md)
   * [Judging Terms and Conditions](audits/real-time-judging/judging-terms-and-conditions.md)
+  * [Judging Conduct Guidelines](audits/real-time-judging/judging-conduct-guidelines.md)
 * [🧑‍⚖️ (old) Judging](audits/judging/README.md)
   * [Criteria for Issue Validity](audits/judging/judging/README.md)
     * [Criteria Changelog](audits/judging/judging/criteria-changelog.md)
