@@ -39,11 +39,13 @@
 
 ## Bug Bounties
 
+* [🌱 Pre-Launch Bounty](bug-bounties/pre-launch-bounty.md)
 * [📜 Platform Rules](bug-bounties/platform-rules.md)
 * [⚖️ Dispute Resolution](bug-bounties/dispute-resolution.md)
 
 ## Coverage
 
+* [🛡️ Sherlock Shield](coverage/sherlock-shield.md)
 * [💰 Stakers](coverage/staking-apy/README.md)
   * [Overview](stakers/overview.md)
   * [Lockup Period](stakers/lockup-period.md)
