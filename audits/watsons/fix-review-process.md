@@ -11,3 +11,15 @@ If the Lead Senior Watson determines that the protocol’s code changes require 
 {% hint style="info" %}
 If a Lead Senior Watson places outside of the top 10 in the ranking for a contest they lead, then they must forfeit 25% of their fixed pay so that Sherlock can bring in a Watson who found more of the issues to conduct the fix review.&#x20;
 {% endhint %}
+
+### Receiving the 25% Fixed Pay
+
+The 25% Fixed Pay will be released up to two weeks after the fix review occurs.
+
+The two-week delay is so that the [Pre-Launch Bounty](../../bug-bounties/pre-launch-bounty.md) can flag any Critical issue that should have been caught in the fix review.
+
+If no issues are reported that should have been caught in the fix review, the 25% fixed pay gets unlocked.
+
+If an issue is reported that could have been caught during the original audit or audit contest, then it is not the sole responsibility of the fix reviewer to catch, and thus the 25% fixed pay gets unlocked.
+
+If a Critical vulnerability is found that could only have been caught during the fix review (was introduced after the original audit), then, depending on the size of the Pre-Launch Bounty, some or all of the 25% fixed pay will be re-routed to the bug bounty submitter, and away from the fix reviewer.&#x20;
