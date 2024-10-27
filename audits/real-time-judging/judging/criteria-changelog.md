@@ -41,7 +41,7 @@ Batch 1: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/24
 * Updated the [#iv.-how-to-identify-a-high-issue](./#iv.-how-to-identify-a-high-issue "mention") and [#v.-how-to-identify-a-medium-issue](./#v.-how-to-identify-a-medium-issue "mention") sections to better explain what high and medium severity issues are. Repealed the [#ii.-criteria-for-issue-severity](./#ii.-criteria-for-issue-severity "mention") description.
 * Added an exception to the hierarchy of truth for cases where blatant mistakes in a higher source of truth were made.
 * Specified opportunity loss and design choices to be out of scope.
-* Updated the [Requirements](./#vi.-requirements "mention") section to require the PoC in more cases and ensure that Watsons need to discover the limitations and constraints of the issue being triggered.
+* Updated the [#vi.-requirements](./#vi.-requirements "mention") section to require the PoC in more cases and ensure that Watsons need to discover the limitations and constraints of the issue being triggered.
 * Rephrased the "Future issues" rule to remove ambiguity.
 * Changed words in several places to ensure ease of understanding. Typo fixes.
 
@@ -55,10 +55,10 @@ Batch 1: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/24
 
 ***
 
-* Addition of CHANGELOG to the docs.&#x20;
+* Addition of CHANGELOG to the docs.
 * Addition of rule related to CHANGELOG in the point `Hierarchy of truth` in the [#iii.-some-standards-observed](./#iii.-some-standards-observed "mention") section
 
-## 1.2 - 12/09/2023&#x20;
+## 1.2 - 12/09/2023
 
 ***
 
@@ -72,7 +72,5 @@ Batch 1: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/24
 
 ***
 
-* Added rules for escalations: [#rules-for-escalation](../escalation-period.md#rules-for-escalation "mention")
+* Added rules for escalations: [#rules-for-escalation](../../judging/escalation-period.md#rules-for-escalation "mention")
 * Added the `External Admin trust assumptions` sub-section under [#iii.-some-standards-observed](./#iii.-some-standards-observed "mention")
-
-&#x20;

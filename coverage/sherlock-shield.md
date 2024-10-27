@@ -11,7 +11,7 @@ Every protocol team that goes through a Sherlock audit gets access to bug bounty
 Here's how it works:
 
 1. Complete an audit with Sherlock
-2. Complete the 1-day included fix review
+2. Complete the fix review
 3. Confirm your 1-click bug bounty program
 4. Sherlock pays for a small pre-deployment bug bounty
 5. Once you launch, Sherlock covers up to $250k of bug bounty and exploit payouts

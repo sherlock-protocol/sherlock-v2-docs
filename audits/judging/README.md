@@ -4,9 +4,9 @@ description: >-
   learn more:
 ---
 
-# 🧑⚖ Judging
+# 🧑‍⚖️ (old) Judging
 
-Looking to understand how issue severities are defined at Sherlock? See [judging](judging/ "mention")
+Looking to understand how issue severities are defined at Sherlock? See [judging](../real-time-judging/judging/ "mention")
 
 Want to understand how to make money participating in Judging Contests? See [guide-to-judging-contests.md](guide-to-judging-contests.md "mention")
 
