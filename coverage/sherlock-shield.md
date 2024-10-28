@@ -22,7 +22,20 @@ After completing the fix review, Sherlock ensures that there is always a bug bou
 
 The amount of coverage Sherlock gives is based on the vulnerabilities found in the Sherlock audit:
 
-Each Medium severity vulnerability is worth 1 point, and each High severity vulnerability is worth 5 points. Like golf, you want your score to be as low as possible so you can access the maximum amount of coverage:
+Each Medium severity vulnerability is worth 1 point, and each High severity vulnerability is worth 5 points. \
+\
+Additionally, there are multipliers for the type of audit done:
+
+| Audit type    | Points Multiplier |
+| ------------- | ----------------- |
+| Recommended   | 0.75              |
+| Minimum       | 1.0               |
+| Best Efforts  | 2.0               |
+| Private       | 1.5               |
+| Collaborative | 1.5               |
+
+\
+Like golf, you want your score to be as low as possible so you can access the maximum amount of coverage:
 
 | Points       | Coverage Amount |
 | ------------ | --------------- |
