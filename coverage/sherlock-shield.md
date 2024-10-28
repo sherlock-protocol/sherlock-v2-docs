@@ -12,9 +12,9 @@ Here's how it works:
 
 1. Complete an audit with Sherlock
 2. Complete the fix review
-3. Sherlock pays for a small pre-deployment bug bounty
-4. Confirm your 1-click bug bounty program
-5. Once you launch, Sherlock covers up to $250k of bug bounty and exploit payouts
+3. Sherlock sets up and pays for your small pre-launch bug bounty
+4. Confirm the details of your post-launch bug bounty program
+5. Post-launch, Sherlock covers up to $250k of bug bounty and exploit payouts
 
 After completing the fix review, Sherlock ensures that there is always a bug bounty on your code! With Sherlock's dual pre-deployment and post-deployment bug bounties, whitehats will be working around the clock to keep your protocol safe.&#x20;
 
