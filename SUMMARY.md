@@ -28,13 +28,7 @@
   * [Judging Conduct Guidelines](audits/real-time-judging/judging-conduct-guidelines.md)
   * [Criteria for Issue Validity](audits/real-time-judging/judging/README.md)
     * [Criteria Changelog](audits/real-time-judging/judging/criteria-changelog.md)
-* [🧑‍⚖️ (old) Judging](audits/judging/README.md)
-  * [Participating in Judging Contests](audits/judging/guide-to-judging-contests.md)
-  * [Lead Judge Selection Process](audits/judging/lead-judge-selection-process.md)
-  * [The Lead Judge's Role](audits/judging/the-lead-judges-role.md)
-  * [Escalation Period](audits/judging/escalation-period.md)
-  * [Tutorials](audits/judging/tutorials/README.md)
-    * [Judging Tutorials](audits/judging/tutorials/judging-tutorials.md)
+  * [Dedicated Judge](audits/real-time-judging/dedicated-judge.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
 ## Bug Bounties

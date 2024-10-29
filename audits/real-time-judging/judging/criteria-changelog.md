@@ -72,5 +72,5 @@ Batch 1: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/24
 
 ***
 
-* Added rules for escalations: [#rules-for-escalation](../../judging/escalation-period.md#rules-for-escalation "mention")
+* Added rules for escalations: [Broken link](broken-reference "mention")
 * Added the `External Admin trust assumptions` sub-section under [#iii.-some-standards-observed](./#iii.-some-standards-observed "mention")
