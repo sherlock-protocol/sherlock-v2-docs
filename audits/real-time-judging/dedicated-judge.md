@@ -10,9 +10,9 @@ The offer to be a dedicated judge will be available in the Sherlock Discord's Ju
 
 **Requirement**
 
-If it takes more than 7 days to announce the final results (from the moment the audit contest ends), the lead judge must judge all issues.
+If it takes more than seven days to announce the final results (from the moment the audit contest ends), the lead judge must judge all issues.
 
-If it takes less than 7 days, there is no requirement on the number of issues being judged.
+If it takes less than seven days, there is no requirement on the number of issues being judged.
 
 **Penalty**
 
