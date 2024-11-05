@@ -1,8 +1,6 @@
 # Criteria for Issue Validity
 
-This guide aims to provide clarity for both Watsons & protocols on various categories of issues that are valid under Sherlock's rules. Sherlock is exclusively focused on high and medium-severity findings, as these vulnerabilities will cause a loss of user funds and most materially damage the reputation of the protocols Sherlock seeks to protect.
-
-**Note:** Despite these rules, we must understand that because of the complexity & subjective nature of smart contract security, there may be issues that are judged beyond the purview of this guide. However, for the vast majority of cases, this guide should suffice. Sherlock's internal judges continue to have the last word on considering any issue as valid or not.&#x20;
+This guide aims to provide clarity for both Watsons & protocols on various categories of issues that are valid under Sherlock's judging. Sherlock is exclusively focused on high and medium-severity findings, as these vulnerabilities will cause a loss of user funds and most materially damage the reputation of the protocols Sherlock seeks to protect.
 
 ### **I. Table of Contents:**
 
@@ -13,7 +11,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 * [#vi.-requirements](./#vi.-requirements "mention")
 * [#vii.-list-of-issue-categories-that-are-not-considered-valid](./#vii.-list-of-issue-categories-that-are-not-considered-valid "mention")
 * [#viii.-list-of-issue-categories-that-are-considered-valid](./#viii.-list-of-issue-categories-that-are-considered-valid "mention")
-* [#ix.-duplication-rules](./#ix.-duplication-rules "mention")
+* [#ix.-duplication-guidelines](./#ix.-duplication-guidelines "mention")
 * [#x.-best-practices](./#x.-best-practices "mention")
 
 ### **II. Criteria for Issue Severity:**
@@ -22,68 +20,75 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 ### III. Sherlock's standards:
 
-1. **Hierarchy of truth:** If the protocol team provides no specific information, the default rules apply (judging guidelines).
+0. **Subjectivity:** Despite these guidelines, we must understand that because of the complexity & subjective nature of smart contract security, there may be issues that are judged beyond the purview of this guide. However, for the vast majority of cases, this guide should suffice. Sherlock's chosen judges continue to have the last word on considering any issue as valid or not.
 
-   If the protocol team provides specific information in the README or CODE COMMENTS, that information stands above all judging rules. In case of contradictions between the README and CODE COMMENTS, the README is the chosen source of truth.
 
-   The judge can decide that CODE COMMENTS are outdated based on contextual evidence. In that case, the judging guidelines are the chosen source of truth.
+1. **Hierarchy of truth:** If the protocol team provides no specific information, the default guidelines always apply.
+
+   If the protocol team provides specific information in the README or CODE COMMENTS, that information when judging. In case of contradictions between the README and CODE COMMENTS, the README is the perferred source of truth.
+
+   The judge can decide that CODE COMMENTS are outdated. In that case, the default guidelines apply.
 
    > Example: The code comments state that "a swap can never fail" even though the code is built to support failing swaps.
 
    The protocol team can use the README (and only the README) to define language that indicates the codebase's restrictions and/or expected functionality. Additionally, the protocol team can use only the following question to define the protocol's invariants/properties:
    > What properties/invariants do you want to hold even if breaking them has a low/unknown impact?
 
-   Issues that break the invariants from the above question, irrespective of whether the impact is low/unknown, will be assigned Medium severity. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
+   Issues that break the invariants from the above question, irrespective of whether the impact is low/unknown, could be assigned Medium severity if it doesn't conflict with common sense. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
 
    > Example: The README states "Admin can only call XYZ function once" but the code allows the Admin to call XYZ function twice; this is a valid Medium
 
+   > Example: The README states "Variable X must always match USDC amount in the contract" and a user can donate USDC to break that invariant without causing issues to the protocol; this is an invalid issue
+
    The Sherlock Judge can use public statements up until 24h before the contest ends to override the language in the chosen source of truth.
 
-   If rules are updated, the new rules apply only to contests that start after the date of change. Please check [criteria-changelog.md](criteria-changelog.md "mention") for information on the latest changes in the judging criteria/rules.
+   If guidelines are updated, the new guidelines apply only to contests that start after the date of change. Please check [criteria-changelog.md](criteria-changelog.md "mention") for information on the latest changes in the judging guidelines.
 
    **Historical decisions are not considered sources of truth.**
 
-2. **Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?** DoS has two separate scores on which it can become an issue:
-   1. The issue causes locking of funds for users for more than a week.
+2. **Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?** To judge the severity we use two separate criteria:
+   1. The issue causes funds to be locked for more than a week.
    2. The issue impacts the availability of time-sensitive functions (cutoff functions are not considered time-sensitive).
-If at least one of these are describing the case, the issue can be a Medium. If both apply, the issue can be considered of High severity. Additional constraints related to the issue may decrease its severity accordingly. \
-Griefing for gas (frontrunning a transaction to fail, even if can be done perpetually) is considered a DoS of a single block, hence only if the function is clearly time-sensitive, it can be a Medium severity issue.
-3. **Low/Informational Issues**:  While Sherlock acknowledges that it would be great to include & reward low-impact/informational issues, we strongly feel that Watsons should focus on finding the most critical vulnerabilities that will potentially cause millions of dollars of losses on mainnet. Sherlock understands that it could be missing out on some potential "value add" for protocol, but it's only because the real task of finding critical vulnerabilities requires 100% of the attention of Watsons. While low/informational issues are not rewarded individually if a Watson identifies an attack vector that combines multiple lows to cause significant loss/damage that would still be categorized as a valid medium/high.
-4. **Direct Protocol Owner/Admin rug pulls.** If a protocol specifically mentions the restrictions imposed on the owner/admin, issues describing an attack that results in bypassing these restrictions can be considered valid. Please note that these restrictions must be explicitly described by the protocol and will be considered case by case. \
+If at least one of these is describing the case, the issue can be a Medium. If both apply, the issue can be considered of High severity. Additional constraints related to the issue may decrease its severity accordingly. \
+Griefing for gas (frontrunning a transaction to fail, even if can be done perpetually) is considered a DoS of a single block, hence only if the function is clearly time-sensitive, it can be a valid issue.
+
+3. **Direct Protocol Owner/Admin rug pulls.** If a protocol specifically mentions the restrictions imposed on the owner/admin, issues describing an attack that results in bypassing these restrictions can be considered valid. Please note that these restrictions must be explicitly described by the protocol and will be considered case by case. \
    Admin functions are assumed to be used properly, unless a list of requirements is listed and it's incomplete or if there is no scenario where a permissioned funtion can be used properly.
 5. **(External) Admin trust assumptions**:
-   When a function is access restricted, only values for specific function variables mentioned in the README can be taken into account when identifying an attack path.
+   When a function is access restricted, the language describing the role in the README is taken into account to decide if the attack path is valid.
 
-   If no values are provided, the (external) admin is trusted to use values that will not cause any issues.
+   If no language is provided, the (external) admin is trusted to not cause any issues.
 
-   Note: if the attack path is possible with any possible value, it will be a valid issue.
+   Note: if the (external) admin will unknowingly cause issues, it can be considered a valid issue.
 
-   Exception: It will be a valid issue if the attack path is based on a value currently live on the network to which the protocol will be deployed.
+   > Example: Admin sets fee to 200%. The issue "Admin can break deposit by setting fee to a 100%+" is invalid as it's common sense that fees can not be more than 100% on a deposit.
+
+   > Example: Admin sets fee to 20%. This will cause liquidations to fail in case the utilization ratio is below 10%, this can Medium as the admin is not aware of the consequenties of his action.
+
 6. **Discord messages or DM** screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
 7. **Contract Scope:**
    1. If a contract is in contest Scope, then all its parent contracts are included by default.
    2. In case the vulnerability exists in a library and an in-scope contract uses it and is affected by this bug this is a valid issue.
-   3. ﻿﻿If there is a vulnerability in a contract from the contest repository but is not included in the scope then issues related to it cannot be considered valid.
+   3. If there is a vulnerability in a contract from the contest repository but is not included in the scope then issues related to it cannot be considered valid.
 8. **Opportunity Loss** is not considered a loss of funds by Sherlock. For example, loss of functionality is not considered a loss of protocol revenue, nevertheless issues involving opportunity loss may be valid issues (for example, due to a loss of core functionality).
 9. **Design decisions** are not valid issues. Even if the design is suboptimal, but doesn't imply any loss of funds, these issues are considered informational.
 10. Watsons are expected to keep up to date with the contest's Discord channel as important announcements impacting judging may arise. They should keep in mind that any message the Sponsor sends will be considered a source of truth.
 
 ### IV. How to identify a high issue:
 
-1. Definite loss of funds without (extensive) limitations of external conditions. The loss of the affected party must exceed 1%.
+1. Definite loss of funds without (extensive) limitations of external conditions. The loss of the affected party must be significant.
 
 ### V. How to identify a medium issue:
 
-1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The loss of the affected party must exceed 0.01% and 10 USD.
-2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds of the affected party larger than 0.01% and 10 USD.
+1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The loss must be relevant to the affected party.
+2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds that's relevant to the affected party.
 
 > Note: If a single attack can cause a 0.01% loss but can be replayed indefinitely, it will be considered a 100% loss and can be medium or high, depending on the constraints.
->
-> Note: if the loss is fixed and below $10, but is 100% loss of the affected party, then it's considered valid. Example: if the protocol has fixed fee of 9 USD and the attack causes 100% loss of this fee.
 
-### VI. Requirements:
 
-PoC is required for all issues falling into any of the following groups:
+### VI. Recommendations:
+
+PoC is strongly recommended for all issues falling into any of the following groups:
 - non-obvious ones with complex vulnerabilities/attack paths
 - issues for which there are non-trivial limitations/constraints on inputs, to show that the attack is possible despite those
 - issues related to precision loss
@@ -91,6 +96,8 @@ PoC is required for all issues falling into any of the following groups:
 - attacks related to the gas consumption and/or reverting message calls
 
 Also, Watsons must outline all constraints of the issue being triggered and specify in which situations these constraints may trigger the issue.
+
+If a PoC is not provided in the original report, it can be considered invalid.
 
 ### VII. List of Issue categories that are not considered valid:
 
@@ -108,8 +115,6 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 9. **User Blacklist:** User getting blacklisted by a token/contract causing harm only to themselves is **not** a valid medium/high.
 10. Issues assuming future opcode gas repricing are not considered to be of Medium/High severity. \
    **Use of call vs transfer** will be considered as a protocol design choice if there is no good reason why the call may consume more than 2300 gas without opcode repricings.
-11. (repealed)
-12. **EIP compliance with no integrations**: If the protocol does not have external integrations then issues related to code not fully complying with the EIP it is implementing and there are no adverse effects of this, are considered informational
 13. **Users sending ETH/native tokens accidentally** just because a contract allows is **not** a valid medium/high.
 14. **Loss of airdrops or liquidity fees** or any other rewards that are not part of the original protocol design is not considered a valid high/medium. [Example](https://github.com/sherlock-audit/2023-02-openq-judging/issues/323)
 15. **Use of Storage gaps:** Simple contracts with one of the parent contract not implementing storage gaps are considered low/informational. \
@@ -124,7 +129,7 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 21. **ERC721 unsafe mint:** In case of a protocol implementing minting/claiming of ERC721, users being unable to do so due to incorrect implementation is not a valid issue. \
     Example: [https://github.com/sherlock-audit/2023-03-teller-judging/issues/8](https://github.com/sherlock-audit/2023-03-teller-judging/issues/8)
 22. **Future issues:** Issues that result out of a future integration/implementation that was not mentioned in the docs/README or because of a future change in the code (as a fix to another issue) are **not** valid issues.
-23. **Non-Standard tokens:** Issues related to tokens with non-standard behaviors, such as [weird-tokens](https://github.com/d-xo/weird-erc20) are not considered valid by default unless these tokens are explicitly mentioned in the README.
+23. **Non-Standard tokens:** Issues related to tokens with non-standard behaviors, such as [weird-tokens](https://github.com/d-xo/weird-erc20) are not considered valid by default unless these tokens are explicitly mentioned in the README. Tokens with decimals between 6 and 18 are not considered weird.
 24. Using Solidity versions that support **EVM opcodes that don't work** on networks on which the protocol is deployed is not a valid issue beacause one can manage compilation flags to compile for past EVM versions on newer Solidity versions.
 
 ### VIII. List of Issue categories that are considered valid:
@@ -136,16 +141,15 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
    **Exception:** In case the array length is controlled by the trusted admin/owner or the issue describes an impractical usage of parameters to reach OOG state then these submissions would be considered as **low**.
 5. **Chainlink Price Checks:** Issues related to `minAnswer` and `maxAnswer` checks on Chainlink's Price Feeds are considered medium **only** if the Watson explicitly mentions the price feeds (e.g. USDC/ETH) that require this check.
 
-### IX. Duplication rules:
+### IX. Duplication guidelines:
 
-The duplication rules assume we have a "target issue", and the "potential duplicate" of that issue needs to meet the following requirements to be considered a duplicate.
+The duplication guidelines assume we have a "target issue", and the "potential duplicate" of that issue needs to meet the following requirements to be considered a duplicate.
 
 1. Identify the root cause
 2. Identify at least a Medium impact
 3. Identify a valid attack path or vulnerability path
-4. Fulfills other submission quality requirements (e.g. provides a PoC for categories that require one)
 
-Only when the "potential duplicate" meets all four requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
+Only when the "potential duplicate" meets all three requirements will the "potential duplicate" be duplicated with the "target issue", and all duplicates will be awarded the highest severity identified among the duplicates.
 
 Otherwise, if the "potential duplicate" doesn't meet all requirements, the "potential duplicate" will not be duplicated but could still be judged any other way (solo, a duplicate of another issue, invalid, or any other severity)
 
@@ -163,7 +167,7 @@ If the following issues appear in multiple places, even in different contracts. 
    - Access control
    - Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
 
-The exception to this would be if underlying code implementations **OR** impact **OR** the fixes are different, then they may be treated separately.
+If the underlying code implementations, impact or fixes are different, then they may be treated separately.
 
 For the root cause categories above, the duplication should be based on the following groups:
    1. Reentrancy:
@@ -180,7 +184,7 @@ For the root cause categories above, the duplication should be based on the foll
 ### X. Best practices:
 
 1. Read the contest readme and documents thoroughly.
-2. Submit issues that are considered valid according to Sherlock rules based on your discretion
+2. Submit issues that are considered valid according to Sherlock guidelines based on your discretion
 3. Do not submit multiple issues in a single submission. Even if the 2 completely different issues occur on the same line, please make sure to separately submit them. \
    Below is a valid example where multiple occurrences can be combined into one issue:  [Example](https://github.com/sherlock-audit/2022-11-dodo-judging/issues/47).\
    Also, there could be multiple occurrences of an issue but they may need to be submitted separately as each occurrence need not be an obvious repetition like the `safeTransfer` example. Watsons must use their own discretion in such cases.
