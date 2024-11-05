@@ -32,7 +32,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    The protocol team can use the README (and only the README) to define language that indicates the codebase's restrictions and/or expected functionality. Additionally, the protocol team can use only the following question to define the protocol's invariants/properties:
    > What properties/invariants do you want to hold even if breaking them has a low/unknown impact?
-   
+
    Issues that break the invariants from the above question, irrespective of whether the impact is low/unknown, will be assigned Medium severity. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
 
    > Example: The README states "Admin can only call XYZ function once" but the code allows the Admin to call XYZ function twice; this is a valid Medium
@@ -78,7 +78,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 2. Breaks **core** contract functionality, rendering the contract useless or leading to loss of funds of the affected party larger than 0.01% and 10 USD.
 
 > Note: If a single attack can cause a 0.01% loss but can be replayed indefinitely, it will be considered a 100% loss and can be medium or high, depending on the constraints.
-> 
+>
 > Note: if the loss is fixed and below $10, but is 100% loss of the affected party, then it's considered valid. Example: if the protocol has fixed fee of 9 USD and the attack causes 100% loss of this fee.
 
 ### VI. Requirements:
@@ -132,7 +132,7 @@ Also, Watsons must outline all constraints of the issue being triggered and spec
 1. **Slippage** related issues showing a definite loss of funds with a detailed explanation for the same can be considered valid **high**
 2. **EIP Compliance:** For issues related to EIP compliance, the protocol & codebase must show that there are important external integrations that would require strong compliance with the EIP's implemented in the code. The EIP must be in regular use or in the **final state** for EIP implementation issues to be considered valid
 3. **Identifies the core issue:** In case of issues that have a large number of duplicates, Issues that identify the core issue and show valid loss of funds should be grouped.
-4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**. 
+4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**.
    **Exception:** In case the array length is controlled by the trusted admin/owner or the issue describes an impractical usage of parameters to reach OOG state then these submissions would be considered as **low**.
 5. **Chainlink Price Checks:** Issues related to `minAnswer` and `maxAnswer` checks on Chainlink's Price Feeds are considered medium **only** if the Watson explicitly mentions the price feeds (e.g. USDC/ETH) that require this check.
 
