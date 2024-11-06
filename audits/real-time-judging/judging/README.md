@@ -49,8 +49,11 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 2. **Could Denial-of-Service (DOS), griefing, or locking of contracts count as Medium (or High) severity issue?** To judge the severity we use two separate criteria:
    1. The issue causes funds to be locked for more than a week.
    2. The issue impacts the availability of time-sensitive functions (cutoff functions are not considered time-sensitive).
-If at least one of these is describing the case, the issue can be Medium. If both apply, the issue can be considered High severity. Additional constraints related to the issue may decrease its severity accordingly. \
-Griefing for gas (frontrunning a transaction to fail, even if can be done perpetually) is considered a DoS of a single block, hence only if the function is clearly time-sensitive, it can be a valid issue.
+
+   If at least one of these is describing the case, the issue can be Medium. If both apply, the issue can be considered High severity. Additional constraints related to the issue may decrease its severity accordingly.
+
+   If a single occurrence of the attack results in a denial of service (DOS) for only one block, it is classified as a one-block DOS, even if it can be repeated indefinitely. It qualifies as a medium-level issue only if it disrupts a clearly time-sensitive function.
+
 5. **(External) Admin trust assumptions**:
    If a protocol defines restrictions on the owner/admin, issues involving attacks that bypass these restrictions may be considered valid. These restrictions must be explicitly stated and will be assessed case by case. Admin functions are generally assumed to be used correctly.
 
@@ -79,7 +82,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 ### VI. Recommendations:
 
-A PoC (Proof of Concept) is required for issues in any of the following categories to avoid placing the burden of proof on the judge:
+A PoC (Proof of Concept) is recommended for issues in any of the following categories to avoid placing the burden of proof on the judge:
 
 - Non-obvious issues with complex vulnerabilities or attack paths
 - Issues with non-trivial input constraints, to demonstrate the attack is feasible despite them
@@ -115,9 +118,7 @@ If a PoC is not included in the original report, the issue may be considered inv
     **Exception**: In case any of these incorrect values returned by the view functions are used as a part of a larger function which would result in loss of funds then it would be a valid **medium/high** depending on the impact.
 17. **Chainlink round completeness** Recommendations to implement staleness price checks are invalid.
 18. In an update contest, issues from the previous contest with `wont fix` labels are not considered valid.
-19. Issues found in mock contracts are not considered valid issues.
-20. **Chain re-org** and **network liveness** issues are not valid. \
-   **Exception**: An issue may be valid as a medium if it involves a network admin (e.g., a sequencer), can be remedied by smart contract modification, and the protocol team restricts external admins. Additionally, the specific network must be mentioned in the contest README. Assume that any network issues will be resolved within 7 days if feasible.
+20. **Chain re-org** and **network liveness** issues are not valid.
 21. **ERC721 unsafe mint:**  Issues where users cannot safemint ERC721 tokens due to unsupported implementation are not valid. \
     Example: [https://github.com/sherlock-audit/2023-03-teller-judging/issues/8](https://github.com/sherlock-audit/2023-03-teller-judging/issues/8)
 22. **Future issues:** Issues that result out of a future integration/implementation that was not mentioned in the docs/README or because of a future change in the code (as a fix to another issue) are **not** valid issues.
