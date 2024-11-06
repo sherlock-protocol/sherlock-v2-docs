@@ -70,7 +70,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 ### IV. How to identify a high issue:
 
-1. Definite loss of funds without (extensive) limitations of external conditions. The loss of the affected party must be significant.
+1. Direct loss of funds without (extensive) limitations of external conditions. The loss of the affected party must be significant.
 
 ### V. How to identify a medium issue:
 
@@ -128,7 +128,7 @@ If a PoC is not included in the original report, the issue may be considered inv
 
 ### VIII. List of Issue categories that are considered valid:
 
-1. **Slippage** related issues showing a definite loss of funds with a detailed explanation for the same can be considered valid **high**
+1. **Slippage** related issues showing a direct loss of funds with a detailed explanation for the same can be considered valid **high**
 2. **EIP Compliance:** For issues related to EIP compliance, the protocol & codebase must show that there are important external integrations that would require strong compliance with the EIP's implemented in the code. The EIP must be in regular use or in the **final state** for EIP implementation issues to be considered valid
 3. **Identifies the core issue:** In case of issues that have a large number of duplicates, Issues that identify the core issue and show valid loss of funds should be grouped.
 4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**.
