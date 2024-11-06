@@ -63,7 +63,7 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
    > Example: Admin sets fee to 200%. The issue "Admin can break deposit by setting fee to a 100%+" is invalid as it's common sense that fees can not be more than 100% on a deposit.
 
-   > Example: Admin sets fee to 20%. This will cause liquidations to fail in case the utilization ratio is below 10%, this can Medium as the admin is not aware of the consequenties of his action.
+   > Example: Admin sets fee to 20%. This will cause liquidations to fail in case the utilization ratio is below 10%, this can be Medium as the admin is not aware of the consequences of his action.
 
 6. **Discord messages or DM** screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
 7. **Contract Scope:**
@@ -95,7 +95,7 @@ PoC is strongly recommended for all issues falling into any of the following gro
 - reentrancy attacks
 - attacks related to the gas consumption and/or reverting message calls
 
-Also, Watsons must outline all constraints of the issue being triggered and specify in which situations these constraints may trigger the issue.
+Also, Watsons are stronlgy recommended to outline all constraints of the issue being triggered and specify in which situations these constraints may trigger the issue.
 
 If a PoC is not provided in the original report, it can be considered invalid.
 
@@ -176,6 +176,7 @@ For the root cause categories above, the duplication should be based on the foll
       - Cross contract reentrancy (in a different contract within the codebase);
       - [Read-only reentrancy](https://github.com/sherlock-audit/2022-11-bond-judging/issues/23).
       - [Cross-chain reentrancy](https://medium.com/immunefi/the-ultimate-guide-to-reentrancy-19526f105ac#8256).
+
       If several reports find different scenarios for the same type of reentrancy within the codebase, they should be considered to have the same root cause.
    2. Front-running/sandwich/slippage protection:
       -  Can be fixed by slippage protection;
