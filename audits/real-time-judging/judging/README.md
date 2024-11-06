@@ -25,7 +25,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 1. **Hierarchy of truth:** If the protocol team provides no specific information, the default guidelines always apply.
 
-   If the protocol team provides specific information in the README or CODE COMMENTS, that information when judging. In case of contradictions between the README and CODE COMMENTS, the README is the perferred source of truth.
+   If the protocol team includes specific information in the README or CODE COMMENTS, that information may be used as context during the judging process. In cases where there is a contradiction between the README and CODE COMMENTS, the README should be considered the primary source of truth.
 
    The judge can decide that CODE COMMENTS are outdated. In that case, the default guidelines apply.
 
@@ -46,33 +46,24 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    **Historical decisions are not considered sources of truth.**
 
-2. **Could Denial-of-Service (DOS), griefing, or locking of contracts count as a Medium (or High) issue?** To judge the severity we use two separate criteria:
+2. **Could Denial-of-Service (DOS), griefing, or locking of contracts count as Medium (or High) severity issue?** To judge the severity we use two separate criteria:
    1. The issue causes funds to be locked for more than a week.
    2. The issue impacts the availability of time-sensitive functions (cutoff functions are not considered time-sensitive).
-If at least one of these is describing the case, the issue can be a Medium. If both apply, the issue can be considered of High severity. Additional constraints related to the issue may decrease its severity accordingly. \
+If at least one of these is describing the case, the issue can be Medium. If both apply, the issue can be considered High severity. Additional constraints related to the issue may decrease its severity accordingly. \
 Griefing for gas (frontrunning a transaction to fail, even if can be done perpetually) is considered a DoS of a single block, hence only if the function is clearly time-sensitive, it can be a valid issue.
-
-3. **Direct Protocol Owner/Admin rug pulls.** If a protocol specifically mentions the restrictions imposed on the owner/admin, issues describing an attack that results in bypassing these restrictions can be considered valid. Please note that these restrictions must be explicitly described by the protocol and will be considered case by case. \
-   Admin functions are assumed to be used properly, unless a list of requirements is listed and it's incomplete or if there is no scenario where a permissioned funtion can be used properly.
 5. **(External) Admin trust assumptions**:
-   When a function is access restricted, the language describing the role in the README is taken into account to decide if the attack path is valid.
-
-   If no language is provided, the (external) admin is trusted to not cause any issues.
+   If a protocol defines restrictions on the owner/admin, issues involving attacks that bypass these restrictions may be considered valid. These restrictions must be explicitly stated and will be assessed case by case. Admin functions are generally assumed to be used correctly.
 
    Note: if the (external) admin will unknowingly cause issues, it can be considered a valid issue.
 
    > Example: Admin sets fee to 200%. The issue "Admin can break deposit by setting fee to a 100%+" is invalid as it's common sense that fees can not be more than 100% on a deposit.
 
    > Example: Admin sets fee to 20%. This will cause liquidations to fail in case the utilization ratio is below 10%, this can be Medium as the admin is not aware of the consequences of his action.
-
-6. **Discord messages or DM** screenshots are not considered sources of truth while judging an issue/escalation especially if they are conflicting with the contest README.
 7. **Contract Scope:**
    1. If a contract is in contest Scope, then all its parent contracts are included by default.
    2. In case the vulnerability exists in a library and an in-scope contract uses it and is affected by this bug this is a valid issue.
    3. If there is a vulnerability in a contract from the contest repository but is not included in the scope then issues related to it cannot be considered valid.
-8. **Opportunity Loss** is not considered a loss of funds by Sherlock. For example, loss of functionality is not considered a loss of protocol revenue, nevertheless issues involving opportunity loss may be valid issues (for example, due to a loss of core functionality).
 9. **Design decisions** are not valid issues. Even if the design is suboptimal, but doesn't imply any loss of funds, these issues are considered informational.
-10. Watsons are expected to keep up to date with the contest's Discord channel as important announcements impacting judging may arise. They should keep in mind that any message the Sponsor sends will be considered a source of truth.
 
 ### IV. How to identify a high issue:
 
@@ -88,16 +79,17 @@ Griefing for gas (frontrunning a transaction to fail, even if can be done perpet
 
 ### VI. Recommendations:
 
-PoC is strongly recommended for all issues falling into any of the following groups:
-- non-obvious ones with complex vulnerabilities/attack paths
-- issues for which there are non-trivial limitations/constraints on inputs, to show that the attack is possible despite those
-- issues related to precision loss
-- reentrancy attacks
-- attacks related to the gas consumption and/or reverting message calls
+A PoC (Proof of Concept) is required for issues in any of the following categories to avoid placing the burden of proof on the judge:
 
-Also, Watsons are stronlgy recommended to outline all constraints of the issue being triggered and specify in which situations these constraints may trigger the issue.
+- Non-obvious issues with complex vulnerabilities or attack paths
+- Issues with non-trivial input constraints, to demonstrate the attack is feasible despite them
+- Issues involving precision loss
+- Reentrancy attacks
+- Attacks related to gas consumption or reverting message calls
 
-If a PoC is not provided in the original report, it can be considered invalid.
+Additionally, Watsons are strongly encouraged to specify all conditions required to trigger the issue and to clarify scenarios where these constraints may apply.
+
+If a PoC is not included in the original report, the issue may be considered invalid.
 
 ### VII. List of Issue categories that are not considered valid:
 
@@ -111,22 +103,22 @@ If a PoC is not provided in the original report, it can be considered invalid.
 6. **Contract / Admin Address Blacklisting / Freezing:** If a protocol's smart contracts or admin addresses get added to a "blacklist" and the functionality of the protocol is affected by this blacklist, this is not considered a valid issue. \
    However, there could be cases where an attacker would use a blacklisted address to cause harm to a protocol functioning. [Example(Valid)](https://github.com/sherlock-audit/2022-11-opyn-judging/issues/219)
 7. **Front-running initializers:** Front-running initializers where there is no irreversible damage or loss of funds & the protocol could just redeploy and initialize again is not a valid issue.
-8. **User experience and design improvement issues:**  Issues that cause minor inconvenience to users where there is no material loss of funds are not considered valid. Funds are temporarily stuck and can be recovered by the administrator or owner. Also, if a submission is a design opinion/suggestion without any clear indications of loss of funds is not a valid issue.
+8. **User experience issues:**  Issues causing only minor inconvenience without fund loss, such as temporarily inaccessible funds recoverable by the admin, are not valid.
 9. **User Blacklist:** User getting blacklisted by a token/contract causing harm only to themselves is **not** a valid medium/high.
 10. Issues assuming future opcode gas repricing are not considered to be of Medium/High severity. \
    **Use of call vs transfer** will be considered as a protocol design choice if there is no good reason why the call may consume more than 2300 gas without opcode repricings.
-13. **Users sending ETH/native tokens accidentally** just because a contract allows is **not** a valid medium/high.
-14. **Loss of airdrops or liquidity fees** or any other rewards that are not part of the original protocol design is not considered a valid high/medium. [Example](https://github.com/sherlock-audit/2023-02-openq-judging/issues/323)
+13. **Accidental ETH/native token transfers** Merely because a contract allows it, are **not** valid as medium/high issues.
+14. **Loss of airdrops** or any other rewards that are not part of the original protocol design is not considered a valid high/medium. [Example](https://github.com/sherlock-audit/2023-02-openq-judging/issues/323)
 15. **Use of Storage gaps:** Simple contracts with one of the parent contract not implementing storage gaps are considered low/informational. \
     **Exception**: However, if the protocol design has a highly complex and branched set of contract inheritance with storage gaps inconsistently applied throughout and the submission clearly describes the necessity of storage gaps it can be considered a valid medium. [Example](https://github.com/sherlock-audit/2022-09-notional-judging/issues/64)
 16. **Incorrect values in View functions** are by default considered **low**. \
     **Exception**: In case any of these incorrect values returned by the view functions are used as a part of a larger function which would result in loss of funds then it would be a valid **medium/high** depending on the impact.
-17. **Chainlink round completeness** check is invalid. The new OCR does not rely on rounds for reporting.
+17. **Chainlink round completeness** Recommendations to implement staleness price checks are invalid.
 18. In an update contest, issues from the previous contest with `wont fix` labels are not considered valid.
-19. Issues found in mock contracts are not considered valid issues.&#x20;
-20. **Chain re-org** and **network liveness** related issues are not considered valid.&#x20;\
-    **Exception**: If an issue concerns any kind of a network admin (e.g. a sequencer), can be remedied by a smart contract modification, the protocol team considers external admins restricted and the considered network was explicitly mentioned in the contest README, it may be a valid medium. It should be assumed that any such network issues will be resolved within 7 days, if that may be possible.
-21. **ERC721 unsafe mint:** In case of a protocol implementing minting/claiming of ERC721, users being unable to do so due to incorrect implementation is not a valid issue. \
+19. Issues found in mock contracts are not considered valid issues.
+20. **Chain re-org** and **network liveness** issues are not valid. \
+   **Exception**: An issue may be valid as a medium if it involves a network admin (e.g., a sequencer), can be remedied by smart contract modification, and the protocol team restricts external admins. Additionally, the specific network must be mentioned in the contest README. Assume that any network issues will be resolved within 7 days if feasible.
+21. **ERC721 unsafe mint:**  Issues where users cannot safemint ERC721 tokens due to unsupported implementation are not valid. \
     Example: [https://github.com/sherlock-audit/2023-03-teller-judging/issues/8](https://github.com/sherlock-audit/2023-03-teller-judging/issues/8)
 22. **Future issues:** Issues that result out of a future integration/implementation that was not mentioned in the docs/README or because of a future change in the code (as a fix to another issue) are **not** valid issues.
 23. **Non-Standard tokens:** Issues related to tokens with non-standard behaviors, such as [weird-tokens](https://github.com/d-xo/weird-erc20) are not considered valid by default unless these tokens are explicitly mentioned in the README. Tokens with decimals between 6 and 18 are not considered weird.
