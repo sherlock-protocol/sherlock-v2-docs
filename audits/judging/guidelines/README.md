@@ -108,7 +108,7 @@ If the original report does not include a Proof of Concept (PoC), it will be con
 1. **Gas optimizations:** The user/protocol ends up paying a little extra gas because of this issue.
 2. **Incorrect Event values:**  Incorrectly calculated/wrong values in emitted events are not considered valid medium or high.
 3. **Zero address checks:**  Check to make sure input values are not zero addresses.
-4. **User input validation:** User input validation to prevent user mistakes is not considered a valid issue. However, if a user input could result in a major protocol malfunction or significant loss of funds could be a valid high. [Example(Valid)](https://github.com/sherlock-audit/2022-10-illuminate-judging/issues/47)
+4. **User input validation:** User input validation to prevent user mistakes is not considered a valid issue. However, if a user input could result in a major protocol malfunction or significant loss of funds for other parties (protocol or other users) it could be a valid high. [Example(Valid)](https://github.com/sherlock-audit/2022-10-illuminate-judging/issues/47)
 5.  **Admin Input/call validation:**
     1. Admin could have an incorrect call order. Example: If an Admin forgets to `setWithdrawAddress()` before calling `withdrawAll()` This is not a valid issue.
     2. An admin action can break certain assumptions about the functioning of the code. Example: Pausing a collateral causes some users to be unfairly liquidated or any other action causing loss of funds. This is not considered a valid issue.&#x20;
