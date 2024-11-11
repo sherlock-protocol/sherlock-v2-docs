@@ -92,7 +92,7 @@ A PoC (Proof of Concept) is recommended for issues in any of the following categ
 
 Additionally, Watsons are strongly encouraged to specify all conditions required to trigger the issue and to clarify scenarios where these constraints may apply.
 
-If a PoC is not included in the original report, the issue may be considered invalid.
+If the original report does not include a Proof of Concept (PoC), it will be considered invalid if the issue cannot be clearly understood without one.
 
 ### VII. List of Issue categories that are not considered valid:
 
