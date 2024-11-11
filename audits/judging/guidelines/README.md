@@ -72,6 +72,11 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 1. Direct loss of funds without (extensive) limitations of external conditions. The loss of the affected party must be significant.
 
+**Guidelines for Significant Loss:**
+- Users lose more than 1% *and* more than $10 of their principal.
+- Users lose more than 1% *and* more than $10 of their yield.
+- The protocol loses more than 1% *and* more than $10 of the fees.
+
 ### V. How to identify a medium issue:
 
 1. Causes a loss of funds but requires certain external conditions or specific states, or a loss is highly constrained. The loss must be relevant to the affected party.
@@ -79,6 +84,10 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 > Note: If a single attack can cause a 0.01% loss but can be replayed indefinitely, it will be considered a 100% loss and can be medium or high, depending on the constraints.
 
+**Guidelines for Relevant Loss:**
+- Users lose more than 0.01% *and* more than $10 of their principal.
+- Users lose more than 0.01% *and* more than $10 of their yield.
+- The protocol loses more than 0.01% *and* more than $10 of the fees.
 
 ### VI. Recommendations:
 
@@ -116,7 +125,7 @@ If the original report does not include a Proof of Concept (PoC), it will be con
     **Exception**: However, if the protocol design has a highly complex and branched set of contract inheritance with storage gaps inconsistently applied throughout and the submission clearly describes the necessity of storage gaps it can be considered a valid medium. [Example](https://github.com/sherlock-audit/2022-09-notional-judging/issues/64)
 16. **Incorrect values in View functions** are by default considered **low**. \
     **Exception**: In case any of these incorrect values returned by the view functions are used as a part of a larger function which would result in loss of funds then it would be a valid **medium/high** depending on the impact.
-17. **Chainlink round completeness** Recommendations to implement staleness price checks are invalid.
+17. **Chainlink round completeness** Recommendations to implement round completeness or stale price checks are invalid.
 18. In an update contest, issues from the previous contest with `wont fix` labels are not considered valid.
 20. **Chain re-org** and **network liveness** issues are not valid.
 21. **ERC721 unsafe mint:**  Issues where users cannot safemint ERC721 tokens due to unsupported implementation are not valid. \
