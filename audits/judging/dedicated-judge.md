@@ -10,7 +10,7 @@ The offer to be a dedicated judge will be available in the Sherlock Discord's Ju
 
 **Requirement**
 
-The lead judge must review all issues before the community judging period ends, with a target of assessing 100 issues per day.
+The dedicated judge must review all issues before the community judging period ends, with a target of assessing 100 issues per day.
 
 **Penalty**
 
