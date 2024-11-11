@@ -24,11 +24,13 @@
   * [Meeting the Payout Criteria](audits/watsons/meeting-the-payout-criteria.md)
   * [Watson Points Example](audits/watsons/watson-points-example.md)
   * [FAQ](audits/watsons/faq.md)
-* [🧑‍⚖️ Real-Time Judging](audits/real-time-judging/README.md)
-  * [Judging Conduct Guidelines](audits/real-time-judging/judging-conduct-guidelines.md)
-  * [Criteria for Issue Validity](audits/real-time-judging/judging/README.md)
-    * [Criteria Changelog](audits/real-time-judging/judging/criteria-changelog.md)
-  * [Dedicated Judge](audits/real-time-judging/dedicated-judge.md)
+* [🧑‍⚖️ Judging](audits/judging/README.md)
+  * [Judging Conduct Guidelines](audits/judging/judging-conduct-guidelines.md)
+  * [Criteria for Issue Validity](audits/judging/guidelines/README.md)
+    * [Criteria Changelog](audits/judging/guidelines/criteria-changelog.md)
+  * [Lead Judge](audits/judging/lead-judge.md)
+  * [Community Judging](audits/judging/community-judging.md)
+  * [Dedicated Judge](audits/judging/dedicated-judge.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
 ## Bug Bounties
