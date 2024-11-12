@@ -13,7 +13,7 @@ The dedicated judges need to judge all issues during the fixed number of days. S
 > Why? If we go straight to preliminary results, security researchers may get frustrated by the inaccurate judging done by the community
 
 - Lead Judge will know his start date as soon as the contest ends (if 500 issues then he starts 5 days after the contest ends)
-- Lead Judge gets (# of issues / 200) days to do this preliminary judging (so 500 issues would round up to 3 days)
+- Lead Judge gets (# of issues / 200) days to do this preliminary judging, with a minimum of 2 days. (so 500 issues would round up to 3 days)
 - Lead Judge only needs to focus on the controversial issues during this phase
 - Lead Judge must provide an explanation for every judgment
 - Checkpoint: Preliminary Results Announced
@@ -24,7 +24,7 @@ The lead judge may begin judging before the official start date.
 - After the preliminary results are announced, security researchers get 24 hours to review the judgments and comment on judgments they disagree with
 
 ### Phase 4: Final Lead Judge Judgments
-- Lead Judge gets (# of controversial issues / 20) days to complete Phase 4
+- Lead Judge gets (# of controversial issues / 20) days to complete Phase 4, with a minimum of 2 days.
 - Lead Judge will review all controversial issues (new ones from the Escalation Period and old ones that he already judged)
 - Lead Judge will make final decisions on all controversial issues
 - Checkpoint: Final Results Announced
