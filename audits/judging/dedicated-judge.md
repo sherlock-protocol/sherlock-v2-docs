@@ -10,9 +10,7 @@ The offer to be a dedicated judge will be available in the Sherlock Discord's Ju
 
 **Requirement**
 
-If it takes more than seven days to announce the final results (from the moment the audit contest ends), the lead judge must judge all issues.
-
-If it takes less than seven days, there is no requirement on the number of issues being judged.
+The dedicated judge must review all issues before the community judging period ends, with a target of assessing 100 issues per day.
 
 **Penalty**
 
@@ -33,5 +31,10 @@ This boost applies to your
 
 Note that incorrect judging amplifies your penalties; this will increase the drop in signal score due to the boost.
 
+### Early November Update
 
+This update applies to all judges, but is especially relevant for the dedicated judge.
 
+Previously, the risk/reward ratio remained constant, with both risk and reward increasing at a steady rate over time. With this update, however, the risk/reward ratio will gradually increase over time.
+
+Before this update, judging uncertain issues was generally penalizing. Now, it’s less penalizing, making it advantageous to judge issues you’re unsure about closer to the deadline.
