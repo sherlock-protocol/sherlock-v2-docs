@@ -18,7 +18,7 @@ As Lead Judge, your role is to assess and make decisions on a subset of complex 
 
 ### Deviation Template
 
-When deviating, document the decision as follows:
+When deviating from the judging guidelines, document the decision as follows:
 
 Based on the audit context, the applicable guideline is:
 > {guideline}
