@@ -11,7 +11,7 @@ description: >-
 
 During this phase:
 - All judges can comment without restrictions.
-- Watsons without a signal score can only comment on their own issues (as authors).
+- Judges without a signal score can only comment on their own issues (as authors).
 
 ### Phases 2, 3, and 4
 
