@@ -31,6 +31,7 @@
   * [Lead Judge](audits/judging/lead-judge.md)
   * [Community Judging](audits/judging/community-judging.md)
   * [Dedicated Judge](audits/judging/dedicated-judge.md)
+  * [Discussion](audits/judging/discussion.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
 ## Bug Bounties
