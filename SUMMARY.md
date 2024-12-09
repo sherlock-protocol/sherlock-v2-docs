@@ -29,7 +29,7 @@
   * [Criteria for Issue Validity](audits/judging/guidelines/README.md)
     * [Criteria Changelog](audits/judging/guidelines/criteria-changelog.md)
   * [Lead Judge](audits/judging/lead-judge.md)
-  * [Community Judging](audits/judging/community-judging.md)
+  * [🧑‍⚖️ Community Judging](audits/judging/community-judging.md)
   * [Dedicated Judge](audits/judging/dedicated-judge.md)
   * [Discussion](audits/judging/discussion.md)
 * [🤝 Referral Program](audits/referral-program.md)
