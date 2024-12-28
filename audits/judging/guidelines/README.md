@@ -142,7 +142,6 @@ If the original report does not include a Proof of Concept (PoC), it will be con
 3. **Identifies the core issue:** In case of issues that have a large number of duplicates, Issues that identify the core issue and show valid loss of funds should be grouped.
 4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**.
    **Exception:** In case the array length is controlled by the trusted admin/owner or the issue describes an impractical usage of parameters to reach OOG state then these submissions would be considered as **low**.
-5. **Chainlink Price Checks:** Issues related to `minAnswer` and `maxAnswer` checks on Chainlink's Price Feeds are considered medium **only** if the Watson explicitly mentions the price feeds (e.g. USDC/ETH) that require this check.
 
 ### IX. Duplication guidelines:
 
