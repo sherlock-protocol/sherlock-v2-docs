@@ -91,7 +91,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
 ### VI. Recommendations:
 
-A PoC (Proof of Concept) is recommended for issues in any of the following categories to avoid placing the burden of proof on the judge:
+1. A PoC (Proof of Concept) is recommended for issues in any of the following categories to avoid placing the burden of proof on the judge:
 
 - Non-obvious issues with complex vulnerabilities or attack paths
 - Issues with non-trivial input constraints, to demonstrate the attack is feasible despite them
@@ -102,6 +102,8 @@ A PoC (Proof of Concept) is recommended for issues in any of the following categ
 Additionally, Watsons are strongly encouraged to specify all conditions required to trigger the issue and to clarify scenarios where these constraints may apply.
 
 If the original report does not include a Proof of Concept (PoC), it will be considered invalid if the issue cannot be clearly understood without one.
+
+2. Front-running on chains with private mempools can be a sole reason to downgrade severity, but shouldn't be the sole reason to invalidate the issue. They **may** be valid as unintentional front-running.
 
 ### VII. List of Issue categories that are not considered valid:
 
