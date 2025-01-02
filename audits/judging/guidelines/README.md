@@ -104,6 +104,9 @@ Additionally, Watsons are strongly encouraged to specify all conditions required
 If the original report does not include a Proof of Concept (PoC), it will be considered invalid if the issue cannot be clearly understood without one.
 
 2. Front-running on chains with private mempools can be a sole reason to downgrade severity, but shouldn't be the sole reason to invalidate the issue. They **may** be valid as unintentional front-running.
+> For example, if we have a standard front-running slippage-related issue on DEX, which deserves High severity under normal circumstances (e.g. front-running on Eth Mainnet), should be viewed as Medium on chains with private mempool (e.g. Optimism). Also, the reports have to explain how the issue can happen with unintentional front-running, e.g. saying "the attacker will monitor the mempool looking for the victim's transaction" is invalid.
+
+
 
 ### VII. List of Issue categories that are not considered valid:
 
