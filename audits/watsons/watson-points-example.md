@@ -10,7 +10,9 @@ How are those leaderboard points calculated? And how you can move up the leaderb
 
 ### **Where do leaderboard points come from?**
 
-For the first \~6 months of Sherlock, Leaderboard Points were calculated based on each Watson's Code Arena ranking. Now that the bootstrapping phase is over, the only "new" Leaderboard Points (which come from Contest Points) are created from a small amount of inflation in each contest. And each Watson brings their Leaderboard Points into each contest, and the sum of every Watson's Leaderboard Points make up the amount of Contest Points available in that contest (plus the inflation amount).&#x20;
+Every ranked Watson carries an amount of Leaderboard Points with them into any contest where they compete for ranking. The number of Leaderboard Points each Watson brings into a contest is proportional to their leaderboard ranking.\
+\
+The only "new" Leaderboard Points (which come from Contest Points) are created from a small amount of Leaderboard Points inflation in each contest. This keeps the leaderboard from getting too stale over many years. Each Watson brings their Leaderboard Points into each contest, and the sum of every Watson's Leaderboard Points make up the amount of Contest Points available in that contest (plus the inflation amount).&#x20;
 
 In this example, there are 5 Watsons. Each one has competed in a 7-day contest previously, so each one has some Leaderboard Points:
 
@@ -56,4 +58,4 @@ This is how the Sherlock leaderboard would look after these two contests:
 
 Because of the increased weighting of the 14-day contest vs. the 7-day contest, Carol and Emily ended up higher on the leaderboard than Bob, despite Bob's high ranking after the 7-day contest.&#x20;
 
-Carol and Emily also earned the highest USDC payouts. But every Watson (including Carol and Emily) will need to ensure they clear [both audit contest payout criteria](https://app.gitbook.com/o/-M\_eFb0i0B5bGNIG9sx8/s/IULvDRunHtCHQJQoTsGo/\~/changes/107/audits/watsons/meeting-the-payout-criteria-july-1st-2023) in order to receive their USDC.&#x20;
+Carol and Emily also earned the highest USDC payouts. But every Watson (including Carol and Emily) will need to ensure they clear [both audit contest payout criteria](https://app.gitbook.com/o/-M_eFb0i0B5bGNIG9sx8/s/IULvDRunHtCHQJQoTsGo/~/changes/107/audits/watsons/meeting-the-payout-criteria-july-1st-2023) in order to receive their USDC.&#x20;
