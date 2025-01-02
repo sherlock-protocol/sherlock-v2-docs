@@ -1,5 +1,11 @@
 # 🧑‍⚖️ Judging
 
+{% hint style="info" %}
+**Note for Protocol Teams:** There is no mandatory action to take during judging. Sherlock's judging will reach a final state without any input from the protocol team.\
+\
+You may focus on fixing any issues as soon as you notice them during the process. However, if you want to provide input or advice on certain issues, this is always welcome.&#x20;
+{% endhint %}
+
 ### Phase 1: Real-Time Judging
 
 > What's the purpose of this phase? To quickly crowdsource (with advanced signal scores) judgments, explanations, and de-duplication for each issue to reduce the workload for the Lead Judge.&#x20;
@@ -33,7 +39,7 @@ Checkpoint: Preliminary Results Announced
 * &#x20;Watsons must pay with their Signal Score to flag an issue
 * Watsons can then leave an extra comment explaining their rationale
 
-### Phase 4: Final Lead Judge Judgments
+### Phase 4: Final Judgments
 
 > What's the purpose of this phase? The Lead Judge will re-review any issues flagged during the Escalation Period. The Sherlock Judge will supervise and interject if needed.&#x20;
 
