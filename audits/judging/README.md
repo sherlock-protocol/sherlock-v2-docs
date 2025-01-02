@@ -8,7 +8,7 @@ You may focus on fixing any issues as soon as you notice them during the process
 
 ### Phase 1: Real-Time Judging
 
-> What's the purpose of this phase? To quickly crowdsource (with advanced signal scores) judgments, explanations, and de-duplication for each issue to reduce the workload for the Lead Judge.&#x20;
+> **Purpose:** To quickly crowdsource (with advanced signal scores) judgments, explanations, and de-duplication for each issue to reduce the workload for the Lead Judge.&#x20;
 
 * Happens right after the audit contest ends
 * Lasts a fixed number of days (# of issues / 100) days (for example 500 issues would be 5 days), with a minimum of 2 days.
@@ -19,7 +19,7 @@ The Dedicated Judges need to judge all issues during the fixed number of days. S
 
 ### Phase 2: Lead Judge
 
-> What's the purpose of this phase? Real-Time Judging often surfaces controversial and/or complex issues that are best judged by a top-tier security expert.&#x20;
+> **Purpose:** What's the purpose of this phase? Real-Time Judging often surfaces controversial and/or complex issues that are best judged by a top-tier security expert.&#x20;
 
 * The Lead Judge will know his start date as soon as the contest ends (if 500 issues then he starts 5 days after the contest ends)
 * Lead Judge gets (# of issues / 200) days to do this preliminary judging, with a minimum of 2 days. (so 500 issues would round up to 3 days)
@@ -33,7 +33,7 @@ Checkpoint: Preliminary Results Announced
 
 ### Phase 3: Escalation Period
 
-> What's the purpose of this phase? Sometimes a Watson will want to flag something they believe the Lead Judge got wrong.&#x20;
+> **Purpose:** Sometimes a Watson will want to flag something they believe the Lead Judge got wrong.&#x20;
 
 * After the preliminary results are announced, Watsons have 24 hours to flag any issues for re-review
 * &#x20;Watsons must pay with their Signal Score to flag an issue
@@ -41,7 +41,7 @@ Checkpoint: Preliminary Results Announced
 
 ### Phase 4: Final Judgments
 
-> What's the purpose of this phase? The Lead Judge will re-review any issues flagged during the Escalation Period. The Sherlock Judge will supervise and interject if needed.&#x20;
+> **Purpose:** The Lead Judge will re-review any issues flagged during the Escalation Period. The Sherlock Judge will supervise and interject if needed.&#x20;
 
 * The Lead Judge gets (# of controversial issues / 20) days to complete Phase 4, with a minimum of 2 days.
 * Lead Judge will review all controversial issues (new ones from the Escalation Period and old ones that he already judged)
