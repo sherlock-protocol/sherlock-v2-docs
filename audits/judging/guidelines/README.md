@@ -126,7 +126,7 @@ If the original report does not include a Proof of Concept (PoC), it will be con
 16. **Incorrect values in View functions** are by default considered **low**. \
     **Exception**: In case any of these incorrect values returned by the view functions are used as a part of a larger function which would result in loss of funds then it would be a valid **medium/high** depending on the impact.
 17. **Chainlink round completeness** Recommendations to implement round completeness or stale price checks are invalid.
-18. In an update contest, issues from the previous contest with `wont fix` labels are not considered valid.
+18. Issues from the previous contests with `wont fix` labels (if it's an update contest) **and** issues from previous audits marked as acknowledged (not fixed) are not considered valid.
 20. **Chain re-org** and **network liveness** issues are not valid.
 21. **ERC721 unsafe mint:**  Issues where users cannot safemint ERC721 tokens due to unsupported implementation are not valid. \
     Example: [https://github.com/sherlock-audit/2023-03-teller-judging/issues/8](https://github.com/sherlock-audit/2023-03-teller-judging/issues/8)
