@@ -134,7 +134,6 @@ If the original report does not include a Proof of Concept (PoC), it will be con
 23. **Non-Standard tokens:** Issues related to tokens with non-standard behaviors, such as [weird-tokens](https://github.com/d-xo/weird-erc20) are not considered valid by default unless these tokens are explicitly mentioned in the README. Tokens with decimals between 6 and 18 are not considered weird.
 24. Using Solidity versions that support **EVM opcodes that don't work** on networks on which the protocol is deployed is not a valid issue beacause one can manage compilation flags to compile for past EVM versions on newer Solidity versions.
 25. **Sequencers** are assumed to operate reliably without misbehavior or downtime. Vulnerabilities or attacks that rely on sequencers going offline or malfunctioning are invalid.
-26. **Chainlink Price Checks:** Issues related to `minAnswer` and `maxAnswer` checks on Chainlink's Price Feeds are considered invalid.
 
 ### VIII. List of Issue categories that are considered valid:
 
@@ -143,6 +142,7 @@ If the original report does not include a Proof of Concept (PoC), it will be con
 3. **Identifies the core issue:** In case of issues that have a large number of duplicates, Issues that identify the core issue and show valid loss of funds should be grouped.
 4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**.
    **Exception:** In case the array length is controlled by the trusted admin/owner or the issue describes an impractical usage of parameters to reach OOG state then these submissions would be considered as **low**.
+5. **Chainlink Price Checks**: Issues related to minAnswer and maxAnswer checks on Chainlink's Price Feeds are considered medium only if the Watson explicitly mentions the price feeds (e.g. USDC/ETH) for the in-scope tokens on the in-scope chains that require this check. **Additionally**, a proper attack path and at least medium severity impact must be included in the report. See [this](https://stackoverflow.com/questions/78558661/which-chainlinks-price-feeds-still-have-minanswer-and-maxanswer-checks) to know if min/maxAnswer are deprecated on the price feed.
 
 ### IX. Duplication guidelines:
 
