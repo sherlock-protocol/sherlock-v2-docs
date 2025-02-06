@@ -219,3 +219,4 @@ This guide shall be regularly updated as more contests are judged and with evolv
 **Sandwich**: A front-run, followed by operation C controlled by the attacker who also executed operation B. The goal of operation C is to revert the contract to its initial state.
 
 **Vulnerability Path**: A sequence of steps showcasing how an issue causes losses or grief to the protocol or users through well-intended usage of the protocol.
+
