@@ -89,8 +89,11 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 - Users lose more than 0.01% *and* more than $10 of their yield.
 - The protocol loses more than 0.01% *and* more than $10 of the fees.
 
-> [!NOTE]
-> Likelihood is not considered when identifying the severity and the validity of the report.
+{% hint style="info" %}
+**Note**
+
+Likelihood is not considered when identifying the severity and the validity of the report.
+{% endhint %}
 
 ### VI. Recommendations:
 
