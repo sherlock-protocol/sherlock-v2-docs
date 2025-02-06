@@ -135,6 +135,7 @@ If the original report does not include a Proof of Concept (PoC), it will be con
     **Exception**: In case any of these incorrect values returned by the view functions are used as a part of a larger function which would result in loss of funds then it would be a valid **medium/high** depending on the impact.
 17. **Stale prices and Chainlink round completeness** Recommendations to implement round completeness or stale price checks for any oracle are invalid.
     > Exception: the recommendation to implement stale price checks **may** be valid. For [example](https://github.com/sherlock-audit/2024-12-mach-finance-judging/issues/41), the protocol may be using Pyth pull-based oracle, which requires requesting the price before using it. Hence, if we don't request the price firstly, or check it for staleness, then we can end up using very old price (e.g. from 1 hour/day ago).
+18. Issues from the previous contests with `wont fix` labels (if it's an update contest) **and** issues from previous audits (linked in the contest README) marked as acknowledged (not fixed) are not considered valid.
 19. In an update contest, issues from the previous contest with `wont fix` labels are not considered valid.
 20. **Chain re-org** and **network liveness** issues are not valid.
 21. **ERC721 unsafe mint:**  Issues where users cannot safemint ERC721 tokens due to unsupported implementation are not valid. \
