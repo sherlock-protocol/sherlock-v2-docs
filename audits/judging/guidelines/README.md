@@ -89,9 +89,12 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 - Users lose more than 0.01% *and* more than $10 of their yield.
 - The protocol loses more than 0.01% *and* more than $10 of the fees.
 
+> [!NOTE]
+> Likelihood is not considered when identifying the severity and the validity of the report.
+
 ### VI. Recommendations:
 
-A PoC (Proof of Concept) is recommended for issues in any of the following categories to avoid placing the burden of proof on the judge:
+1. A PoC (Proof of Concept) is recommended for issues in any of the following categories to avoid placing the burden of proof on the judge:
 
 - Non-obvious issues with complex vulnerabilities or attack paths
 - Issues with non-trivial input constraints, to demonstrate the attack is feasible despite them
@@ -102,6 +105,11 @@ A PoC (Proof of Concept) is recommended for issues in any of the following categ
 Additionally, Watsons are strongly encouraged to specify all conditions required to trigger the issue and to clarify scenarios where these constraints may apply.
 
 If the original report does not include a Proof of Concept (PoC), it will be considered invalid if the issue cannot be clearly understood without one.
+
+2. Issues that depend on front-running will get their severity downgraded if the deployment chain has a private mempool. High will be Medium, and Medium will be Invalid.
+> For example, if we have a standard front-running slippage-related issue on DEX, which deserves High severity under normal circumstances (e.g. front-running on Eth Mainnet), should be viewed as Medium on chains with private mempool (e.g. Optimism). Also, the reports have to explain how the issue can happen with unintentional front-running, e.g. saying "the attacker will monitor the mempool looking for the victim's transaction" is invalid.
+
+
 
 ### VII. List of Issue categories that are not considered valid:
 
@@ -125,8 +133,10 @@ If the original report does not include a Proof of Concept (PoC), it will be con
     **Exception**: However, if the protocol design has a highly complex and branched set of contract inheritance with storage gaps inconsistently applied throughout and the submission clearly describes the necessity of storage gaps it can be considered a valid medium. [Example](https://github.com/sherlock-audit/2022-09-notional-judging/issues/64)
 16. **Incorrect values in View functions** are by default considered **low**. \
     **Exception**: In case any of these incorrect values returned by the view functions are used as a part of a larger function which would result in loss of funds then it would be a valid **medium/high** depending on the impact.
-17. **Chainlink round completeness** Recommendations to implement round completeness or stale price checks are invalid.
+17. **Stale prices and Chainlink round completeness** Recommendations to implement round completeness or stale price checks for any oracle are invalid.
+    > Exception: the recommendation to implement stale price checks **may** be valid. For [example](https://github.com/sherlock-audit/2024-12-mach-finance-judging/issues/41), the protocol may be using Pyth pull-based oracle, which requires requesting the price before using it. Hence, if we don't request the price firstly, or check it for staleness, then we can end up using very old price (e.g. from 1 hour/day ago).
 18. Issues from the previous contests with `wont fix` labels (if it's an update contest) **and** issues from previous audits (linked in the contest README) marked as acknowledged (not fixed) are not considered valid.
+19. In an update contest, issues from the previous contest with `wont fix` labels are not considered valid.
 20. **Chain re-org** and **network liveness** issues are not valid.
 21. **ERC721 unsafe mint:**  Issues where users cannot safemint ERC721 tokens due to unsupported implementation are not valid. \
     Example: [https://github.com/sherlock-audit/2023-03-teller-judging/issues/8](https://github.com/sherlock-audit/2023-03-teller-judging/issues/8)
@@ -142,7 +152,7 @@ If the original report does not include a Proof of Concept (PoC), it will be con
 3. **Identifies the core issue:** In case of issues that have a large number of duplicates, Issues that identify the core issue and show valid loss of funds should be grouped.
 4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**.
    **Exception:** In case the array length is controlled by the trusted admin/owner or the issue describes an impractical usage of parameters to reach OOG state then these submissions would be considered as **low**.
-5. **Chainlink Price Checks:** Issues related to `minAnswer` and `maxAnswer` checks on Chainlink's Price Feeds are considered medium **only** if the Watson explicitly mentions the price feeds (e.g. USDC/ETH) that require this check.
+5. **Chainlink Price Checks**: Issues related to minAnswer and maxAnswer checks on Chainlink's Price Feeds are considered medium only if the Watson explicitly mentions the price feeds (e.g. USDC/ETH) for the in-scope tokens on the in-scope chains that require this check. **Additionally**, a proper attack path and at least medium severity impact must be included in the report. See [this](https://stackoverflow.com/questions/78558661/which-chainlinks-price-feeds-still-have-minanswer-and-maxanswer-checks) to know if min/maxAnswer are deprecated on the price feed.
 
 ### IX. Duplication guidelines:
 

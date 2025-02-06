@@ -22,7 +22,7 @@
   * [Contest Points](audits/watsons/contest-points.md)
   * [How to Score Issue Points in a Contest](audits/watsons/how-to-score-issue-points-in-a-contest.md)
   * [Meeting the Payout Criteria](audits/watsons/meeting-the-payout-criteria.md)
-  * [Watson Points Example](audits/watsons/watson-points-example.md)
+  * [Leaderboard Points Example](audits/watsons/watson-points-example.md)
   * [FAQ](audits/watsons/faq.md)
 * [🧑‍⚖️ Judging](audits/judging/README.md)
   * [Judging Conduct Guidelines](audits/judging/judging-conduct-guidelines.md)
@@ -32,13 +32,15 @@
   * [🧑‍⚖️ Community Judging](audits/judging/community-judging.md)
   * [Dedicated Judge](audits/judging/dedicated-judge.md)
   * [Discussion](audits/judging/discussion.md)
+  * [Sherlock's Exclusive Judging Apprentice Program](audits/judging/sherlocks-exclusive-judging-apprentice-program.md)
 * [🤝 Referral Program](audits/referral-program.md)
 
 ## Bug Bounties
 
 * [🌱 Pre-Launch Bounty](bug-bounties/pre-launch-bounty.md)
-* [📜 Platform Rules](bug-bounties/platform-rules.md)
-* [⚖️ Dispute Resolution](bug-bounties/dispute-resolution.md)
+* [🚀 Post-Launch Bounty](bug-bounties/post-launch-bounty/README.md)
+  * [📜 Platform Rules](bug-bounties/post-launch-bounty/platform-rules.md)
+  * [⚖️ Dispute Resolution](bug-bounties/post-launch-bounty/dispute-resolution.md)
 
 ## Coverage
 
