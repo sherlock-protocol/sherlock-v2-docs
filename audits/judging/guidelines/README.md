@@ -89,6 +89,9 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 - Users lose more than 0.01% *and* more than $10 of their yield.
 - The protocol loses more than 0.01% *and* more than $10 of the fees.
 
+> [!NOTE]
+> Likelihood is not considered when identifying the severity and the validity of the report.
+
 ### VI. Recommendations:
 
 1. A PoC (Proof of Concept) is recommended for issues in any of the following categories to avoid placing the burden of proof on the judge:
