@@ -14,7 +14,7 @@ Here's how it works:
 2. Complete the fix review
 3. Sherlock sets up and pays for your small pre-launch bug bounty
 4. Confirm the details of your post-launch bug bounty program
-5. Post-launch, Sherlock covers up to $250k of bug bounty and exploit payouts
+5. Post-launch, Sherlock covers up to $500k of bug bounty and exploit payouts
 
 After completing the fix review, Sherlock ensures that there is always a bug bounty on your code! With Sherlock's dual pre-deployment and post-deployment bug bounties, whitehats will be working around the clock to keep your protocol safe.&#x20;
 
@@ -39,6 +39,7 @@ Like golf, you want your score to be as low as possible so you can access the ma
 
 | Points       | Coverage Amount |
 | ------------ | --------------- |
+| 0            | $500,000        |
 | Less than 3  | $250,000        |
 | Less than 6  | $200,000        |
 | Less than 9  | $150,000        |
