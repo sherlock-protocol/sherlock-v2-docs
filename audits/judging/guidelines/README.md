@@ -58,7 +58,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
    If a protocol defines restrictions on the owner/admin, issues involving attacks that bypass these restrictions may be considered valid. These restrictions must be explicitly stated and will be assessed case by case. Admin functions are generally assumed to be used correctly and not harm users/the protocol.
 
    Note: if the (external) admin will unknowingly cause issues, it can be considered a valid issue.
-   Note: the role can be considered untrusted (i.e. act maliciously) only if it's specifically claimed to be untrusted in the contest README OR the user can get the role without admin/owner permission (e.g. paying specific fee).
+   Note: the internal protocol roles are trusted by default. They can be considered untrusted (i.e. act maliciously) only if it's, specifically, claimed to be untrusted in the contest README OR the user can get the role without admin/owner permission (e.g. paying a specific fee).
 
    > Example: Admin sets fee to 200%. The issue "Admin can break deposit by setting fee to a 100%+" is invalid as it's common sense that fees can not be more than 100% on a deposit.
 
