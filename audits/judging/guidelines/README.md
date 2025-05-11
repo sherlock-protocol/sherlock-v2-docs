@@ -52,7 +52,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    If at least one of these is describing the case, the issue can be Medium. If both apply, the issue can be considered High severity. Additional constraints related to the issue may decrease its severity accordingly.
 
-   If a single occurrence of the attack results in a denial of service (DOS) for only one block, it is classified as a one-block DOS, even if it can be repeated indefinitely. It qualifies as a medium-level issue only if it disrupts a clearly time-sensitive function.
+   If a single occurrence of the attack results in a denial of service (DOS) for less than a week, the issue should be evaluated based on a **single occurence** of the attack, even if it can be repeated indefinitely. It qualifies as a medium-level issue only if it disrupts a clearly time-sensitive function.
 
 5. **(External) Admin trust assumptions**:
    If a protocol defines restrictions on the owner/admin, issues involving attacks that bypass these restrictions may be considered valid. These restrictions must be explicitly stated and will be assessed case by case. Admin functions are generally assumed to be used correctly.
