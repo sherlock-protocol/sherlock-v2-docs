@@ -1,4 +1,4 @@
-## First Submitter Pod
+## First Submitter Pot
 
 Three percent of the total payouts will be reserved for a first-submitter pot, which is distributed among the first submitters of all valid issues.
 
