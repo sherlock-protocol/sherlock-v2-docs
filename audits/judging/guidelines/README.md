@@ -31,7 +31,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    > Example: The code comments state that "a swap can never fail" even though the code is built to support failing swaps.
 
-   The protocol team can use the README (and only the README) to define language that indicates the codebase's restrictions and/or expected functionality. Additionally, the protocol team can use only the following question to define the protocol's invariants/properties:
+   The protocol team can use the README (and only the README) to define the protocol's invariants/properties. Specifically, only the following question can be used for that:
    > What properties/invariants do you want to hold even if breaking them has a low/unknown impact?
 
    Issues that break the invariants from the above question, irrespective of whether the impact is low/unknown, could be assigned Medium severity if it doesn't conflict with common sense. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
@@ -52,12 +52,14 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
    If at least one of these is describing the case, the issue can be Medium. If both apply, the issue can be considered High severity. Additional constraints related to the issue may decrease its severity accordingly.
 
-   If a single occurrence of the attack results in a denial of service (DOS) for only one block, it is classified as a one-block DOS, even if it can be repeated indefinitely. It qualifies as a medium-level issue only if it disrupts a clearly time-sensitive function.
+   If a single occurrence of the attack results in a denial of service (DOS) for less than a week, the issue should be evaluated based on a **single occurrence** of the attack, even if it can be repeated indefinitely. It qualifies as a medium-level issue only if it disrupts a clearly time-sensitive function.
+   > Note: if the single occurrence of the attack is relatively long (e.g. >2 days), and it takes only 2-3 iterations to cause a 7-day DOS, it may be considered a valid finding.
 
 5. **(External) Admin trust assumptions**:
-   If a protocol defines restrictions on the owner/admin, issues involving attacks that bypass these restrictions may be considered valid. These restrictions must be explicitly stated and will be assessed case by case. Admin functions are generally assumed to be used correctly.
+   If a protocol defines restrictions on the owner/admin, issues involving attacks that bypass these restrictions may be considered valid. These restrictions must be explicitly stated and will be assessed case by case. Admin functions are generally assumed to be used correctly and not harm users/the protocol.
 
    Note: if the (external) admin will unknowingly cause issues, it can be considered a valid issue.
+   Note: the internal protocol roles are trusted by default. They can be considered untrusted (i.e. act maliciously) only if it's, specifically, claimed to be untrusted in the contest README OR the user can get the role without admin/owner permission (e.g. paying a specific fee).
 
    > Example: Admin sets fee to 200%. The issue "Admin can break deposit by setting fee to a 100%+" is invalid as it's common sense that fees can not be more than 100% on a deposit.
 
@@ -130,7 +132,7 @@ If the original report does not include a Proof of Concept (PoC), it will be con
 9. **User Blacklist:** User getting blacklisted by a token/contract causing harm only to themselves is **not** a valid medium/high.
 10. Issues assuming future opcode gas repricing are not considered to be of Medium/High severity. \
    **Use of call vs transfer** will be considered as a protocol design choice if there is no good reason why the call may consume more than 2300 gas without opcode repricings.
-13. **Accidental ETH/native token transfers** Merely because a contract allows it, are **not** valid as medium/high issues.
+13. **Accidental direct token transfers**: users accidentally or intentionally directly transferring any tokens (native, ERC20, etc.) into the in-scope contracts, while it is not a part of the expected protocol operations, and the contract doesn't have a way to retrieve them, is **not** valid as a medium/high issue and is considered a user mistake, if the user hurts themselves only. However, if it leads to hurting the protocol and/or other users, it may be considered a valid issue.
 14. **Loss of airdrops** or any other rewards that are not part of the original protocol design is not considered a valid high/medium. [Example](https://github.com/sherlock-audit/2023-02-openq-judging/issues/323)
 15. **Use of Storage gaps:** Simple contracts with one of the parent contract not implementing storage gaps are considered low/informational. \
     **Exception**: However, if the protocol design has a highly complex and branched set of contract inheritance with storage gaps inconsistently applied throughout and the submission clearly describes the necessity of storage gaps it can be considered a valid medium. [Example](https://github.com/sherlock-audit/2022-09-notional-judging/issues/64)
