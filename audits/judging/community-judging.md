@@ -2,7 +2,7 @@
 description: You’re going to review some issues anyway, why not get paid for it?
 ---
 
-# 🧑‍⚖️ Real-Time Judging
+# 🧑‍⚖️ Community Judging
 
 ### What’s in it for me?
 
@@ -12,7 +12,7 @@ There’s no requirement to judge all of the issues submitted in a contest. If y
 
 ### How can I become a Judge?
 
-If you submit at least 1 valid issue in a Sherlock contest, you are eligible to participate in judging.&#x20;
+You need to have 10+ judging signal to be able to judge. This means if you submit at least 1 valid issue in a Sherlock contest, you are eligible to participate in judging.&#x20;
 
 Watsons that were on the audit or legacy judging leaderboard at the time of announcement will start with an initial signal score.&#x20;
 
@@ -22,11 +22,11 @@ Real-Time Judging is a live judging contest where hundreds of Judges can contrib
 
 You’ll be able to track every issue’s severity and duplication progress in the Overview page. You’ll also be able to see each issue’s severity and duplication status. This page will constantly update to show the latest votes of every Watson.&#x20;
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXfxORK3RQQV9cts-KCLL3Kzwf7XlX2Xn4s7vFXqbeGvglGHrJxaV5ASGuQvSf5hJncNHC5LIlfHf\_g3xMhzi0NzaEqucg3y04Sweeb8LbUIPvY5vLIDwFn0pfhEh3LZBsPPFfOYc7wvcaEIszqJzaMgpDoZ?key=vBHXKQdJakMdc1gIGcMF8w)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfxORK3RQQV9cts-KCLL3Kzwf7XlX2Xn4s7vFXqbeGvglGHrJxaV5ASGuQvSf5hJncNHC5LIlfHf_g3xMhzi0NzaEqucg3y04Sweeb8LbUIPvY5vLIDwFn0pfhEh3LZBsPPFfOYc7wvcaEIszqJzaMgpDoZ?key=vBHXKQdJakMdc1gIGcMF8w)
 
 If you want to participate, you can click on any issue to view the issue description, vote on the duplication status and choose the severity (High, Medium, Invalid).
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXfunEKJYB2KkuBoI9mll1dGqcGBLsFS5wiviNgeB-yLLW4Q4KXbCKOfNftSk\_JUCtw6gcKX5Xjf-3KDOxswdZvjCrdfanRdxoDhTPjO0KUezkEzhr0cBkr7aPT2Ql17G2qQVj8r4JICnL76CTg\_UrYS3Nyw?key=vBHXKQdJakMdc1gIGcMF8w)\
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfunEKJYB2KkuBoI9mll1dGqcGBLsFS5wiviNgeB-yLLW4Q4KXbCKOfNftSk_JUCtw6gcKX5Xjf-3KDOxswdZvjCrdfanRdxoDhTPjO0KUezkEzhr0cBkr7aPT2Ql17G2qQVj8r4JICnL76CTg_UrYS3Nyw?key=vBHXKQdJakMdc1gIGcMF8w)\
 \
 
 
@@ -34,9 +34,7 @@ If you want to participate, you can click on any issue to view the issue descrip
 
 Judging goes live right after the audit contest ends. You can find it in the [Contests](https://audits.sherlock.xyz/contests) section of the Sherlock app. It will be available for any contest in the “Judging” stage.&#x20;
 
-Each issue must hit 100% on the Severity and Duplication Progress to be in the “Finalizable” state. When every issue reaches this state, the contest judging progress will reach 100% and the preliminary results can be viewed. Voting is still live during this phase.
-
-After 24 hours the voting will end and the final results will be announced.
+Lasts a fixed number of days (# of issues / 100) days (for example 500 issues would be 5 days), with a minimum of 2 days.
 
 ### Key Features of Real-Time Judging
 
@@ -45,13 +43,10 @@ After 24 hours the voting will end and the final results will be announced.
 * The currency of the system is called “signal” and you gain signal for correct judgments and lose signal for incorrect judgments
 * The reward for judging an issue increases over time
 * The reward for voting on an outcome (i.e. Medium) decreases after others vote for the same outcome
-* There is no escalation period, the Sherlock Judge has discretion to review controversial issues
 * As issues become more controversial (i.e. lots of votes on Medium AND invalid) the signal required to finalize that issue’s outcome increases
 * Judging contests are finalized once there is enough signal voting in the same direction on each issue
-* Once all issues are in a finalized state, there’s a 24-hour period for more voting to occur, and then the contest results become final
-* There is no fixed timeframe for a judging contest, it could finalize in 3 days and payouts could happen the day after
 
-> Important! Once you vote or write a comment, you cannot change it. Think carefully before taking any action and include as much relevant detail in your comments as possible.&#x20;
+> Important! Once you vote or write a comment, changing it may incur a penalty. Think carefully before taking any action and include as much relevant detail in your comments as possible.&#x20;
 
 ### What is Signal?
 
@@ -66,7 +61,7 @@ After an audit contest, your Signal increases for correct judgments and decrease
 1. Submit correct judgments
 2. If your Signal is <100, you can increase your Signal to a maximum of 100 by submitting valid issues in an audit contest
 
-If your Signal gets to 0, you can no longer participate in Real-Time Judging. The maximum possible Signal is 1,000.
+If your Signal gets to <10, you can no longer participate in Real-Time Judging. The maximum possible Signal is 1,000.
 
 ### &#x20;How is Signal calculated?
 
@@ -106,15 +101,11 @@ Every severity and duplication judgment on every issue requires a comment. If so
 
 Writing a comment can earn you a 300% reward boost on that judgment if your comment accrues the most Signal, but it can result in a 10% penalty if it doesn’t accrue the most Signal.&#x20;
 
-You are only able to write 1 comment per severity and duplication judgment. And you are not allowed to edit your comment. So only write a comment once you feel you have a strong grasp of the issue, and include as much relevant detail in your comment as possible.&#x20;
+You are only able to write 1 comment per severity. And changing your comment later may lead to receiving a penalty. So only write a comment once you feel you have a strong grasp of the issue, and include as much relevant detail in your comment as possible.&#x20;
 
 ### How can I escalate my issue if I disagree with the outcome?
 
-Escalations have been deprecated. Instead, the same mechanism naturally occurs in Real-Time Judging if there is a material amount of Signal voting on different outcomes (i.e. Medium vs. Invalid).
-
-Every issue with a high degree of controversy will attract the attention of the Sherlock Judge, who has the final say on every judgment.&#x20;
-
-In the previous system, the ability to escalate an issue was earned by doing well in the judging contest and submitting valid issues. In the same way, you can increase your Signal by judging well and submitting valid issues in audit contests.&#x20;
+Escalations happen right after the preliminary results are released. To escalate an issue you need to make a comment in the discussion section in the judging app. There are only 24 hours to escalate your issue after the release of the preliminary results. The cost is 2 signal, and you need to have >=100 signal to comment on issues submitted by other Watsons.&#x20;
 
 ### How does Real-Time Judging work in private audit contests?
 

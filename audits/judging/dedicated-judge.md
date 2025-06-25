@@ -1,12 +1,12 @@
 ---
 description: >-
   A dedicated judge is dedicated to judge all issues in the contest and gets a
-  300% reward boost.
+  500% reward boost.
 ---
 
 # Dedicated Judge
 
-The offer to be a dedicated judge will be available in the Sherlock Discord's Judging channel. The signup deadline is 24 hours before the audit contest ends.
+The offer to be a dedicated judge will be available in the Sherlock Discord's Judging channel. The signup deadline is 24 hours before the audit contest ends. There are only 5 dedicated judges for the public contests (top 5 with highest signal out of those who signed up), and only 3 dedicated judges for the private contests.
 
 **Requirement**
 
@@ -14,14 +14,14 @@ The dedicated judge must review all issues before the community judging period e
 
 **Penalty**
 
-If the final results are announced after more than seven days and you don't judge all issues, you will be penalized.
+If the dedicated judge doesn't manage to judge all the issues before the end of community judging, they will receive a penalty.
 
 1. You will not receive the 300% reward boost. Like any other judge, you will receive a 100% reward boost.
 2. Your leaderboard signal score will be decreased by 50%, this is a significant penalty.
 
 **Reward**
 
-If you don't receive the penalty and successfully fulfill your obligations as a dedicated judge. You will receive a 300% reward boost.
+If you don't receive the penalty and successfully fulfil your obligations as a dedicated judge. You will receive a 500% reward boost.
 
 This boost applies to your
 
