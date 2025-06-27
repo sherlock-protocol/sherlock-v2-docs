@@ -80,3 +80,7 @@
 * [Deployed Contracts](developer/deployed-contracts.md)
 * [Contract Reference](developer/contract-reference.md)
 * [Audits](developer/audits.md)
+
+## Legal
+
+* [Privacy Policy](legal/privacy-policy.md)
