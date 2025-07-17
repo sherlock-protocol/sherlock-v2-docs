@@ -8,7 +8,7 @@
 
 ### How is Sherlock different from other audit firms?
 
-* Most audit firms rely on their reputation to convince protocol teams to use them. This is a poor way to guarantee incentive alignment. Sherlock provides something far more valuable than reputation: USDC. If a contract that is audited and covered by Sherlock has a bug bounty payout (or gets exploited), then Sherlock's staking pool can pay out USDC to reimburse the entire bug bounty (minus a deductible) or part of the exploit. This is a much stronger incentive to do a good job vs. relying on an amorphous reputation across hundreds of audits and dozens of individual auditors.
+* Most audit firms rely on their reputation to convince protocol teams to use them. This alone is a poor way to guarantee incentive alignment. Sherlock provides something far more valuable than just reputation: USDC. If a contract that is audited and covered by Sherlock has a bug bounty payout (or gets exploited), then Sherlock can pay out USDC to reimburse the bug bounty (up to $500k). This incentive demonstrates Sherlocks commitment to do a good job vs. relying on an amorphous reputation across hundreds of audits and dozens of individual auditors.
 * Many audit firms charge 100% more than what they pay individual auditors. This is the "reputation premium." Sherlock can pay top independent security experts more than they would make at leading audit firms. Then Sherlock can offer USDC backing behind Sherlock's audit. And the cost can often STILL be lower than what most traditional firms charge.
 * Good security work is done by talented individuals. Many audit firms have been known to hide lesser talented individuals behind their overall audit firm reputation. This means the quality of audit you will get from other firms is highly variable. You should always check to see who the individual auditors are. Sherlock is very transparent about the [qualifications of individual auditors](https://audits.sherlock.xyz/leaderboard).
 
@@ -25,10 +25,6 @@ Sherlock can price coverage the lowest because we do the most up-front work
 Claims decisions are made by an unbiased 3rd party
 
 * Follow the incentives. Does a successful payout rely on a decision made by someone who will lose a lot of money if they decide in your favor? Sherlock has partnered with UMA to offer an unbiased claims process handled by objective, third-party voters who have economic guarantees around their incentives. Read more [here](https://docs.umaproject.org/getting-started/oracle).
-
-### How does staking work?
-
-* A user stakes USDC for a fixed term (6 months or 12 months) and receives a market-leading yield in return. The yield is partially fixed, partially variable. The amount of SHER tokens a staker will receive is known at the time of staking and is fixed for the duration of the stake. Premiums received by stakers would be expected to increase as more protocols become covered. If there is a covered smart contract exploit during the term, a staker's funds can be slashed up to 50%.
 
 ### How can I get an audit or coverage from Sherlock?
 

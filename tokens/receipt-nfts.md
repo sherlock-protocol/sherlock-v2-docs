@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Receipt NFTs
 
 Each staking position must have a lockup period (6 months, 12 months, etc.) associated with it. Because a staking position can be initiated at any time, each staking position will likely have a unique lockup end date. Due to this phenomenon, staking positions are not fungible. Therefore, staking positions at Sherlock are represented by NFTs.

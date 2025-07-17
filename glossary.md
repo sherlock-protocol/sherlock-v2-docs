@@ -24,15 +24,7 @@
 
 ### SHER
 
-* Sherlock's governance token. See the [SHER section](https://docs.sherlock.xyz/tokens/sher) for more info.
-
-### Staking
-
-* The act of depositing USDC into a Sherlock staking pool for a fixed period (6 months, 12 months, etc.). Once USDC has been deposited, USDC and SHER tokens accrue to the depositor in the form of APY. A portion of the staked tokens (up to 50% for an individual exploit) in the staking pool is at risk of being liquidated due to a bug bounty payout or exploit at one of the protocols covered by Sherlock.
-
-### Unstaking
-
-* The act of removing staked USDC from the Sherlock staking pool. This action can only be taken once the staking period (6 months, 12 months, etc.) for that USDC has ended.
+* Sherlock's token which is still in development. See the [SHER section](https://docs.sherlock.xyz/tokens/sher) for more info.
 
 ### Watsons
 
