@@ -5,7 +5,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 ### **I. Table of Contents:**
 
 * [#ii.-criteria-for-issue-severity](./#ii.-criteria-for-issue-severity "mention")
-* [#iii.-some-standards-observed](./#iii.-some-standards-observed "mention")
+* [#iii.-sherlocks-standards](./#iii.-sherlocks-standards "mention")
 * [#iv.-how-to-identify-a-high-issue](./#iv.-how-to-identify-a-high-issue "mention")
 * [#v.-how-to-identify-a-medium-issue](./#v.-how-to-identify-a-medium-issue "mention")
 * [#vi.-recommendations](./#vi.-recommendations "mention")
