@@ -8,7 +8,7 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 * [#iii.-some-standards-observed](./#iii.-some-standards-observed "mention")
 * [#iv.-how-to-identify-a-high-issue](./#iv.-how-to-identify-a-high-issue "mention")
 * [#v.-how-to-identify-a-medium-issue](./#v.-how-to-identify-a-medium-issue "mention")
-* [#vi.-requirements](./#vi.-requirements "mention")
+* [#vi.-recommendations](./#vi.-recommendations "mention")
 * [#vii.-list-of-issue-categories-that-are-not-considered-valid](./#vii.-list-of-issue-categories-that-are-not-considered-valid "mention")
 * [#viii.-list-of-issue-categories-that-are-considered-valid](./#viii.-list-of-issue-categories-that-are-considered-valid "mention")
 * [#ix.-duplication-guidelines](./#ix.-duplication-guidelines "mention")
