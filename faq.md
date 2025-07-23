@@ -1,4 +1,4 @@
-# 🙋 FAQ
+# FAQ
 
 ## General
 

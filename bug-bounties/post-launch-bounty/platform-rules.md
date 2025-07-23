@@ -1,4 +1,4 @@
-# 📜 Platform Rules
+# Platform Rules
 
 In order to facilitate cordial and productive exchanges between protocol customers and whitehats, Sherlock has established a set of rules for whitehats and protocol customers to define proper conduct.&#x20;
 

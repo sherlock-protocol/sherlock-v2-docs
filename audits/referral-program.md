@@ -2,7 +2,7 @@
 description: Welcome to Sherlock's Audit Referral Program!
 ---
 
-# 🤝 Referral Program
+# Referral Program
 
 ### Referral program basics
 

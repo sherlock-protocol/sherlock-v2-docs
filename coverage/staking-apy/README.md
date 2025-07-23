@@ -2,6 +2,6 @@
 hidden: true
 ---
 
-# 💰 Stakers
+# Stakers
 
 ###

@@ -2,7 +2,7 @@
 description: Sherlock protects teams against hacks at every step of the journey
 ---
 
-# 🌱 Pre-Launch Bounty
+# Pre-Launch Bounty
 
 Sometimes there is a period after the fix review has been completed, but before a protocol goes live on mainnet.&#x20;
 

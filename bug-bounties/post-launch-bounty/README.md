@@ -2,7 +2,7 @@
 description: Sherlock protects teams against hacks at every step of the journey
 ---
 
-# 🚀 Post-Launch Bounty
+# Post-Launch Bounty
 
 **Bug Bounty for Qualifying Customers**&#x20;
 

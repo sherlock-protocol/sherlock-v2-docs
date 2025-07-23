@@ -2,7 +2,7 @@
 description: You’re going to review some issues anyway, why not get paid for it?
 ---
 
-# 🧑‍⚖️ Community Judging
+# Community Judging
 
 ### What’s in it for me?
 

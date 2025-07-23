@@ -1,4 +1,4 @@
-# 🧑‍⚖️ Judging
+# Judging
 
 {% hint style="info" %}
 **Note for Protocol Teams:** There is no mandatory action to take during judging. Sherlock's judging will reach a final state without any input from the protocol team.\

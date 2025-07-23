@@ -2,7 +2,7 @@
 description: Sherlock now includes bug bounty and exploit coverage with every audit
 ---
 
-# 🛡️ Sherlock Shield
+# Sherlock Shield
 
 Welcome to Sherlock Shield!
 

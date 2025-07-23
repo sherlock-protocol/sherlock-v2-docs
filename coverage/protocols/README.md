@@ -1,2 +1,2 @@
-# 🧑💻 Protocol Teams
+# Protocol Teams
 

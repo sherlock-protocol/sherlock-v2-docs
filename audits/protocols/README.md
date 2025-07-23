@@ -1,6 +1,6 @@
-# 🧑‍💻 Protocol Teams
+# Protocol Teams
 
-Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI\_xD6AQiag/viewform)!
+Request an audit [here](https://docs.google.com/forms/d/e/1FAIpQLSfqy21chyyzhAfbCxMQOlNTlYxegfvxZDhYsPkpI_xD6AQiag/viewform)!
 
 Security is a top priority for high-quality projects shipping code to mainnet given the inherently adversarial nature of on-chain interactions and consequently the prospect of losing user funds. And because Sherlock is willing to offer bug bounty and exploit coverage to qualifying codebases, Sherlock obsesses over the processes to keep codebases safer.
 
@@ -37,7 +37,7 @@ Below, we’ll outline the strengths and weaknesses of both traditional audits a
 
 **Strengths**
 
-* The likelihood of missed bugs is [very low](https://docs.google.com/spreadsheets/d/1RIJCK3\_9RHvtNPObsDRTAqkP9IbyutZMsqlKNnZCO00/edit#gid=0) because 200-400 security experts try to find bugs in your code
+* The likelihood of missed bugs is [very low](https://docs.google.com/spreadsheets/d/1RIJCK3_9RHvtNPObsDRTAqkP9IbyutZMsqlKNnZCO00/edit#gid=0) because 200-400 security experts try to find bugs in your code
 * Incentives are stronger to find bugs: experts get paid based on the number of findings and severity of findings
 * Contests can often be scheduled within days
 * You can decide your own price (size of the prize pool)

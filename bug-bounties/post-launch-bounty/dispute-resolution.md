@@ -1,4 +1,4 @@
-# ⚖️ Dispute Resolution
+# Dispute Resolution
 
 ## Bug Bounty Dispute Resolution
 
