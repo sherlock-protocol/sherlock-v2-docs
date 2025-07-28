@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Stake Position Lifecycle
 
 ![Stake position lifecycle](https://i.imgur.com/pUq6mkT.png)
