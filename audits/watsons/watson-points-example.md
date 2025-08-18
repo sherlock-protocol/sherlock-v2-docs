@@ -58,4 +58,4 @@ This is how the Sherlock leaderboard would look after these two contests:
 
 Because of the increased weighting of the 14-day contest vs. the 7-day contest, Carol and Emily ended up higher on the leaderboard than Bob, despite Bob's high ranking after the 7-day contest.&#x20;
 
-Carol and Emily also earned the highest USDC payouts. But every Watson (including Carol and Emily) will need to ensure they clear [both audit contest payout criteria](https://app.gitbook.com/o/-M_eFb0i0B5bGNIG9sx8/s/IULvDRunHtCHQJQoTsGo/~/changes/107/audits/watsons/meeting-the-payout-criteria-july-1st-2023) in order to receive their USDC.&#x20;
+Carol and Emily also earned the highest USDC payouts. But every Watson (including Carol and Emily) will need to ensure they clear [both audit contest payout criteria](./meeting-the-payout-criteria.md) in order to receive their USDC.&#x20;
