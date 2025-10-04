@@ -82,4 +82,5 @@
 
 ## Legal
 
-* [Privacy Policy](legal/privacy-policy.md)
+* [Security Researcher Privacy Policy](legal/privacy-policy.md)
+* [Customer Privacy Policy](legal/customer-privacy-policy.md)
