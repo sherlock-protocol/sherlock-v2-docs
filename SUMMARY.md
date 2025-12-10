@@ -60,6 +60,10 @@
 * [Claims](coverage/claims/README.md)
   * [Claims Process](claims/claims-process.md)
 
+## SHERLOCK AI
+
+* [Configuring a Sherlock AI Run](sherlock-ai/configuring-a-sherlock-ai-run.md)
+
 ## Tokens
 
 * [SHER](tokens/sher.md)
