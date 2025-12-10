@@ -19,7 +19,7 @@ Changes made here apply only to that run.
 
 ### Repo defaults with `.sherlock-ai.json`
 
-Place a `.sherlock-ai.json` at the repo root (on the branch/commit being run). When the commit is selected in the UI, these defaults prefill the advanced options:
+Place a `.sherlock-ai.json` at the repo root (on the branch/commit being run). When the commit is selected in the UI, the values in  `.sherlock-ai.json`  will prefill the advanced options.
 
 Example:
 
