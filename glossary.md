@@ -1,3 +1,10 @@
+---
+description: >-
+  Definitions for Sherlock programs, people and roles, and core security terms
+  used across these docs: from scope and severity to contests, bounties,
+  judging, and Shield.
+---
+
 # Glossary
 
 #### People and roles <a href="#docs-internal-guid-81ee12bc-7fff-da7c-d48e-f1356acb8e78" id="docs-internal-guid-81ee12bc-7fff-da7c-d48e-f1356acb8e78"></a>
