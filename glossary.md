@@ -7,7 +7,7 @@ description: >-
 
 # Glossary
 
-#### People and roles <a href="#docs-internal-guid-81ee12bc-7fff-da7c-d48e-f1356acb8e78" id="docs-internal-guid-81ee12bc-7fff-da7c-d48e-f1356acb8e78"></a>
+### People and roles <a href="#docs-internal-guid-81ee12bc-7fff-da7c-d48e-f1356acb8e78" id="docs-internal-guid-81ee12bc-7fff-da7c-d48e-f1356acb8e78"></a>
 
 **Protocol team:** The builders and operators of the system in scope. Typically includes engineering, security, and operations roles responsible for scoping, remediation, and deployment decisions.
 
@@ -21,7 +21,7 @@ description: >-
 
 ***
 
-#### Core concepts
+### Core concepts
 
 **Finding (Issue):** A security-relevant problem identified in code, configuration, or system design. A finding typically includes an impact statement, an attack path (or failure mode), and remediation guidance.
 
@@ -45,7 +45,7 @@ description: >-
 
 ***
 
-#### Development
+### Development
 
 **Sherlock AI:** Auditor-grade analysis used across the lifecycle, with the highest leverage while code is still changing. Teams use it during development to surface likely vulnerabilities, clarify trust assumptions, and prioritize fixes as they build and refactor.
 
@@ -55,7 +55,7 @@ description: >-
 
 ***
 
-#### Auditing (Pre-launch review)
+### Auditing (Pre-launch review)
 
 **Collaborative Audit:** A staffed, coordinated review for high-stakes scopes. The emphasis is depth: architecture understanding, adversarial reasoning, and fix verification with a tight feedback loop.
 
@@ -73,7 +73,7 @@ description: >-
 
 ***
 
-#### Post-Launch protection
+### Post-Launch protection
 
 **Bug bounty:** An ongoing post-launch program that rewards responsible disclosure of vulnerabilities in a live system. Bounties exist to keep pressure on production deployments as upgrades, integrations, and market conditions change.
 
@@ -85,7 +85,7 @@ description: >-
 
 ***
 
-#### Sherlock Shield
+### Sherlock Shield
 
 **Sherlock Shield:** Optional financial coverage that can sit alongside post-launch programs under defined terms.
 
