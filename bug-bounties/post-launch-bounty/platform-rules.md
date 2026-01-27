@@ -51,4 +51,4 @@ Breaking these rules as a protocol team could result in removal from the Sherloc
 * Always default to the assumption that the whitehat has good intentions.
 * By listing your bug bounty program on Sherlock, you are agreeing to abide by the outcome of the Sherlock dispute resolution process.
 
-\
+<br>

@@ -1,4 +1,4 @@
-# Privacy Policy
+# Security Researcher Privacy Policy
 
 **Privacy Policy for Sherlock**
 
@@ -54,9 +54,8 @@ We may update this Privacy Policy from time to time. If we make material changes
 
 By using the Services, you acknowledge that you have read and understood this Privacy Policy.
 
-\
-
+<br>
 
 &#x20;
 
-\
+<br>

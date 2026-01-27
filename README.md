@@ -1,35 +1,36 @@
-# Intro to Sherlock
+---
+description: Sherlock Docs Update - Jan 2026
+---
 
-Sherlock is an audit provider and smart contract vulnerability research platform. Sherlock works to protect Decentralized Finance (DeFi) users from smart contract exploits with security reviews from leading auditors backed by smart contract coverage incentives on the audited contracts.
+# Introduction to Sherlock
 
-You can find a brief overview of the Sherlock ecosystem below.
+Sherlock is a security organization built to protect onchain systems where software directly controls capital. We exist because security for these systems can’t be treated as a one-time event or a single deliverable. Protocols ship continuously, assumptions change, integrations shift, and incentives attract real adversaries. Security has to be an operating model.
 
-## Sherlock Ecosystem
-
-There are 3 main participants in the Sherlock ecosystem:
-
-1. Protocols
-2. Watsons
-3. Independent Security Researchers
-
-![](https://i.imgur.com/bQxJd02.png)
-
-### Protocols
-
-Protocols come to Sherlock for audits from top smart contract  security experts. Sherlock offers a financial incentive of smart contract coverage on any contracts that are reviewed as part of the audit. This means you can rest assured knowing that Sherlock has "skin in the game" in terms of auditing the smart contracts. Basically, if the audited smart contracts have a critical bug, Sherlock will pay up to $500k on the codebase in scope. No other auditor offers this kind of backing for their audits.
-
-Whenever a Critical-severity vulnerability is discovered in a protocol (on an audited contract), Sherlock may pay for the bug bounty cost (minus a deductible). Sherlock's [claims process](claims/claims-process.md) will decide whether or not the vulnerability falls under coverage and should be paid out.
-
-
-
-### Watsons
-
-Sherlock’s Watsons (the security experts) do a full audit of each prospective protocol's contracts and provide input as to the risk of the protocol's contracts.\
 \
-Sherlock audits feature both dedicated, top-tier auditors who are incentivized to find vulnerabilities in the codebase, as well as a contest pot where anyone in the world can find bugs. See [protocols](audits/protocols/ "mention") for more info on the audit process. And security experts (or those planning to become security experts) can see more information about how they can participate in audits in [watsons](audits/watsons/ "mention").
+**Complete Lifecycle Security**
+
+Sherlock’s model is complete lifecycle security: coverage across development, pre-launch review, and post-launch operation.
+
+**Development:** teams identify issues early and tighten assumptions while code is still changing fast.
+
+**Auditing:** structured review programs pressure test architecture and code under adversarial conditions, then verify fixes before release.
+
+**Post-launch**: ongoing incentives keep pressure on production systems as upgrades, integrations, and market conditions change.<br>
+
+This approach is designed to compound over time. Each engagement improves the next one because context carries forward: how the system is intended to work, what changed, what was fixed, and where risk tends to concentrate as the protocol grows.
 
 
 
-### Independent Security Researchers
+**Sherlock offers six core services:**
 
-Sherlock, as a competitive platform, has a significant amount of independent security researchers. These researchers are from all over the world, in competition with each other to find as many legitimate vulnerabilities in your codebase as possible in order to earn a payout. The level of coverage our hybrid model provides is unparalleled in comparison to other forms of smart contract audits.
+**Sherlock AI:** An auditor-grade AI security tool used during development that reads your codebase in context, models protocol intent and trust assumptions, then runs specialist checks to find real exploit paths and write fix-ready findings as you build and ship.
+
+**Collaborative Auditing:** A staffed audit where Sherlock assembles an engagement-specific team from our elite researcher network based on your protocol’s architecture and attack surface, then runs a coordinated review with fix verification through to release.
+
+**Audit Contests:** A time-boxed public audit program that brings many independent, vetted researchers onto the same scope under clear rules and incentives, producing high-throughput issue discovery with structured judging, severity calibration, and a clean paper trail teams can remediate against.
+
+**Bug Bounties:** A post-launch security program that keeps continuous pressure on production systems by paying independent researchers for valid live findings, with defined triage and remediation workflows so teams can receive, validate, patch, and communicate issues without chaos.
+
+**Sherlock Shield:** An optional post-launch coverage program with defined terms that can reimburse eligible losses or payouts tied to covered security events, designed to sit alongside bounties and ongoing monitoring as a financial backstop (not a substitute for fixing root causes).
+
+**Blackthorn:** A premium collaborative audit tier for the highest-stakes scopes, staffed by a small group of top-tier reviewers and run with deeper architecture scrutiny, tighter iteration loops, and hands-on fix verification for teams that can’t afford uncertainty.

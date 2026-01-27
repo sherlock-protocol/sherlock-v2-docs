@@ -58,4 +58,4 @@ That’s why Sherlock allows for a limited period of negotiation as an alternati
 Negotiation must not last longer than 14 days before an alternative option (pay the requested bounty, accept the decision, escalate to the 2nd or 3rd tier) must be selected. Negotiation must remain “good faith” and cordial.&#x20;
 
 \
-\
+<br>

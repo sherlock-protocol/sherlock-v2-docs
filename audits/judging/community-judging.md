@@ -27,8 +27,7 @@ You’ll be able to track every issue’s severity and duplication progress in t
 If you want to participate, you can click on any issue to view the issue description, vote on the duplication status and choose the severity (High, Medium, Invalid).
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfunEKJYB2KkuBoI9mll1dGqcGBLsFS5wiviNgeB-yLLW4Q4KXbCKOfNftSk_JUCtw6gcKX5Xjf-3KDOxswdZvjCrdfanRdxoDhTPjO0KUezkEzhr0cBkr7aPT2Ql17G2qQVj8r4JICnL76CTg_UrYS3Nyw?key=vBHXKQdJakMdc1gIGcMF8w)\
-\
-
+<br>
 
 ### Real-Time Judging Timeline
 
@@ -118,4 +117,4 @@ If a Watson does not meet the Payout Threshold after any audit contest, the issu
 \
 \
 \
-\
+<br>

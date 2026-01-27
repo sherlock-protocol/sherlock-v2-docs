@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Intro to Sherlock](README.md)
+* [Introduction to Sherlock](README.md)
 * [FAQ](faq.md)
 * [Glossary](glossary.md)
 * [Disclaimers](disclaimers.md)
@@ -63,26 +63,6 @@
 ## SHERLOCK AI
 
 * [Configuring a Sherlock AI Run](sherlock-ai/configuring-a-sherlock-ai-run.md)
-
-## Tokens
-
-* [SHER](tokens/sher.md)
-* [Receipt NFTs](tokens/receipt-nfts.md)
-
-## Governance
-
-* [Roles](governance/roles.md)
-
-## Developer
-
-* [Overview](developer/overview.md)
-* [Stake Position Lifecycle](developer/stake-position.md)
-* [Claim Lifecycle](developer/claims.md)
-* [Protocol Lifecycle](developer/protocols.md)
-* [SHER Distribution](developer/sher-distribution.md)
-* [Deployed Contracts](developer/deployed-contracts.md)
-* [Contract Reference](developer/contract-reference.md)
-* [Audits](developer/audits.md)
 
 ## Legal
 

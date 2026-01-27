@@ -82,10 +82,10 @@ Batch 1: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/24
 ***
 
 * Historical decisions are no longer considered sources of truth. They may guide Watsons, but judgments should always be based on rules as they are and mistakes should not be repeated. Private messages are not sources of truth.
-* Updated the [Broken link](broken-reference "mention") and [Broken link](broken-reference "mention") sections to better explain what high and medium severity issues are. Repealed the [Broken link](broken-reference "mention") description.
+* Updated the [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#v.-how-to-identify-a-medium-issue "mention") and [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#v.-how-to-identify-a-medium-issue "mention") sections to better explain what high and medium severity issues are. Repealed the [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#ii.-criteria-for-issue-severity "mention") description.
 * Added an exception to the hierarchy of truth for cases where blatant mistakes in a higher source of truth were made.
 * Specified opportunity loss and design choices to be out of scope.
-* Updated the [Broken link](broken-reference "mention") section to require the PoC in more cases and ensure that Watsons need to discover the limitations and constraints of the issue being triggered.
+* Updated the [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#vi.-requirements "mention") section to require the PoC in more cases and ensure that Watsons need to discover the limitations and constraints of the issue being triggered.
 * Rephrased the "Future issues" rule to remove ambiguity.
 * Changed words in several places to ensure ease of understanding. Typo fixes.
 
@@ -93,28 +93,28 @@ Batch 1: https://github.com/sherlock-protocol/sherlock-v2-docs/pull/24
 
 ***
 
-* Made network liveness our of scope, with an exception of sequencer-like issues if they are preventable and the external admin is restricted in the [Broken link](broken-reference "mention") section.
+* Made network liveness our of scope, with an exception of sequencer-like issues if they are preventable and the external admin is restricted in the [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#vii.-list-of-issue-categories-that-are-not-considered-valid "mention") section.
 
 ## 1.3 - 12/10/2023
 
 ***
 
 * Addition of CHANGELOG to the docs.
-* Addition of rule related to CHANGELOG in the point `Hierarchy of truth` in the [Broken link](broken-reference "mention") section
+* Addition of rule related to CHANGELOG in the point `Hierarchy of truth` in the [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#iii.-some-standards-observed "mention") section
 
 ## 1.2 - 12/09/2023
 
 ***
 
 * Some minor changes in the judging criteria documentation structure
-* Added the `Contract Scope:` sub-section under [Broken link](broken-reference "mention") section in the judging criteria.
-* Added the [Broken link](broken-reference "mention") section in the judging criteria: https://docs.sherlock.xyz/audits/judging/judging#vi.-requirements
-* Added `Non-Standard tokens:` point in the [Broken link](broken-reference "mention") section
-* Extended the `EIP compliance` point in the [Broken link](broken-reference "mention")
+* Added the `Contract Scope:` sub-section under [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#iii.-some-standards-observed "mention") section in the judging criteria.
+* Added the [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#vi.-requirements "mention") section in the judging criteria: https://docs.sherlock.xyz/audits/judging/judging#vi.-requirements
+* Added `Non-Standard tokens:` point in the [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#vii.-list-of-issue-categories-that-are-not-considered-valid "mention") section
+* Extended the `EIP compliance` point in the [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#viii.-list-of-issue-categories-that-are-considered-valid "mention")
 
 ## 1.1 - 01/08/2023
 
 ***
 
-* Added rules for escalations: [Broken link](broken-reference "mention")
-* Added the `External Admin trust assumptions` sub-section under [Broken link](broken-reference "mention")
+* Added rules for escalations: [Broken link](/broken/pages/TJxOO0dPyMzB82z2Uwec#rules-for-escalation "mention")
+* Added the `External Admin trust assumptions` sub-section under [Broken link](/broken/pages/jPjV1lgaPyFBBhBADYxn#iii.-some-standards-observed "mention")

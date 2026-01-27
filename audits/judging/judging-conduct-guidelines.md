@@ -13,4 +13,4 @@ To be a Judge on Sherlock, the following rules should be observed:
 
 If any of the above guidelines are not followed, a temporary or permanent ban from judging and removal of the Sherlock Judge role will follow.&#x20;
 
-\
+<br>
