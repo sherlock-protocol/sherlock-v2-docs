@@ -33,14 +33,32 @@ Each program is designed to solve a different part of the security problem, and 
 
 #### **Sherlock offers six core services:**
 
-**Sherlock AI:** An auditor-grade AI security tool used during development that reads your codebase in context, models protocol intent and trust assumptions, then runs specialist checks to find real exploit paths and write fix-ready findings as you build and ship.
+1. **Sherlock AI**&#x20;
 
-**Collaborative Auditing:** A staffed audit where Sherlock assembles an engagement-specific team from our elite researcher network based on your protocol’s architecture and attack surface, then runs a coordinated review with fix verification through to release.
+An auditor-grade AI security tool used during development and pre-launch review. It reads your codebase in context, models protocol intent and trust assumptions, and routes analysis through specialist checks. The output is fix-ready findings tied to real exploit paths, so teams can remediate as they build and ship.<br>
 
-**Audit Contests:** A time-boxed public audit program that brings many independent, vetted researchers onto the same scope under clear rules and incentives, producing high-throughput issue discovery with structured judging, severity calibration, and a clean paper trail teams can remediate against.
+2. **Collaborative Auditing**
 
-**Bug Bounties:** A post-launch security program that keeps continuous pressure on production systems by paying independent researchers for valid live findings, with defined triage and remediation workflows so teams can receive, validate, patch, and communicate issues without chaos.
+A staffed audit engagement. Sherlock assembles an engagement-specific team from our elite researcher network based on your architecture and attack surface. The review is coordinated end-to-end, with fix verification through to release.<br>
 
-**Sherlock Shield:** An optional post-launch coverage program with defined terms that can reimburse eligible losses or payouts tied to covered security events, designed to sit alongside bounties and ongoing monitoring as a financial backstop (not a substitute for fixing root causes).
+3. **Audit Contests**
 
-**Blackthorn:** A premium collaborative audit tier for the highest-stakes scopes, staffed by a small group of top-tier reviewers and run with deeper architecture scrutiny, tighter iteration loops, and hands-on fix verification for teams that can’t afford uncertainty.
+A time-boxed public audit program. Many independent, vetted researchers review the same scope under clear rules and incentives. The result is high-throughput issue discovery with structured judging, consistent severity calibration, and a clean paper trail teams can remediate against.&#x20;
+
+
+
+4. **Bug Bounties**
+
+A post-launch security program that keeps pressure on production systems. Independent researchers are paid for valid live findings. Triage and remediation workflows are defined up front so teams can receive, validate, patch, and communicate issues without chaos.&#x20;
+
+
+
+5. **Sherlock Shield**
+
+An optional post-launch coverage program with defined terms. It can reimburse eligible losses or payouts tied to covered security events. It is designed to sit alongside bounties and ongoing security work as a financial backstop, not a substitute for fixing root causes.
+
+
+
+6. **Blackthorn:**&#x20;
+
+A premium collaborative audit tier for the highest-stakes scopes. It’s staffed by a small group of top-tier reviewers and run with deeper architecture scrutiny. Teams get tighter iteration loops and hands-on fix verification when uncertainty isn’t acceptable.
