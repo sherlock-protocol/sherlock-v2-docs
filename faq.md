@@ -1,42 +1,96 @@
+---
+description: >-
+  High-level information on Sherlock’s lifecycle security model, how our
+  programs work, and how teams choose the right path from development through
+  post-launch.
+---
+
 # FAQ
 
-## General
+**What is Sherlock?**
 
-### What is Sherlock?
+Sherlock is a leading Web3 security company for onchain systems where software directly controls capital. We provide complete lifecycle security across development, pre-launch review, and post-launch operation through Sherlock AI, Collaborative Audits, Audit Contests, Bug Bounties, and Sherlock Shield.
 
-* Sherlock is an audit marketplace and smart contract coverage protocol built on the Ethereum blockchain. Sherlock works to protect Decentralized Finance (DeFi) users from smart contract exploits with security reviews from top auditors backed by smart contract coverage on the audited contracts.
 
-### How is Sherlock different from other audit firms?
 
-* Most audit firms rely on their reputation to convince protocol teams to use them. This alone is a poor way to guarantee incentive alignment. Sherlock provides something far more valuable than just reputation: USDC. If a contract that is audited and covered by Sherlock has a bug bounty payout (or gets exploited), then Sherlock can pay out USDC to reimburse the bug bounty (up to $500k). This incentive demonstrates Sherlocks commitment to do a good job vs. relying on an amorphous reputation across hundreds of audits and dozens of individual auditors.
-* Many audit firms charge 100% more than what they pay individual auditors. This is the "reputation premium." Sherlock can pay top independent security experts more than they would make at leading audit firms. Then Sherlock can offer USDC backing behind Sherlock's audit. And the cost can often STILL be lower than what most traditional firms charge.
-* Good security work is done by talented individuals. Many audit firms have been known to hide lesser talented individuals behind their overall audit firm reputation. This means the quality of audit you will get from other firms is highly variable. You should always check to see who the individual auditors are. Sherlock is very transparent about the [qualifications of individual auditors](https://audits.sherlock.xyz/leaderboard).
+**What does “complete lifecycle security” mean in practice?**
 
-### How is Sherlock different from other risk management protocols?
+It means security work that matches how protocols actually fail in production: invariants drift as features ship, upgrade paths introduce new trust assumptions, integrations change, and adversaries adapt. Lifecycle security applies pressure at three points:
 
-Coverage is managed by protocols/DAOs instead of users
+* During development (before patterns harden),
+* Before launch/upgrade (when risk concentrates),
+* After launch (when incentives and integrations keep moving).<br>
 
-* Right now, the burden of managing smart contract risk is borne entirely by users. By working directly with protocols, smart contract coverage can be applied to all users with no extra work required. It's very difficult for users to coordinate on a whitehat bug bounty, so this is better managed by the protocol team. Not to mention, when an exploit happens, protocol teams often find themselves deciding to reimburse all users as much as possible, so getting covered at the protocol level helps builders sleep better.
+**What types of vulnerabilities does Sherlock focus on?**
 
-Sherlock can price coverage the lowest because we do the most up-front work
+The work is designed to catch issues that commonly lead to loss of funds or broken protocol guarantees, including:
 
-* Because Sherlock requires a full audit from Sherlock before coverage can go live, Sherlock gains more confidence in the security of the smart contracts than anyone else. This allows Sherlock to reward safe protocols for being safe by pricing coverage lower than anyone else can offer.
+access control and privilege paths, accounting/invariant breaks, reentrancy and callback risk, oracle and price-manipulation surfaces, MEV and sequencing risk, upgrade and admin-key assumptions, cross-contract and cross-chain integration failures, and unsafe external dependency trust boundaries. Coverage depends on scope and program type.
 
-Claims decisions are made by an unbiased 3rd party
 
-* Follow the incentives. Does a successful payout rely on a decision made by someone who will lose a lot of money if they decide in your favor? Sherlock has partnered with UMA to offer an unbiased claims process handled by objective, third-party voters who have economic guarantees around their incentives. Read more [here](https://docs.umaproject.org/getting-started/oracle).
 
-### How can I get an audit or coverage from Sherlock?
+**How is Sherlock AI used across the lifecycle?**
 
-* Please reach out to contact@sherlock.xyz.
+Sherlock AI is used across the lifecycle, with the highest leverage during development when code is changing fast. Teams run it continuously as they build, refactor, and ship—using it to surface exploitable patterns, clarify assumptions, and prioritize fixes. It also stays useful before launches or upgrades and after deployment to re-check changes, new integrations, and evolving attack surfaces as the system evolves.
 
-### Is coverage for a protocol always fully collateralized?
 
-* One of the superpowers of a risk management protocol like Sherlock is using diversification to increase the affordability of coverage and limit the need for full collateralization. This is what allows coverage to be affordable in traditional markets. The value staked into Sherlock's staking pools is designed to be less than the total funds that Sherlock is covering. By the same token, the staking pool is also designed to be significantly larger than the max size of coverage at any one protocol.
-* Isolated exploits should always be 100% paid out. Sherlock is designed to have at least 200% overcollateralization for any singular exploit event.
-* Things get more interesting if an exploit occurs at multiple covered protocols and drains 100% of the funds of multiple protocols at the same time. In this situation, depending on the capital efficiency of Sherlock, Sherlock may not be able to reimburse each exploit (assuming 4 or more simultaneous exploits) at 100 cents on the dollar. However, Sherlock's risk models are designed to mitigate the risk of multiple protocols being affected by the same type of exploit. Consequently, it would constitute an extremely unlikely event (never before seen in DeFi) to have multiple covered protocols hacked for nearly all of their TVL at the same time -- but it is theoretically possible.
-* Even in extreme scenarios where Sherlock's capitalization falls below the coverage amount for a single protocol, that protocol will only be charged for the amount it would receive in a payout. This ensures that, at any given time, a protocol NEVER overpays for coverage.
 
-### What is a "Best Efforts" audit?
+**What is a Collaborative Audit?**
 
-* An audit labeled "Best Efforts" means that the amount of money dedicated to the contest by the protocol team is lower than Sherlock's minimum recommendation. A "Best Efforts" audit is not eligible for coverage from Sherlock afterward. Sherlock offers "Best Efforts" audits because some teams do not have the budget to meet Sherlock's minimum recommended contest cost and Sherlock still wants to do its best to find as many bugs as possible in this codebase instead of leaving these teams to use other (potentially less effective) auditors.&#x20;
+A Collaborative Audit is a staffed engagement where Sherlock assembles an engagement-specific team and runs a coordinated review for high-stakes scopes. The team builds an architecture-level understanding of the protocol, maps trust boundaries and attack surfaces, tests exploit paths, and verifies fixes through iteration. It’s the right fit when complexity, upgradeability, or integration risk calls for tight feedback loops and hands-on fix validation.
+
+
+
+**What is Blackthorn?**
+
+Blackthorn is Sherlock’s elite collaborative audit program for the highest-stakes scopes. It’s a staffed engagement led by a small group of top-tier reviewers who go deep on architecture, threat modeling, and exploit-path analysis, then stay engaged through iteration to verify fixes. Teams use Blackthorn when a standard review cadence isn’t enough: new primitives, complex integrations, large TVL, or launch timelines where uncertainty is the real risk.
+
+
+
+**What is an Audit Contest?**
+
+An Audit Contest is a public review program where many independent security researchers analyze the scope concurrently under clear incentives. The focus is breadth and throughput: multiple independent perspectives, many parallel lines of inquiry, and fast coverage of attack surfaces that can be missed by a small team.
+
+
+
+**How should we choose between a Collaborative Audit and an Audit Contest?**
+
+Teams typically choose a Collaborative Audit when they need coordinated depth on architecture, invariants, roles, and integrations, plus an iterative fix-and-verify loop with a staffed team. Choose an Audit Contest when you want maximum parallel coverage from independent researchers and high throughput on a clearly defined scope. Many teams combine them: Collaborative Audit first to pressure test the design and verify fixes, then a Contest to add breadth on the hardened release candidate.
+
+
+
+**What does “fix verification” mean?**
+
+Fix verification is the step where proposed remediations are reviewed against the reported exploit path and the protocol’s intended invariants. The goal is to confirm the fix closes the specific failure mode without introducing regressions or new trust assumptions.
+
+
+
+**What do we get as outputs from a review?**
+
+Outputs vary by program, but generally include written findings and severity assessments, proof-of-concept or exploit reasoning where applicable, reproduction context, and guidance on remediation. For pre-launch programs, the emphasis is on actionable results: what breaks, why it breaks, and what changes are required to restore intended guarantees.
+
+
+
+**How does Sherlock handle post-launch security?**
+
+Post-launch security is driven by incentive programs like bug bounties, which keep ongoing pressure on production systems. This is meant to match reality: upgrades, parameter changes, new integrations, and market conditions change the effective threat model over time, so scrutiny has to persist after deployment.
+
+
+
+**What is Sherlock Shield?**
+
+Sherlock Shield is optional financial coverage that can sit alongside post-launch programs under defined terms. Coverage availability, eligibility, scope, and limits depend on the program terms and the details of the reviewed system.
+
+
+
+**Does Sherlock guarantee the protocol won’t be exploited?**
+
+No. The goal is to materially reduce risk by identifying and fixing vulnerabilities, clarifying trust assumptions, validating invariants, and maintaining scrutiny as the system evolves. Outcomes depend on scope definition, code maturity, change cadence, operational controls, and integration complexity.
+
+
+
+**What chains and codebases can Sherlock support?**
+
+Sherlock supports smart contract security work across major onchain environments, and the recommended program depends on your stack and architecture (for example EVM Solidity vs Solana Rust), the deployment model (upgradeable vs immutable), and how much integration surface area exists. If you share your target chain, repo, and timeline, the right program mix becomes straightforward to recommend.
+
+<br>
