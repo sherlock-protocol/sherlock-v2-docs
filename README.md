@@ -59,6 +59,6 @@ An optional post-launch coverage program with defined terms. It can reimburse el
 
 
 
-6. **Blackthorn:**&#x20;
+6. **Blackthorn**
 
 A premium collaborative audit tier for the highest-stakes scopes. It’s staffed by a small group of top-tier reviewers and run with deeper architecture scrutiny. Teams get tighter iteration loops and hands-on fix verification when uncertainty isn’t acceptable.
