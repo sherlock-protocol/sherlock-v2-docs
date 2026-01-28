@@ -1,23 +1,57 @@
-# How it Works for Protocols
+---
+description: >-
+  What a Sherlock audit contest is, how the process works (scoping, contest
+  window, live judging, remediation, and fix verification), and how to plan
+  timelines for a mainnet launch or upgrade.
+---
 
-Whether this is your protocol’s first audit before launching on mainnet, or latest version, Sherlock’s audit experience is designed to provide the familiarity of a traditional audit, with drastically better results.
+# How Audit Contests Work
 
-**A protocol’s audit process:**
+### How Audit Contests Work
 
-<figure><img src="https://lh7-us.googleusercontent.com/VL9KNryxABlPhwON2oxTILCjtSDAQ28RlyortR0kHbfknMe2JKAq8O2WrDi4CArHmZLU_aEqM1TGb2mCmgUscMd_MaWOWaHNmgtXYPR2TzTfPuBTm2ehUkh2AmMFfaArPbmV95iaRkU7Gzl6LJBNwmY" alt=""><figcaption><p>The timeline for a Sherlock audit</p></figcaption></figure>
+Sherlock audit contests are time-boxed public review programs that bring many independent researchers onto the same scope under clear rules and incentives. The goal is high-throughput discovery, paired with structured judging and fix verification so teams can ship against a clean set of findings.
 
-1. You can request an audit [here](https://audits.sherlock.xyz/request-audit). Sherlock can usually start an audit within 3 days.&#x20;
-2. Sherlock will contact you to discuss your audit scope, expected timeline, and requirements to get an audit started (check out Sherlock's [Audit Requirements Checklist](https://docs.google.com/document/d/10\_t7Kt814Otp-FMFK8mvCsxb3tX3wyu1Z9V4nhZxTY8/edit?usp=sharing) for items Sherlock requires to start an audit).
-3. Sherlock conducts an initial assessment and provides you with a quote based on the length of time required for the audit.
-4. You then reserve your audit slot by putting down a refundable deposit for 25% of the cost of the audit.
-5. Three days before the audit starts, you send Sherlock the final commit, branch, contracts, and the remaining portion of the audit deposit.
-6. Once the audit contest portion of the audit begins, Sherlock will ask your team to be available to answer questions from security experts (mostly in a Discord channel).&#x20;
-7. Immediately after the audit contest ends, the judging contest starts. The judging contest will last a variable number of days, depending on the number of issues submitted. After the judging contest ends, Sherlock will provide you with a curated, de-duplicated list of all High and Medium-severity findings.
-8. You then have 72 hours to acknowledge and indicate which submitted issues you intend to fix and schedule a fix review to be completed within 3 weeks.
-9. Sherlock asks that you implement any fixes (a separate PR for each issue being fixed) and deliver the new commit hash to Sherlock 24 hours before your fix review starts. We also ask that you comment on each open issue (in the Sherlock repo) with a link to the PR that fixes that issue.&#x20;
-10. Around the same time as Step #9, Sherlock runs an "Escalation Period" where security experts can stake USDC and flag any issues that they think were not categorized correctly for a second opinion.&#x20;
-11. Post-fix review, you will receive sign-off to launch on mainnet and a final report, which gives you the option to add coverage at any point in the future.
-12. Sherlock works with you to get your coverage and bug bounty live (if you decide you want smart contract exploit coverage).
+Audit contests are commonly used for first-time mainnet launches, major upgrades, new deployments, and high-impact integrations.
+
+<figure><img src="../../.gitbook/assets/Screenshot 2026-01-28 at 3.56.05 PM.png" alt=""><figcaption></figcaption></figure>
+
+
+
+#### The Audit Contest Process
+
+**1) Request + scoping**
+
+Submit an intake request. We’ll confirm scope, risk areas, constraints, and target dates. For most scopes, Sherlock can begin within a few days once scope and logistics are finalized.
+
+**2) Quote + scheduling**
+
+Sherlock provides a quote based on scope complexity and the review window. Once scheduled, your team reserves the slot with a deposit.
+
+**3) Finalizing the scope**
+
+Before the contest begins, you provide the final commit / branch and any required materials (deployment context, docs, testing guidance, known assumptions). This is the baseline the contest is judged against.
+
+**4) Contest window**
+
+During the contest, vetted researchers review the scope in parallel and submit issues. Your team should be available to answer clarifying questions in the shared channel.
+
+**5) Live judging + severity calibration**
+
+Submissions are reviewed as they come in. Sherlock judges validate issues, deduplicate similar reports, and calibrate severity so the final output is actionable. At the end of judging, you receive a curated list of confirmed findings with consistent severity and remediation guidance.
+
+**6) Acknowledgement + remediation plan**
+
+Your team acknowledges findings and indicates which ones will be addressed for the upcoming release. At this point, you also schedule fix verification.
+
+**7) Fix verification**
+
+You ship fixes as PRs and provide the new commit for review. Sherlock verifies that fixes resolve the issue and don’t introduce new risk. If the change set is large, Sherlock may recommend a short follow-up review window to re-check the updated surface area.
+
+**8) Final report**
+
+You receive a final report that includes the validated findings, severity decisions, and fix verification status — a clean paper trail your team can launch against.
+
+
 
 {% hint style="warning" %}
 **Important timeline considerations**\
