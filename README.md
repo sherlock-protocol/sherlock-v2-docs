@@ -25,7 +25,7 @@ We built this model because one-off reviews don’t match how onchain systems ar
 
 Compounding context is the practical benefit: a durable “security memory” of the system (intent, assumptions, known risk areas, prior findings, and the outcomes of fixes) that carries forward into the next change. That continuity reduces repeat findings, shortens remediation cycles, and makes upgrades safer because the starting point is an informed baseline, not a cold start.
 
-
+<figure><img src=".gitbook/assets/Group 2085664397.png" alt=""><figcaption></figcaption></figure>
 
 ### **How teams work with Sherlock**
 
