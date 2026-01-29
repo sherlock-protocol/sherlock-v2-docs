@@ -1,11 +1,36 @@
-# Audit Preparation
+---
+description: >-
+  Covers how to prepare for an audit contest, what’s required 72 hours before
+  start, and what happens if readiness or logistics aren’t complete.
+---
 
-Prepping a protocol’s code for an audit is an invaluable process to result in a higher quality security review, but it can be challenging for many protocol development teams to know what things they should prioritize to better prepare for an audit. Sherlock has designed its [Audit Requirements Checklist](https://docs.google.com/document/d/10_t7Kt814Otp-FMFK8mvCsxb3tX3wyu1Z9V4nhZxTY8/edit?usp=sharing) to guide protocols towards the minimum requirements Sherlock expects to see completed by the audit start date. For audits scheduled >7 days in advance of the start date, Sherlock will have multiple check-ins with each protocol team to make sure they are on-track to meet all the Audit Requirements Checklist items before the audit start date.
+# Audit Contest Preparation
 
-72 hours before the audit start date, the protocol team sends Sherlock the finalized commit hash, branch, and contracts to be audited. At this point, the protocol will also pay the remaining 75% of the audit cost.
+Preparing a codebase for an audit contest improves review quality and reduces noise during the contest window. Sherlock’s Audit Requirements Checklist outlines the minimum readiness standards expected by the start date so researchers can spend time on security work instead of setup and environment issues.
 
-In the unlikely scenario where a protocol submits contracts which fail to meet the Audit Requirements Checklist or submits contracts which will require a longer audit than what was originally scheduled, Sherlock will allow the protocol to move forward with one of the following scenarios:
+For audits scheduled more than a week in advance, Sherlock will run check-ins with the protocol team to confirm readiness and avoid last-minute blockers.<br>
 
-1. Attempt to reschedule
-2. Attempt to increase the length of the audit
-3. Move forward with a “best efforts” audit, which will undergo a full contest, but will not qualify for coverage afterwards
+#### 72 hours before the start date
+
+Approximately 72 hours before the audit begins, the protocol team must provide:
+
+* the frozen commit hash and branch
+* the final list of contracts/modules in scope
+
+At the same time, the protocol completes the remaining audit payment.<br>
+
+#### If requirements are not met
+
+If required logistics are incomplete (for example, payment or access), the audit will not start.
+
+
+
+If the frozen commit does not meet the Audit Requirements Checklist, or if the final scope requires more review time than originally scheduled, Sherlock will work with the protocol team on one of the following paths:
+
+* reschedule the audit window
+* extend the audit length (subject to staffing availability and revised pricing)
+* proceed on a best-efforts basis with adjusted expectations and limitations (including potential impact on eligibility for post-audit coverage programs)
+
+
+
+If the start date is blocked due to protocol readiness after a slot has been reserved, the deposit may be used to compensate reserved reviewer time.
