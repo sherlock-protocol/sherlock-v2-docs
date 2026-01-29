@@ -1,14 +1,50 @@
+---
+description: >-
+  What happens after an audit, including how findings are finalized, how teams
+  confirm disposition and implement fixes, and how Sherlock verifies remediation
+  before a final report.
+---
+
 # Protocol Involvement Post-Audit
 
-Once an audit is complete, Sherlock saves protocols days of work by utilizing its own in-house team to begin the evaluation process. The post-audit track takes the following path:
+### Protocol involvement post-audit
 
-1. Sherlock will review all issues, de-duplicate submissions, and judge every issue.
-   * Sherlock is focused exclusively on high and medium severity findings, as these are the types of vulnerabilities which will cause a loss of user funds and most materially damage the reputation protocols.
-2. Protocol team will receive a final list of vulnerabilities, and then has 72 hours to indicate which issues they intend to either fix or acknowledge. Acknowledging an issue without fixing it means that the protocol team is ok with taking the risk, even though the manifestation of that risk would no longer be covered by Sherlock.&#x20;
-3. Once the protocol team has received their final list of vulnerabilities, they will have up to 2 weeks to schedule and complete a fix-review, where Sherlock’s Lead Senior Watson (at minimum) will conduct a 1-day (or less) fix review audit to make sure the fixes have been implemented correctly and haven’t introduced vulnerabilities.
+After the review window ends, the work shifts from discovery to remediation and verification. Sherlock’s goal in this phase is simple: deliver a clean set of validated findings, help your team remediate them efficiently, and verify fixes before release.
 
-> Note: If a protocol fails to deliver a new commit hash and separate PRs for each issue within 3 weeks, then Sherlock can no longer guarantee that a fix review will be scheduled, disqualifying a protocol from implementing smart contract exploit coverage at go-live. For transparency, Sherlock puts a 3-week timeline on this fix review requirement out of best-practices, since the quality of a fix review is only as good as the senior engineer’s ability to maintain context of the entire code base into perpetuity. Given every person’s natural limitations to remember everything forever, Sherlock believes that the fix reviews must be completed in a reasonable timeframe in order to have a high-quality fix review conducted.
+#### 1) Findings are finalized and validated
 
-4\. Once a fix-review is completed, the senior engineer will verify that the protocol is good to launch on mainnet with the final commit. At this point, a protocol can be fully qualified for smart contract coverage, which can be activated at any point in the future on the previously audited commit hash. A protocol will also receive a final audit report shortly thereafter.
+Sherlock reviews submissions and consolidates the output into an actionable issue set. This includes validation, deduplication, and severity calibration so the protocol team is not sorting through raw noise.
 
-> Note: If the senior auditor believes there are a material amount of changes required post-audit which can’t be reviewed in 1 day or less, Sherlock may require a smaller follow-up audit (see Audit Pricing and Timeline section) be conducted in order to qualify for coverage.
+Sherlock prioritizes issues that change real security risk. High and medium severity findings receive the most attention because they are the most likely to lead to fund loss or material system compromise.
+
+#### 2) Protocol reviews the final issue set
+
+Once the protocol receives the final list, the team confirms disposition for each item:
+
+* Will fix for the upcoming release, or
+* Accepted risk (acknowledged without fixing), or
+* Disputed / needs clarification where the team believes context changes impact.
+
+There is no universal fixed deadline for this step. The practical requirement is responsiveness so remediation and verification can be scheduled without blocking a launch.
+
+#### 3) Remediation and PR linking
+
+For issues marked “will fix,” the protocol implements patches and links each fix to the corresponding finding (typically via separate PRs). This keeps the remediation record clean and makes fix verification faster and more reliable.
+
+#### 4) Fix verification
+
+Sherlock then reviews the patch set to confirm:
+
+* the original issue is fully resolved,
+* the fix matches intended behavior, and
+* the change does not introduce new risk.
+
+For staffed engagements, fix verification is performed by the assigned review team. For contest-based reviews, fix verification follows the same principle: reviewers verify the relevant patch set against the validated findings.
+
+#### 5) Final report and release readiness
+
+After fix verification completes, Sherlock provides the final report reflecting the validated issues, severity decisions, and verification status. This becomes the record for internal sign-off and release readiness.<br>
+
+#### Follow-up review windows
+
+Sometimes remediation materially changes the attack surface (large refactors, new modules, revised accounting, new integrations). When the patch set is too large to confidently verify in a short window, Sherlock may recommend a follow-up review focused on the changes before sign-off.
