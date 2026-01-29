@@ -47,6 +47,7 @@
 
 * [About Sherlock AI](sherlock-ai/about-sherlock-ai.md)
 * [Configuring a Sherlock AI Run](sherlock-ai/configuring-a-sherlock-ai-run.md)
+* [Understanding Sherlock AI results](sherlock-ai/understanding-sherlock-ai-results.md)
 
 ## Coverage
 
