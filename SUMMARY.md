@@ -8,6 +8,7 @@
 ## Audits
 
 * [Audits for Protocol Teams](audits/protocols/README.md)
+  * [How Collaborative Audits Work](audits/protocols/how-collaborative-audits-work.md)
   * [How Audit Contests Work](audits/protocols/how-it-works-for-protocols.md)
   * [Audit Contest Timeline](audits/protocols/audit-pricing-and-timeline.md)
   * [Scheduling Process](audits/protocols/scheduling-process.md)
