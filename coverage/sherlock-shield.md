@@ -50,4 +50,4 @@ Like golf, you want your score to be as low as possible so you can access the ma
 | Less than 30 | $5,000          |
 | 30 or more   | $1,000          |
 
-Note: Sherlock does not guarantee payment or the availability of funds. Payouts are determined by the [on-chain claims process](claims/) of the Sherlock protocol on Ethereum mainnet. Please review the [Sherlock Disclaimers](../disclaimers.md) to better understand the coverage offering.&#x20;
+Note: Sherlock does not guarantee payment or the availability of funds. Payouts are determined by the [on-chain claims process](/broken/pages/nKd9ARrg41HSYsewqIVT) of the Sherlock protocol on Ethereum mainnet. Please review the [Sherlock Disclaimers](../disclaimers.md) to better understand the coverage offering.&#x20;

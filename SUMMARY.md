@@ -43,27 +43,14 @@
   * [Platform Rules](bug-bounties/post-launch-bounty/platform-rules.md)
   * [Dispute Resolution](bug-bounties/post-launch-bounty/dispute-resolution.md)
 
+## SHERLOCK AI
+
+* [About Sherlock AI](sherlock-ai/about-sherlock-ai.md)
+* [Configuring a Sherlock AI Run](sherlock-ai/configuring-a-sherlock-ai-run.md)
+
 ## Coverage
 
 * [Sherlock Shield](coverage/sherlock-shield.md)
-* [Stakers](coverage/staking-apy/README.md)
-  * [Overview](stakers/overview.md)
-  * [Lockup Period](stakers/lockup-period.md)
-  * [Payout Flow](stakers/exploit-flow.md)
-  * [Staking APY](stakers/staking-APY.md)
-* [Protocol Teams](coverage/protocols/README.md)
-  * [Getting Started](protocols/getting-started.md)
-  * [Coverage Premiums](protocols/premiums.md)
-  * [Pricing](protocols/pricing.md)
-  * [Composability and Coverage](coverage/protocols/composability-and-coverage.md)
-  * [Payout Flow](protocols/exploit-flow.md)
-  * [FAQ](coverage/protocols/faq.md)
-* [Claims](coverage/claims/README.md)
-  * [Claims Process](claims/claims-process.md)
-
-## SHERLOCK AI
-
-* [Configuring a Sherlock AI Run](sherlock-ai/configuring-a-sherlock-ai-run.md)
 
 ## Legal
 
