@@ -1,13 +1,24 @@
+---
+description: >-
+  How to reserve and confirm an audit slot with Sherlock, including deposits,
+  start date confirmation, and scheduling flexibility for both major releases
+  and update reviews.
+---
+
 # Scheduling Process
 
-Sherlock aims to provide one of the most flexible audit solutions in the space, starting with a simplified scheduling process. Once an initial assessment has been completed and a preliminary quote provided, the next steps include:
+Sherlock keeps scheduling lightweight so teams can lock review time without freezing code weeks in advance. After an initial assessment and a preliminary quote, scheduling follows a straightforward flow.
 
-1. Protocol puts down a deposit for 25% of the audit cost and indicates which date it would like the audit to begin - can be scheduled with at least 3 days' notice.
-2. Sherlock will then either:
-   - Confirm the senior auditor and start date within 72 hours, or
-   - Suggest an alternative start date, or
-   - Request the protocol team select an alternative start date
+#### **Step 1: Reserve a slot**
 
-> Note: In the unlikely instance where Sherlock does not confirm the originally proposed start date, the protocol has the option to withdraw the full amount of their deposit.
+The protocol reserves a review slot with a **25% deposit and proposes a preferred start date.**
 
-Of course, the farther out a protocol schedules an audit, the higher the likelihood they generate maximum Watson participation and secure the highest-ranked senior Watson.
+Sherlock confirms staffing and the start date shortly after reservation. If the proposed date is not feasible, Sherlock will suggest alternatives and work with the team to select a new start date.
+
+#### Step 3: Deposit flexibility
+
+If Sherlock cannot accommodate the originally proposed start date, the protocol may withdraw the deposit in full.
+
+#### Scheduling notes
+
+Teams can often schedule on short notice, especially for narrower scopes and update reviews. For larger or higher-stakes releases, earlier scheduling gives more flexibility on dates and staffing and reduces the chance of timeline compression close to launch.
