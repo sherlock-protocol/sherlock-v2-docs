@@ -1,3 +1,10 @@
+---
+description: >-
+  How Sherlock’s collaborative audits work, including dynamic team assembly, the
+  engagement timeline from scoping through report, and the readiness
+  requirements needed to start on schedule.
+---
+
 # How Collaborative Audits Work
 
 Collaborative Audits are Sherlock’s staffed review engagements for high-stakes scopes. They are designed for teams that need depth, direct coordination with reviewers, and fix verification before release. The work runs in a shared audit workspace that tracks scope, findings, remediation status, linked fixes, and fix review through to a final report.
