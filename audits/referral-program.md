@@ -14,11 +14,9 @@ The Sherlock Partnership Program is for ecosystem operators who regularly advise
 
 ### How it works
 
-Referrals are submitted through the program form or via an introduction thread that includes Sherlock.
-
-Sherlock runs evaluation, scoping, contracting, and delivery.
-
-Referral payouts are issued after customer payments are received and cleared.
+1. Referrals are submitted through the program form or via formal introduction that includes Sherlock.
+2. Sherlock runs evaluation, scoping, contracting, and delivery.
+3. Referral payouts are issued after customer payments are received and cleared.
 
 ### Compensation
 
