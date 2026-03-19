@@ -1,18 +1,29 @@
 ---
-description: Sherlock protects teams against hacks at every step of the journey
+description: >-
+  A Web3 bug bounty is a program that rewards security researchers for
+  responsibly disclosing vulnerabilities.
 ---
 
 # Pre-Launch Bounty
 
-Sometimes there is a period after the fix review has been completed, but before a protocol goes live on mainnet.&#x20;
+* shorter in duration
+* smaller in payout
+* more situational in use
 
-Sherlock wants to ensure that there is an incentive for whitehats to disclose any bugs that may be found during this period.&#x20;
+Compared with post-launch bug bounties, pre-launch bug bounties are usually:
 
-Why? Because if a whitehat waits until the protocol is live on mainnet, this can result in bad outcomes such as a blackhat exploiting the bug first, or the team needing to do a lengthy and embarrassing re-launch.
 
-Sherlock attempts to mitigate this by creating a "Pre-Launch Bounty" program for every cooperating protocol team.&#x20;
 
-This will be a very small bounty but will increase as the launch date approaches.&#x20;
+Pre-launch bug bounties are not the default path for most teams. They are typically used only when launch timing, release complexity, or deployment sequencing creates a meaningful pre-mainnet window.
 
-It also acts as a "check" on the fix review. Before, there was little incentive to give maximum effort during a fix review. Now, the Lead Senior Watson (or whoever conducts the fix review) will only receive a portion of their fixed pay AFTER this Pre-Launch Bounty period has passed and no new Critical bugs were missed during the fix review.&#x20;
+* giving whitehats an incentive to report issues before deployment
+* creating a formal disclosure path during the final stretch before launch
+* adding one more layer of external scrutiny before code reaches production
 
+In that window, a pre-launch bug bounty can help by:
+
+
+
+A pre-launch bug bounty is a more specific type of Web3 bug bounty used before a protocol goes live.&#x20;
+
+**Most protocol teams ultimately want a post-launch bug bounty on live code, but a pre-launch bounty can be useful when there is still a gap between audit completion, fix review, and mainnet deployment.**
