@@ -26,4 +26,6 @@ In that window, a pre-launch bug bounty can help by:
 
 A pre-launch bug bounty is a more specific type of Web3 bug bounty used before a protocol goes live. <br>
 
-**Most protocol teams ultimately want a post-launch bug bounty on live code, but a pre-launch bounty can be useful when there is still a gap between audit completion, fix review, and mainnet deployment.**
+**Most protocol teams ultimately want a post-launch bug bounty on live code, but a pre-launch bounty can be useful when there is still a gap between audit completion, fix review, and mainnet deployment.**\
+\
+**Note:** Unlike an audit contest, which is a fixed pre-launch review event designed to pressure-test a codebase at scale, a pre-launch bug bounty is a narrower disclosure program used to keep incentives active during the gap between fix review and mainnet launch.
