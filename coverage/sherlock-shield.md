@@ -1,22 +1,22 @@
 ---
-description: Sherlock now includes bug bounty and exploit coverage with every audit
+description: Exploit payout coverage for qualified audited code
 ---
 
 # Sherlock Shield
 
-Welcome to Sherlock Shield!
+Welcome to Sherlock Shield.
 
-Every protocol team that goes through a Sherlock audit gets access to bug bounty and exploit coverage on their audited code.&#x20;
+Sherlock Shield is available for qualified codebases that complete an audit with Sherlock and meet the requirements for coverage. Shield is not included by default with every audit.
 
-Here's how it works:
+Here’s how it works:
 
 1. Complete an audit with Sherlock
 2. Complete the fix review
-3. Sherlock sets up and pays for your small pre-launch bug bounty
-4. Confirm the details of your post-launch bug bounty program
-5. Post-launch, Sherlock covers up to $500k of bug bounty and exploit payouts
+3. Sherlock evaluates the audited codebase for Shield eligibility
+4. Confirm scope, coverage amount, and final terms
+5. If approved, Sherlock Shield provides exploit payout coverage for the covered code
 
-After completing the fix review, Sherlock ensures that there is always a bug bounty on your code! With Sherlock's dual pre-deployment and post-deployment bug bounties, whitehats will be working around the clock to keep your protocol safe.&#x20;
+Sherlock Shield is part of Sherlock’s broader lifecycle security model, extending protection beyond the audit itself for qualified code that meets coverage requirements.
 
 ### Coverage Amount Criteria
 
