@@ -186,7 +186,6 @@ If the following issues appear in multiple places, even in different contracts. 
    * Access control
    * Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
 
-If the underlying code implementations, impact or fixes are different, then they may be treated separately.
 
 For the root cause categories above, the duplication should be based on the following groups:
 
