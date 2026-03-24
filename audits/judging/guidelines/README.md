@@ -186,7 +186,6 @@ If the following issues appear in multiple places, even in different contracts. 
    * Access control
    * Front-run / sandwich ( issue A that identifies a front-run and issue B that identifies a sandwich can be duplicated )
 
-However, in edge cases, based on the context (e.g. the difference of code implementations, impact or fixes), the Judge can separate issues even if they have the same root cause and should be duplicated.
 
 For the root cause categories above, the duplication should be based on the following groups:
 
