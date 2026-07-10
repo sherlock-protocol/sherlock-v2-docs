@@ -1,166 +1,261 @@
 # Customer Privacy Policy
 
-**Effective Date: October 4, 2025**
+Sherlock Customer Privacy Policy
 
-Sherlock ("We," "Us," or "Our") is committed to protecting your privacy. This Privacy Policy explains how Sherlock collects, uses, discloses, and safeguards your information when you use our website, our services including collaborative audits, audit contests, bug bounties, and our AI audit product ("Sherlock AI"), or otherwise interact with us. By accessing or using our Services, you agree to this Privacy Policy.
+Last Updated: July 10, 2026
 
-If you are a resident of the European Economic Area (EEA), United Kingdom (UK), or California, you may have additional rights under applicable data protection laws such as the General Data Protection Regulation (GDPR), UK GDPR, or California Consumer Privacy Act (CCPA). We act as a data processor for certain data related to our Services, particularly code and repository data accessed via Sherlock AI.
+Sherlock Protocol, Inc. (“Sherlock,” "We," "Us," or "Our") is committed to protecting your privacy. This Privacy Policy explains how Sherlock collects, uses, discloses, and safeguards your information when you use our website, our services including collaborative audits, audit contests, bug bounties, and our AI-powered code analysis products and features ("AI Analysis Services," which include Sherlock AI and related or successor offerings), or otherwise interact with us. By accessing or using our Services, you agree to this Privacy Policy.
 
-Key Points:
+If you are a resident of the European Economic Area (EEA), United Kingdom (UK), or California, you may have additional rights under applicable data protection laws such as the General Data Protection Regulation (GDPR), UK GDPR, or California Consumer Privacy Act (CCPA). We act as a data processor for certain data related to our Services, particularly code and repository data accessed via our AI Analysis Services.
 
-* We prioritize data security: Your code and personal information are handled with enterprise-grade protections, including encryption and access controls. We do not use your proprietary code for AI training without explicit consent.
-* Limited data collection: We collect only what's necessary for providing Services, such as account details, usage data, and code snippets for vulnerability disclosures.&#x20;
-* No unnecessary sharing: Data is shared only with authorized service providers or as required by law; we do not sell your data.
-* Enterprise considerations: For large organizations, we offer data processing agreements (DPAs), support for GDPR/CCPA compliance, and options for data residency. Research suggests that tools like ours must balance innovation with privacy, and we lean toward strict controls to build trust.
-* User rights emphasized: You can access, delete, or opt out of certain processing; however, evidence from industry guides indicates that complete data anonymity in AI tools is challenging, so we provide transparent opt-outs where possible.
 
-#### What Information We Collect
 
-We collect personal data (e.g., name, email, IP address) when you create an account or contact us, and non-personal data like code snippets and vulnerability reports during audits. For Sherlock AI, we access GitHub repositories with your permission to scan pull requests (PRs) for vulnerabilities, but we do not store your code except snippets needed in vulnerability reports.&#x20;
+**Key Points:**
 
-#### How We Use Your Information
+\* We prioritize data security: Your code and personal information are handled with enterprise-grade protections, including encryption in transit and at rest and role-based access controls. We do not use your proprietary code to train AI models without explicit consent.
 
-Data is used to deliver Services, improve security insights, and comply with legal obligations. For AI audits, a proprietary codebase is analyzed in real-time but not stored long-term.
+\* Limited data collection: We collect only what is necessary to provide the Services, such as account details, usage data, and the code and repository data you authorize us to analyze.
 
-#### Your Privacy Choices
+\* Defined retention: Repository and code data processed by our AI Analysis Services is retained for a default period of 30 days following analysis, configurable under enterprise agreements, and is then deleted. Code excerpts included in vulnerability reports delivered to you persist as part of those reports.
+
+\* No unnecessary sharing: Data is shared only with authorized service providers listed in this Policy or as required by law; we do not sell your data.
+
+\* Enterprise considerations: For organizations with heightened requirements, we offer data processing agreements (DPAs), support for GDPR/CCPA compliance obligations, and configurable retention terms.
+
+\* User rights: You can request access to, correction of, or deletion of your data, and opt out of certain processing, as described in Section 8.<br>
+
+**What Information We Collect**
+
+We collect personal data (e.g., name, email, IP address) when you create an account or contact us, and non-personal data such as code, vulnerability findings, and related metadata during audits and AI analysis. For our AI Analysis Services, we access GitHub repositories with your permission to analyze commits, pull requests, and repository contents for vulnerabilities. Repository contents are retained only for the limited, defined period described in Section 5 to support analysis, remediation verification, and report generation, after which they are deleted.<br>
+
+**How We Use Your Information**
+
+Data is used to deliver the Services, improve security insights, and comply with legal obligations. For AI analysis, your codebase is processed for security analysis and retained only for the limited period described in Section 5.<br>
+
+**Your Privacy Choices**
 
 Request access or deletion via support@sherlock.xyz. CCPA residents: We do not sell personal information.
 
-***
-
 This Privacy Policy ("Policy") describes our practices regarding the collection, use, disclosure, and protection of information when you use our Services. Please read it carefully. If you do not agree, do not use our Services.
 
-### 1. Interpretation and Definitions
 
-#### Interpretation
+
+**1. Interpretation and Definitions**
+
+**Interpretation**
 
 Capitalized terms have the meanings defined below, applicable in singular or plural.
 
-#### Definitions
+**Definitions**
 
-* Account: A unique profile for accessing our Services.
-* Company: Sherlock, operating under DeFi Risk Management Foundation, located at Dresdner Tower, 11th Floor 50th St. and 55th East Street, Panama City, Panama 00000.
-* Cookies: Small files tracking browsing activity.
-* Device: Any tool accessing our Services (e.g., computer, mobile).
-* Personal Data: Information identifying an individual (e.g., name, email).
-* Services: Our website, audits, contests, bounties, and Sherlock AI.
-* Usage Data: Automatically collected data (e.g., IP address, visit duration).
-* You: The individual or entity using our Services.
+\* Account: A unique profile for accessing our Services.
 
-### 2. Collecting and Using Your Personal Data
+\* AI Analysis Services: Our AI-powered code analysis products and features, including Sherlock AI and related or successor offerings.
 
-#### Types of Data Collected
+\* Company: Sherlock Protocol, Inc., located at Dresdner Tower, 11th Floor 50th St. and 55th East Street, Panama City, Panama 00000.
+
+\* Cookies: Small files tracking browsing activity.
+
+\* Device: Any tool accessing our Services (e.g., computer, mobile).
+
+\* Personal Data: Information identifying an individual (e.g., name, email).
+
+\* Services: Our website, audits, contests, bounties, and AI Analysis Services.
+
+\* Usage Data: Automatically collected data (e.g., IP address, visit duration).
+
+\* You: The individual or entity using our Services.
+
+<br>
+
+**2. Collecting and Using Your Personal Data**
+
+**Types of Data Collected**
 
 **Personal Data**
 
 We may collect:
 
-* Email, name, and contact details for account creation and communication.
-* Payment information (processed via third-party providers like Stripe).
-* GitHub authentication data when integrating Sherlock AI.
+\* Email, name, and contact details for account creation and communication.
+
+\* Payment and payout information, such as billing details and blockchain wallet addresses used for on-chain payouts and potential third-party providers such as Stripe.
+
+\* GitHub authentication data when integrating our AI Analysis Services.<br>
 
 **Usage Data**
 
 Automatically collected:
 
-* IP address, browser type, pages visited, time spent.
-* For mobile access: Device ID, OS, browser.
+\* IP address, browser type, pages visited, time spent.
 
+\* For mobile access: Device ID, OS, browser.
+
+\
 **Code and Repository Data (Non-Personal but Sensitive)**
 
-For Sherlock AI and audits:
+For our AI Analysis Services and audits:
 
-* Code snippets for vulnerability reports.
-* Vulnerability findings and metadata. This data is treated as confidential and processed only for security analysis. We do not collect data from full repositories unless authorized.
+\* Repository contents authorized by you for analysis, including commits and pull requests.
 
+\* Code excerpts included in vulnerability reports.
+
+\* Vulnerability findings and metadata.
+
+This data is treated as confidential, is processed only for security analysis and reporting, and is retained only as described in Section 5. We do not access repositories beyond the scope you authorize.
+
+\
 **Data from Third-Party Services**
 
-* GitHub integration: We receive repo access tokens, usernames, and metadata per your permissions.
-* Social logins (e.g., Google): Name, email.
+\* GitHub integration: We receive repository access tokens, usernames, and metadata per your permissions.
+
+\* Social logins (e.g., Google): Name, email.<br>
 
 **Tracking Technologies and Cookies**
 
 We use:
 
-* Essential Cookies: For authentication and functionality.
-* Performance Cookies: To analyze usage.
-* You can manage cookies via browser settings.&#x20;
+\* Essential Cookies: For authentication and functionality.
 
-3\. Use of Your Personal Data
+\* Performance Cookies: To analyze usage.
+
+\* You can manage cookies via browser settings.
+
+
+
+**3. Use of Your Personal Data**
 
 We use data for:
 
-* Providing Services: Conducting audits, running AI reviews, reporting vulnerabilities.
-* Account management: Registration, support.
-* Performance of contracts: Fulfilling audit or bounty agreements.
-* Communications: Updates, security alerts (opt-out available).
-* Compliance: Legal obligations, dispute resolution.
-* For Sherlock AI: Real-time analysis of PRs to detect vulnerabilities; no long-term storage of code.
+\* Providing Services: Conducting audits, running AI analyses, reporting vulnerabilities.
 
-We do not use your proprietary code to train AI models unless you explicitly opt-in via enterprise agreements.
+\* Account management: Registration, support.
 
-### 4. Sharing of Your Personal Data
+\* Performance of contracts: Fulfilling audit or bounty agreements.
+
+\* Communications: Updates, security alerts (opt-out available).
+
+\* Compliance: Legal obligations, dispute resolution.
+
+\* For AI Analysis Services: Analysis of repositories, commits, and pull requests to detect vulnerabilities, with code retained only for the limited period described in Section 5.
+
+\
+We do not use your proprietary code to train AI models, whether our own or those of our AI providers, unless you explicitly opt in via enterprise agreements. Where code is processed by third-party AI model providers as described in Section 4, it is processed under enterprise agreements that prohibit the use of your data to train their models and that limit their retention of your data.
+
+<br>
+
+**4. Sharing of Your Personal Data**
 
 We share data:
 
-* With Service Providers: For hosting (e.g., AWS), analytics (e.g., Google), under strict confidentiality.
-* Affiliates: For internal operations, bound by this Policy.
-* Business Partners: For joint services, with your consent.
-* In Business Transfers: During mergers/acquisitions.
-* With Your Consent: For other purposes.
-* For Legal Reasons: To comply with laws, protect rights, or respond to authorities.
+\* With Service Providers (Subprocessors): For hosting, infrastructure, authentication, communications, and AI model inference, under strict confidentiality and data protection obligations.
 
-We do not sell Personal Data. For enterprises, we offer DPAs outlining processor responsibilities.
+\* Affiliates: For internal operations, bound by this Policy.
 
-| Sharing Scenario   | Recipients                      | Purpose             |
-| ------------------ | ------------------------------- | ------------------- |
-| Service Providers  | Cloud hosts, payment processors | Operational support |
-| Legal Compliance   | Government agencies             | As required by law  |
-| Business Transfers | Acquirers                       | Asset evaluation    |
+\* Business Partners: For joint services, with your consent.
 
-### 5. Retention of Your Personal Data
+\* In Business Transfers: During mergers/acquisitions.
 
-* Personal Data: Retained as needed for Services, legal compliance (e.g., 7 years for financial records).
-* Code Data: Not stored except in code snippets used in vulnerability reports, unless retained for audits with consent.
-* Usage Data: Retained for 12 months for analytics.
+\* With Your Consent: For other purposes.
 
-### 6. Transfer of Your Personal Data
+\* For Legal Reasons: To comply with laws, protect rights, or respond to authorities.
 
-Data may be processed outside your jurisdiction (e.g., US servers). We use Standard Contractual Clauses (SCCs) for EEA/UK transfers and ensure equivalent protections.
+We do not sell Personal Data. For enterprises, we offer DPAs outlining processor responsibilities.<br>
 
-### 7. Security of Your Personal Data
+Our current subprocessors include:
 
-We employ encryption and access controls. However, no system is 100% secure. For Sherlock AI, proprietary code is not collected and access is limited to authorized personnel.
+| **Subprocessor**      | **Purpose**                                                               |
+| --------------------- | ------------------------------------------------------------------------- |
+| Google Cloud Platform | Cloud infrastructure, application hosting, data storage                   |
+| Vercel                | Web application hosting / frontend                                        |
+| Cloudflare            | DNS, content delivery, and edge security                                  |
+| GitHub                | Source code integration and CI/CD                                         |
+| Clerk                 | Customer authentication and identity                                      |
+| Anthropic             | AI model inference for code analysis                                      |
+| OpenAI                | AI model inference for code analysis                                      |
+| Twilio SendGrid       | Transactional email                                                       |
+| Google (OAuth)        | Social login                                                              |
+| Google Workspace      | Business operations, email, and documents                                 |
+| Sumsub                | Identity verification / KYC                                               |
+| Slack                 | Customer support channel and operational notifications                    |
+| Telegram              | Customer support channel and operational notifications                    |
+| Discord               | Community channel, infrastructure alerting, and operational notifications |
+| DocuSign              | eSignature / legal agreement signing                                      |
+| Alchemy               | Polygon RPC provider for on-chain reads and writes for USDC payouts       |
 
-### 8. Your Privacy Rights
+\
+AI model providers (Anthropic and OpenAI) process code submitted for analysis under enterprise terms that prohibit training on customer data and that delete retained inputs and outputs within limited windows in accordance with their published enterprise data policies. Requests to these providers are routed through a first-party, self-hosted model gateway operating on our own cloud infrastructure; the gateway is not a third-party subprocessor. We will update this list when we add or replace subprocessors, and enterprise customers with a DPA will be notified of material changes in accordance with its terms.
 
-* Access, correct, or delete your data.
-* Opt-out of marketing or certain processing.
-* GDPR/CCPA Rights: Object to processing, request portability, non-discrimination. Contact: privacy@sherlock.xyz. We respond within 30 days (45 for CCPA).
+<br>
+
+**5. Retention of Your Personal Data**
+
+\* Personal Data: Retained as needed for the Services and legal compliance (e.g., 7 years for financial records).
+
+\* Code and Repository Data: Retained for a default period of 30 days following completion of analysis, after which it is deleted from our production systems. This retention period is configurable under enterprise agreements. Code excerpts contained in vulnerability reports delivered to you persist as part of those reports.
+
+\* Operational and Audit Logs (including records of analysis runs and prompt activity): Retained for 60 days.
+
+\* Usage Data: Retained for 12 months for analytics.
+
+\* Deletion Requests: Upon a verified request, we delete the requester's data from our production systems within 30 days, except where retention is required by law.
+
+\* Third-Party AI Providers: Copies of code processed by our AI model providers are deleted in accordance with their enterprise retention commitments, or are not retained where zero data retention arrangements apply.
+
+<br>
+
+**6. Transfer of Your Personal Data**
+
+Data may be processed outside your jurisdiction (e.g., on US-based cloud infrastructure). We use Standard Contractual Clauses (SCCs) for EEA/UK transfers and ensure equivalent protections.
+
+<br>
+
+**7. Security of Your Personal Data**
+
+We employ encryption in transit (TLS 1.2 or higher) and at rest (AES-256), role-based access controls, and least-privilege access limited to a small number of authorized personnel. However, no system is 100% secure.
+
+\
+If we become aware of a breach of security leading to the accidental or unlawful destruction, loss, alteration, or unauthorized disclosure of or access to your data, we will notify affected customers without undue delay, and in any event within 72 hours where required by agreement or applicable law, and will provide information reasonably available to us about the nature of the incident and the measures taken.
+
+
+
+**8. Your Privacy Rights**
+
+\* Access, correct, or delete your data.
+
+\* Opt out of marketing or certain processing.
+
+\* GDPR/CCPA Rights: Object to processing, request portability, non-discrimination. Contact: privacy@sherlock.xyz. We respond within 30 days (45 for CCPA).<br>
 
 For California Residents:
 
-* Categories Collected: Identifiers, commercial info, internet activity.
-* Sources: Directly from you, GitHub.
-* Disclosures: To providers for business purposes.
-* No sales in past 12 months.
+\* Categories Collected: Identifiers, commercial info, internet activity.
 
-### 9. Children's Privacy
+\* Sources: Directly from you, GitHub.
 
-Services not for under 18; we do not knowingly collect data from children.
+\* Disclosures: To providers for business purposes.
 
-### 10. Links to Other Websites
+\* No sales in past 12 months.
 
-We are not responsible for third-party privacy practices (e.g., GitHub).
 
-### 11. Changes to This Privacy Policy
+
+**9. Children's Privacy**
+
+Services not for under 18; we do not knowingly collect data from children.<br>
+
+**10. Links to Other Websites**
+
+We are not responsible for third-party privacy practices (e.g., GitHub).<br>
+
+**11. Changes to This Privacy Policy**
 
 Updates posted here with "Last Updated" date. Significant changes notified via email.
 
-### 12. Contact Us
 
-Questions? Email privacy@sherlock.xyz.
 
-Last Updated: October 4, 2025
+**12. Contact Us**
+
+Questions? Email privacy@sherlock.xyz.<br>
+
+Last Updated: July 10, 2026
 
 <br>
