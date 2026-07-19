@@ -29,16 +29,6 @@ This guide aims to provide clarity for both Watsons & protocols on various categ
 
     > Example: The code comments state that "a swap can never fail" even though the code is built to support failing swaps.
 
-    The protocol team can use the README (and only the README) to define the protocol's invariants/properties. Specifically, only the following question can be used for that:
-
-    > What properties/invariants do you want to hold even if breaking them has a low/unknown impact?
-
-    Issues that break the invariants from the above question, irrespective of whether the impact is low/unknown, could be assigned Medium severity if it doesn't conflict with common sense. High severity will be applied only if the issue falls into the High severity category in the judging guidelines.
-
-    > Example: The README states "Admin can only call XYZ function once" but the code allows the Admin to call XYZ function twice; this is a valid Medium
-
-    > Example: The README states "Variable X must always match USDC amount in the contract" and a user can donate USDC to break that invariant without causing issues to the protocol; this is an invalid issue
-
     The Sherlock Judge can use public statements up until 24h before the contest ends to override the language in the chosen source of truth.
 
     If guidelines are updated, the new guidelines apply only to contests that start after the date of change. Please check [criteria-changelog.md](criteria-changelog.md "mention") for information on the latest changes in the judging guidelines.
@@ -157,6 +147,11 @@ If the original report does not include a Proof of Concept (PoC), it will be con
 3. **Identifies the core issue:** In case of issues that have a large number of duplicates, Issues that identify the core issue and show valid loss of funds should be grouped.
 4. **Out of Gas:** Issues that result in Out of Gas errors either by the malicious user filling up the arrays or there is a practical call flow that results in OOG can be considered a valid **medium** or in cases of blocking all user funds forever maybe a valid **high**.**Exception:** In case the array length is controlled by the trusted admin/owner or the issue describes an impractical usage of parameters to reach OOG state then these submissions would be considered as **low**.
 5. **Chainlink Price Checks**: Issues related to minAnswer and maxAnswer checks on Chainlink's Price Feeds are considered medium only if the Watson explicitly mentions the price feeds (e.g. USDC/ETH) for the in-scope tokens on the in-scope chains that require this check. **Additionally**, a proper attack path and at least medium severity impact must be included in the report. See [this](https://stackoverflow.com/questions/78558661/which-chainlinks-price-feeds-still-have-minanswer-and-maxanswer-checks) to know if min/maxAnswer are deprecated on the price feed.
+6. The protocol team can use the README (and only the README) to define the protocol's invariants/properties. Specifically, only the following question can be used for that:
+
+    > What properties/invariants do you want to hold even if breaking them has a low/unknown impact?
+
+    Issues that break the invariants from the above question, can be considered valid Medium or High severity issues if they qualify for Medium/High severity definitions in the judging guidelines.
 
 ### IX. Duplication guidelines:
 
