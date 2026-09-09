@@ -53,6 +53,7 @@
 ## Coverage
 
 * [Sherlock Shield](coverage/sherlock-shield.md)
+* [Sherlock V1 & V2 Deprecation Notice](coverage/sherlock-v1-and-v2-deprecation-notice.md)
 
 ## Legal
 
