@@ -29,4 +29,16 @@ It does **not** apply to Sherlock’s current security products or services, inc
 **Support:** Discontinued\
 **Recommended action:** Withdraw remaining funds and discontinue use
 
+### Contract Addresses
+
+The primary deployed contract addresses for the deprecated Sherlock V1 and V2 protocols are:
+
+**Sherlock V1**\
+`0xacbBe1d537BDa855797776F969612df7bBb98215`\
+[View V1 on Etherscan](https://etherscan.io/address/0xacbBe1d537BDa855797776F969612df7bBb98215?utm_source=chatgpt.com)
+
+**Sherlock V2**\
+`0x0865a889183039689034da55c1fd12af5083eabf`\
+[View V2 on Etherscan](https://etherscan.io/address/0x0865a889183039689034da55c1fd12af5083eabf?utm_source=chatgpt.com)
+
 Because the underlying contracts are deployed onchain, this deprecation notice does not remove or disable the contracts themselves. It represents Sherlock’s formal notice that these legacy protocols are no longer supported and should no longer be used.
