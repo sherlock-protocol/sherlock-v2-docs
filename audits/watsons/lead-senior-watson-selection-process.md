@@ -2,8 +2,9 @@
 
 In order to become a Senior Watson, you must pass 2 criteria:
 
-1. **Compete in >=28 contest-days on Sherlock (contests where "USDC Only" is selected don't count)**
-2. **Have at least 25% of the leaderboard points of the average of the Top 5 Senior Watsons.** Example: If the top 5 Senior Watsons have 800, 700, 650, 600 and 500 points, then the average is 650 points which means you must have at least 25% of 650 points (162.5 points) in order to pass this criteria.&#x20;
+1. **Compete in >=49 contest-days on Sherlock (contests where "USDC Only" is selected don't count)**
+2. **Have at least 40% of the leaderboard points of the average of the Top 5 Senior Watsons.** Example: If the top 5 Senior Watsons have 800, 700, 650, 600 and 500 points, then the average is 650 points which means you must have at least 40% of 650 points (260 points) in order to pass this criteria.
+3. Participate with USDC + Points in at least 3 contests.&#x20;
 
 {% hint style="info" %}
 Senior Watsons have a pink crown next to their name on the [leaderboard](https://audits.sherlock.xyz/leaderboard).&#x20;

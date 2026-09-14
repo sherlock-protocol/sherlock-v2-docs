@@ -1,17 +1,22 @@
 # Contest Points
 
-Sherlock has a cold-start problem. Because there are no rankings initially, Sherlock doesn’t know who the Senior Watsons should be. To fix this, Sherlock has whitelisted a select group of security experts to be Senior Watsons. This whitelist will be based on security experts who have led audits for Sherlock in the past. Rankings will show up on the leaderboard after each Watson’s first contest. However, promotion to the Senior Watson role or demotion from the Senior Watson role will only happen once a Watson has completed two contests.
+## Points calculation
 
-> Update: As of 9/21/22, Sherlock will change the required number of contests for promotion/demotion from the Senior Watson role. Instead of requiring 2 contests, Sherlock will require 4 contest-weeks to be completed. This will help give more credit to long, 4-week contests and give less credit to short 3-day contests. We think this is an important change to make the rankings and selection process more fair. If it helps you can think of each contest as consisting of a number of contest-days (based on the length of the contest). And 28 contest-days (4 contest-weeks) are required to be eligible for Senior Watson promotion/demotion. Since this scoring system went into effect on 9/21/22, the Notional, Harpie and Sentiment contests will use the old system, meaning each will be worth 14 contest-days.&#x20;
+Your points will be calculated against last 7 contest weeks (49 contest days). This means that a 3-day contest will only count for ~6% (3 contest days / 49 contest days) of your Leaderboard points (assuming you've competed in >=49 contest days of contests already). And similarly, a 4-week contest will count for ~57% (28 contest days / 49 contest days) of your Leaderboard points (assuming you've competed in >=49 contest days of contests already). If you've competed in <49 contest days worth of contests, then these contests will naturally make up a higher % of your Leaderboard points.
 
-> Note: Watsons have the ability to decide if they want a contest to count towards their ranking. The only catch is that you must indicate this (there’s a button on the sign-up page) before the contest ends. This is to ensure that a Watson who is busy or not able to dedicate enough time to a contest doesn’t get penalized in the rankings. However, if you’re the Lead Senior Watson chosen for the contest (receiving fixed pay), the contest will always count towards your ranking.
+> Example: Bob has participated in four contests in the following order:
+> - 7-day contest and scored 100 points;
+> - 7-day contest and scored 50 points;
+> - 14-day contest and scored 125 points;
+> - 28-day contest and scored 200 points;
+> The three last contests add up to 49 contest days (28 + 14 + 7), so the first 7-day contest is not accounted. The calculation for points:
+> - 7-day contest with 100 points = (7 / 49) * 100 = ~14 points;
+> - 14-day contest with 125 points = (14 / 49) * 125 = ~36 points;
+> - 28-day contest with 200 points = (28 / 49) * 200 = ~114 points;
+> Thus, Bob will have 164 points on the Leaderboard.
+> Note: contest days are added only for contests that you participate in for USDC + points. 
 
-The amount of Contest Points available to gain in each contest (to move up the ranks) is determined by the average scores of the competing Watsons, based on previous Sherlock contests:
+## Getting on the leaderboard
+Watsons need to have >=49 contest days to get on the Leaderboard. Before one gets at least 49 contest days, they will show up on the Leaderboard, but greyed out and without a place. The points will be calculated against the contest days that you've participated for (i.e., <49).
 
-Let’s assume Bob’s average score is 7, Joe’s average score is 13, and Mike’s average score is 5. And only Bob, Joe, and Mike compete in a contest. The total Contest Points available in that contest will be 25 (7+13+5).
-
-Once a Watson has competed in a Sherlock competition, their Leaderboard points (aka ranking) will be determined by their average contest points scored in their 5 most recent Sherlock competitions. It drops off after 5 competitions so that “bad” scores do not stay with you forever.
-
-> Update: As of 9/21/22, Sherlock will change the methodology for calculating Leaderboard points. Instead of taking the 5 most recent contests, Sherlock will take the last 10 contest-weeks (70 contest-days). This means that a 3-day contest will only count for \~4% (3 contest-days / 70 contest days) of your Leaderboard points (assuming you've competed in >=70 contest-days of contests already). And similarly, a 4-week contest will count for 40% (28 contest-days / 70 contest-days) of your Leaderboard points (assuming you've competed in >=70 contest-days of contests already). If you've competed in <70 contest-days worth of contests, then these contests will naturally make up a higher % of your Leaderboard points.\
-> \
-> However, the Notional, Harpie and Sentiment contests will each count for 2 contest-weeks (14 contest-days) because we don't want to make a retroactive change to the scoring.&#x20;
+If one was previously on the Leaderboard but disappeared, most likely the reason is that they've scored 0 points in the last 49 contest days, and the points dropped to 0.
