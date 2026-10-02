@@ -15,7 +15,7 @@ You may focus on fixing any issues as soon as you notice them during the process
 * Dedicated Judges sign up ahead of time to give certainty that all issues will be judged and de-duplicated by the end of this period
 * Often, 90% of issues are judged accurately within 12-24 hours, allowing a protocol team to start on any fixes
 
-The Dedicated Judges need to judge all issues during the fixed number of days. See [Dedicated Judge](audits/real-time-judging/dedicated-judge.md) for more details.
+The Dedicated Judges need to judge all issues during the fixed number of days. See [Dedicated Judge](https://github.com/sherlock-protocol/sherlock-v2-docs/blob/main/audits/judging/audits/real-time-judging/dedicated-judge.md) for more details.
 
 ### Phase 2: Lead Judge
 

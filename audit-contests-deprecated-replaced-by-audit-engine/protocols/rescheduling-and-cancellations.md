@@ -29,4 +29,4 @@ To avoid last-minute issues:
 * use the Audit Requirements Checklist to confirm readiness ahead of the 3-day freeze point
 * flag risks early (delayed tests, pending migrations, major refactors, access limitations) so the review plan can be adjusted\
   \
-  &#xNAN;_&#x54;his page is provided for informational purposes only and does not create any contractual rights or obligations. All rescheduling, cancellation, and fee/deposit terms are governed solely by the parties’ executed agreement(s) (including any order form or statement of work) and may be modified by written agreement between the parties._
+  _&#x54;his page is provided for informational purposes only and does not create any contractual rights or obligations. All rescheduling, cancellation, and fee/deposit terms are governed solely by the parties’ executed agreement(s) (including any order form or statement of work) and may be modified by written agreement between the parties._
