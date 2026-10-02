@@ -20,7 +20,7 @@ A larger-scale AI stack (more auditors, models, and skills) reviews your scope. 
 
 * Broader AI coverage but don't want to add human security researchers into the mix yet
 * Stronger parallel pressure than a focused sprint
-* Benchmarking across a wider participant mix
+* [Benchmarking](benchmarking.md) across a wider participant mix
 
 ### 3) Intensive AI + Security Researcher engagement
 
@@ -33,7 +33,7 @@ A multi-day engagement where the kitchen sink is thrown at the codebase: AI audi
 * Full benchmarking of the best approaches across all fields for your codebase (optimized to what you care about across 20+ metrics)
 
 {% hint style="info" %}
-These shapes are starting patterns. Custom setups are common. Sherlock will provide options for engagement shape and package / participant mix when you configure the run.
+These shapes are starting patterns. Custom setups are common. Sherlock will provide options for engagement shape and package / participant mix when you configure the engagement.
 {% endhint %}
 
 ### What Sherlock configures with you
@@ -46,10 +46,10 @@ These shapes are starting patterns. Custom setups are common. Sherlock will prov
 
 ### After Audit Engine
 
-If you need staffed depth, remediation loops, or release sign-off after an Audit Engine run, ask Sherlock about a follow-on fix review, Collaborative Audits, or Blackthorn. Those are separate offerings; confirm what is in your SOW.
+If you need staffed depth, remediation loops, or release sign-off after an Audit Engine engagement, [ask Sherlock](https://sherlock.xyz/contact) about a follow-on fix review, [Collaborative Audits](../audit-contests-deprecated-replaced-by-audit-engine/protocols/how-collaborative-audits-work.md), or Blackthorn. Those are separate offerings; confirm what is in your SOW.
 
 {% hint style="warning" %}
-**Pricing:** Contact Sherlock for a quote: [https://sherlock.xyz/contact](https://sherlock.xyz/contact)
+**Pricing:** [Contact Sherlock](https://sherlock.xyz/contact) for a quote: [https://sherlock.xyz/contact](https://sherlock.xyz/contact)
 {% endhint %}
 
-See also: How Audit Engine Works, For Protocol Teams, FAQ.
+See also: [How Audit Engine Works](how-audit-engine-works.md), [For Protocol Teams](for-protocol-teams.md), [FAQ](faq.md).

@@ -21,18 +21,18 @@ Unfortunately, Audit Contests and Audit Engine are two very different systems an
 
 Findings discovered for an engagement must be submitted **exclusively through Audit Engine** under the Engagement Addendum and any NDA you signed.
 
-Do not leak in-scope findings to public bug bounties, social channels, or other vendors during the restricted period defined in your agreements. Breaches can mean disqualification, revoked unpaid rewards or compensation, bans from future participation, and potentially legal action.&#x20;
+Do not leak in-scope findings to public bug bounties, social channels, or other vendors during the restricted period defined in your agreements. Breaches can mean disqualification, revoked unpaid rewards or compensation, bans from future participation, and potentially legal action.
 
 ### Rewrite and Resubmit
 
 You can improve reports **during** the engagement / submissions period with the Rewrite and Resubmit flow:
 
 * After submitting an issue you'll receive AI judge feedback in a short period of time.
-* You may Rewrite and Resubmit (limits apply; commonly up to 5 times per issue chain) any submitted issue based on that feedback.&#x20;
-* Each Rewrite and Resubmit adds **+0.5** to the Issues Ratio denominator, hurting your Issues Ratio, but it gives the opportunity to have the issue be accepted instead of rejected (moving the Issues Ratio numerator for that issue to +**1.0** instead of **0**). &#x20;
+* You may Rewrite and Resubmit (limits apply; commonly up to 5 times per issue chain) any submitted issue based on that feedback.
+* Each Rewrite and Resubmit adds **+0.5** to the Issues Ratio denominator, hurting your Issues Ratio, but it gives the opportunity to have the issue be accepted instead of rejected (moving the Issues Ratio numerator for that issue to +**1.0** instead of **0**).
 * Use the Rewrite and Resubmit flow while the Submissions Window is still open to fix any issues flagged in your submission by the AI judge or Sherlock Judge
 
-A key to strong Audit Engine performance and a healthy Issues Ratio is to iterate on and perfect your reports during the engagement with the assistance of the AI Judge.&#x20;
+A key to strong Audit Engine performance and a healthy Issues Ratio is to iterate on and perfect your reports during the engagement with the assistance of the AI Judge.
 
 ### Issues Ratio
 
@@ -50,21 +50,21 @@ By default, the number of accepted issues includes Critical, High, Medium, Low o
 
 Once an issues is submitted, it cannot be withdrawn/closed or edited. If the Security Researcher wants to update the issue, they need to "rewrite and resubmit". This will create another submission. Both the original submission and the "rewritten and resubmitted" one will be counted towards the Issues Ratio. The "rewritten and resubmitted" report will be counted as +0.5 towards the numerator (if deemed valid) and +0.5 towards the denominator (whether valid or invalid) of the Issues Ratio.
 
-Examples:&#x20;
+Examples:
 
 * A Dismissed Issue with 2 Rewrite and Resubmits will count 0 towards the numerator of your Issues Ratio, and +2.0 to the denominator of your Issues Ratio.
-* An issue that was originally Accepted (+1/1 to the Issues Ratio) will become +1/1.5 to the Issues Ratio if it is Rewritten and Resubmitted once (and still judged as Accepted). An issue that was originally Dismissed (+0/1 to the Issues Ratio) will become +0.5/1.5 to the Issues Ratio if it becomes Accepted after being Rewritten and Resubmitted once.&#x20;
-* A Neutral Issue with 1 Rewrite and Resubmit will count 0 towards the numerator of your Issues Ratio and +0.5 to the denominator of your Issues Ratio.&#x20;
+* An issue that was originally Accepted (+1/1 to the Issues Ratio) will become +1/1.5 to the Issues Ratio if it is Rewritten and Resubmitted once (and still judged as Accepted). An issue that was originally Dismissed (+0/1 to the Issues Ratio) will become +0.5/1.5 to the Issues Ratio if it becomes Accepted after being Rewritten and Resubmitted once.
+* A Neutral Issue with 1 Rewrite and Resubmit will count 0 towards the numerator of your Issues Ratio and +0.5 to the denominator of your Issues Ratio.
 
 Sherlock uses the Issues Ratio (alongside other performance signals) when deciding on invites to future engagements. Sherlock makes no guarantee that participants whose rewards are not paid due to a low Issues Ratio will have an opportunity to improve their Issues Ratio in the future and unlock those rewards.
 
 ### Issues Threshold
 
-In order to be eligible for a payout, a participant must submit at least 2 valid issues across all Audit Engine engagements. Certain severities like Low or Info may be excluded from this threshold in specific engagements.&#x20;
+In order to be eligible for a payout, a participant must submit at least 2 valid issues across all Audit Engine engagements. Certain severities like Low or Info may be excluded from this threshold in specific engagements.
 
-Issues with a "Neutral" status are not counted toward the Issues Threshold.&#x20;
+Issues with a "Neutral" status are not counted toward the Issues Threshold.
 
-Check the Judging Guidelines for each specific engagement.&#x20;
+Check the Judging Guidelines for each specific engagement.
 
 ### Payout eligibility
 
@@ -85,4 +85,4 @@ Audit Engines are not like Audit Contests. Results, judging and payouts are mean
 * Watch for AI judge feedback and use Rewrite and Resubmit while submissions are open
 * Protect your Issues Ratio: invalid issues will cost you payouts and future invites
 
-See also: Judging, Benchmarking, FAQ.
+See also: [Judging](judging.md), [Benchmarking](benchmarking.md), [FAQ](faq.md).

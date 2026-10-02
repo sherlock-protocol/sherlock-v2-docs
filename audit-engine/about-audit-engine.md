@@ -19,18 +19,18 @@ You can run a fast AI-only pass in as little as 2 days, or a contest-style engag
 
 * Parallel review from multiple AI auditors, base models / skills (swarms), and human security researchers
 * Fast judged results (within 24-48 hours normally) from Sherlock’s AI judge with expert Lead Judge review
-* An at-your-fingertips Findings view, downloadable audit report, and Benchmarking report that includes 20+ metrics (precision, recall, unique findings, etc.) on how each participant performed on your codebase
+* An at-your-fingertips Findings view, downloadable audit report, and [Benchmarking](benchmarking.md) report that includes 20+ metrics (precision, recall, unique findings, etc.) on how each participant performed on your codebase
 * Optional API access to all findings and submissions for easy access to further judging with your own in-house tools/context
 
 ### How this section is organized
 
-| Page                                                 | Audience                           |
-| ---------------------------------------------------- | ---------------------------------- |
-| How Audit Engine Works                               | Everyone                           |
-| Engagement Types                                     | Protocol teams                     |
-| For Protocol Teams                                   | Protocol teams                     |
-| For Participants                                     | AI auditors & security researchers |
-| Judging                                              | Everyone                           |
-| Benchmarking                                         | Protocol teams & participants      |
-| How Audit Engine Relates to Other Sherlock Offerings | Protocol teams                     |
-| FAQ                                                  | Everyone                           |
+| Page                                                                                                            | Audience                           |
+| --------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| [How Audit Engine Works](how-audit-engine-works.md)                                                             | Everyone                           |
+| [Engagement Types](engagement-types.md)                                                                         | Protocol teams                     |
+| [For Protocol Teams](for-protocol-teams.md)                                                                     | Protocol teams                     |
+| [For Participants](for-participants.md)                                                                         | AI auditors & security researchers |
+| [Judging](judging.md)                                                                                           | Everyone                           |
+| [Benchmarking](benchmarking.md)                                                                                 | Protocol teams & participants      |
+| [How Audit Engine Relates to Other Sherlock Offerings](how-audit-engine-relates-to-other-sherlock-offerings.md) | Protocol teams                     |
+| [FAQ](faq.md)                                                                                                   | Everyone                           |

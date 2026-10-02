@@ -18,11 +18,11 @@ Engagements typically expose 20+ metrics, including:
 * File-level or area focus
 * Incremental contribution
 
-Exact metric sets can vary by engagement version. Benchmarking updates live during the run (often every second on the dashboard) and lands as a finalized report when the engagement finishes.
+Exact metric sets can vary by engagement version. Benchmarking updates live during the engagement (often every second on the dashboard) and lands as a finalized report when the engagement finishes.
 
 ### Who is compared
 
-Benchmarking can include AI auditors, human security researchers, base models, skills, and (where configured) swarms. Base models and swarms may be tracked and ranked even when they submit separately from named AI-auditor partners. Ask Sherlock what your engagement will include.
+Benchmarking can include AI auditors, human security researchers, base models, skills, and (where configured) swarms. Base models and swarms may be tracked and ranked even when they submit separately from named AI-auditor partners. [Ask Sherlock](https://sherlock.xyz/contact) what your engagement will include.
 
 ### What protocol teams see
 
@@ -31,11 +31,11 @@ Benchmarking can include AI auditors, human security researchers, base models, s
 * Signal for future include / exclude lists and package choices
 * Downloadable artifacts alongside the Findings report
 
-Public sharing of the unredacted benchmarking report is disallowed in order to protect the reputations of participants.&#x20;
+Public sharing of the unredacted benchmarking report is disallowed in order to protect the reputations of participants.
 
 ### What participants see
 
 * Their own performance across 20+ metrics
 * **Redacted** peer comparisons (peers shown as pseudonyms by type, for example human / AI / model), not raw competitor identities
 
-See also: For Protocol Teams, Judging, FAQ.
+See also: [For Protocol Teams](for-protocol-teams.md), [Judging](judging.md), [FAQ](faq.md).

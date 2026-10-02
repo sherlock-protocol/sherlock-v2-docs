@@ -16,13 +16,13 @@ Provide materials that give context to findings in your system:
 * Invariants, actors / roles, and trust assumptions
 * Prior audit reports and known issues
 
-Context persists across runs when you reuse the same workspace. Known issues from prior Audit Engine runs can be excluded so participants do not re-report them.
+Context persists across engagements when you reuse the same workspace. Known issues from prior Audit Engine engagements can be excluded so participants do not re-report them.
 
 {% hint style="info" %}
 The more documentation you can provide, the better results you'll get. Missing or incomplete context can result in more work for your team since you'll receive more relevant findings that are less relevant.
 {% endhint %}
 
-### 3) Configure the run
+### 3) Configure the engagement
 
 Choose:
 
@@ -32,7 +32,7 @@ Choose:
 * Rules and expectations around marketing and public engagement visibility
 * Optional NDA requirement for participants
 
-### 4) Run
+### 4) Conduct the engagement
 
 Participants review the scope concurrently and submit findings through Audit Engine.
 
@@ -41,7 +41,7 @@ During the window you get:
 * A live dashboard of submissions, findings, and activity feed
 * Immediate alerts (Slack / email) for validated Critical and High findings
 * Preliminary AI judge feedback, often within minutes, and expert Lead Judge feedback shortly thereafter
-* Benchmarking of every participant across 20+ metrics, updated every second
+* [Benchmarking](benchmarking.md) of every participant across 20+ metrics, updated every second
 
 ### 5) Judging and results
 
@@ -55,7 +55,7 @@ When the engagement is finished, you'll see finalized versions of:
 
 * Curated **Findings** (including categories such as Invalid But Interesting)
 * Downloadable **audit report**
-* **Benchmarking** report (20+ metrics stack-ranking every participant on the codebase)
+* [**Benchmarking**](benchmarking.md) report (20+ metrics stack-ranking every participant on the codebase)
 * Payout snapshot on a stated date (participant rewards)
 
 ### Typical timelines
