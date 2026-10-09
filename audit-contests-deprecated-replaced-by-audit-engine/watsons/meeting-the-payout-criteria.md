@@ -4,6 +4,10 @@ description: How to make sure you get paid for your findings
 
 # Meeting the Payout Criteria
 
+{% hint style="warning" %}
+Please note that the ability to unlock past unearned audit contest payouts will end after February 6th, 2027 due to Audit Engine replacing audit contests.&#x20;
+{% endhint %}
+
 Previously, anyone could sign up as a Watson, join a contest, and get paid for any valid issues they submit. The only caveat is that there was a USDC penalty for invalid issues.&#x20;
 
 The USDC penalty is now gone, and it's replaced by 2 "Audit Contest Payout Criteria."

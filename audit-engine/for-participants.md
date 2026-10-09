@@ -66,6 +66,8 @@ Issues with a "Neutral" status are not counted toward the Issues Threshold.
 
 Check the Judging Guidelines for each specific engagement.
 
+When a participant does not meet the payout threshold after participating in an Audit Engine, the rewards for that participant will not be paid out. The participant then has 12 months from the end of the Audit Engine to improve their payout threshold and unlock the payout. After 12 months, the payout for that specific Audit Engine engagement can no longer be unlocked.&#x20;
+
 ### Payout eligibility
 
 Reward pools pay on **Accepted** findings. Severity, uniqueness, and speed can affect share of the pot under the engagement’s scoring rules.
