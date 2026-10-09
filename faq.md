@@ -7,90 +7,112 @@ description: >-
 
 # FAQ
 
-**What is Sherlock?**
+### What is Sherlock?
 
-Sherlock is a leading Web3 security company for onchain systems where software directly controls capital. We provide complete lifecycle security across development, pre-launch review, and post-launch operation through Sherlock AI, Collaborative Audits, Audit Contests, Bug Bounties, and Sherlock Shield.
+Sherlock provides lifecycle security for financial institutions and leading Web3 teams building and operating onchain systems. We audit crypto codebases across languages and execution environments, with services spanning protocols, applications, and infrastructure.
 
+Our services include Collaborative Audits, Audit Engine, Bug Bounties, and Institutional Security programs, with Blackthorn as our premier audit track.
 
+### What does “complete lifecycle security” mean in practice?
 
-**What does “complete lifecycle security” mean in practice?**
+It means organizing security work around the life of a system, from initial development through launch and ongoing operation.
 
-It means security work that matches how protocols actually fail in production: invariants drift as features ship, upgrade paths introduce new trust assumptions, integrations change, and adversaries adapt. Lifecycle security applies pressure at three points:
+During development, security work helps identify risks in architecture, implementation, and dependencies. Before a launch or upgrade, reviews investigate vulnerabilities and assess proposed fixes. After deployment, ongoing security work addresses newly discovered vulnerabilities and changes to the system.
 
-* During development (before patterns harden),
-* Before launch/upgrade (when risk concentrates),
-* After launch (when incentives and integrations keep moving).<br>
+Findings, remediation decisions, and knowledge of the system carry forward between engagements. The services included at each stage depend on the agreed scope.
 
-**What types of vulnerabilities does Sherlock focus on?**
+### Does Sherlock work with financial institutions?
 
-The work is designed to catch issues that commonly lead to loss of funds or broken protocol guarantees, including:
+Yes. Sherlock works with financial institutions and asset managers designing, launching, and operating onchain financial products.
 
-access control and privilege paths, accounting/invariant breaks, reentrancy and callback risk, oracle and price-manipulation surfaces, MEV and sequencing risk, upgrade and admin-key assumptions, cross-contract and cross-chain integration failures, and unsafe external dependency trust boundaries. Coverage depends on scope and program type.
+These engagements consider the wider system through which capital moves, including vault infrastructure, underlying protocols, collateral, oracles, permissions, and operational processes. Sherlock provides crypto-native security expertise alongside the institution’s existing engineering, cybersecurity, and risk functions.
 
+### What does an Institutional Security engagement include?
 
+Institutional Security combines services into a program built around the institution’s infrastructure and operating requirements.
 
-**How is Sherlock AI used across the lifecycle?**
+An engagement can include threat modeling, architecture guidance, auditing, custom monitoring, and incident preparedness. The work begins with understanding how the system is intended to operate and the dependencies or failures that could put capital at risk.
 
-Sherlock AI is used across the lifecycle, with the highest leverage during development when code is changing fast. Teams run it continuously as they build, refactor, and ship—using it to surface exploitable patterns, clarify assumptions, and prioritize fixes. It also stays useful before launches or upgrades and after deployment to re-check changes, new integrations, and evolving attack surfaces as the system evolves.
+Before launch, the focus is on design, implementation, and remediation. During live operation, the program can include monitoring requirements and incident runbooks built around the system’s expected behavior.
 
+The services, responsibilities, and deliverables are defined for each engagement.
 
+### Do we need to purchase a full lifecycle program?
 
-**What is a Collaborative Audit?**
+No. Teams can engage Sherlock for an individual service or combine services into a broader security program.
 
-A Collaborative Audit is a staffed engagement where Sherlock assembles an engagement-specific team and runs a coordinated review for high-stakes scopes. The team builds an architecture-level understanding of the protocol, maps trust boundaries and attack surfaces, tests exploit paths, and verifies fixes through iteration. It’s the right fit when complexity, upgradeability, or integration risk calls for tight feedback loops and hands-on fix validation.
+The appropriate scope depends on the system, its stage of development, existing security work, and the team’s requirements.
 
+### What types of vulnerabilities does Sherlock focus on?
 
+Reviews focus on vulnerabilities that could cause loss of funds, unauthorized actions, or failures in the system’s intended behavior.
 
-**What is Blackthorn?**
+Depending on the codebase, this can include access-control failures, accounting errors, broken invariants, reentrancy, oracle and price manipulation, transaction-ordering risks, unsafe upgrade paths, cross-chain interactions, and failures involving external dependencies.
 
-Blackthorn is Sherlock’s elite collaborative audit program for the highest-stakes scopes. It’s a staffed engagement led by a small group of top-tier reviewers who go deep on architecture, threat modeling, and exploit-path analysis, then stay engaged through iteration to verify fixes. Teams use Blackthorn when a standard review cadence isn’t enough: new primitives, complex integrations, large TVL, or launch timelines where uncertainty is the real risk.
+Institutional engagements can also examine risks arising from vault configuration, collateral, permissions, and operational processes. The issues examined depend on the system and the engagement scope.
 
+### What is a Collaborative Audit?
 
+A Collaborative Audit is Sherlock’s private, time-boxed security review, carried out by a team selected for the codebase.
 
-**What is an Audit Contest?**
+Researchers work together in a dedicated GitHub repository to understand the system, investigate potential vulnerabilities, and document validated findings. The engagement includes a process for discussing findings with the engineering team and reviewing submitted fixes before final reporting.
 
-An Audit Contest is a public review program where many independent security researchers analyze the scope concurrently under clear incentives. The focus is breadth and throughput: multiple independent perspectives, many parallel lines of inquiry, and fast coverage of attack surfaces that can be missed by a small team.
+See the Collaborative Audits section for scoping, preparation requirements, the review process, and reporting.
 
+### What is Blackthorn?
 
+Blackthorn is Sherlock’s elite research team and premier audit track for high-stakes infrastructure.
 
-**How should we choose between a Collaborative Audit and an Audit Contest?**
+The team consists of a small group of researchers who have consistently performed at the highest level within Sherlock’s network. Contact Sherlock to discuss whether Blackthorn is appropriate for the proposed scope.
 
-Teams typically choose a Collaborative Audit when they need coordinated depth on architecture, invariants, roles, and integrations, plus an iterative fix-and-verify loop with a staffed team. Choose an Audit Contest when you want maximum parallel coverage from independent researchers and high throughput on a clearly defined scope. Many teams combine them: Collaborative Audit first to pressure test the design and verify fixes, then a Contest to add breadth on the hardened release candidate.
+### What is Audit Engine?
 
+Audit Engine is Sherlock’s audit orchestration platform. It brings AI auditors, frontier models, and human security researchers into a coordinated review, with the participant mix determined by the engagement type.
 
+Sherlock handles validation, deduplication, judging, and reporting. See the Audit Engine section for engagement types, workflows, and participation requirements.
 
-**What does “fix verification” mean?**
+### How should we choose between a Collaborative Audit and Audit Engine?
 
-Fix verification is the step where proposed remediations are reviewed against the reported exploit path and the protocol’s intended invariants. The goal is to confirm the fix closes the specific failure mode without introducing regressions or new trust assumptions.
+A Collaborative Audit centers on a selected team of researchers conducting a private review together, with direct discussion of findings and review of submitted fixes.
 
+Audit Engine coordinates AI auditors, models, and, depending on the engagement type, human researchers against a defined scope.
 
+The services can be used separately or together. Share the codebase, review objectives, and release timeline with Sherlock to determine the appropriate approach.
 
-**What do we get as outputs from a review?**
+### What does “fix verification” mean?
 
-Outputs vary by program, but generally include written findings and severity assessments, proof-of-concept or exploit reasoning where applicable, reproduction context, and guidance on remediation. For pre-launch programs, the emphasis is on actionable results: what breaks, why it breaks, and what changes are required to restore intended guarantees.
+Fix verification examines whether a proposed remediation addresses the underlying cause of a reported vulnerability and restores the intended system behavior.
 
+Auditors also examine whether the change introduces a new issue in the surrounding code. The review covers the agreed remediation scope; it should not be treated as a review of unrelated changes or newly added features.
 
+### What do we get as outputs from a review?
 
-**How does Sherlock handle post-launch security?**
+Outputs depend on the engagement. They generally include written findings, severity assessments, technical explanations, supporting evidence where applicable, and remediation guidance.
 
-Post-launch security is driven by incentive programs like bug bounties, which keep ongoing pressure on production systems. This is meant to match reality: upgrades, parameter changes, new integrations, and market conditions change the effective threat model over time, so scrutiny has to persist after deployment.
+A Collaborative Audit report records the reviewed scope, code versions, findings, and outcomes of fix review.
 
+Institutional programs may also include threat models, monitoring requirements, and incident runbooks, depending on the services included in the engagement.
 
+### How does Sherlock handle post-launch security?
 
-**What is Sherlock Shield?**
+Bug bounty programs give independent researchers an ongoing route to report vulnerabilities in deployed systems and receive rewards for eligible findings.
 
-Sherlock Shield is optional financial coverage that can sit alongside post-launch programs under defined terms. Coverage availability, eligibility, scope, and limits depend on the program terms and the details of the reviewed system.
+Further reviews can examine upgrades, new integrations, and other changes that affect the system’s security assumptions.
 
+Institutional programs can also include custom monitoring and incident preparedness, with monitoring focused on expected system behavior and runbooks defining how potential incidents should be handled.
 
+The post-launch services and responsibilities are agreed for each engagement.
 
-**Does Sherlock guarantee the protocol won’t be exploited?**
+### Does Sherlock guarantee that a system will not be exploited?
 
-No. The goal is to materially reduce risk by identifying and fixing vulnerabilities, clarifying trust assumptions, validating invariants, and maintaining scrutiny as the system evolves. Outcomes depend on scope definition, code maturity, change cadence, operational controls, and integration complexity.
+No. Security work aims to reduce risk by identifying vulnerabilities, reviewing fixes, examining trust assumptions, and maintaining scrutiny as systems change.
 
+A review applies to its defined scope, code versions, and assumptions. New functionality, configuration changes, external dependencies, and operational decisions can introduce risks outside that review.
 
+### What chains and codebases can Sherlock support?
 
-**What chains and codebases can Sherlock support?**
+Sherlock reviews crypto protocols, applications, and infrastructure across languages and execution environments.
 
-Sherlock supports smart contract security work across major onchain environments, and the recommended program depends on your stack and architecture (for example EVM Solidity vs Solana Rust), the deployment model (upgradeable vs immutable), and how much integration surface area exists. If you share your target chain, repo, and timeline, the right program mix becomes straightforward to recommend.
+Researcher experience spans environments such as Solidity/EVM, Rust/Solana, and Bitcoin-adjacent systems. The team and review approach depend on the language, architecture, dependencies, and scope.
 
-<br>
+Share your repository, target environment, system documentation, and timeline with Sherlock to confirm the appropriate engagement.

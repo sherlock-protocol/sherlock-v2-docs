@@ -5,6 +5,12 @@
 * [Glossary](glossary.md)
 * [Disclaimers](disclaimers.md)
 
+## Collaborative Audits
+
+* [About Collaborative Audits](collaborative-audits/about-collaborative-audits.md)
+* [Scoping & Audit Requirements](collaborative-audits/scoping-and-audit-requirements.md)
+* [Review, Fixes & Reporting](collaborative-audits/review-fixes-and-reporting.md)
+
 ## AUDIT ENGINE
 
 * [About Audit Engine](audit-engine/about-audit-engine.md)

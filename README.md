@@ -1,64 +1,90 @@
 ---
 description: >-
   An overview of Sherlock, our security programs, and how these docs are
-  organized so that teams can quickly find the right guidance for AI, audits,
-  contests, bounties, & coverage. Updated January 2026.
+  organized so that teams can quickly find the right guidance for institutional
+  security, AI, audits, bounties. Updated Oct 2026.
 ---
 
 # Introduction to Sherlock
 
-Sherlock is a security organization built to protect onchain systems where software directly controls capital. We exist because security for these systems can’t be treated as a one-time event or a single deliverable. Protocols ship continuously, assumptions change, integrations shift, and incentives attract real adversaries. Security has to be an operating model.
+Sherlock provides lifecycle security for financial institutions and leading Web3 teams. We audit crypto codebases across languages and execution environments, with services spanning protocols, applications, and infrastructure.
 
+Teams work with Sherlock on individual engagements or security program[Ready to merge](https://app.gitbook.com/o/-M_eFb0i0B5bGNIG9sx8/sites/site_U3zYs/s/IULvDRunHtCHQJQoTsGo/~/edit/~/changes/240/~/merge-status)s spanning development, launch, and live operation.
 
+### How we approach security
 
-### **Complete Lifecycle Security**
+Sherlock works with leading teams to secure the software and infrastructure powering the onchain economy. Our work supports organizations building new systems, operating established protocols, and bringing institutional capital onchain.
 
-Sherlock’s model is complete lifecycle security: coverage across development, auditing, and post-launch operation.
+Since 2021, we have assembled a network of 11,000 independent security researchers, bringing together expertise across crypto ecosystems, programming languages, and system architectures. This collective knowledge forms the foundation of Sherlock’s security work.
 
-**Development:** teams identify issues early and tighten assumptions while code is still changing fast.
+We combine independent research, AI-powered auditing, and ongoing security programs to help organizations address security throughout the life of their systems. Our role extends from supporting developers as they build to working alongside institutions as they launch and operate onchain financial products.
 
-**Auditing:** structured review programs pressure test architecture and code under adversarial conditions, then verify fixes before release.
+Our goal is to make strong security a foundation for crypto’s growth, helping protect the infrastructure, users, and capital that depend on it.
 
-**Post-launch**: ongoing incentives keep pressure on production systems as upgrades, integrations, and market conditions change.<br>
+### Complete Lifecycle Security
 
-We built this model because one-off reviews don’t match how onchain systems are actually built and maintained. Protocols ship continuously, trust assumptions shift with upgrades and integrations, and many real failures come from changes made after a point-in-time review. Lifecycle security keeps the work connected across phases so teams don’t restart from zero each release.<br>
+A system’s security requirements change as it moves from development to deployment and ongoing operation. Sherlock’s lifecycle security model connects work across these stages.
 
-Compounding context is the practical benefit: a durable “security memory” of the system (intent, assumptions, known risk areas, prior findings, and the outcomes of fixes) that carries forward into the next change. That continuity reduces repeat findings, shortens remediation cycles, and makes upgrades safer because the starting point is an informed baseline, not a cold start.
+#### Development
 
-<figure><img src=".gitbook/assets/Group 2085664397.png" alt=""><figcaption></figcaption></figure>
+Examine architecture, implementation choices, dependencies, and trust assumptions while the system is being built. Identify potential failure modes early enough to inform design and engineering decisions.
 
-### **How teams work with Sherlock**
+#### Pre-launch review
 
-Each program is designed to solve a different part of the security problem, and most teams combine them based on architecture complexity, timeline, and risk tolerance. The sections below explain what each program is, when to use it, and what to expect from the process and outputs.
+Review the code and its interactions before deployment or a major upgrade. Investigate vulnerabilities, assess their impact, and review proposed fixes within the agreed scope.
 
-#### **Sherlock offers six core services:**
+#### Live operation
 
-1. **Sherlock AI**&#x20;
+Support ongoing vulnerability discovery through bug bounties and review changes to code, integrations, and system configuration. Institutional programs can also include custom monitoring and incident preparedness.
 
-An auditor-grade AI security tool used during development and pre-launch review. It reads your codebase in context, models protocol intent and trust assumptions, and routes analysis through specialist checks. The output is fix-ready findings tied to real exploit paths, so teams can remediate as they build and ship.<br>
+Carry prior findings and remediation decisions into subsequent security work as the system changes.
 
-2. **Collaborative Auditing**
+The scope of each engagement determines which services and stages are included.
 
-A staffed audit engagement. Sherlock assembles an engagement-specific team from our elite researcher network based on your architecture and attack surface. The review is coordinated end-to-end, with fix verification through to release.<br>
+### How teams work with Sherlock
 
-3. **Audit Contests**
+#### Sherlock for financial institutions
 
-A time-boxed public audit program. Many independent, vetted researchers review the same scope under clear rules and incentives. The result is high-throughput issue discovery with structured judging, consistent severity calibration, and a clean paper trail teams can remediate against.&#x20;
+Sherlock works with financial institutions and asset managers building and operating onchain financial products.
 
+Engagements are structured around the institution’s architecture, dependencies, and operating requirements, from initial design through live operation.
 
+#### Sherlock for leading Web3 teams
 
-4. **Bug Bounties**
+Sherlock works with teams building crypto protocols, applications, and infrastructure.
 
-A post-launch security program that keeps pressure on production systems. Independent researchers are paid for valid live findings. Triage and remediation workflows are defined up front so teams can receive, validate, patch, and communicate issues without chaos.&#x20;
+Engagements can cover new codebases, major releases, integrations, or changes to deployed systems. Teams can use individual services or combine them into a security program aligned with their development and release process.
 
+### Core services
 
+#### Collaborative Audits
 
-5. **Sherlock Shield**
+Sherlock’s private audit service. A selected team of researchers reviews the codebase collaboratively, investigates potential vulnerabilities, documents validated findings, and reviews submitted fixes before final reporting.
 
-An optional post-launch coverage program with defined terms. It can reimburse eligible losses or payouts tied to covered security events. It is designed to sit alongside bounties and ongoing security work as a financial backstop, not a substitute for fixing root causes.
+The Collaborative Audits section explains scoping, preparation requirements, the review process, and reporting.
 
+#### Audit Engine
 
+Sherlock’s audit orchestration platform, bringing AI auditors, frontier models, and human security researchers into a coordinated review.
 
-6. **Blackthorn**
+The engagement type determines the participant mix. Sherlock handles validation, deduplication, judging, and reporting. The Audit Engine section explains engagement types, workflows, and participation requirements.
 
-A premium collaborative audit tier for the highest-stakes scopes. It’s staffed by a small group of top-tier reviewers and run with deeper architecture scrutiny. Teams get tighter iteration loops and hands-on fix verification when uncertainty isn’t acceptable.
+#### Bug Bounties
+
+Programs that give independent researchers a defined route to report vulnerabilities and receive rewards for eligible findings.
+
+Each program establishes its scope, submission requirements, and reward rules. The Bug Bounties section explains program setup and participation.
+
+#### Blackthorn
+
+Sherlock’s premier privateaudit track, delivered by its elite research team for high-stakes infrastructure.
+
+See the Blackthorn overview within Collaborative Audits for more information.
+
+#### Institutional Security
+
+Security programs for financial institutions and asset managers designing, launching, and operating onchain financial products.
+
+Engagements combine threat modeling, architecture guidance, auditing, custom monitoring, and incident preparedness. The scope considers the wider system, including protocol dependencies, collateral, oracles, permissions, and operational processes.
+
+Sherlock works alongside the institution across development and live operations, with services defined around its infrastructure and the ways capital could be put at risk.
