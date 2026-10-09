@@ -9,7 +9,7 @@ description: >-
 
 Sherlock provides lifecycle security for financial institutions and leading Web3 teams. We audit crypto codebases across languages and execution environments, with services spanning protocols, applications, and infrastructure.
 
-Teams work with Sherlock on individual engagements or security program[Ready to merge](https://app.gitbook.com/o/-M_eFb0i0B5bGNIG9sx8/sites/site_U3zYs/s/IULvDRunHtCHQJQoTsGo/~/edit/~/changes/240/~/merge-status)s spanning development, launch, and live operation.
+Teams work with Sherlock on individual engagements or security program spanning development, launch, and live operation.
 
 ### How we approach security
 
