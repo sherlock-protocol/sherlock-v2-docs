@@ -16,7 +16,7 @@ If a Lead Senior Watson places outside of the top 10 in the ranking for a contes
 
 The 25% Fixed Pay will be released up to two weeks after the fix review occurs.
 
-The two-week delay is so that the [Pre-Launch Bounty](../../bug-bounties/pre-launch-bounty.md) can flag any Critical issue that should have been caught in the fix review.
+The two-week delay is so that the pre-launch bounty can flag any Critical issue that should have been caught in the fix review.
 
 If no issues are reported that should have been caught in the fix review, the 25% fixed pay gets unlocked.
 
