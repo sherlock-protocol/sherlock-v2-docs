@@ -25,7 +25,7 @@
 
 ## Bug Bounties
 
-* [Post-Launch Bounty](bug-bounties/post-launch-bounty/README.md)
+* [Bug Bounties](bug-bounties/post-launch-bounty/README.md)
   * [Platform Rules](bug-bounties/post-launch-bounty/platform-rules.md)
   * [Dispute Resolution](bug-bounties/post-launch-bounty/dispute-resolution.md)
 * [Criteria for Bug Bounty reports validity](bug-bounties/criteria-for-bug-bounty-reports-validity.md)

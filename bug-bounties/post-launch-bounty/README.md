@@ -2,11 +2,11 @@
 description: Sherlock protects teams against hacks at every step of the journey
 ---
 
-# Post-Launch Bounty
+# Bug Bounties
 
 **Bug Bounty for Qualifying Customers**&#x20;
 
-Qualifying customers who have undergone a Sherlock audit have the opportunity to participate in Sherlock's Post-Launch Bug Bounty Program.&#x20;
+Qualifying customers can run a bug bounty program on Sherlock.&#x20;
 
 Sherlock's Bug Bounty Program is hosted on Sherlock's website. Security Researchers are able to submit vulnerabilities that relate to the customer's respective Bug Bounty program through a secure messaging portal, to which customers are given access.&#x20;
 
