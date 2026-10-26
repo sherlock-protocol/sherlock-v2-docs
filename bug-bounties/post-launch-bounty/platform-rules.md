@@ -54,6 +54,7 @@ If your deposit hasn't been refunded and you believe it should have been, open a
 * Replicating tests on public mainnet or testnet is prohibited. All testing should be conducted on local forks of either testnet or mainnet.
 * Use only authorized environments for testing to avoid any unintended disruptions or security risks.
 * Avoid testing with external dependencies and third-party systems not controlled by the protocol customer to avoid any leaks of the potential vulnerability
+* **Web2 and off-chain assets** (websites, apps, APIs, backends) can't be tested on a fork. Use your own accounts, keep requests to the minimum needed to prove the issue, and never access, change or delete other users' data. The web2 testing rules on the [criteria page](../criteria-for-bug-bounty-reports-validity.md) (section V) apply.
 
 #### Service Disruptions
 
