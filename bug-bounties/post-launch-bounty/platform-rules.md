@@ -73,7 +73,7 @@ If your deposit hasn't been refunded and you believe it should have been, open a
 
 * Do not try to cajole a protocol customer into paying you. Always use the provided Sherlock resolution mechanisms.&#x20;
 * Rewards and refunds are paid in USDC on Polygon by default. Some protocols pay rewards themselves on a different network or in a different token; the program page or our email will say.
-* Some protocols require identity verification (KYC) before paying a reward.
+* You don't need to complete identity verification (KYC) to submit a report, but most protocols require it before paying a reward.
 
 ### Protocol Customers
 
