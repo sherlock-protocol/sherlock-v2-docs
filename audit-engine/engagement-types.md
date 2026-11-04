@@ -42,11 +42,10 @@ These shapes are starting patterns. Custom setups are common. Sherlock will prov
 * Package / participant mix
 * Start and end windows
 * Rules and expectations around marketing and public engagement visibility
-* Optional NDA requirement for participants
 
 ### After Audit Engine
 
-If you need staffed depth, remediation loops, or release sign-off after an Audit Engine engagement, [ask Sherlock](https://sherlock.xyz/contact) about a follow-on fix review, [Collaborative Audits](../audit-contests-deprecated-replaced-by-audit-engine/protocols/how-collaborative-audits-work.md), or Blackthorn. Those are separate offerings; confirm what is in your SOW.
+If you need staffed depth, remediation loops, or release sign-off after an Audit Engine engagement, [ask Sherlock](https://sherlock.xyz/contact) about a follow-on fix review, [Collaborative Audits](../collaborative-audits/about-collaborative-audits.md), or Blackthorn. Those are separate offerings; confirm what is in your SOW.
 
 {% hint style="warning" %}
 **Pricing:** [Contact Sherlock](https://sherlock.xyz/contact) for a quote: [https://sherlock.xyz/contact](https://sherlock.xyz/contact)

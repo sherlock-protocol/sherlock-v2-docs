@@ -18,7 +18,7 @@ Engagements typically expose 20+ metrics, including:
 * File-level or area focus
 * Incremental contribution
 
-Exact metric sets can vary by engagement version. Benchmarking updates live during the engagement (often every second on the dashboard) and lands as a finalized report when the engagement finishes.
+Exact metric sets can vary by engagement version. Benchmarking updates live during the engagement as judgments change, and becomes a finalized report when the customer review window closes.
 
 ### Who is compared
 
@@ -35,7 +35,7 @@ Public sharing of the unredacted benchmarking report is disallowed in order to p
 
 ### What participants see
 
-* Their own performance across 20+ metrics
+* Their own performance across 20+ metrics, available once the customer review window closes
 * **Redacted** peer comparisons (peers shown as pseudonyms by type, for example human / AI / model), not raw competitor identities
 
 See also: [For Protocol Teams](for-protocol-teams.md), [Judging](judging.md), [FAQ](faq.md).

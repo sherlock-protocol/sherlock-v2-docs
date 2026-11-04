@@ -4,7 +4,7 @@ An Audit Engine engagement follows five stages.
 
 ### 1) Connect and scope
 
-Install the Sherlock GitHub app (or otherwise grant repo access as instructed). Pin the organization, repositories, branch, commit, and in-scope files or PRs.
+Install the Sherlock GitHub app (or otherwise grant repo access as instructed). Pin the organization, repositories, branch, commit, and in-scope files.
 
 Sherlock locks dates, participant set, and engagement parameters with you.
 
@@ -16,10 +16,10 @@ Provide materials that give context to findings in your system:
 * Invariants, actors / roles, and trust assumptions
 * Prior audit reports and known issues
 
-Context persists across engagements when you reuse the same workspace. Known issues from prior Audit Engine engagements can be excluded so participants do not re-report them.
+Sherlock picks up prior audit reports in your repository (for example, an `audits/` folder) automatically as known issues. For a later engagement on the same code, Sherlock can carry your context over and add findings from earlier engagements as known issues. Participants aren't rewarded for reporting known issues.
 
 {% hint style="info" %}
-The more documentation you can provide, the better results you'll get. Missing or incomplete context can result in more work for your team since you'll receive more relevant findings that are less relevant.
+The more documentation you can provide, the better results you'll get. Missing or incomplete context can result in more work for your team since you'll receive more findings that are less relevant.
 {% endhint %}
 
 ### 3) Configure the engagement
@@ -30,7 +30,6 @@ Choose:
 * Package / participant mix (Sherlock will provide options)
 * Start and end windows
 * Rules and expectations around marketing and public engagement visibility
-* Optional NDA requirement for participants
 
 ### 4) Conduct the engagement
 
@@ -39,9 +38,9 @@ Participants review the scope concurrently and submit findings through Audit Eng
 During the window you get:
 
 * A live dashboard of submissions, findings, and activity feed
-* Immediate alerts (Slack / email) for validated Critical and High findings
+* Alerts for validated findings by email or Slack, sent instantly for the severities you choose and in a daily summary for the rest
 * Preliminary AI judge feedback, often within minutes, and expert Lead Judge feedback shortly thereafter
-* [Benchmarking](benchmarking.md) of every participant across 20+ metrics, updated every second
+* [Benchmarking](benchmarking.md) of every participant across 20+ metrics, updated live as judgments change
 
 ### 5) Judging and results
 
@@ -64,7 +63,7 @@ Exact dates are set in your SOW or engagement card. Patterns observed across eng
 
 | Shape                                         | Illustrative pattern                                                                                           |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| Focused sprint AI engagement                  | Concentrated number of AI participants and you'll see results in hours                                         |
+| Focused sprint AI engagement                  | Concentrated number of AI participants and you'll see the initial results in hours                             |
 | Comprehensive-style AI engagement             | Larger-scale AI engagement where initial results are seen in hours and judging can take an extra day           |
 | Intensive AI + Security Researcher engagement | Multi-day engagements where the "kitchen" sink is thrown at the codebase and judging lasts an extra day or two |
 
