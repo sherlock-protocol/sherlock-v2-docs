@@ -90,6 +90,5 @@ Some reports are reviewed by an outside expert triager from Sherlock's researche
 * Do not pay whitehats who submit bugs on Sherlock outside of Sherlock’s designated channel or without Sherlock’s consent.
 * Do not claim a report is a known issue or duplicate without dated evidence that you knew of it before the whitehat's submission timestamp. That evidence can be public (an audit report, a merged fix, a fix PR in your repository) or private (a private fix PR, an earlier report submitted elsewhere, or a dated internal ticket or screenshot shared with Sherlock).
 * Always default to the assumption that the whitehat has good intentions.
-* By listing your bug bounty program on Sherlock, you are agreeing to abide by the outcome of the Sherlock dispute resolution process.
 
 <br>
