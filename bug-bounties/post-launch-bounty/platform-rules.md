@@ -54,7 +54,7 @@ Some reports are reviewed by an outside expert triager from Sherlock's researche
 #### Communication
 
 * **Replies about your report:** reply to the emails we send you about your submission, from the same email address you submitted with. Your reply is added to the submission's conversation, where Sherlock and the protocol team see it. Emails from any other address aren't received, and attachments don't come through: paste text and code into the email body.
-* **No response after 5 days:** reply to the confirmation email you got when you submitted your report to escalate to Sherlock. If that gets no answer either, open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with your submission ID or the report's title.
+* **No response after a week:** reply to the confirmation email you got when you submitted your report to escalate to Sherlock. If that gets no answer either, open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with your submission ID or the report's title.
 * **Anything else** (deposits, refunds, account questions): open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp).
 
 #### Testing Environment
