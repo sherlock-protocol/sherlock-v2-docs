@@ -37,16 +37,36 @@ Links to gists, repositories, documents or videos can add detail, but they don't
 
 #### Submission Deposit
 
-Most programs ask for a deposit with each report: 250 USDC by default, paid in **native USDC on Polygon**. Other tokens (such as USDC.e) and other networks aren't detected. The program page shows the amount for each severity, and some programs don't charge one for every severity.
+Most programs ask for a deposit with each report: 250 USDC by default, paid in **native USDC on Polygon** (contract `0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359`). Other tokens (such as USDC.e) and other networks aren't detected. The program page shows the amount for each severity, and some programs don't charge one for every severity.
 
-Deposits are there to cut down on AI-generated spam. In most cases your deposit is refunded. Where an outside expert triager reviews your report, the deposit pays them for their time. If a submission is clearly AI spam or explicitly out of scope, the deposit is forfeited.
+Deposits are there to cut down on spam, including AI-generated spam. What happens to a deposit depends on the report's outcome and on who triaged it.
 
-If your deposit hasn't been refunded and you believe it should have been, open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp).
+#### Deposit Refunds and Credits
+
+Most reports are triaged by Sherlock. Some are reviewed by an outside expert triager from Sherlock's researcher community, and on those the deposit pays the triager for their time. The closing message tells you if an outside triager reviewed your report.
+
+When your report is closed, its deposit is handled like this:
+
+| Outcome | Triaged by Sherlock | Reviewed by an outside triager |
+| --- | --- | --- |
+| Valid | Refunded | Credit toward a future report |
+| Duplicate of an earlier report | Refunded | Credit toward a future report |
+| Not eligible because it's a known issue | Refunded | Credit toward a future report |
+| Invalid | Refunded | Kept |
+| Spam, AI-generated, or clearly out of scope | Kept | Kept |
+
+**Credits.** A credit covers the deposit on one future report to the same program, submitted from the same email address. Credits don't expire, and they can't be cashed out or moved to another program or email.
+
+**How refunds are paid.** Refunds are paid in native USDC on Polygon. When a report with a refundable deposit is closed, the closing message asks for a Polygon address: reply with it, from the email you submitted with.
+
+**Sent on the wrong network or token?** The deposit isn't detected and the report isn't submitted. Open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with the transaction hash.
+
+**Missing a refund or credit?** If you believe your deposit should have been refunded or credited, open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with your submission ID or the report's title.
 
 #### Communication
 
 * **Replies about your report:** reply to the emails we send you about your submission, from the same email address you submitted with. Your reply is added to the submission's conversation, where Sherlock and the protocol team see it. Emails from any other address aren't received, and attachments don't come through: paste text and code into the email body.
-* **No response after 5 days:** reply to the "Submission Sent Successfully" email to escalate to Sherlock.
+* **No response after 5 days:** reply to the confirmation email you got when you submitted your report to escalate to Sherlock. If that gets no answer either, open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with your submission ID or the report's title.
 * **Anything else** (deposits, refunds, account questions): open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp).
 
 #### Testing Environment
@@ -67,13 +87,13 @@ If your deposit hasn't been refunded and you believe it should have been, open a
 * Report via Sherlock: Use the official reporting channels to submit your findings.
 * Never exploit a vulnerability or threaten to do so
 * Do not attempt to rescue funds without the written consent of the protocol customer
-* Publicly known bugs or bugs reported in a previous audit are never eligible for a reward.
+* Known issues, including bugs that are public or were reported in a previous audit, are never eligible for a reward.
 
 #### Payouts
 
 * Do not try to cajole a protocol customer into paying you. Always use the provided Sherlock resolution mechanisms.&#x20;
-* Rewards and refunds are paid in USDC on Polygon by default. Some protocols pay rewards themselves on a different network or in a different token; the program page or our email will say.
-* You don't need to complete identity verification (KYC) to submit a report, but most protocols require it before paying a reward.
+* Sherlock pays rewards and deposit refunds in USDC on Polygon by default. Some programs pay rewards on a different network or in a different token; the program page will say.
+* You don't need to complete identity verification (KYC) to submit a report. Some protocols require it before paying a reward; the program page will say.
 
 ### Protocol Customers
 
@@ -81,7 +101,7 @@ If your deposit hasn't been refunded and you believe it should have been, open a
 
 * Do not communicate with the whitehat outside of the official channel provided by Sherlock.
 * Do not pay whitehats who submit bugs on Sherlock outside of Sherlock’s designated channel or without Sherlock’s consent.
-* Do not claim a report is a known issue or duplicate without evidence that you knew of it before the whitehat's submission timestamp. That evidence can be public (an audit report, a merged fix, a fix PR in your repository) or private (a dated internal ticket or screenshot shared with Sherlock).
+* Do not claim a report is a known issue or duplicate without dated evidence that you knew of it before the whitehat's submission timestamp. That evidence can be public (an audit report, a merged fix, a fix PR in your repository) or private (a private fix PR, an earlier report submitted elsewhere, or a dated internal ticket or screenshot shared with Sherlock).
 * Always default to the assumption that the whitehat has good intentions.
 * By listing your bug bounty program on Sherlock, you are agreeing to abide by the outcome of the Sherlock dispute resolution process.
 
