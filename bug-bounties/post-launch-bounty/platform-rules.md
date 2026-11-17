@@ -41,17 +41,9 @@ Most programs ask for a deposit with each report: 250 USDC by default, paid in *
 
 #### Deposit Refunds and Credits
 
-Most reports are triaged by Sherlock. Some are reviewed by an outside expert triager from Sherlock's researcher community, and on those externally judged submissions the deposit pays the triager for their time.
+Most reports are triaged by Sherlock. If Sherlock triages your report, your deposit is refunded once the report is closed, unless the report is spam, AI-generated or clearly out of scope.
 
-When your report is closed, its deposit is handled like this:
-
-| Outcome | Triaged by Sherlock | Reviewed by an outside triager |
-| --- | --- | --- |
-| Valid | Refunded | Credit toward a future report |
-| Duplicate of an earlier report | Refunded | Credit toward a future report |
-| Not eligible because it's a known issue | Refunded | Credit toward a future report |
-| Invalid | Refunded | Kept |
-| Spam, AI-generated, or clearly out of scope | Kept | Kept |
+Some reports are reviewed by an outside expert triager from Sherlock's researcher community, and on those externally judged submissions the deposit pays the triager for their time. If an externally judged report is valid, you get a credit toward a future report instead of a refund.
 
 **Credits.** A credit covers the deposit on one future report to the same program, submitted from the same email address. Credits don't expire, and they can't be cashed out or moved to another program or email.
 
