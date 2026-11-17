@@ -10,7 +10,7 @@ description: >-
 
 1.  If the protocol team includes specific information in the Bug Bounty Page or Code Comments, that information may be used as context during the triaging process. In cases where there is a contradiction between the Bug Bounty Page and Code Comments, the Bug Bounty Page should be considered the primary source of truth.
 
-    The judge can decide that Code Comments are outdated. In that case, the default guidelines apply.
+    Sherlock can decide that Code Comments are outdated. In that case, the default guidelines apply.
 
     > Example: The code comments state that "a swap can never fail" even though the code is built to support failing swaps.
 2. The report should include one vulnerability, and if the submitter identifies several vulnerabilities, they should be submitted separately.
@@ -23,10 +23,9 @@ description: >-
 5. **Low vs Informational** (smart contracts and web2 alike):
    1. **Low** means the issue works: against the current code or deployment, you can show real (even if small) harm to the protocol or to someone other than yourself.
    2. **Informational** means there is no harm you can show today: hardening ideas, best-practice gaps, configuration opinions, code quality, design choices (II.22), and issues that only matter if something else changes first (II.18).
-   3. The test: does a working PoC hurt someone other than you? If yes but the harm is small, it's Low. If no, it's Informational, however sensible the advice.
 
       > Example: a missing `X-Frame-Options` header on its own is Informational. Framing the page to trick a logged-in user into changing a setting, shown with a working PoC, is at least Low.
-   4. Informational reports are not rewarded unless the Bug Bounty Page says otherwise. Each Bug Bounty Page sets whether Lows are rewarded, and how much.
+   3. Each Bug Bounty Page sets which severities are rewarded, and how much.
 
 #### II. List of Issue categories that are not considered valid:
 
@@ -51,7 +50,12 @@ description: >-
 14. **Stale prices and Chainlink round completeness** Recommendations to implement round completeness or stale price checks for any oracle are invalid.
 
     > Exception: the recommendation to implement stale price checks **may** be valid. For [example](https://github.com/sherlock-audit/2024-12-mach-finance-judging/issues/41), the protocol may be using Pyth pull-based oracle, which requires requesting the price before using it. Hence, if we don't request the price firstly, or check it for staleness, then we can end up using very old price (e.g. from 1 hour/day ago).
-15. **Known issues** are not eligible for a reward. That covers issues listed on the Bug Bounty Page or in the audits it links (including findings marked acknowledged / not fixed), issues already fixed in the protocol's own code or covered by a public fix PR in its repository before your submission, and issues on a known-issues list the protocol shared with Sherlock before your submission. That list may be private; the protocol then has to show Sherlock dated evidence that it knew first.
+15. **Known issues** are not eligible for a reward. An issue is known if, before your submission, it was:
+    1. listed on the Bug Bounty Page or in an audit report it links, including findings marked acknowledged or not fixed;
+    2. already fixed in the protocol's own code, or covered by a fix PR in the protocol's repository, public or private; or
+    3. on a known-issues list the protocol shared with Sherlock.
+
+    Private evidence (a private PR or a private known-issues list) counts only if the protocol shows Sherlock dated proof that it existed before your submission. A fix that exists only upstream, in a project the protocol forked, doesn't make the issue known: the report is judged on the protocol's own code.
 16. **Chain re-org** and **network liveness** issues are not valid. However, if the underlying protocol is blockchain and the malicious actor can force a chain re-org affecting the protocol and the users, it can be a valid issue if it qualifies for in-scope severity definitions.
 17. Issues where users cannot safemint ERC721 tokens due to unsupported implementation are not valid.
 18. **Future issues:** Issues that result out of a future integration/implementation that was not mentioned in the docs/README or because of a future change in the code (as a fix to another issue) are **not** valid issues.
@@ -73,7 +77,7 @@ The duplication of the issue will be considered based on the **root cause** of t
 2. Submit issues that are considered valid according to Sherlock guidelines based on your discretion.
 3. Be specific and sufficiently descriptive when describing an issue's impact. Bad: Loss of funds for the user Good: Loss of funds for users as there is no access control for the ‘withdraw’ function
 4. **Do not add** unnecessarily **long code snippets** into the submission. Keep the code snippet limited to the scope of the impact, and be as descriptive as possible in the Vulnerability Detail sections.
-5. Do not copy-paste issues from other contests/reports/past audits. They are extremely unlikely to be valid to the respective contest.
+5. Do not copy-paste issues from other programs, reports or past audits. They are extremely unlikely to be valid for this program.
 
 #### V. Web2 and off-chain assets
 
