@@ -43,7 +43,7 @@ Most programs ask for a deposit with each report: 250 USDC by default, paid in *
 
 Most reports are triaged by Sherlock. If Sherlock triages your report, your deposit is refunded once the report is closed, unless the report is spam, AI-generated or clearly out of scope.
 
-Some reports are reviewed by an outside expert triager from Sherlock's researcher community, and on those externally judged submissions the deposit pays the triager for their time.
+Some reports are reviewed by an outside expert triager from Sherlock's researcher community, and on those externally judged submissions the deposit pays the triager for their time. If an externally judged report is valid, the deposit still goes to the triager, but you can receive a credit for it to use on a future submission to the same program.
 
 **How refunds are paid.** Refunds are paid in native USDC on Polygon.
 
