@@ -37,13 +37,11 @@ Links to gists, repositories, documents or videos can add detail, but they don't
 
 #### Submission Deposit
 
-Most programs ask for a deposit with each report: 250 USDC by default, paid in **native USDC on Polygon** (contract `0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359`). Other tokens (such as USDC.e) and other networks aren't detected. The deposit for each severity is shown on the submission form, next to each severity, once you start a report; it isn't listed on the program page itself. Some programs don't charge a deposit for every severity.
-
-Deposits are there to cut down on spam, including AI-generated spam. What happens to a deposit depends on the report's outcome and on who triaged it.
+Most programs ask for a deposit with each report: 250 USDC by default, paid in **native USDC on Polygon** (contract `0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359`). Other tokens (such as USDC.e) and other networks aren't detected. The deposit for each severity is shown on the submission form, next to each severity, once you start a report. Some programs don't charge a deposit for every severity. What happens to a deposit depends on the report's outcome and on who triaged it.
 
 #### Deposit Refunds and Credits
 
-Most reports are triaged by Sherlock. Some are reviewed by an outside expert triager from Sherlock's researcher community, and on those the deposit pays the triager for their time. The closing message tells you if an outside triager reviewed your report.
+Most reports are triaged by Sherlock. Some are reviewed by an outside expert triager from Sherlock's researcher community, and on those externally judged submissions the deposit pays the triager for their time.
 
 When your report is closed, its deposit is handled like this:
 
@@ -57,7 +55,7 @@ When your report is closed, its deposit is handled like this:
 
 **Credits.** A credit covers the deposit on one future report to the same program, submitted from the same email address. Credits don't expire, and they can't be cashed out or moved to another program or email.
 
-**How refunds are paid.** Refunds are paid in native USDC on Polygon. When a report with a refundable deposit is closed, the closing message asks for a Polygon address: reply with it, from the email you submitted with.
+**How refunds are paid.** Refunds are paid in native USDC on Polygon.
 
 **Sent on the wrong network or token?** The deposit isn't detected and the report isn't submitted. Open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with the transaction hash.
 
