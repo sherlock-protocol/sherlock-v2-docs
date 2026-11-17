@@ -39,19 +39,17 @@ Links to gists, repositories, documents or videos can add detail, but they don't
 
 Most programs ask for a deposit with each report: 250 USDC by default, paid in **native USDC on Polygon** (contract `0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359`). Other tokens (such as USDC.e) and other networks aren't detected. The deposit for each severity is shown on the submission form, next to each severity, once you start a report. Some programs don't charge a deposit for every severity. What happens to a deposit depends on the report's outcome and on who triaged it.
 
-#### Deposit Refunds and Credits
+#### Deposit Refunds
 
 Most reports are triaged by Sherlock. If Sherlock triages your report, your deposit is refunded once the report is closed, unless the report is spam, AI-generated or clearly out of scope.
 
-Some reports are reviewed by an outside expert triager from Sherlock's researcher community, and on those externally judged submissions the deposit pays the triager for their time. If an externally judged report is valid, you get a credit toward a future report instead of a refund.
-
-**Credits.** A credit covers the deposit on one future report to the same program, submitted from the same email address. Credits don't expire, and they can't be cashed out or moved to another program or email.
+Some reports are reviewed by an outside expert triager from Sherlock's researcher community, and on those externally judged submissions the deposit pays the triager for their time.
 
 **How refunds are paid.** Refunds are paid in native USDC on Polygon.
 
 **Sent on the wrong network or token?** The deposit isn't detected and the report isn't submitted. Open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with the transaction hash.
 
-**Missing a refund or credit?** If you believe your deposit should have been refunded or credited, open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with your submission ID or the report's title.
+**Deposit not refunded?** If your deposit wasn't refunded and you believe it should have been, open a ticket in the [Sherlock Discord](https://discord.com/invite/MABEWyASkp) with your submission ID or the report's title.
 
 #### Communication
 
