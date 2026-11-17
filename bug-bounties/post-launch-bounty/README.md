@@ -1,21 +1,23 @@
 ---
-description: Sherlock protects teams against hacks at every step of the journey
+description: How bug bounty programs on Sherlock work
 ---
 
-# Post-Launch Bounty
+# Overview
 
-**Bug Bounty for Qualifying Customers**&#x20;
+Qualifying customers can run a bug bounty program on Sherlock.&#x20;
 
-Qualifying customers who have undergone a Sherlock audit have the opportunity to participate in Sherlock's Post-Launch Bug Bounty Program.&#x20;
+Customers are provided with co-marketing of the customer's Bug Bounty Program according to Sherlock's standard marketing efforts.&#x20;
 
-Sherlock's Bug Bounty Program is hosted on Sherlock's website. Security Researchers are able to submit vulnerabilities that relate to the customer's respective Bug Bounty program through a secure messaging portal, to which customers are given access.&#x20;
+Each program has its own page on [Sherlock's bug bounty site](https://audits.sherlock.xyz/bug-bounties) that sets out its scope, severities, rewards and rules.&#x20;
 
-Customers are given access to the platform for an unlimited number of Submission Managers as whitelisted by the customer. Customers are given access to free triaging and issue explanations from a verified Security Researcher who has previously demonstrated proficiency with the customer's codebase (often through a Sherlock audit contest).&#x20;
+Security researchers submit vulnerabilities on the program's page. The protocol team reviews reports, comments on them and approves verdicts on the Sherlock bug bounty dashboard.&#x20;
 
-Customers are also given access to Sherlock's full arbitration suite that includes access to the Sherlock Protocol Claim Committee and the UMA Optimistic Oracle to help with dispute resolution. Customers are provided with co-marketing of the customer's Bug Bounty Program according to Sherlock's standard marketing efforts.&#x20;
+Programs reserve the right to pause submissions at any time.&#x20;
 
-**Required Fees of Qualifying Customers**&#x20;
+**How reports are judged**&#x20;
 
-Qualifying customers are required to pay the Platform Fee. The Platform Fee is equal to ten percent (10%) of the Research Fee. The Research Fee is paid by the Customer to a Security Researcher who submits a valid finding in accordance with the rules and payout guidelines of the Bug Bounty Program. The Research Fee includes any goodwill payments.
+Sherlock triages every report first. We check it against the program rules, the in-scope code, earlier submissions and known issues, then post a proposed verdict for the protocol team. In some cases an expert triager from Sherlock's community of security researchers triages the report instead. The protocol team reviews the verdict and approves it or pushes back. The protocol team has the final say on validity and severity. Sherlock then sends the final verdict to the researcher. For a valid report, that includes the severity and reward.&#x20;
 
-Qualifying customers are required to make payment to Sherlock as follows: 100% paid within 10 days of latest resolution (Sherlock Judge, Sherlock Protocol Claims Committee, UMA Optimistic Oracle).
+**If the researcher disagrees**&#x20;
+
+A researcher who disagrees with the verdict, the severity or the reward replies in the same email thread with their reasoning. Sherlock reviews it and takes it back to the protocol team when it adds something new, such as new evidence, a stronger PoC or an impact that was missed. Asking for a higher severity or reward without new information doesn't reopen the verdict. The protocol team's decision on the rebuttal is final.&#x20;

@@ -75,7 +75,7 @@ description: >-
 
 ### Post-Launch protection
 
-**Bug bounty:** An ongoing post-launch program that rewards responsible disclosure of vulnerabilities in a live system. Bounties exist to keep pressure on production deployments as upgrades, integrations, and market conditions change.
+**Bug bounty:** An ongoing program that rewards responsible disclosure of vulnerabilities in a live system. Bounties exist to keep pressure on production deployments as upgrades, integrations, and market conditions change.
 
 **Bounty submission:** A report describing a vulnerability or exploit path in a live system under an active bounty program. Submissions are triaged for validity, severity, and scope alignment.
 
