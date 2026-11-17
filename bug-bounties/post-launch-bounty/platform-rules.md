@@ -37,7 +37,7 @@ Links to gists, repositories, documents or videos can add detail, but they don't
 
 #### Submission Deposit
 
-Most programs ask for a deposit with each report: 250 USDC by default, paid in **native USDC on Polygon** (contract `0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359`). Other tokens (such as USDC.e) and other networks aren't detected. The program page shows the amount for each severity, and some programs don't charge one for every severity.
+Most programs ask for a deposit with each report: 250 USDC by default, paid in **native USDC on Polygon** (contract `0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359`). Other tokens (such as USDC.e) and other networks aren't detected. The deposit for each severity is shown on the submission form, next to each severity, once you start a report; it isn't listed on the program page itself. Some programs don't charge a deposit for every severity.
 
 Deposits are there to cut down on spam, including AI-generated spam. What happens to a deposit depends on the report's outcome and on who triaged it.
 
