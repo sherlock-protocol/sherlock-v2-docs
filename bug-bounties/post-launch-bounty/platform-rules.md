@@ -41,9 +41,21 @@ Most programs ask for a deposit with each report: 250 USDC by default, paid in *
 
 #### Deposit Refunds
 
-Most reports are triaged by Sherlock. If Sherlock triages your report, your deposit is refunded once the report is closed, unless the report is spam, AI-generated or clearly out of scope.
+Most reports are triaged by Sherlock. Some are reviewed by an outside expert triager from Sherlock's researcher community, and on those the deposit pays the triager for their time. A reward for a valid report is always paid by the protocol team and is separate from the deposit.
 
-Some reports are reviewed by an outside expert triager from Sherlock's researcher community, and on those externally judged submissions the deposit pays the triager for their time. If an externally judged report is valid, the deposit still goes to the triager, but you can receive a credit for it to use on a future submission.
+**Triaged by Sherlock:**
+
+* **Valid and the first report of the issue:** your deposit is refunded, and the protocol team pays the reward.
+* **Duplicate of an earlier report that wasn't public** (for example, an undisclosed earlier bug bounty submission): your deposit is refunded.
+* **Already public before you submitted** (for example, in an audit report, a public fix or a public issue): your deposit isn't refunded. Check for public reports before you submit.
+* **Invalid:** your deposit is refunded, unless the report is spam, AI-generated or clearly out of scope.
+
+**Triaged by an outside triager:**
+
+* **Valid and the first report of the issue:** your deposit goes to the triager. The protocol team pays the reward, and you get a credit for a free future submission.
+* **Duplicate of an earlier report that wasn't public:** your deposit goes to the triager, and you get a credit for a free future submission.
+* **Already public before you submitted:** your deposit goes to the triager.
+* **Invalid:** your deposit goes to the triager.
 
 **How refunds are paid.** Refunds are paid in native USDC on Polygon.
 
